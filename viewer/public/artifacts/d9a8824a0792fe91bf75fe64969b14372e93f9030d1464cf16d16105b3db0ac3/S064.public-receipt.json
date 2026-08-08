@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0002879072,
+  "answer": "The informal estimate during the incident was \"maybe around 20 customers\" affected, based on a quick database check by Chloe Dupont and supported as a ballpark by Raj Patel [NL-022#NL-022-S03]. The final impact, established later by the official postmortem after a complete audit of database transaction logs, was exactly 17 customer workspaces directly affected by the upload pipeline and indexing queue outage [NL-022#NL-022-S03]. The postmortem also emphasized that the postmortem database audit is the sole authority for customer-impact metrics and that internal engineering guesses should not be published before audits are complete [NL-013#NL-013-S09].\n\nCorrective work addressing recurrence includes:\n\n- Enforcing a maximum of 5 retries for document processing jobs with exponential backoff and randomized jitter, completed March 15, 2026 [NL-013#NL-013-S07].\n- Mandating multi-stage, lock-free schema migrations for tables larger than 100,000 rows, with `NOT VALID` foreign keys verified separately, completed March 16, 2026 [NL-013#NL-013-S07].\n- Implementing granular Redis queue monitoring alerts for retry frequencies and worker connection states [NL-013#NL-013-S07][NL-013#NL-013-S08].\n- Conducting ingestion load testing under connection-starvation scenarios [NL-013#NL-013-S07][NL-013#NL-013-S08].\n- Separating database connection pools for write-heavy background tasks and read-heavy user queries [NL-013#NL-013-S07][NL-013#NL-013-S08].\n- Revising the SRE runbook with Redis queue backups, manual connection purging, read-only failovers, quarterly disaster recovery drills, and alerting on-call engineers within 120 seconds of latency spikes [NL-013#NL-013-S09].\n- Shifting engineering mindset to \"fail gracefully with backoff\" and maintaining rapid, one-click rollback capabilities [NL-013#NL-013-S09].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 8292.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-high-S064",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Reconcile the informal March incident estimate with the final impact, then identify the corrective work that addresses recurrence.",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S064"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2624,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "4d15ef86473ddd90b79908d6",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-013-S09"
+        ],
+        "token_count": 321
+      },
+      {
+        "evidence_id": "50af38121f5f41138cb8f594",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-013-S07"
+        ],
+        "token_count": 220
+      },
+      {
+        "evidence_id": "0087336d5f14a89e0028295e",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-022-S03"
+        ],
+        "token_count": 588
+      },
+      {
+        "evidence_id": "9794bf87a7b5a7f74ba79673",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-017-S08"
+        ],
+        "token_count": 136
+      },
+      {
+        "evidence_id": "0009c9049a11fa2321013067",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-013-S08"
+        ],
+        "token_count": 81
+      },
+      {
+        "evidence_id": "6e82cff6b6af139f915a9c70",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-010-S10"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "484538d2945f38005e6f4d11",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-011-S10"
+        ],
+        "token_count": 439
+      },
+      {
+        "evidence_id": "b463e01a7324a49dc3cea1dd",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-013-S03"
+        ],
+        "token_count": 548
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "4d15ef86473ddd90b79908d6",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-013-S09"
+        ],
+        "token_count": 321
+      },
+      {
+        "evidence_id": "50af38121f5f41138cb8f594",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-013-S07"
+        ],
+        "token_count": 220
+      },
+      {
+        "evidence_id": "0087336d5f14a89e0028295e",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-022-S03"
+        ],
+        "token_count": 588
+      },
+      {
+        "evidence_id": "9794bf87a7b5a7f74ba79673",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-017-S08"
+        ],
+        "token_count": 136
+      },
+      {
+        "evidence_id": "0009c9049a11fa2321013067",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-013-S08"
+        ],
+        "token_count": 81
+      },
+      {
+        "evidence_id": "6e82cff6b6af139f915a9c70",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-010-S10"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "484538d2945f38005e6f4d11",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-011-S10"
+        ],
+        "token_count": 439
+      },
+      {
+        "evidence_id": "b463e01a7324a49dc3cea1dd",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-013-S03"
+        ],
+        "token_count": 548
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

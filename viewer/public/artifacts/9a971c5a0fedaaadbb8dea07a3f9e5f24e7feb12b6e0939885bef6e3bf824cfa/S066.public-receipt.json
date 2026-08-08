@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0001656424,
+  "answer": "The playbook target for Enterprise onboarding is 8–10 weeks, with an actual observed median of 8.7 weeks [NL-031-S02][NL-012-S06][NL-031-S03]. This observed Enterprise average (8.7 weeks) is longer than simpler plans because Enterprise accounts require security reviews, custom data-retention configurations, single sign-on (SSO) setups, nested Active Directory/Okta permission mapping, and processing of scanned PDFs that need OCR; these tasks are not typically present in Starter or Growth implementations [NL-012-S06][NL-031-S02][NL-005-S09][NL-015-S04]. Additionally, Enterprise implementations include extended UAT, custom DPAs, and dedicated engineering support, which extend the timeline versus the 4–6 week Growth or 2–4 week Starter windows [NL-005-S02][NL-031-S02].\n\nANSWER_STATUS: answer  \nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 5667.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-low-S066",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Compare the Enterprise onboarding range in the playbook with the observed Enterprise average, and explain why the observed duration is longer than simpler plans.",
+      "suite": "static",
+      "task_family": "table_prose_join",
+      "task_id": "S066"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2813,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "ab359c7f221435d74218a441",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-031-S02"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      },
+      {
+        "evidence_id": "63b020223557573133f38af2",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S04"
+        ],
+        "token_count": 477
+      },
+      {
+        "evidence_id": "3b16d141b34cc16d8e455465",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-023-S06"
+        ],
+        "token_count": 690
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "ab359c7f221435d74218a441",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-031-S02"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      },
+      {
+        "evidence_id": "63b020223557573133f38af2",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S04"
+        ],
+        "token_count": 477
+      },
+      {
+        "evidence_id": "3b16d141b34cc16d8e455465",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-023-S06"
+        ],
+        "token_count": 690
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

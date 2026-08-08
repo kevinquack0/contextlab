@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.000497224,
+  "answer": "Support should treat missing or weak citations on scanned PDFs as an OCR/indexing issue and follow these steps:\n\n1. **Confirm OCR handling**: Scanned PDFs require OCR; without OCR the parser extracts no text and citations cannot be generated [NL-006#NL-006-S03]. Check the upload metadata; if the file is flagged as image-only, confirm the workspace has OCR enabled [NL-006#NL-006-S03].\n\n2. **Inspect logs and document status**: Inspect admin/OCR logs to identify the retrieved source and section, and check whether page boundaries were missed during indexing [NL-006#NL-006-S04]. Verify the source document status is not `deprecated` or `stale`, and confirm the user has permission to view the source folder [NL-006#NL-006-S04] [NL-028#NL-028-S03].\n\n3. **Advise on scan quality and source format**: Instruct the customer to improve scan quality or re-save the document as a digital, text-searchable PDF; ideally export directly from the source system rather than scanning a printed sheet [NL-028#NL-028-S03] [NL-006#NL-006-S03].\n\n4. **Recommend Advanced OCR for scanned-only files**: If scanned files must be used, recommend the Advanced OCR Pipeline, which uses layout-aware models to reconstruct text [NL-006#NL-006-S03].\n\n5. **Re-index if OCR completed**: If the source is a scanned PDF, check whether OCR completed without errors; if it did, re-index the folder to refresh vector mappings [NL-028#NL-028-S03]. If page boundaries were missed, OCR logs will show this and re-uploading with higher-resolution OCR is advised [NL-006#NL-006-S04] [NL-021#NL-021-S05].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 15256.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-high-S024",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What should support do when a customer reports missing or weak citations for scanned PDFs?",
+      "suite": "static",
+      "task_family": "procedural_guidance",
+      "task_id": "S024"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3121,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "8c3a97eff9330d6cb053267c",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S05"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "59e68fefd9fe397cacad7704",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-011-S05"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "2e72fabcdcd1c2b8e704abdd",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-018-S04"
+        ],
+        "token_count": 299
+      },
+      {
+        "evidence_id": "d7e9eca24d700532782ab314",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-006-S04"
+        ],
+        "token_count": 464
+      },
+      {
+        "evidence_id": "8a886e3b2dc947136d3079ed",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-028-S03"
+        ],
+        "token_count": 359
+      },
+      {
+        "evidence_id": "c686cc42efc632feeb243dae",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-021-S05"
+        ],
+        "token_count": 368
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "8c3a97eff9330d6cb053267c",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S05"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "59e68fefd9fe397cacad7704",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-011-S05"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "2e72fabcdcd1c2b8e704abdd",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-018-S04"
+        ],
+        "token_count": 299
+      },
+      {
+        "evidence_id": "d7e9eca24d700532782ab314",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-006-S04"
+        ],
+        "token_count": 464
+      },
+      {
+        "evidence_id": "8a886e3b2dc947136d3079ed",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-028-S03"
+        ],
+        "token_count": 359
+      },
+      {
+        "evidence_id": "c686cc42efc632feeb243dae",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-021-S05"
+        ],
+        "token_count": 368
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

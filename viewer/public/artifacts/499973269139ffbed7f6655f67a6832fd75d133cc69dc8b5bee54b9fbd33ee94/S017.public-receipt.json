@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0011310768,
+  "answer": "OCR/import issues are directly linked to poorer onboarding performance and can degrade the quality of answers delivered by the support assistant. Scanned, image-only PDFs require OCR before KnowledgeHub can extract a usable text layer; without OCR, citation accuracy drops and tenants fail the go-live quality threshold (85% citation correctness, or 90% for Enterprise where applicable) [NL-015#NL-015-S04][NL-005#NL-005-S11][NL-031#NL-031-S04]. OCR processing is a distinct onboarding-delay category, accounting for 25% of delay incidents [NL-012#NL-012-S06][NL-031#NL-031-S04]. For example, Northstar Financial needed external OCR preprocessing of scanned credit policy PDFs, delaying pilot kickoff by three weeks [NL-010#NL-010-S06], and BrightPath Healthcare had the longest onboarding duration at 9.5 weeks due to OCR/scanned-PDF compliance issues [NL-012#NL-012-S06][NL-031#NL-031-S04]. Without OCR, ingestion can fail or yield incomplete text extraction, leaving TutorChat unable to answer basic queries or producing low-quality/missing answers [NL-010#NL-010-S06]. Large scanned-batch imports can also clog the ingestion queue and block normal uploads, requiring split-queue architecture and page caps to protect system performance [NL-021#NL-021-S06]. Onboarding blockers, including OCR/import issues, are reviewed against onboarding metrics and support ticket patterns [NL-031#NL-031-S04], though no quantitative evidence in the context directly ties OCR issues to support ticket volume.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 20263.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-high-S017",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What relationship exists between OCR/import issues and support or onboarding performance?",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S017"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2871,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      },
+      {
+        "evidence_id": "77cf8912f7f7754f60627223",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S06"
+        ],
+        "token_count": 345
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "bb6dd6175f7e6c59ef563902",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-031-S04"
+        ],
+        "token_count": 308
+      },
+      {
+        "evidence_id": "1c463727adce682cc9fc4a25",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-021-S07"
+        ],
+        "token_count": 416
+      },
+      {
+        "evidence_id": "c7a1d4004b0d64aae9b8ebb4",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-005-S11"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "b64ebbdc0022a41572d20236",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-021-S06"
+        ],
+        "token_count": 411
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      },
+      {
+        "evidence_id": "77cf8912f7f7754f60627223",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S06"
+        ],
+        "token_count": 345
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "bb6dd6175f7e6c59ef563902",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-031-S04"
+        ],
+        "token_count": 308
+      },
+      {
+        "evidence_id": "1c463727adce682cc9fc4a25",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-021-S07"
+        ],
+        "token_count": 416
+      },
+      {
+        "evidence_id": "c7a1d4004b0d64aae9b8ebb4",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-005-S11"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "b64ebbdc0022a41572d20236",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-021-S06"
+        ],
+        "token_count": 411
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

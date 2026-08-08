@@ -1,0 +1,133 @@
+{
+  "artifact_sha256": "84cb75a42556251ceacb96cc36fe9f257c304336e8fdb7224bb73ab2f1f0f5ea",
+  "evidence": {
+    "deterministic_checks": {
+      "deliberately_broken": "failed_as_expected",
+      "known_good": "passed"
+    },
+    "protected_adapter_boundary": "passed",
+    "provider_and_cost": {
+      "authorized_smoke_evidence": {
+        "failed_evidence_capture": "results/v2/provider/openrouter_smoke_20260805_1941_failed.json",
+        "successful": "results/v2/provider/openrouter_smoke_20260805_1950.json"
+      },
+      "canonical_paid_ledger": {
+        "active_reservations": 78,
+        "actual_usd": "2.2777148632",
+        "event_count": 12951,
+        "provider_acknowledged_calls": 4266,
+        "recorded_failures": 72,
+        "reserved_calls": 4345,
+        "settled_calls": 4267
+      },
+      "credential_keychain_entry": "present",
+      "credential_runtime_guard": "passed",
+      "external_key_limit": {
+        "limit_reset": null,
+        "limit_usd": "15.00",
+        "remaining_usd": "14.99997564",
+        "usage_usd": "0.00002436"
+      },
+      "external_key_limit_snapshot": "results/v2/provider/openrouter_key_limit_snapshot.json",
+      "fixed_gateway_fixture": {
+        "answer": "OK",
+        "injected_transport_calls": 1,
+        "latency_ms": 10,
+        "ledger_events": 3,
+        "network_transport": "disabled_by_injection"
+      },
+      "g1_smoke_cost_usd": "0.00002436",
+      "informational_warning_usd": "12.00",
+      "live_provider_price": {
+        "input_usd_per_million": "0.14000000",
+        "output_usd_per_million": "0.28000000",
+        "provider": "DeepSeek"
+      },
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "provider_route": "deepseek",
+      "reasoning_efforts": [
+        "low",
+        "high"
+      ],
+      "redaction": "passed"
+    },
+    "review_protocol": {
+      "ai_token_preflight_contracts": 2,
+      "calibration_cells_per_reviewer": 20,
+      "calibration_gate": "approved",
+      "calibration_release_packets": 3,
+      "content_identity_leak_fixture": "rejected",
+      "generated_manifest_sha256": "1f48ebd5cbbc1306c50e95c7ca80ef3f684ea2854843980473dfdbc9c2a485da",
+      "generated_packet_count": 255,
+      "hidden_repeats_per_reviewer": 80,
+      "main_cells_per_reviewer": 1600,
+      "protected_citation_leak_fixture": "rejected",
+      "review_release_packets": 252,
+      "reviewers": 3,
+      "task_identity_leak_fixture": "rejected",
+      "total_packets_per_reviewer": 85,
+      "unique_cells_per_reviewer": 1600
+    },
+    "review_protocol_canonical_sha256": "0f0488b0e6db0647cf001f836b45b148000dfced1cac02bcb9145c4b316027d7",
+    "review_protocol_file_sha256": "67bb392ddc7b69c1dfc1930223b37e16429162ab296a7fca0ff0e53408c5c923",
+    "rubric_sha256": "61290b20a518200b85b33953875b3af3f40dc3b92a1c8d4dc315f69e23323696",
+    "schemas": {
+      "invalid_fixtures_failed": 7,
+      "schemas": 7,
+      "valid_fixtures_passed": 7
+    },
+    "sealed_import": {
+      "allowed_fixture_records": 480,
+      "boolean_ordinal_fixture": "rejected",
+      "external_bundle_hash_mismatch": "rejected",
+      "forbidden_gold_fixture": "rejected",
+      "import": "results/v2/sealed/g1_fixture_import.json",
+      "import_sha256": "a7200622af25523e5777ca5ae2c1b6bc561d3ff771197eb94c8b32e0f062b8a3"
+    },
+    "sealed_tasks_external": 48,
+    "secret_scan": {
+      "findings": 0,
+      "status": "passed"
+    },
+    "split_manifest": "results/v2/splits/task_split_manifest.json",
+    "split_manifest_sha256": "2f20fda9bbe217de7940d1b12dc6f16d112ef77d350797f17a9debaa8600b3eb",
+    "static_trace_mock": {
+      "html": "results/v2/traces/v1_static_trace_mock.html",
+      "html_sha256": "e219ff5b39e1e423da4cd6f95a106b2808f67ae5f4f1f44b41e004429568219f",
+      "json": "results/v2/traces/v1_static_trace_mock.json",
+      "json_sha256": "dba32916ffe915a6e5777e1eb3dfd48d6845357e4cbc1803041dd2fbd9c48c6f",
+      "runs": 160
+    },
+    "task_count": 160,
+    "task_drafts": {
+      "known_evidence_ids": 290,
+      "protected_gold_rows": 40,
+      "public_drafts": 40
+    },
+    "truth_language_audit": "passed",
+    "v1_adapter_equivalence": {
+      "answers_equal": 160,
+      "contract_valid": 160,
+      "ordered_source_lists_equal": 160,
+      "questions_checked": 40,
+      "runs_checked": 160,
+      "strategies_checked": 4
+    },
+    "v1_executable_wrapper": {
+      "answer_passthrough_perturbations": 4,
+      "answers_equal": 4,
+      "execution_derived_context_packs": 4,
+      "ordered_source_lists_equal": 4,
+      "paid_network_calls": 0,
+      "recorded_model_calls_replayed": 12,
+      "runs_executed": 4,
+      "strategies_executed": 4
+    },
+    "v1_manifest": "verified",
+    "v1_structural_validation": "OK: 32 docs, 258 sections, 40 questions"
+  },
+  "gate": "G1",
+  "schema_version": "contextlab.g1-technical-gate.v2",
+  "technical_evidence_sha256": "5d7480819030d7a1c6a8e371a227e56f9d57ef122e94856c61f09f603a0f3773",
+  "technical_status": "passed"
+}

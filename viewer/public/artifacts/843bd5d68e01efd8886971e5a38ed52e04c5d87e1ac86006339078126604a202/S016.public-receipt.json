@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0004227272,
+  "answer": "Based on official metrics and customer success reports, NovaLearn should prioritize the **regulated mid-market and enterprise customer segments**. The evidence consistently shows this segment is the most successful, profitable, and strategically aligned with NovaLearn's core strengths.\n\n**Reasons for prioritization:**\n\n1. **Revenue Dominance:** Mid-market (28 active accounts) and enterprise (9 active accounts) customers combined generate 83.8% of recurring revenue [NL-016#NL-016-S03]. They also generate significantly higher expansion revenue ($155,000 combined vs $18,000 for SMB) [NL-012#NL-012-S09].\n2. **Superior Retention and Satisfaction:** These segments exhibit much lower monthly churn rates (mid-market at 2.1% and enterprise at 1.3% vs 4.8% for SMB) [NL-012#NL-012-S09]. They also report the highest NPS scores (mid-market 47, enterprise 52, compared to SMB 31) [NL-012#NL-012-S08].\n3. **Better Unit Economics:** The Enterprise segment has a significantly higher LTV:CAC ratio of 16.0x (LTV exceeding $350,000 vs CAC $22,000), while SMB has a ratio of approximately 8.3x (LTV capped at $25,000 vs CAC $3,000) [NL-016#NL-016-S03]. The mid-market is considered the \"sweet spot\" for rapid customer success with predictable growth [NL-016#NL-016-S03].\n4. **Competitive Advantage and Strategic Fit:** The common denominator among highest-performing accounts is regulatory compliance and heavy documentation (e.g., BrightPath Healthcare, Northstar Financial), where citation-backed answers protect against compliance risks—a distinct competitive advantage for NovaLearn [NL-016#NL-016-S03]. This aligns with the strategic conclusion to focus on compliance-conscious organizations [NL-012#NL-012-S09].\n5. **Strategic Alignment:** Management is shifting outbound sales focus entirely away from SMBs, which show weak long-term retention compared to regulated mid-market and enterprise companies [NL-016#NL-016-S03].\n\nIn contrast, the SMB segment is experiencing high churn (4.8% monthly), low NPS (31), and poor unit economics, making them a lower priority [NL-016#NL-016-S03][NL-012#NL-012-S08].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 10857.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-low-S016",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Across official metrics and customer success reports, which customer segment should NovaLearn prioritize and why?",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S016"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2822,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      },
+      {
+        "evidence_id": "624a898fd5dd52607e945140",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-010-S01"
+        ],
+        "token_count": 380
+      },
+      {
+        "evidence_id": "986b6ad2cfc2a9742372e488",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-012-S08"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      },
+      {
+        "evidence_id": "a8fc8d591099588c56805227",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-010-S02"
+        ],
+        "token_count": 356
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      },
+      {
+        "evidence_id": "624a898fd5dd52607e945140",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-010-S01"
+        ],
+        "token_count": 380
+      },
+      {
+        "evidence_id": "986b6ad2cfc2a9742372e488",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-012-S08"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      },
+      {
+        "evidence_id": "a8fc8d591099588c56805227",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-010-S02"
+        ],
+        "token_count": 356
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

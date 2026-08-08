@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0005108992,
+  "answer": "Higher-authority sources (official performance metrics, analytics data, and executive statements) directly contradict the sales material's claim that education startups are the \"best ICP.\" While the sales playbook describes education startups as a \"phenomenal ICP\" and \"fastest-growing segment\" [NL-009#NL-009-S04], it simultaneously includes a caveat acknowledging that official Finance metrics (NL-012) highlight \"low initial contract values and elevated churn risks\" for this category, and instructs reps not to over-index on them for revenue quotas [NL-009#NL-009-S04].\n\nThe higher-authority, data-backed sources indicate the opposite:\n\n- **Official performance metrics (NL-001)** state that the ICP is concentrated in \"mid-market and enterprise companies operating in highly regulated fields\" [NL-001#NL-001-S04]. Education startups fall under the SMB segment (EduVantage Labs is listed as an SMB example in the sales qualification table [NL-009#NL-009-S04]), and the data shows SMBs have \"significantly higher churn rates and lower expansion potential\" than mid-market and enterprise clients [NL-001#NL-001-S04].\n- **The Q2 2026 analytics review (NL-015)** directly refutes the sales argument for doubling down on edtech startups. SMB churn is 4.8% monthly, versus 2.1% for Mid-Market and 1.3% for Enterprise [NL-015#NL-015-S03]. SMB expansion revenue was only $18,000, compared to $64,000 (Mid-Market) and $91,000 (Enterprise) [NL-015#NL-015-S03]. NPS for SMB is 31, versus 47 and 52 for Mid-Market and Enterprise [NL-015#NL-015-S03].\n- **The CEO (Maya Patel)** explicitly confirmed in that meeting: \"our Ideal Customer Profile (ICP) is regulated mid-market and enterprise organizations. These are companies with 500 to 10,000 employees... We cannot pivot our strategy to chase quick SMB sales that churn out in six months\" [NL-015#NL-015-S03].\n\nTherefore, higher-authority sources indicate that education startups are not the best ICP; they are a low-revenue, high-churn segment, and the true ICP is the regulated mid-market and enterprise segment (500–10,000 employees) [NL-001#NL-001-S04] [NL-015#NL-015-S03].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 14216.0,
+  "policy": "M2",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M2-low-S033",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Sales material says education startups are the best ICP. What do higher-authority sources indicate?",
+      "suite": "static",
+      "task_family": "authority_conflict",
+      "task_id": "S033"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3125,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "63b020223557573133f38af2",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S04"
+        ],
+        "token_count": 477
+      },
+      {
+        "evidence_id": "9a8f72ba60e01259bdc281d3",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-009-S07"
+        ],
+        "token_count": 285
+      },
+      {
+        "evidence_id": "3eee11910fe7e10e8c8456c9",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-001-S04"
+        ],
+        "token_count": 368
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "960b19b670e4fd65730cd357",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-009-S06"
+        ],
+        "token_count": 265
+      },
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "355bbc21dc16af5c7a2e8552",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-032-S01"
+        ],
+        "token_count": 240
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "63b020223557573133f38af2",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S04"
+        ],
+        "token_count": 477
+      },
+      {
+        "evidence_id": "9a8f72ba60e01259bdc281d3",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-009-S07"
+        ],
+        "token_count": 285
+      },
+      {
+        "evidence_id": "3eee11910fe7e10e8c8456c9",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-001-S04"
+        ],
+        "token_count": 368
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "960b19b670e4fd65730cd357",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-009-S06"
+        ],
+        "token_count": 265
+      },
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "355bbc21dc16af5c7a2e8552",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-032-S01"
+        ],
+        "token_count": 240
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0005564104,
+  "answer": "To prepare a corpus for a reliable NovaLearn deployment, a customer must complete the corpus cataloging and audit process defined in Phase 2 of the onboarding playbook [NL-005#NL-005-S04]. This involves the following sequential steps:\n\n1.  **Document Source Audit:** Identify where the company’s knowledge is stored (e.g., SharePoint, Google Drive, local servers, Confluence), catalog the file formats, and document the volume of files in each repository [NL-005#NL-005-S04].\n2.  **Format Inspection:** Check that all documents are in supported formats (PDF, DOCX, PPTX, HTML, Markdown, CSV, XLSX). Flag any legacy formats or unsupported file types for conversion [NL-005#NL-005-S04].\n3.  **OCR Identification:** Scan the corpus to identify image-only or scanned PDFs. Flag these files for OCR processing, and be aware that they may extend the onboarding timeline due to processing latency [NL-005#NL-005-S04] [NL-009#NL-009-S05].\n4.  **Document Taxonomy Definition:** Design the tagging system in KnowledgeHub (e.g., by department, product, region) to enable precise filtering and retrieval, and set up the custom metadata schemas [NL-005#NL-005-S04].\n5.  **Corpus Audit Checklist Verification:** Before delivering the Corpus Inventory Sheet, content owners must verify that: all file names are descriptive and exclude special symbols; no duplicate copies of policy manuals exist; scanned files are separated and marked \"OCR Required: True\"; every document has an assigned department and owner; and source files contain clear heading structures (H1, H2, H3) [NL-005#NL-005-S04].\n\nFor overall deployment reliability, Phase 1 (uploading initial policy documentation and establishing folder directory tree structure and taxonomies in KnowledgeHub) should be coordinated with this corpus preparation [NL-028#NL-028-S01] [NL-005#NL-005-S01].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 14574.0,
+  "policy": "M4",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M4-low-S023",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What process should a customer follow to prepare a corpus for a reliable NovaLearn deployment?",
+      "suite": "static",
+      "task_family": "procedural_guidance",
+      "task_id": "S023"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2636,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "4828b4cc4342447fada1e860",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-005-S04"
+        ],
+        "token_count": 228
+      },
+      {
+        "evidence_id": "5040d007a019cff6b3f3f981",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-002-S01"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "91c4638e7a9fd45c750c7122",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-005-S01"
+        ],
+        "token_count": 187
+      },
+      {
+        "evidence_id": "6bedc3704f2dc4444366d276",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-001-S01"
+        ],
+        "token_count": 221
+      },
+      {
+        "evidence_id": "a51e2a1f1ee52f745968283e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-009-S05"
+        ],
+        "token_count": 559
+      },
+      {
+        "evidence_id": "ab49a76bab7f1386d4b3f42d",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-001-S02"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "0991ee88af6cc0231d475b69",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-028-S01"
+        ],
+        "token_count": 239
+      },
+      {
+        "evidence_id": "3ac6b532187de2f692d66761",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-005-S03"
+        ],
+        "token_count": 480
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "4828b4cc4342447fada1e860",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-005-S04"
+        ],
+        "token_count": 228
+      },
+      {
+        "evidence_id": "5040d007a019cff6b3f3f981",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-002-S01"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "91c4638e7a9fd45c750c7122",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-005-S01"
+        ],
+        "token_count": 187
+      },
+      {
+        "evidence_id": "6bedc3704f2dc4444366d276",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-001-S01"
+        ],
+        "token_count": 221
+      },
+      {
+        "evidence_id": "a51e2a1f1ee52f745968283e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-009-S05"
+        ],
+        "token_count": 559
+      },
+      {
+        "evidence_id": "ab49a76bab7f1386d4b3f42d",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-001-S02"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "0991ee88af6cc0231d475b69",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-028-S01"
+        ],
+        "token_count": 239
+      },
+      {
+        "evidence_id": "3ac6b532187de2f692d66761",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-005-S03"
+        ],
+        "token_count": 480
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

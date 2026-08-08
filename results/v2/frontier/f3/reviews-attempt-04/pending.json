@@ -1,0 +1,31 @@
+{
+  "ai_reviews": [
+    {
+      "decision": "pass",
+      "findings": [],
+      "invocation_receipt_sha256": "851f046ad369925fe27322157647c180937d74db9328dc84f8c34c5545963413",
+      "review_artifact_sha256": "8ba1f3fddbd2bbdc3ac0d7f0ec7226de6772117341452232345abf290e9c4622",
+      "reviewer_id": "gpt-5.6-sol-high"
+    },
+    {
+      "decision": "pass",
+      "findings": [],
+      "invocation_receipt_sha256": "fd4864d75e2e87d7cb2f13e9656a164c2565bbc03c6b8c8d0dad04e357849af1",
+      "review_artifact_sha256": "9abc30d36eed1f910c1998dfa09c0685c372c2a16e3f621e6856190dd311a5b5",
+      "reviewer_id": "gpt-5.6-terra-high"
+    }
+  ],
+  "artifact_sha256": "ccf3685c5e16bac59806fccdce2a1092d8ba0cfb47ddbd99b6aecbba2a95eae9",
+  "experiment_id": "F3",
+  "final_status": "blocked-pending-kevin",
+  "human_approval": {
+    "reviewer": "Kevin Araujo",
+    "status": "pending",
+    "technical_record_sha256": "e54d607bb5c2481c0ce935bfe8410f491fa063a756b1a3c3e44c6471db8acf0e"
+  },
+  "proposed_decision": "accept-negative",
+  "schema_version": "contextlab.frontier-result-gate.v1",
+  "technical_artifact_sha256": "f18f7eb214a0d9c268ba028771127bd9ff068fd6454455b646cc8343ec42aebe",
+  "technical_record_sha256": "e54d607bb5c2481c0ce935bfe8410f491fa063a756b1a3c3e44c6471db8acf0e",
+  "technical_status": "passed"
+}

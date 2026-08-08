@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0005831672,
+  "answer": "The three recurring onboarding blockers appearing consistently across the implementation data logs and the playbook are:\n\n1. **Permission Mapping**: This is the most common blocker, accounting for 45% of delay incidents in implementation logs [NL-031#NL-031-S04] and 45% of onboarding delays in Q2 data [NL-012#NL-012-S06]. The playbook also confirms it is the most common blocker for Enterprise accounts [NL-005#NL-005-S06]. A technical root cause is that the permission worker sync script encounters recursion limits on nested group configurations with circular dependencies, halting directory mirroring [NL-031#NL-031-S04].\n\n2. **Source Ingestion Cleanup**: This accounts for 30% of delay incidents [NL-031#NL-031-S04] and 30% of onboarding delays [NL-012#NL-012-S06]. Customers dump unreviewed folders into KnowledgeHub, resulting in outdated policy versions, requiring a manual document audit and cleanup to purge duplicate and stale files [NL-031#NL-031-S04].\n\n3. **OCR and Scanned PDFs**: This accounts for 25% of delay incidents [NL-031#NL-031-S04] and 25% of onboarding delays [NL-012#NL-012-S06]. The standard PDF parser fails to detect text layers in image-only documents, resulting in empty indexes and incomplete citations that fail the go-live validation threshold unless external OCR pre-processing is applied [NL-031#NL-031-S04]. This was the primary blocker for BrightPath Healthcare's 9.5-week onboarding [NL-031#NL-031-S04][NL-012#NL-012-S06].\n\nThe playbook's remediation path also categorizes failure causes into similar buckets—extraction errors, semantic mapping gaps, or conflicting source policies—which map to these three blockers [NL-005#NL-005-S11].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 15232.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-low-S013",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What recurring onboarding blockers appear across the playbook, customer interviews, and implementation data?",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S013"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2730,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "91c4638e7a9fd45c750c7122",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-005-S01"
+        ],
+        "token_count": 187
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "3ac6b532187de2f692d66761",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S03"
+        ],
+        "token_count": 480
+      },
+      {
+        "evidence_id": "c7a1d4004b0d64aae9b8ebb4",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-005-S11"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "bb6dd6175f7e6c59ef563902",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-031-S04"
+        ],
+        "token_count": 308
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "dd566ce7159edfe3274326b7",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-005-S06"
+        ],
+        "token_count": 370
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "91c4638e7a9fd45c750c7122",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-005-S01"
+        ],
+        "token_count": 187
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "3ac6b532187de2f692d66761",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S03"
+        ],
+        "token_count": 480
+      },
+      {
+        "evidence_id": "c7a1d4004b0d64aae9b8ebb4",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-005-S11"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "bb6dd6175f7e6c59ef563902",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-031-S04"
+        ],
+        "token_count": 308
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "dd566ce7159edfe3274326b7",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-005-S06"
+        ],
+        "token_count": 370
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0001011752,
+  "answer": "No. The $900/month Starter price is **not current**; it was part of the deprecated 2025 pricing proposal and has been superseded [NL-003#NL-003-S08] [NL-004#NL-004-S02]. The current trusted Starter price is **$1,200/month** under the active 2026 pricing schedule [NL-003#NL-003-S02] [NL-003#NL-003-S03]. The 2025 proposal was rejected as financially unsustainable and must not be used [NL-004#NL-004-S04].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 4399.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-high-S028",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "A document says Starter costs $900/month. Is that current? Which price should be trusted?",
+      "suite": "static",
+      "task_family": "authority_conflict",
+      "task_id": "S028"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2244,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "aa4a388733cb6e3101ad1a1c",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-003-S08"
+        ],
+        "token_count": 303
+      },
+      {
+        "evidence_id": "789e6a6f3b3c4985314a97a6",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S03"
+        ],
+        "token_count": 284
+      },
+      {
+        "evidence_id": "d8f95402880ce5338d3a7213",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-004-S03"
+        ],
+        "token_count": 316
+      },
+      {
+        "evidence_id": "5786a29c4734fe1ce1667b81",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-004-S02"
+        ],
+        "token_count": 112
+      },
+      {
+        "evidence_id": "5f5a43d38863a7d8b2224bd6",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-003-S02"
+        ],
+        "token_count": 92
+      },
+      {
+        "evidence_id": "1c6b5adf62c8602947421ee1",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-004-S04"
+        ],
+        "token_count": 613
+      },
+      {
+        "evidence_id": "1a80802691ee19fe640bb9dc",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-003-S05"
+        ],
+        "token_count": 319
+      },
+      {
+        "evidence_id": "4df4892f35cacfa07daf7b1d",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-003-S04"
+        ],
+        "token_count": 205
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "aa4a388733cb6e3101ad1a1c",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-003-S08"
+        ],
+        "token_count": 303
+      },
+      {
+        "evidence_id": "789e6a6f3b3c4985314a97a6",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S03"
+        ],
+        "token_count": 284
+      },
+      {
+        "evidence_id": "d8f95402880ce5338d3a7213",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-004-S03"
+        ],
+        "token_count": 316
+      },
+      {
+        "evidence_id": "5786a29c4734fe1ce1667b81",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-004-S02"
+        ],
+        "token_count": 112
+      },
+      {
+        "evidence_id": "5f5a43d38863a7d8b2224bd6",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-003-S02"
+        ],
+        "token_count": 92
+      },
+      {
+        "evidence_id": "1c6b5adf62c8602947421ee1",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-004-S04"
+        ],
+        "token_count": 613
+      },
+      {
+        "evidence_id": "1a80802691ee19fe640bb9dc",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-003-S05"
+        ],
+        "token_count": 319
+      },
+      {
+        "evidence_id": "4df4892f35cacfa07daf7b1d",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-003-S04"
+        ],
+        "token_count": 205
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

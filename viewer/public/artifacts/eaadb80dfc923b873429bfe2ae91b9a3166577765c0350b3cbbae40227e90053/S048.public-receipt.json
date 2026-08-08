@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0006200768,
+  "answer": "No. Under the permitted competitive messaging rules, a sales representative may not state that LearnPilot has unstable finances: the rules explicitly prohibit making claims about LearnPilot's financial health or funding status [NL-032#NL-032-S06]. The representative also may not state that NovaLearn already has perfect automated OCR: the rules prohibit claiming NovaLearn currently has fully automated OCR for scanned PDFs, require acknowledging that scanned files need pre-processing, and state the Advanced OCR pipeline is targeting an August 2026 release [NL-032#NL-032-S06]. This is consistent with the approved talk track, which says NovaLearn's advanced OCR pipeline is launching in August 2026 [NL-032#NL-032-S05].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 5107.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-high-S048",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Can a sales representative state that LearnPilot has unstable finances and that NovaLearn already has perfect automated OCR? Answer using the permitted competitive messaging rules.",
+      "suite": "static",
+      "task_family": "authority_conflict",
+      "task_id": "S048"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2322,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "da503fd140633aea5f15ff2e",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-032-S06"
+        ],
+        "token_count": 163
+      },
+      {
+        "evidence_id": "06aafae88e0dcd2d47c2d572",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-032-S07"
+        ],
+        "token_count": 423
+      },
+      {
+        "evidence_id": "29341b88d42007518d742629",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-032-S05"
+        ],
+        "token_count": 404
+      },
+      {
+        "evidence_id": "355bbc21dc16af5c7a2e8552",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-032-S01"
+        ],
+        "token_count": 240
+      },
+      {
+        "evidence_id": "4ed168c756a66b36f7103c70",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-032-S04"
+        ],
+        "token_count": 201
+      },
+      {
+        "evidence_id": "414db3ff44876c4bc80c019e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-032-S02"
+        ],
+        "token_count": 266
+      },
+      {
+        "evidence_id": "9a8f72ba60e01259bdc281d3",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S07"
+        ],
+        "token_count": 285
+      },
+      {
+        "evidence_id": "706cb2c599a15ec297195848",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-032-S03"
+        ],
+        "token_count": 340
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "da503fd140633aea5f15ff2e",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-032-S06"
+        ],
+        "token_count": 163
+      },
+      {
+        "evidence_id": "06aafae88e0dcd2d47c2d572",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-032-S07"
+        ],
+        "token_count": 423
+      },
+      {
+        "evidence_id": "29341b88d42007518d742629",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-032-S05"
+        ],
+        "token_count": 404
+      },
+      {
+        "evidence_id": "355bbc21dc16af5c7a2e8552",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-032-S01"
+        ],
+        "token_count": 240
+      },
+      {
+        "evidence_id": "4ed168c756a66b36f7103c70",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-032-S04"
+        ],
+        "token_count": 201
+      },
+      {
+        "evidence_id": "414db3ff44876c4bc80c019e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-032-S02"
+        ],
+        "token_count": 266
+      },
+      {
+        "evidence_id": "9a8f72ba60e01259bdc281d3",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S07"
+        ],
+        "token_count": 285
+      },
+      {
+        "evidence_id": "706cb2c599a15ec297195848",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-032-S03"
+        ],
+        "token_count": 340
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

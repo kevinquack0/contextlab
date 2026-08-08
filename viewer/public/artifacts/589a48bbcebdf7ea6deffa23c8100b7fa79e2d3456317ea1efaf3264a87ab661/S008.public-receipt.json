@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.000476504,
+  "answer": "The evidence directly supports the claim that scanned PDFs can weaken citation quality, across support-ticket metrics, customer testimony, and engineering/product documentation:\n\n- **[NL-021#NL-021-S02]**: David Okafor reports that for scanned PDFs without an embedded text layer (roughly 40–50% of ingested files at regulated enterprise accounts), TutorChat \"either returns an answer with no source citations because it can't find text offsets, or the citation points to the entire document – like page 1 of a 250-page PDF – rather than a specific section.\"\n- **[NL-018#NL-018-S04]**: Sarah Jenkins states that for the 60% of clinical documentation that is scanned, image-only PDFs, \"the citation mapping is still failing. It either points to page one of a 200-page document or doesn't generate a citation link at all.\" She gives a concrete example: a code blue response checklist query was answered correctly but the citation pointed to page one of a 150-page document instead of page 87.\n- **[NL-011#NL-011-S05]**: Even after the April fix reduced citation tickets, \"the remaining tickets in May and June are almost entirely linked to scanned, image-only PDFs. For these files, TutorChat struggles to establish citation anchors, often linking back to the start of the file rather than the specific page.\"\n- **[NL-006#NL-006-S03]**: A scanned PDF without OCR yields zero extracted text, and OCR is heuristic: blurry/low-resolution scans, handwriting, or complex layouts cause \"misread characters or broken paragraphs,\" which \"directly cause\" broken citations where TutorChat \"may not be able to link to the exact paragraph.\"\n- **[NL-006#NL-006-S04]**: A common root cause for missing citations is that \"the answer was retrieved from a low-resolution scanned PDF, and the layout parser could not determine the exact page or section ID.\" The resolution step is to \"inspect the OCR logs to see if page boundaries were missed during indexing.\"\n- **[NL-028#NL-028-S03]**: The product documentation states that \"if you ask a question based on scanned PDFs of low quality, the system may struggle to generate page-specific citations due to OCR limitations,\" and recommends re-saving the document in a digital, text-searchable format.\n- **[NL-021#NL-021-S05]**: The design team proposes an upload-phase warning stating that ingesting a scanned/image-only file \"without OCR may result in poor citation quality,\" acknowledging the weakening effect of scanned PDFs on citation reliability.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 12031.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-low-S008",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What evidence supports the claim that scanned PDFs can weaken citation quality?",
+      "suite": "static",
+      "task_family": "evidence_selection",
+      "task_id": "S008"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3121,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "8c3a97eff9330d6cb053267c",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-010-S05"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "2e72fabcdcd1c2b8e704abdd",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-018-S04"
+        ],
+        "token_count": 299
+      },
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "59e68fefd9fe397cacad7704",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-011-S05"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "d7e9eca24d700532782ab314",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-006-S04"
+        ],
+        "token_count": 464
+      },
+      {
+        "evidence_id": "c686cc42efc632feeb243dae",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-021-S05"
+        ],
+        "token_count": 368
+      },
+      {
+        "evidence_id": "8a886e3b2dc947136d3079ed",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-028-S03"
+        ],
+        "token_count": 359
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "8c3a97eff9330d6cb053267c",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-010-S05"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "2e72fabcdcd1c2b8e704abdd",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-018-S04"
+        ],
+        "token_count": 299
+      },
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "59e68fefd9fe397cacad7704",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-011-S05"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "d7e9eca24d700532782ab314",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-006-S04"
+        ],
+        "token_count": 464
+      },
+      {
+        "evidence_id": "c686cc42efc632feeb243dae",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-021-S05"
+        ],
+        "token_count": 368
+      },
+      {
+        "evidence_id": "8a886e3b2dc947136d3079ed",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-028-S03"
+        ],
+        "token_count": 359
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

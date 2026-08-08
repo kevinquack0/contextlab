@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0004212152,
+  "answer": "Beacon Insurance is a high-performing enterprise account experiencing successful adoption and expansion, whereas Meridian Retail Group is a high-risk account requiring urgent intervention to prevent churn. \n\n**Beacon Insurance (Success):**\n- Reported a \"highly successful quarter\" in Q2 2026 [NL-025#NL-025-S01].\n- Adoption exceeded benchmarks: KnowledgeHub at 96% and TutorChat at 92.2% [NL-025#NL-025-S03].\n- Achieved operational impact: onboarding reduced from 6.2 to 4.0 weeks, and support escalations declined by 22% [NL-025#NL-025-S04].\n- Citation trust improved to 94% following the April 15 validation update [NL-025#NL-025-S04].\n- Account details: $112,000 ACV, Enterprise Plan, 3,500 seats, renewal Dec 31, 2026 [NL-025#NL-025-S02].\n- Expansion planned: adding 600 seats via WorkflowCoach (raising ACV to $136,000) and committing to a lighthouse beta role [NL-025#NL-025-S06].\n- Q3 2026 action plan includes enrollment in beta, SCIM provisioning, and renewal preparation to secure the December renewal [NL-025#NL-025-S07].\n\n**Meridian Retail Group (Risk / Intervention):**\n- Classified as High Risk, with renewal probability estimated below 40% without intervention [NL-026#NL-026-S02].\n- Core risk drivers: support ticket delays exceeding SLAs, unresolved permission mapping friction due to decentralized structure, and a critical feature gap (Microsoft Teams integration not available until Q4 2026, after their renewal date) [NL-026#NL-026-S02].\n- Recommended intervention: offer a pro-bono upgrade to the Enterprise Plan for the remainder of the term, and if accepted, set a 1-year renewal target at a discounted $7,500/month [NL-026#NL-026-S05].\n- Risk is specific to their decentralized retail network and not generalizable to the broader Growth Plan segment [NL-026#NL-026-S02].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 11586.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-low-S021",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Compare Beacon Insurance and Meridian Retail Group as customer success examples.",
+      "suite": "static",
+      "task_family": "comparison",
+      "task_id": "S021"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2236,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "2d4bff8a08a8269847d60019",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-025-S01"
+        ],
+        "token_count": 262
+      },
+      {
+        "evidence_id": "a49ef2bdf648a1ceaf906a01",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-025-S02"
+        ],
+        "token_count": 276
+      },
+      {
+        "evidence_id": "facc207a7612866698457b2d",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-025-S04"
+        ],
+        "token_count": 267
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "79ddf9cfcbfc0a57a9ed1353",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-026-S05"
+        ],
+        "token_count": 185
+      },
+      {
+        "evidence_id": "1dc45758eeff083a06c8cd3f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-025-S06"
+        ],
+        "token_count": 264
+      },
+      {
+        "evidence_id": "005924b5bad7d85f53f97cce",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-025-S07"
+        ],
+        "token_count": 417
+      },
+      {
+        "evidence_id": "3af309502162ecd69350da8b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-026-S02"
+        ],
+        "token_count": 293
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "2d4bff8a08a8269847d60019",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-025-S01"
+        ],
+        "token_count": 262
+      },
+      {
+        "evidence_id": "a49ef2bdf648a1ceaf906a01",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-025-S02"
+        ],
+        "token_count": 276
+      },
+      {
+        "evidence_id": "facc207a7612866698457b2d",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-025-S04"
+        ],
+        "token_count": 267
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "79ddf9cfcbfc0a57a9ed1353",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-026-S05"
+        ],
+        "token_count": 185
+      },
+      {
+        "evidence_id": "1dc45758eeff083a06c8cd3f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-025-S06"
+        ],
+        "token_count": 264
+      },
+      {
+        "evidence_id": "005924b5bad7d85f53f97cce",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-025-S07"
+        ],
+        "token_count": 417
+      },
+      {
+        "evidence_id": "3af309502162ecd69350da8b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-026-S02"
+        ],
+        "token_count": 293
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

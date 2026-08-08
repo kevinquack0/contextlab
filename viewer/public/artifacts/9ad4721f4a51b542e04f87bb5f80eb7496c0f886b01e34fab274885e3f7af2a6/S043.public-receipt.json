@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0001900024,
+  "answer": "The final incident summary should use the official postmortem figures, not the informal engineering estimate. The engineering standup note saying “maybe around 20 customers” was a rough estimate made before the database audit was complete [NL-022#NL-022-S03]. The official postmortem, compiled later after a full database transaction log audit, confirms exactly **17 active customer accounts** were affected [NL-013#NL-013-S02]. The postmortem also explicitly establishes the postmortem database audit as the sole authority for customer-impact metrics and says internal engineering guesses should not be published [NL-013#NL-013-S09]. Therefore, the final summary should report:\n\n- **17 affected customer workspaces** — confirmed by database transaction log audits [NL-013#NL-013-S02].\n- **142 pending/failed document upload requests** — total pending documents across affected accounts [NL-013#NL-013-S02].\n- **86-minute service interruption** — from 14:02 UTC to 15:28 UTC [NL-013#NL-013-S01].\n- **No data loss** — all pending documents were successfully processed after resolution [NL-013#NL-013-S01][NL-013#NL-013-S02].\n\nThe “about 20 customers” figure from NL-022 should not be used in the final summary because it was an informal estimate superseded by the verified postmortem count [NL-022#NL-022-S03][NL-013#NL-013-S09].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 6198.0,
+  "policy": "M4",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M4-high-S043",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Engineering estimated that about 20 customers were affected by the March upload incident. Which impact figures belong in the final incident summary, and why?",
+      "suite": "static",
+      "task_family": "authority_conflict",
+      "task_id": "S043"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2988,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "f4a5a376f4a838513ecd7984",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-013-S02"
+        ],
+        "token_count": 334
+      },
+      {
+        "evidence_id": "44760b3b88722ce7cc7df136",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-013-S06"
+        ],
+        "token_count": 240
+      },
+      {
+        "evidence_id": "b463e01a7324a49dc3cea1dd",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-013-S03"
+        ],
+        "token_count": 548
+      },
+      {
+        "evidence_id": "0087336d5f14a89e0028295e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-022-S03"
+        ],
+        "token_count": 588
+      },
+      {
+        "evidence_id": "1aa307059d9c572a9518d138",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-029-S03"
+        ],
+        "token_count": 386
+      },
+      {
+        "evidence_id": "4d15ef86473ddd90b79908d6",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-013-S09"
+        ],
+        "token_count": 321
+      },
+      {
+        "evidence_id": "18dc291c5c4dc8dbd6df3cd4",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-013-S01"
+        ],
+        "token_count": 233
+      },
+      {
+        "evidence_id": "46adeaf024c21608b97be4f1",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-013-S04"
+        ],
+        "token_count": 338
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "f4a5a376f4a838513ecd7984",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-013-S02"
+        ],
+        "token_count": 334
+      },
+      {
+        "evidence_id": "44760b3b88722ce7cc7df136",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-013-S06"
+        ],
+        "token_count": 240
+      },
+      {
+        "evidence_id": "b463e01a7324a49dc3cea1dd",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-013-S03"
+        ],
+        "token_count": 548
+      },
+      {
+        "evidence_id": "0087336d5f14a89e0028295e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-022-S03"
+        ],
+        "token_count": 588
+      },
+      {
+        "evidence_id": "1aa307059d9c572a9518d138",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-029-S03"
+        ],
+        "token_count": 386
+      },
+      {
+        "evidence_id": "4d15ef86473ddd90b79908d6",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-013-S09"
+        ],
+        "token_count": 321
+      },
+      {
+        "evidence_id": "18dc291c5c4dc8dbd6df3cd4",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-013-S01"
+        ],
+        "token_count": 233
+      },
+      {
+        "evidence_id": "46adeaf024c21608b97be4f1",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-013-S04"
+        ],
+        "token_count": 338
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

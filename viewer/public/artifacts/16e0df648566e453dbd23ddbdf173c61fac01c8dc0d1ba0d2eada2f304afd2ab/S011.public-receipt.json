@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0007018704,
+  "answer": "The following documents provide evidence for typical Growth and Enterprise onboarding timelines:\n\n- **[NL-005-S02]** defines the canonical typical onboarding timelines: **Growth Plan Onboarding (4–6 weeks)** and **Enterprise Plan Onboarding (8–10 weeks)**, including a phase-mapping table with target weeks for each phase (e.g., Phase 1 starts Week 1 for Growth and Weeks 1–2 for Enterprise; Phase 6 ends Week 6 for Growth and Weeks 9–10 for Enterprise).\n- **[NL-005-S03]** specifies that Phase 1 lasts 1 week for Growth accounts and 1–2 weeks for Enterprise accounts.\n- **[NL-005-S08]** specifies that the final phase takes 1 week for Growth and 2 weeks for Enterprise, completing the typical planned timeline.\n- **[NL-012-S06]** provides measured/observed typical durations: **Mid-Market (Growth plan): 5.2 weeks** and **Enterprise (Enterprise plan): 8.7 weeks**, with a sample customer table and delay breakdowns.\n- **[NL-031-S03]** validates those averages using a sample dataset (e.g., Atlas Logistics 4.2 weeks, Acme Manufacturing 5.4 weeks, Meridian Retail Group 6.0 weeks; Northstar Financial 8.2 weeks, Beacon Insurance 8.4 weeks, BrightPath Healthcare 9.5 weeks) and confirms they align exactly with the segment-level metrics in NL-012.\n- **[NL-011-S06]** corroborates the observed averages: **Mid-Market Segment: 5.2 weeks** and **Enterprise Segment: 8.7 weeks**.\n- **[NL-015-S04]** corroborates the Enterprise average of 8.7 weeks and mentions the 4–6 week promise made during sales contracting.\n\nThe planned typical timelines from NL-005 (Growth 4–6 weeks, Enterprise 8–10 weeks) and the observed median timelines from NL-012/NL-031/NL-011/NL-015 (Growth 5.2 weeks, Enterprise 8.7 weeks) are both relevant. The planned figures represent the standard schedule, while the observed figures represent actual median durations, with the discrepancy attributed to bottlenecks like permission mapping, SSO reviews, and OCR processing.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 18363.0,
+  "policy": "M2",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M2-low-S011",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Which documents provide evidence for typical Growth and Enterprise onboarding timelines?",
+      "suite": "static",
+      "task_family": "evidence_selection",
+      "task_id": "S011"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2354,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "3ac6b532187de2f692d66761",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S03"
+        ],
+        "token_count": 480
+      },
+      {
+        "evidence_id": "f617beda911dd75c55163ef0",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-005-S08"
+        ],
+        "token_count": 250
+      },
+      {
+        "evidence_id": "dd6f5deb172b5a7ebb643128",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-011-S06"
+        ],
+        "token_count": 216
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "3ac6b532187de2f692d66761",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S03"
+        ],
+        "token_count": 480
+      },
+      {
+        "evidence_id": "f617beda911dd75c55163ef0",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-005-S08"
+        ],
+        "token_count": 250
+      },
+      {
+        "evidence_id": "dd6f5deb172b5a7ebb643128",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-011-S06"
+        ],
+        "token_count": 216
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

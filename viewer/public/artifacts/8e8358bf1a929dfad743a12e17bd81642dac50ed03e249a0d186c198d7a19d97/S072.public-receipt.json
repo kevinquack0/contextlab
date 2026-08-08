@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0008281168,
+  "answer": "Planned availability differs by feature and target audience:\n\n- **Advanced OCR Pipeline**: Scheduled for general release in August 2026 (v2.8.0, target August 25, 2026) as a standard component of the KnowledgeHub ingestion layer [NL-014#NL-014-S03][NL-014#NL-014-S06]. Plan availability: included natively in the Enterprise plan, offered as a paid add-on for Growth plans ($500/month), and **not** supported on the Starter plan [NL-014#NL-014-S06].\n\n- **WorkflowCoach Public Beta**: Target release is September 2026 (v2.9.0, target September 29, 2026), available to all active Growth and Enterprise accounts [NL-014#NL-014-S03][NL-014#NL-014-S05]. It is currently in a private/internal beta for about 11% of active customers [NL-014#NL-014-S05][NL-002#NL-002-S07]. However, engineering leadership indicates the September date is at risk, with a realistic slip to November 2026 due to dependencies on the Advanced OCR Pipeline, permission synchronization, and state-management/permission issues [NL-014#NL-014-S05][NL-015#NL-015-S05]. An internal contingency plan anticipates a possible November public launch [NL-015#NL-015-S05].\n\n- **Teams connector**: Planned for Q4 2026 (v2.11.0, November release), currently under active design and planning [NL-014#NL-014-S07]. A restricted pilot begins October 2026 with selected financial and healthcare enterprise accounts to validate security isolation before general release [NL-014#NL-014-S07]. It depends on Microsoft Graph APIs, which creates third-party risk [NL-014#NL-014-S09]. It is not generally available; only the Slack connector is currently available as a limited pilot [NL-014#NL-014-S07].\n\nIn summary, Advanced OCR is the earliest planned release (August 2026) with tier-specific availability, WorkflowCoach public beta targets September 2026 but may slip to November 2026 for all Growth/Enterprise accounts, and the Teams connector is the latest (November 2026) with only a restricted October 2026 pilot.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 11328.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-high-S072",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "From the release table and detailed notes, contrast the planned availability of Advanced OCR, WorkflowCoach public beta, and the Teams connector.",
+      "suite": "static",
+      "task_family": "table_prose_join",
+      "task_id": "S072"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2417,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "899be70e9a0dfc7ac2408c8f",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-014-S05"
+        ],
+        "token_count": 202
+      },
+      {
+        "evidence_id": "a526e97072908a4d148027e9",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-014-S03"
+        ],
+        "token_count": 544
+      },
+      {
+        "evidence_id": "b9443f003b5b1e23530b9ae4",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-002-S07"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "f63767d9ce0958fb0543f00c",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-014-S09"
+        ],
+        "token_count": 330
+      },
+      {
+        "evidence_id": "303fd5103447e070a55d5d39",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-014-S06"
+        ],
+        "token_count": 213
+      },
+      {
+        "evidence_id": "509ba4b002f13b9f26a37ff5",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-015-S09"
+        ],
+        "token_count": 298
+      },
+      {
+        "evidence_id": "6db700a5840ee68f3cced38e",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S05"
+        ],
+        "token_count": 376
+      },
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "899be70e9a0dfc7ac2408c8f",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-014-S05"
+        ],
+        "token_count": 202
+      },
+      {
+        "evidence_id": "a526e97072908a4d148027e9",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-014-S03"
+        ],
+        "token_count": 544
+      },
+      {
+        "evidence_id": "b9443f003b5b1e23530b9ae4",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-002-S07"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "f63767d9ce0958fb0543f00c",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-014-S09"
+        ],
+        "token_count": 330
+      },
+      {
+        "evidence_id": "303fd5103447e070a55d5d39",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-014-S06"
+        ],
+        "token_count": 213
+      },
+      {
+        "evidence_id": "509ba4b002f13b9f26a37ff5",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-015-S09"
+        ],
+        "token_count": 298
+      },
+      {
+        "evidence_id": "6db700a5840ee68f3cced38e",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S05"
+        ],
+        "token_count": 376
+      },
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

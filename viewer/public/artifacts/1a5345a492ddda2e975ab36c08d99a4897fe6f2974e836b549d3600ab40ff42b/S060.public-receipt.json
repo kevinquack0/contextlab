@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.000273392,
+  "answer": "Beacon Insurance is a credible expansion example because its high adoption and measurable business outcomes align directly with the Q2 2026 expansion revenue events already recorded for the account.\n\n- **Account adoption:** Beacon’s KnowledgeHub adoption reached 96% and TutorChat adoption 92.2% in Q2 2026, both exceeding enterprise benchmarks [NL-025#NL-025-S03]. TutorChat weekly queries rose from 4,200 in Q1 to 6,800 in Q2, showing deep workflow integration [NL-025#NL-025-S03]. Overall platform adoption reached mature levels, especially in claims processing [NL-025#NL-025-S01].\n- **Outcome evidence:** New claims adjuster onboarding was reduced from 6.2 weeks to 4.0 weeks [NL-025#NL-025-S01][NL-025#NL-025-S04]. Support escalations declined by 22%, reclaiming supervisor time [NL-025#NL-025-S01][NL-025#NL-025-S04]. Citation trust improved to 94% verified queries after the April 15 validation update [NL-025#NL-025-S04].\n- **Recorded Q2 expansion events:** Beacon Insurance contributed two expansion events in Q2 2026: $4,500 expansion MRR on 2026-05-15 for a multi-department expansion (HR & Legal) and $1,500 expansion MRR on 2026-06-25 for an additional workspace index partition [NL-012#NL-012-S05]. This dataset also shows that Beacon was one of the largest enterprise expansion contributors, validating the focus on larger, compliance-heavy institutions [NL-012#NL-012-S05].\n\nJoining these together, the strong adoption and operational outcomes demonstrate the product’s proven value inside Beacon, making its recorded Q2 expansion events a credible result of the land-and-expand strategy rather than isolated purchases.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 8291.0,
+  "policy": "M4",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M4-high-S060",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Why is Beacon Insurance a credible expansion example? Join its account adoption and outcome evidence with the recorded Q2 expansion events.",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S060"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2305,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "2d4bff8a08a8269847d60019",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-025-S01"
+        ],
+        "token_count": 262
+      },
+      {
+        "evidence_id": "1dc45758eeff083a06c8cd3f",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-025-S06"
+        ],
+        "token_count": 264
+      },
+      {
+        "evidence_id": "facc207a7612866698457b2d",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-025-S04"
+        ],
+        "token_count": 267
+      },
+      {
+        "evidence_id": "a49ef2bdf648a1ceaf906a01",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-025-S02"
+        ],
+        "token_count": 276
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "005924b5bad7d85f53f97cce",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-025-S07"
+        ],
+        "token_count": 417
+      },
+      {
+        "evidence_id": "790d0e0f0141f0a669ed0e89",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-012-S05"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "be4a2af05fb404c276896f46",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-025-S05"
+        ],
+        "token_count": 256
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "2d4bff8a08a8269847d60019",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-025-S01"
+        ],
+        "token_count": 262
+      },
+      {
+        "evidence_id": "1dc45758eeff083a06c8cd3f",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-025-S06"
+        ],
+        "token_count": 264
+      },
+      {
+        "evidence_id": "facc207a7612866698457b2d",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-025-S04"
+        ],
+        "token_count": 267
+      },
+      {
+        "evidence_id": "a49ef2bdf648a1ceaf906a01",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-025-S02"
+        ],
+        "token_count": 276
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "005924b5bad7d85f53f97cce",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-025-S07"
+        ],
+        "token_count": 417
+      },
+      {
+        "evidence_id": "790d0e0f0141f0a669ed0e89",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-012-S05"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "be4a2af05fb404c276896f46",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-025-S05"
+        ],
+        "token_count": 256
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

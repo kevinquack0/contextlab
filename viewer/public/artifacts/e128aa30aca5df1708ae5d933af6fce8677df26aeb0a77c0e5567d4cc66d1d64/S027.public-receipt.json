@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0012558,
+  "answer": "To handle a prospect asking for immediate deletion, Teams availability, and custom pricing, a sales representative should follow these verified procedures:\n\n**Immediate deletion:** Do not promise immediate data deletion or sign a custom SLA without first consulting Priya Raman (Security and Governance Lead) [NL-009#NL-009-S08]. The standard corporate policy requires data deletion within 90 days of contract termination [NL-009#NL-009-S08]. While data is removed from active user access immediately upon termination, physical deletion from primary storage and backups takes up to 90 days [NL-019#NL-019-S05]. For Enterprise clients, a custom SLA exception can be negotiated in the DPA, allowing a 30-day purge of active records and a 60-day purge of backup archives (deleting backups faster than 60 days is technically impossible) [NL-019#NL-019-S05]. This exception must be formally documented in the legal DPA and cannot rely on verbal or informal sales commitments [NL-019#NL-019-S05].\n\n**Teams availability:** The rep must consult Sofia Almeida (VP Product) or the official Product Roadmap (NL-014) and must not guarantee a specific launch date [NL-009#NL-009-S08]. The roadmap places the Microsoft Teams integration in the planning and design phase for Q4 2026, and dates must be framed as targets, not contractual guarantees [NL-009#NL-009-S08]. The company explicitly refuses to release insecure \"alpha\" builds or one-off custom integrates for clients due to multi-tenant infrastructure and QA constraints [NL-027#NL-027-S04]. Instead, the rep should pivot to selling citation reliability and strict data isolation (e.g., guaranteeing 85% citation correctness) and suggest the responsive mobile web interface as a workaround [NL-027#NL-027-S04].\n\n**Custom pricing:** Do not offer custom discounts on the Starter or Growth plans [NL-009#NL-009-S08]. Any discounts must be approved by Marcus Reed (VP Sales) and must align with the current pricing sheet (NL-003) [NL-009#NL-009-S08]. Historical prices (e.g., the deprecate $900/month Starter plan from the 2025 proposal) must never be used in active proposals [NL-009#NL-009-S08]. Enterprise plan pricing starts at $8,500/month with a minimum $15,000 onboarding fee, but is subject to security review, seat count, and integration requirements, and final enterprise pricing cannot be quoted on discovery calls [NL-009#NL-009-S08] [NL-004#NL-004-S05].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 22868.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-low-S027",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "How should a sales representative handle a prospect asking for immediate deletion, Teams availability, and custom pricing?",
+      "suite": "static",
+      "task_family": "procedural_guidance",
+      "task_id": "S027"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2639,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "7c71cf17cc9cef4289226df4",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S08"
+        ],
+        "token_count": 341
+      },
+      {
+        "evidence_id": "0a1a1ed25c28765411d11fe9",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-023-S07"
+        ],
+        "token_count": 271
+      },
+      {
+        "evidence_id": "790c62cb40ce140299e17a94",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-019-S05"
+        ],
+        "token_count": 504
+      },
+      {
+        "evidence_id": "70af491e77028109ca3dbf3b",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-027-S04"
+        ],
+        "token_count": 566
+      },
+      {
+        "evidence_id": "5a6310118e7e6b9d7a74674a",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-015-S08"
+        ],
+        "token_count": 94
+      },
+      {
+        "evidence_id": "f96c86a422d48169ec62472f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-023-S01"
+        ],
+        "token_count": 135
+      },
+      {
+        "evidence_id": "aeb61c6c76a026b346947204",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S03"
+        ],
+        "token_count": 353
+      },
+      {
+        "evidence_id": "55a72fe82d433730976641b1",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-004-S05"
+        ],
+        "token_count": 375
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "7c71cf17cc9cef4289226df4",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S08"
+        ],
+        "token_count": 341
+      },
+      {
+        "evidence_id": "0a1a1ed25c28765411d11fe9",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-023-S07"
+        ],
+        "token_count": 271
+      },
+      {
+        "evidence_id": "790c62cb40ce140299e17a94",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-019-S05"
+        ],
+        "token_count": 504
+      },
+      {
+        "evidence_id": "70af491e77028109ca3dbf3b",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-027-S04"
+        ],
+        "token_count": 566
+      },
+      {
+        "evidence_id": "5a6310118e7e6b9d7a74674a",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-015-S08"
+        ],
+        "token_count": 94
+      },
+      {
+        "evidence_id": "f96c86a422d48169ec62472f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-023-S01"
+        ],
+        "token_count": 135
+      },
+      {
+        "evidence_id": "aeb61c6c76a026b346947204",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S03"
+        ],
+        "token_count": 353
+      },
+      {
+        "evidence_id": "55a72fe82d433730976641b1",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-004-S05"
+        ],
+        "token_count": 375
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

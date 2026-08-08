@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.00077014,
+  "answer": "The evidence describes NovaLearn AI's SOC 2 Type II compliance program and notes that it \"undergo[es] annual audits by independent third parties\" [NL-007#NL-007-S01], and mentions plans to allocate capital to \"external security audits, including our annual SOC 2 Type II certification\" [NL-016#NL-016-S07]. However, none of the supplied evidence provides a specific date on which NovaLearn most recently passed a SOC 2 audit. The available evidence is insufficient to answer the question.\n\nANSWER_STATUS: abstain\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 8089.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-low-S074",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "On what exact date did NovaLearn most recently pass a SOC 2 audit?",
+      "suite": "static",
+      "task_family": "abstention",
+      "task_id": "S074"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3007,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "ab49a76bab7f1386d4b3f42d",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-001-S02"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "04c42d08ffe980760cf207b6",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-007-S01"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      },
+      {
+        "evidence_id": "b44ee1b8062f18ffbf44f3d8",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-014-S01"
+        ],
+        "token_count": 407
+      },
+      {
+        "evidence_id": "986b6ad2cfc2a9742372e488",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-012-S08"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "43c96dd62dc57047b9c6345b",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-016-S07"
+        ],
+        "token_count": 702
+      },
+      {
+        "evidence_id": "741f4c3a347f1f1ac053fe05",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-001-S08"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "ab49a76bab7f1386d4b3f42d",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-001-S02"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "04c42d08ffe980760cf207b6",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-007-S01"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      },
+      {
+        "evidence_id": "b44ee1b8062f18ffbf44f3d8",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-014-S01"
+        ],
+        "token_count": 407
+      },
+      {
+        "evidence_id": "986b6ad2cfc2a9742372e488",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-012-S08"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "43c96dd62dc57047b9c6345b",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-016-S07"
+        ],
+        "token_count": 702
+      },
+      {
+        "evidence_id": "741f4c3a347f1f1ac053fe05",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-001-S08"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

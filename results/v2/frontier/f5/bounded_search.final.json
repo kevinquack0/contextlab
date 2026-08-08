@@ -1,0 +1,1001 @@
+{
+  "aggregate": {
+    "R5": {
+      "cell_count": 4,
+      "cost_usd": "0.0035754096",
+      "dead_ends": 0,
+      "latency_ms": 63659.0,
+      "mean_evidence_coverage": 0.05,
+      "task_success_rate": 0.25,
+      "tool_calls": 0,
+      "verifier_failure_count": 3
+    },
+    "R6": {
+      "cell_count": 4,
+      "cost_usd": "0.00420196",
+      "dead_ends": 0,
+      "latency_ms": 58204.0,
+      "mean_evidence_coverage": 0.0,
+      "task_success_rate": 0.0,
+      "tool_calls": 0,
+      "verifier_failure_count": 4
+    },
+    "bounded_search": {
+      "cell_count": 8,
+      "cost_usd": "0.003222756",
+      "dead_ends": 0,
+      "latency_ms": 151029.0,
+      "mean_evidence_coverage": 0.14375,
+      "task_success_rate": 0.0,
+      "tool_calls": 9,
+      "verifier_failure_count": 10
+    }
+  },
+  "approved_tools": [
+    "search_public_chunks",
+    "read_public_source"
+  ],
+  "artifact_sha256": "aa0b68ab988836da3c52825fbd5e27d385528b741b3aa0bf1bc470910bd82377",
+  "baseline_cells": [
+    {
+      "cost_usd": "0.0006536936",
+      "dead_ends": 0,
+      "evidence_coverage": 0.0,
+      "latency_ms": 5630,
+      "reasoning_effort": "low",
+      "record_sha256": "5b0ef212223d760c4ab138098f98389beebdc78c04deffb139516cb5a785bc73",
+      "required_source_count": 5,
+      "source_run_id": "g2r2-S025-R5-low-t1",
+      "strategy_id": "R5",
+      "task_id": "S025",
+      "task_success": false,
+      "tool_calls": 0,
+      "verifier_failures": [
+        "saved_public_proxy_not_accepted"
+      ]
+    },
+    {
+      "cost_usd": "0.000935872",
+      "dead_ends": 0,
+      "evidence_coverage": 0.2,
+      "latency_ms": 18142,
+      "reasoning_effort": "high",
+      "record_sha256": "86a9fb77c8e5b71f51d89bdebda3d673cf98fbd44c0a929814b72262469f6567",
+      "required_source_count": 5,
+      "source_run_id": "g2r2-S025-R5-high-t1",
+      "strategy_id": "R5",
+      "task_id": "S025",
+      "task_success": true,
+      "tool_calls": 0,
+      "verifier_failures": []
+    },
+    {
+      "cost_usd": "0.00120204",
+      "dead_ends": 0,
+      "evidence_coverage": 0.0,
+      "latency_ms": 21512,
+      "reasoning_effort": "low",
+      "record_sha256": "2d1d1b8f789a31b3b4f4544492a1cb36209a45104effa584792dd3676e824719",
+      "required_source_count": 5,
+      "source_run_id": "g2r2-S025-R6-low-t1",
+      "strategy_id": "R6",
+      "task_id": "S025",
+      "task_success": false,
+      "tool_calls": 0,
+      "verifier_failures": [
+        "saved_public_proxy_not_accepted"
+      ]
+    },
+    {
+      "cost_usd": "0.00085022",
+      "dead_ends": 0,
+      "evidence_coverage": 0.0,
+      "latency_ms": 8303,
+      "reasoning_effort": "high",
+      "record_sha256": "9185a81a4cbc1e115ebb3628a93061e784b6e92d5a9d9ec1022a01cdb3f25d48",
+      "required_source_count": 5,
+      "source_run_id": "g2r2-S025-R6-high-t1",
+      "strategy_id": "R6",
+      "task_id": "S025",
+      "task_success": false,
+      "tool_calls": 0,
+      "verifier_failures": [
+        "saved_public_proxy_not_accepted"
+      ]
+    },
+    {
+      "cost_usd": "0.001050952",
+      "dead_ends": 0,
+      "evidence_coverage": 0.0,
+      "latency_ms": 21092,
+      "reasoning_effort": "low",
+      "record_sha256": "573c3c286fde6ecda4a74c94013eaf7526df68294bd6f4bf68d7ab17e068b92d",
+      "required_source_count": 4,
+      "source_run_id": "g2r2-S026-R5-low-t1",
+      "strategy_id": "R5",
+      "task_id": "S026",
+      "task_success": false,
+      "tool_calls": 0,
+      "verifier_failures": [
+        "saved_public_proxy_not_accepted"
+      ]
+    },
+    {
+      "cost_usd": "0.000934892",
+      "dead_ends": 0,
+      "evidence_coverage": 0.0,
+      "latency_ms": 18795,
+      "reasoning_effort": "high",
+      "record_sha256": "fcb415dfa22c78950b305615cfc1dd25dde26ddd5608ab3fc6ccb907b826bdfa",
+      "required_source_count": 4,
+      "source_run_id": "g2r2-S026-R5-high-t1",
+      "strategy_id": "R5",
+      "task_id": "S026",
+      "task_success": false,
+      "tool_calls": 0,
+      "verifier_failures": [
+        "saved_public_proxy_not_accepted"
+      ]
+    },
+    {
+      "cost_usd": "0.00110642",
+      "dead_ends": 0,
+      "evidence_coverage": 0.0,
+      "latency_ms": 14580,
+      "reasoning_effort": "low",
+      "record_sha256": "cc3d8c1e7388ae5c454890a103edc1ef8c9623938ceacc45b6852d2e40203f1b",
+      "required_source_count": 4,
+      "source_run_id": "g2r2-S026-R6-low-t1",
+      "strategy_id": "R6",
+      "task_id": "S026",
+      "task_success": false,
+      "tool_calls": 0,
+      "verifier_failures": [
+        "saved_public_proxy_not_accepted"
+      ]
+    },
+    {
+      "cost_usd": "0.00104328",
+      "dead_ends": 0,
+      "evidence_coverage": 0.0,
+      "latency_ms": 13809,
+      "reasoning_effort": "high",
+      "record_sha256": "b9a1f7a3d4dbde928a0f5417a9391190aced53347749e6c8cbcabb678ce74b11",
+      "required_source_count": 4,
+      "source_run_id": "g2r2-S026-R6-high-t1",
+      "strategy_id": "R6",
+      "task_id": "S026",
+      "task_success": false,
+      "tool_calls": 0,
+      "verifier_failures": [
+        "saved_public_proxy_not_accepted"
+      ]
+    }
+  ],
+  "ceiling_artifact_sha256": "c16d227f0a523ae4bd2fee384944520a656da8475e0622510b2ab8bbc905f36a",
+  "corpus_snapshot_id": "6f6cfd25e92088e1e2da198ce14b7b7b56373e22e953261a0287f06cd7143e13",
+  "experiment_id": "F5",
+  "frontier_entry_gate_sha256": "d7f4a44cdd7ad3cf721824961436dd21eb7d5d58a7133b280d5744510cbc2ed0",
+  "limits": {
+    "tool_calls": 4,
+    "total_provider_tokens": 8000,
+    "wall_time_seconds": 60.0
+  },
+  "provider_route": "deepinfra",
+  "schema_version": "contextlab.f5-bounded-search-result.v1",
+  "search_cells": [
+    {
+      "answer": "Sales should use the **Corpus Readiness Checklist** before promising enterprise deployment dates. This checklist, mandated for new customers before the onboarding clock starts, requires sales to verify that the customer's source corpus is ready for ingestion: it must establish clear criteria for source cleanup, define minimum OCR standards for scanned/image-only PDFs (since the citation engine requires a text layer), and provide templates for role-based permission mappings [NL-015#NL-015-S07][NL-015#NL-015-S09]. The checklist is tied to the go-live quality thresholds of an 85% citation correctness rate and zero critical permission failures; sales must not promise the typical 4–6 week rollout if the customer's corpus is not ready (e.g., thousands of scanned PDFs without OCR) [NL-015#NL-015-S04]. Additionally, sales should avoid making unverified claims about deployment timelines or roadmap features, and should consult the official security, reliability, and pricing documents for binding constraints [NL-009#NL-009-S08].",
+      "cost_usd": "0.000398034",
+      "dead_ends": 0,
+      "evidence_coverage": 0.0,
+      "latency_ms": 11954.0,
+      "provider_receipts": [
+        {
+          "completion_tokens": 73,
+          "cost_usd": "0.000036612",
+          "latency_ms": 1751,
+          "path": "results/v2/frontier/f5/provider/f5-S025-low-f5-trial-01-turn-1.json",
+          "prompt_tokens": 312,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 71,
+          "request_id": "gen-1786135042-F8N5kAchHTgUF0C9KRzS",
+          "sha256": "b5f22cee7ca56737d4a7c374aabf06d0c8abd67aeae83c47fa1705f5cb78d304"
+        },
+        {
+          "completion_tokens": 674,
+          "cost_usd": "0.000361422",
+          "latency_ms": 10203,
+          "path": "results/v2/frontier/f5/provider/f5-S025-low-f5-trial-01-turn-2.json",
+          "prompt_tokens": 2719,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 591,
+          "request_id": "gen-1786135044-kTBnP2fHWNrS7fYJZJOH",
+          "sha256": "f617d97bf2c3ec83d2b2be883b91fcad91c5b2d565fe926e599467edb9afba34"
+        }
+      ],
+      "reasoning_effort": "low",
+      "record_sha256": "42d9007ac93639402adc98b465e4f8fed391c75cb33b83763159826866978a11",
+      "required_source_count": 5,
+      "status": "completed",
+      "strategy_id": "bounded_search",
+      "task_id": "S025",
+      "task_success": false,
+      "tool_calls": 1,
+      "total_provider_tokens": 3778,
+      "transcript": [
+        {
+          "action": {
+            "action": "search_public_chunks",
+            "query": "sales checklist enterprise deployment dates"
+          },
+          "tool_result": {
+            "query": "sales checklist enterprise deployment dates",
+            "results": [
+              {
+                "content": "[NL-009#NL-009-S08] Claims Requiring Verification\nAs a sales team, we want to be helpful and enthusiastic. However, to avoid legal and operational risks, some claims must be verified with other departments. ### 1. Legal and Data Retention Policies Do not sign custom SLAs or promise immediate data deletion without consulting Priya Raman (Security and Governance Lead). While we present a highly responsive deletion capability in sales pitches, the official corporate policy dictates standard timeline limits for data removal. Always cross-reference the Security Policy (NL-007) for binding timelines, which outline standard deletion within 90 days of contract termination. Any custom data-decommissioning agreements must go through formal legal review. ### 2. Pricing and Packaging Changes Do not offer custom discounts on the Starter or Growth plans. All discounts must be approved by Marcus Reed (VP Sales) and must align with the current pricing sheet (NL-003). Any reference to historical prices (like the $900/month Starter plan from the 2025 proposal) is deprecated and must not be used in active proposals. Enterprise plan pricing starts at $8,500/month but is subject to a security review, seat count, and integration requirements. Do not quote final enterprise pricing on discovery calls. ### 3. Product Roadmap and Future Modules When prospects ask about upcoming integrations (like Microsoft Teams) or new modules (like WorkflowCoach), consult Sofia Almeida (VP Product) or the official Product Roadmap (NL-014). Do not guarantee specific launch dates. For example, while sales reps may tell customers that the Microsoft Teams integration is almost ready based on informal discussion, the roadmap states it is in the planning and design phase for Q4 2026. The WorkflowCoach module is scheduled for public beta in September 2026, but internal notes suggest it could slide to November. Always frame roadmap dates as targets, not contractual guarantees. *** **DISCLAIMER:** This sales playbook is for internal training purposes only. It is a lower-authority sales enablement resource (Authority Level 2). It does not constitute a legal contract, and its claims do not supersede official company policies. Always refer to official security (NL-007), reliability (NL-008), and pricing (NL-003) documents for definitive facts.",
+                "content_sha256": "888430a9a7f3d9e1067ab034137c84c8b7ecf2880051560f5ae9bc87ffe3d1e6",
+                "reference": "NL-009#NL-009-S08"
+              },
+              {
+                "content": "[NL-015#NL-015-S04] Discussion  -  Enterprise Onboarding\nJordan Lee led a discussion on the operational challenges in customer onboarding and implementation. **Jordan Lee (Customer Success):** \"We are seeing a median onboarding time of 5.8 weeks across all segments, but as David pointed out, Enterprise is averaging 8.7 weeks. This is a problem because sales continues to promise a 4-to-6 week rollout during the contracting phase. When it takes 9 weeks, the customer gets frustrated, and it delays our revenue recognition. The primary blockers are not on our engineering side; they are administrative and compliance-related. Specifically: 1. **Permission Mapping:** Enterprise customers have complex active directory setups and role-based access rules. Mapping who is allowed to see what in TutorChat takes weeks of alignment. 2. **SSO and Security Review:** Standard enterprise security reviews often drag on, particularly for clients in financial services and healthcare. 3. **Data Cleanup and Scanned PDFs:** Clients are dumping raw folders into KnowledgeHub. A massive portion of these files are scanned, image-only PDFs. Because our citation engine requires a text layer for reliable linking, these scanned files need OCR. Without OCR, their citation accuracy drops, and they fail our go-live quality checks.\" **Sofia Almeida (Product):** \"We need to enforce better boundaries. I propose we create a 'Corpus Readiness Checklist' that sales shares during the discovery phase. If a customer has thousands of scanned PDFs, we need to explicitly tell them that onboarding will be delayed unless they run OCR on their end first, or wait for our upcoming automated OCR pipeline. Jordan, what is the go-live quality threshold right now?\" **Jordan Lee (Customer Success):** \"According to our AI Assistant Reliability Policy, the pilot deployment must pass an 85% citation correctness threshold and have zero critical permission failures before we allow a broad rollout. For Enterprise clients, we recommend a pilot size of 100 to 300 users. Meeting that 85% threshold is very difficult when their ingested corpus is filled with image-only policy documents.\" ---",
+                "content_sha256": "cdb8bef48c2ae37116ec77f44657a335e20c7594e225df2f9cf9abff44603f85",
+                "reference": "NL-015#NL-015-S04"
+              },
+              {
+                "content": "[NL-015#NL-015-S07] Decisions\nThe leadership team aligned on the following strategic decisions: | Area | Strategic Decision | Responsibility | |---|---|---| | **ICP Focus** | Maintain primary focus on regulated mid-market and enterprise segments. Sales will not pivot resources to target SMB/startups. | Marcus Reed | | **Product Priorities** | Prioritize the Advanced OCR Pipeline for August 2026 release. Teams integration remains in design for Q4 2026. | Sofia Almeida / Leon Grayson | | **WorkflowCoach** | Retain external roadmap target of September 2026 public beta, but prepare internal sales and support teams for a slip to November 2026. | Nora Kim / Sofia Almeida | | **Onboarding** | Implement a mandatory 'Corpus Readiness Checklist' for new customers before starting the onboarding clock. | Jordan Lee | ---",
+                "content_sha256": "9ed70c9555b82c5fd27e2752858fc893482bf8c2357693b1f446b05d542cc58b",
+                "reference": "NL-015#NL-015-S07"
+              },
+              {
+                "content": "[NL-015#NL-015-S09] Action Items\n* **Sofia Almeida:** Draft internal product update outlining the contingency timeline and scope adjustments for the WorkflowCoach module by July 5. This update must detail the specific features that will be deferred to the November public release, including cross-workspace permission synchronization, and define the criteria for the September private beta cohort. * **Leon Grayson:** Finalize the technical design document for the Advanced OCR Pipeline and initiate sandbox load testing by July 10. The load tests must specifically simulate high-volume document ingestion queues with scanned PDF packages of varying layouts to verify the retry backoff mechanisms established in the postmortem policy. * **Jordan Lee & Lina Park:** Collaborate on the draft of the 'Corpus Readiness Checklist' and share it with the sales enablement team for review by July 8. The checklist must establish clear criteria for source cleanup, define the minimum OCR standards for ingested files, and provide templates for role-based permission mappings. * **Marcus Reed:** Review the active pipeline for Q3 and Q4 to identify any accounts where the September WorkflowCoach launch was presented as a hard contractual commitment, and draft mitigation strategies by July 12. Marcus will also coordinate with Sales Enablement to update pitch decks to reflect the primary value of our current modules rather than pre-selling the Teams integration. * **David Okafor:** Prepare a detailed cohort analysis of SMB churn versus mid-market customer acquisition costs to support Sales training materials. The analysis should break down the June 2026 MRR contribution by customer segment and correlate logo churn rates with onboarding duration to prove the long-term value of the regulated mid-market and enterprise ICP. * **Priya Raman (Security - notified post-meeting):** Review the proposed Microsoft Teams bot authorization model and map out tenant isolation requirements in a formal security briefing by July 15, ensuring compliance with the logical isolation standards in NL-007.",
+                "content_sha256": "4a9333e617813439a96a220554e0c966e097174cbce3888e8aebcde977ae92a5",
+                "reference": "NL-015#NL-015-S09"
+              },
+              {
+                "content": "[NL-014#NL-014-S01] Roadmap Overview\nThis document defines the official product development roadmap, release schedule, and version history for the NovaLearn AI platform in 2026. The information contained herein represents our current engineering priorities and product strategy, as established by the Product Management and Engineering leadership. Our primary goal for 2026 is to transition the NovaLearn platform from a passive knowledge retrieval tool into an active, compliant, and guided learning system. To achieve this, our engineering efforts are focused on three core themes: 1. **Accuracy and Grounding (Reliability)**: Improving citation extraction and parsing performance, particularly for scanned legacy documentation, which is our primary technical driver of onboarding delays. 2. **Operational Enablement**: Introducing guided workflow assistance to support frontline employees during complex procedures. 3. **Enterprise Security and Scaling**: Simplifying role-based permission mappings and expanding collaboration integrations to support large corporate rollouts. ### Strategic Priorities and Engineering Methodology Our development lifecycle follows a structured dual-track agile framework to maintain high-velocity execution while ensuring absolute compliance with security standards: * **Product Discovery Track**: Led by Sofia Almeida (VP Product) and Nora Kim (Product Marketing Lead), this track gathers feedback from enterprise client advisory boards, support operations datasets, and customer success reviews. This ensures that roadmap items directly address real-world challenges faced by key customer segments, particularly in highly regulated industries. * **Product Delivery Track**: Under the leadership of Leon Grayson (CTO) and Squad Leads, this track governs architecture design, sprint executions, automated regression testing, security reviews, and rollout schedules. Every feature on this roadmap goes through a strict deployment pipeline before general availability: 1. **Design & Security Review**: Evaluation of permission isolation, API security, and encryption standards led by Priya Raman (Security and Governance Lead). 2. **Internal Alpha**: Deployed to the internal NovaLearn sandbox environment for testing by support and engineering teams. 3. **Private Pilot**: Rolled out to a limited group of 5-10 designated mid-market or enterprise customers (such as Acme Manufacturing or Atlas Logistics) to validate performance under live operational conditions. 4. **Public Beta**: Offered to all customers on Growth and Enterprise plans with a toggle in the Admin Console. 5. **General Availability (GA)**: Fully deployed as the default active component for all eligible plans. *Disclaimer: This roadmap is intended for planning purposes only. While we make every effort to achieve the release dates specified herein, the timelines are subject to modification based on engineering capacity, QA testing results, and customer pilot feedback. Roadmap targets do not constitute contractual commitments or guarantees of future feature availability.* ---",
+                "content_sha256": "f0ab16c018506cc396285cfde1a902acbb44d86c8249f80d0126c7eff182ac4d",
+                "reference": "NL-014#NL-014-S01"
+              }
+            ],
+            "tool": "search_public_chunks"
+          },
+          "turn": 1
+        },
+        {
+          "action": {
+            "action": "answer",
+            "answer": "Sales should use the **Corpus Readiness Checklist** before promising enterprise deployment dates. This checklist, mandated for new customers before the onboarding clock starts, requires sales to verify that the customer's source corpus is ready for ingestion: it must establish clear criteria for source cleanup, define minimum OCR standards for scanned/image-only PDFs (since the citation engine requires a text layer), and provide templates for role-based permission mappings [NL-015#NL-015-S07][NL-015#NL-015-S09]. The checklist is tied to the go-live quality thresholds of an 85% citation correctness rate and zero critical permission failures; sales must not promise the typical 4–6 week rollout if the customer's corpus is not ready (e.g., thousands of scanned PDFs without OCR) [NL-015#NL-015-S04]. Additionally, sales should avoid making unverified claims about deployment timelines or roadmap features, and should consult the official security, reliability, and pricing documents for binding constraints [NL-009#NL-009-S08]."
+          },
+          "turn": 2
+        }
+      ],
+      "trial_id": "f5-trial-01",
+      "verifier_failures": [
+        "required_source_coverage_incomplete"
+      ],
+      "wall_time_ms": 13861.162291
+    },
+    {
+      "answer": "Sales should use the mandatory 'Corpus Readiness Checklist' before promising enterprise deployment dates [NL-015#NL-015-S07]. This checklist, drafted by Customer Success and Sales Enablement, must establish clear criteria for source cleanup, define minimum OCR standards for ingested files (especially scanned/image-only PDFs), and provide templates for role-based permission mappings [NL-015#NL-015-S09]. The checklist addresses the primary onboarding blockers: permission mapping, SSO/security review, and data cleanup/OCR [NL-015#NL-015-S04]. Additionally, sales must not guarantee roadmap dates (e.g., Microsoft Teams integration, WorkflowCoach) as contractual commitments; these are targets only [NL-014#NL-014-S01]. Sales must also verify claims with other departments—such as security for SLAs/data deletion, pricing for discounts, and product for roadmap features—before making promises [NL-009#NL-009-S08].",
+      "cost_usd": "0.000192582",
+      "dead_ends": 0,
+      "evidence_coverage": 0.2,
+      "latency_ms": 8845.0,
+      "provider_receipts": [
+        {
+          "completion_tokens": 73,
+          "cost_usd": "0.000036612",
+          "latency_ms": 1144,
+          "path": "results/v2/frontier/f5/provider/f5-S025-high-f5-trial-01-turn-1.json",
+          "prompt_tokens": 312,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 71,
+          "request_id": "gen-1786135055-g64vEj5vyiYV8kDgARQM",
+          "sha256": "f07696786fc161d06de3a874a7fa62fd139b685cab5a9df3e4650fac3accb308"
+        },
+        {
+          "completion_tokens": 531,
+          "cost_usd": "0.00015597",
+          "latency_ms": 7701,
+          "path": "results/v2/frontier/f5/provider/f5-S025-high-f5-trial-01-turn-2.json",
+          "prompt_tokens": 2719,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 368,
+          "request_id": "gen-1786135057-0cWaj0l8HRNVawtrToEp",
+          "sha256": "ea28b79d4b345a9e8f8ae56e265b080fb979d67e217e40f07b9f1568cd9b9caf"
+        }
+      ],
+      "reasoning_effort": "high",
+      "record_sha256": "081be9783d349d0366e4775d64bd2731d7b755c9d31b52baa6a2a369f5615bec",
+      "required_source_count": 5,
+      "status": "completed",
+      "strategy_id": "bounded_search",
+      "task_id": "S025",
+      "task_success": false,
+      "tool_calls": 1,
+      "total_provider_tokens": 3635,
+      "transcript": [
+        {
+          "action": {
+            "action": "search_public_chunks",
+            "query": "sales checklist enterprise deployment dates"
+          },
+          "tool_result": {
+            "query": "sales checklist enterprise deployment dates",
+            "results": [
+              {
+                "content": "[NL-009#NL-009-S08] Claims Requiring Verification\nAs a sales team, we want to be helpful and enthusiastic. However, to avoid legal and operational risks, some claims must be verified with other departments. ### 1. Legal and Data Retention Policies Do not sign custom SLAs or promise immediate data deletion without consulting Priya Raman (Security and Governance Lead). While we present a highly responsive deletion capability in sales pitches, the official corporate policy dictates standard timeline limits for data removal. Always cross-reference the Security Policy (NL-007) for binding timelines, which outline standard deletion within 90 days of contract termination. Any custom data-decommissioning agreements must go through formal legal review. ### 2. Pricing and Packaging Changes Do not offer custom discounts on the Starter or Growth plans. All discounts must be approved by Marcus Reed (VP Sales) and must align with the current pricing sheet (NL-003). Any reference to historical prices (like the $900/month Starter plan from the 2025 proposal) is deprecated and must not be used in active proposals. Enterprise plan pricing starts at $8,500/month but is subject to a security review, seat count, and integration requirements. Do not quote final enterprise pricing on discovery calls. ### 3. Product Roadmap and Future Modules When prospects ask about upcoming integrations (like Microsoft Teams) or new modules (like WorkflowCoach), consult Sofia Almeida (VP Product) or the official Product Roadmap (NL-014). Do not guarantee specific launch dates. For example, while sales reps may tell customers that the Microsoft Teams integration is almost ready based on informal discussion, the roadmap states it is in the planning and design phase for Q4 2026. The WorkflowCoach module is scheduled for public beta in September 2026, but internal notes suggest it could slide to November. Always frame roadmap dates as targets, not contractual guarantees. *** **DISCLAIMER:** This sales playbook is for internal training purposes only. It is a lower-authority sales enablement resource (Authority Level 2). It does not constitute a legal contract, and its claims do not supersede official company policies. Always refer to official security (NL-007), reliability (NL-008), and pricing (NL-003) documents for definitive facts.",
+                "content_sha256": "888430a9a7f3d9e1067ab034137c84c8b7ecf2880051560f5ae9bc87ffe3d1e6",
+                "reference": "NL-009#NL-009-S08"
+              },
+              {
+                "content": "[NL-015#NL-015-S04] Discussion  -  Enterprise Onboarding\nJordan Lee led a discussion on the operational challenges in customer onboarding and implementation. **Jordan Lee (Customer Success):** \"We are seeing a median onboarding time of 5.8 weeks across all segments, but as David pointed out, Enterprise is averaging 8.7 weeks. This is a problem because sales continues to promise a 4-to-6 week rollout during the contracting phase. When it takes 9 weeks, the customer gets frustrated, and it delays our revenue recognition. The primary blockers are not on our engineering side; they are administrative and compliance-related. Specifically: 1. **Permission Mapping:** Enterprise customers have complex active directory setups and role-based access rules. Mapping who is allowed to see what in TutorChat takes weeks of alignment. 2. **SSO and Security Review:** Standard enterprise security reviews often drag on, particularly for clients in financial services and healthcare. 3. **Data Cleanup and Scanned PDFs:** Clients are dumping raw folders into KnowledgeHub. A massive portion of these files are scanned, image-only PDFs. Because our citation engine requires a text layer for reliable linking, these scanned files need OCR. Without OCR, their citation accuracy drops, and they fail our go-live quality checks.\" **Sofia Almeida (Product):** \"We need to enforce better boundaries. I propose we create a 'Corpus Readiness Checklist' that sales shares during the discovery phase. If a customer has thousands of scanned PDFs, we need to explicitly tell them that onboarding will be delayed unless they run OCR on their end first, or wait for our upcoming automated OCR pipeline. Jordan, what is the go-live quality threshold right now?\" **Jordan Lee (Customer Success):** \"According to our AI Assistant Reliability Policy, the pilot deployment must pass an 85% citation correctness threshold and have zero critical permission failures before we allow a broad rollout. For Enterprise clients, we recommend a pilot size of 100 to 300 users. Meeting that 85% threshold is very difficult when their ingested corpus is filled with image-only policy documents.\" ---",
+                "content_sha256": "cdb8bef48c2ae37116ec77f44657a335e20c7594e225df2f9cf9abff44603f85",
+                "reference": "NL-015#NL-015-S04"
+              },
+              {
+                "content": "[NL-015#NL-015-S07] Decisions\nThe leadership team aligned on the following strategic decisions: | Area | Strategic Decision | Responsibility | |---|---|---| | **ICP Focus** | Maintain primary focus on regulated mid-market and enterprise segments. Sales will not pivot resources to target SMB/startups. | Marcus Reed | | **Product Priorities** | Prioritize the Advanced OCR Pipeline for August 2026 release. Teams integration remains in design for Q4 2026. | Sofia Almeida / Leon Grayson | | **WorkflowCoach** | Retain external roadmap target of September 2026 public beta, but prepare internal sales and support teams for a slip to November 2026. | Nora Kim / Sofia Almeida | | **Onboarding** | Implement a mandatory 'Corpus Readiness Checklist' for new customers before starting the onboarding clock. | Jordan Lee | ---",
+                "content_sha256": "9ed70c9555b82c5fd27e2752858fc893482bf8c2357693b1f446b05d542cc58b",
+                "reference": "NL-015#NL-015-S07"
+              },
+              {
+                "content": "[NL-015#NL-015-S09] Action Items\n* **Sofia Almeida:** Draft internal product update outlining the contingency timeline and scope adjustments for the WorkflowCoach module by July 5. This update must detail the specific features that will be deferred to the November public release, including cross-workspace permission synchronization, and define the criteria for the September private beta cohort. * **Leon Grayson:** Finalize the technical design document for the Advanced OCR Pipeline and initiate sandbox load testing by July 10. The load tests must specifically simulate high-volume document ingestion queues with scanned PDF packages of varying layouts to verify the retry backoff mechanisms established in the postmortem policy. * **Jordan Lee & Lina Park:** Collaborate on the draft of the 'Corpus Readiness Checklist' and share it with the sales enablement team for review by July 8. The checklist must establish clear criteria for source cleanup, define the minimum OCR standards for ingested files, and provide templates for role-based permission mappings. * **Marcus Reed:** Review the active pipeline for Q3 and Q4 to identify any accounts where the September WorkflowCoach launch was presented as a hard contractual commitment, and draft mitigation strategies by July 12. Marcus will also coordinate with Sales Enablement to update pitch decks to reflect the primary value of our current modules rather than pre-selling the Teams integration. * **David Okafor:** Prepare a detailed cohort analysis of SMB churn versus mid-market customer acquisition costs to support Sales training materials. The analysis should break down the June 2026 MRR contribution by customer segment and correlate logo churn rates with onboarding duration to prove the long-term value of the regulated mid-market and enterprise ICP. * **Priya Raman (Security - notified post-meeting):** Review the proposed Microsoft Teams bot authorization model and map out tenant isolation requirements in a formal security briefing by July 15, ensuring compliance with the logical isolation standards in NL-007.",
+                "content_sha256": "4a9333e617813439a96a220554e0c966e097174cbce3888e8aebcde977ae92a5",
+                "reference": "NL-015#NL-015-S09"
+              },
+              {
+                "content": "[NL-014#NL-014-S01] Roadmap Overview\nThis document defines the official product development roadmap, release schedule, and version history for the NovaLearn AI platform in 2026. The information contained herein represents our current engineering priorities and product strategy, as established by the Product Management and Engineering leadership. Our primary goal for 2026 is to transition the NovaLearn platform from a passive knowledge retrieval tool into an active, compliant, and guided learning system. To achieve this, our engineering efforts are focused on three core themes: 1. **Accuracy and Grounding (Reliability)**: Improving citation extraction and parsing performance, particularly for scanned legacy documentation, which is our primary technical driver of onboarding delays. 2. **Operational Enablement**: Introducing guided workflow assistance to support frontline employees during complex procedures. 3. **Enterprise Security and Scaling**: Simplifying role-based permission mappings and expanding collaboration integrations to support large corporate rollouts. ### Strategic Priorities and Engineering Methodology Our development lifecycle follows a structured dual-track agile framework to maintain high-velocity execution while ensuring absolute compliance with security standards: * **Product Discovery Track**: Led by Sofia Almeida (VP Product) and Nora Kim (Product Marketing Lead), this track gathers feedback from enterprise client advisory boards, support operations datasets, and customer success reviews. This ensures that roadmap items directly address real-world challenges faced by key customer segments, particularly in highly regulated industries. * **Product Delivery Track**: Under the leadership of Leon Grayson (CTO) and Squad Leads, this track governs architecture design, sprint executions, automated regression testing, security reviews, and rollout schedules. Every feature on this roadmap goes through a strict deployment pipeline before general availability: 1. **Design & Security Review**: Evaluation of permission isolation, API security, and encryption standards led by Priya Raman (Security and Governance Lead). 2. **Internal Alpha**: Deployed to the internal NovaLearn sandbox environment for testing by support and engineering teams. 3. **Private Pilot**: Rolled out to a limited group of 5-10 designated mid-market or enterprise customers (such as Acme Manufacturing or Atlas Logistics) to validate performance under live operational conditions. 4. **Public Beta**: Offered to all customers on Growth and Enterprise plans with a toggle in the Admin Console. 5. **General Availability (GA)**: Fully deployed as the default active component for all eligible plans. *Disclaimer: This roadmap is intended for planning purposes only. While we make every effort to achieve the release dates specified herein, the timelines are subject to modification based on engineering capacity, QA testing results, and customer pilot feedback. Roadmap targets do not constitute contractual commitments or guarantees of future feature availability.* ---",
+                "content_sha256": "f0ab16c018506cc396285cfde1a902acbb44d86c8249f80d0126c7eff182ac4d",
+                "reference": "NL-014#NL-014-S01"
+              }
+            ],
+            "tool": "search_public_chunks"
+          },
+          "turn": 1
+        },
+        {
+          "action": {
+            "action": "answer",
+            "answer": "Sales should use the mandatory 'Corpus Readiness Checklist' before promising enterprise deployment dates [NL-015#NL-015-S07]. This checklist, drafted by Customer Success and Sales Enablement, must establish clear criteria for source cleanup, define minimum OCR standards for ingested files (especially scanned/image-only PDFs), and provide templates for role-based permission mappings [NL-015#NL-015-S09]. The checklist addresses the primary onboarding blockers: permission mapping, SSO/security review, and data cleanup/OCR [NL-015#NL-015-S04]. Additionally, sales must not guarantee roadmap dates (e.g., Microsoft Teams integration, WorkflowCoach) as contractual commitments; these are targets only [NL-014#NL-014-S01]. Sales must also verify claims with other departments—such as security for SLAs/data deletion, pricing for discounts, and product for roadmap features—before making promises [NL-009#NL-009-S08]."
+          },
+          "turn": 2
+        }
+      ],
+      "trial_id": "f5-trial-01",
+      "verifier_failures": [
+        "required_source_coverage_incomplete"
+      ],
+      "wall_time_ms": 10656.043875
+    },
+    {
+      "answer": "Before broad TutorChat rollout for an Enterprise customer, NovaLearn should: (1) Run a pilot with 100–300 users in a high-impact department (e.g., customer support) rather than a small team, to justify the onboarding investment and drive adoption [NL-023#NL-023-S03]; (2) Verify the Microsoft Teams integration is actually generally available and secure before promising it, since the sales claim conflicts with the official roadmap (NL-014) and internal status (NL-027) — ensure the connector has proper security controls and tenant isolation [NL-023#NL-023-S04]; (3) Align all security and data governance commitments with official policy (NL-007): confirm standard data deletion is within 90 days (not immediate), ensure the DPA includes explicit backup deletion terms, and verify SSO (Okta) and RBAC capabilities are fully supported [NL-023#NL-023-S05]; (4) Ensure data isolation and compliance (SOC 2, penetration testing) are documented and verified [NL-023#NL-023-S05]; and (5) Assign a dedicated customer success resource to structure KnowledgeHub ingestion and clean up legacy documents before scaling [NL-023#NL-023-S03].",
+      "cost_usd": "0.000578970",
+      "dead_ends": 0,
+      "evidence_coverage": 0.25,
+      "latency_ms": 44657.0,
+      "provider_receipts": [
+        {
+          "completion_tokens": 144,
+          "cost_usd": "0.000050742",
+          "latency_ms": 2899,
+          "path": "results/v2/frontier/f5/provider/f5-S026-low-f5-trial-01-turn-1.json",
+          "prompt_tokens": 327,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 134,
+          "request_id": "gen-1786135066-qjPHVYVSSsRgIZzAvxw2",
+          "sha256": "baf431100c0621e23b7238738602a93df8056733a9a3d7ae69f1f3e526479dcc"
+        },
+        {
+          "completion_tokens": 1171,
+          "cost_usd": "0.000528228",
+          "latency_ms": 41758,
+          "path": "results/v2/frontier/f5/provider/f5-S026-low-f5-trial-01-turn-2.json",
+          "prompt_tokens": 3732,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 995,
+          "request_id": "gen-1786135070-89hq9aympaV3Ddl5prsb",
+          "sha256": "a6cb66bd462dfea40a5226c487459de9f8e0d554d694fd9cafacc6e2d13b5e72"
+        }
+      ],
+      "reasoning_effort": "low",
+      "record_sha256": "c9641ef7df6f6298250d5624ac8b3925195a61bc3baf60ad0e8a496b9d0e2e1e",
+      "required_source_count": 4,
+      "status": "completed",
+      "strategy_id": "bounded_search",
+      "task_id": "S026",
+      "task_success": false,
+      "tool_calls": 1,
+      "total_provider_tokens": 5374,
+      "transcript": [
+        {
+          "action": {
+            "action": "read_public_source",
+            "source_id": "NL-023"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "content": "[NL-023#NL-023-S01] Call Metadata\n* **Date:** June 10, 2026 * **Time:** 11:00 AM - 11:45 AM EST * **Location:** Zoom Enterprise Recording ID: REC-99238-APEX * **CRM Opportunity Link:** SFDC-OPP-2026-88421 * **Participants:** * **Marcus Reed** - VP of Sales, NovaLearn AI (VP Sales) * **Sarah Jenkins** - Senior Account Executive, NovaLearn AI (Account Executive) * **Michael Chang** - Director of Learning & Development, Apex Global Solutions (Prospect) * **Linda Torres** - VP of Security & Compliance, Apex Global Solutions (Prospect) * **Reference Policies Circulated:** NL-007_security_data_governance_policy.md (draft summary), NL-008_ai_assistant_reliability_policy.md (excerpt). *(Note: This call transcript is classified as an informal sales discovery record with an authority level of 2. It contains conversational exchanges, customer requirements, and non-binding explanations by sales representatives. It does not establish binding contractual terms or official policy. For verified specifications on pricing, security protocols, or product roadmaps, refer to NL-003, NL-007, and NL-014, which carry authority levels of 5 and 4.)* ---",
+                "content_sha256": "9dc9500c37b2b2321930a7a0291bf0966c2e1babf6244611af9f410ebbca3781",
+                "reference": "NL-023#NL-023-S01"
+              },
+              {
+                "content": "[NL-023#NL-023-S02] Prospect Context\nApex Global Solutions is a global logistics and supply chain services provider with approximately 3,500 employees across North America. The organization is undergoing a digital transformation of its employee enablement systems. They have a massive repository of Standard Operating Procedures (SOPs), customer-support guides, compliance manuals, and safety protocols, currently scattered across multiple legacy document repositories. They are seeking an AI-powered assistant to help their customer-facing teams and warehouse staff retrieve accurate training and compliance information. ---",
+                "content_sha256": "9bdad571510c5a6adea16cd0fde38af3b21a3bacac127e3d2469c9d3809ceccf",
+                "reference": "NL-023#NL-023-S02"
+              },
+              {
+                "content": "[NL-023#NL-023-S03] Transcript  -  Business Need\n**Marcus Reed:** \"Well, Michael, Linda, thank you for jumping on the phone with us today. Sarah and I are really excited to show you what NovaLearn can do. To kick things off, Michael, I'd love to hear a bit more about your current setup at Apex. What are the main pain points your L&D team is facing, and what would a successful AI deployment look like for you?\" **Michael Chang:** \"Thanks, Marcus. Glad to be here. To put it bluntly, our internal knowledge base is a disaster. We have been growing quickly over the last five years, and we've acquired three smaller logistics companies. As a result, we have training documentation, safety procedures, and customer support templates spread across two different SharePoint servers, a legacy Confluence instance, and random shared network drives. Our customer support agents - we have about 800 of them - spend a massive amount of time just trying to find answers when customers call. They are searching through multiple tabs, and they often give conflicting information because they find outdated documents. For example, our shipping policies changed in January, but we still have agent guides from 2024 active on one of our SharePoint drives. And on the warehouse side, we have strict OSHA safety guidelines and Department of Transportation compliance rules for our drivers. If a warehouse employee needs to look up the protocol for handling hazardous material or a driver needs to check truck maintenance logs, they need the exact answer immediately. Right now, they have to sift through a 300-page PDF manual on a desktop computer. We want an AI assistant where they can type a question and get an immediate, accurate answer with a link to the exact source page. We need absolute accuracy here because a compliance violation in safety protocols can cost us thousands in fines.\" **Sarah Jenkins:** \"That is a classic scenario we see all the time, Michael. NovaLearn was built precisely to solve this type of scattered documentation problem. Our KnowledgeHub module handles the ingestion from SharePoint, local files, and help centers, and our TutorChat interface acts as the single assistant that employees can query. The key is that TutorChat doesn't just guess the answer; it extracts it from your approved files and provides a direct, clickable citation. Let me ask: are you thinking of rolling this out to all 3,500 employees at once, or are you planning a pilot?\" **Michael Chang:** \"We definitely want to start with a pilot. We were thinking of rolling it out first to our Customer Support team, which is about 150 users. Actually, I was speaking with a colleague at another company who used a competitor, and he recommended that we start with our smallest, most agile team - our digital product team, which is only about 30 people. He suggested that startups and small teams are much easier to roll out, and we'd see higher adoption metrics. Do you find that to be the case? Is it better to focus on small teams first rather than our core operations? My main concern is that if we go too big too fast, we'll run into user friction, and people will just stop using the assistant if they get bad answers in the first week.\" **Sarah Jenkins:** \"Oh, absolutely. We love starting with small, agile teams. Startups and small business segments represent a major sweet spot for us in terms of speed. We can set up a small team in just a couple of weeks, and the adoption is usually off the charts because they are quick to adapt and don't have legacy processes. We can get a pilot live for a small group very quickly. That said, our platform is fully enterprise-grade, and we have many large clients. But starting with a smaller group like your L&D administrative staff or a small support pod is a great way to build momentum. However, our data metrics show that the real long-term business impact occurs when we scale to your core operational teams, like the 800 support agents, where the reduction in average handle time translates directly to dollar savings.\" **Michael Chang:** \"But doesn't that require a lot more cleanup? I mean, our product team's documentation is relatively clean and markdown-based. Our customer support documents are a mix of legacy PDFs, old DOCX files, and spreadsheets. If we pilot with the support team, aren't we risking failure due to the messiness of their files?\" **Sarah Jenkins:** \"It is a bit more work upfront, yes, but we guide you through that. We assign a dedicated customer success resource to help structure the KnowledgeHub ingestion. We believe the pilot is best run where the pain is highest, which is support, rather than a small team that already has good retrieval workflows.\" *(Note: While Sarah Jenkins notes sales enthusiasm for the startup/small team segment, NovaLearn's official business metrics in NL-012 show that SMB and startup clients have a much higher logo churn of 4.8% and lower expansion rates, whereas mid-market and enterprise segments demonstrate the highest Net Revenue Retention (116%) and customer satisfaction (NPS of 52 for Enterprise,",
+                "content_sha256": "68495482ae756b51696d5c792b24dcdfc7e03a91e31c54787c65e5d0377cf7e0",
+                "reference": "NL-023#NL-023-S03"
+              },
+              {
+                "content": "[NL-023#NL-023-S03] Transcript  -  Business Need\nwe guide you through that. We assign a dedicated customer success resource to help structure the KnowledgeHub ingestion. We believe the pilot is best run where the pain is highest, which is support, rather than a small team that already has good retrieval workflows.\" *(Note: While Sarah Jenkins notes sales enthusiasm for the startup/small team segment, NovaLearn's official business metrics in NL-012 show that SMB and startup clients have a much higher logo churn of 4.8% and lower expansion rates, whereas mid-market and enterprise segments demonstrate the highest Net Revenue Retention (116%) and customer satisfaction (NPS of 52 for Enterprise, 47 for Mid-Market vs. 31 for SMB). The recommendation for mid-market and enterprise clients is to run pilots with 100 to 300 users in high-impact departments to justify the onboarding investment.)* ---",
+                "content_sha256": "884e891a8471804797327c2e660b1435bce6b8fcfbe93967b1f0e5b9942e1862",
+                "reference": "NL-023#NL-023-S03"
+              },
+              {
+                "content": "[NL-023#NL-023-S04] Transcript  -  Integrations\n**Michael Chang:** \"That makes sense. In terms of where the employees will interact with the assistant, we are a heavy Microsoft Teams organization. Our support agents have Teams open all day, and our warehouse managers use the Teams mobile app. We really want the assistant to live inside Teams. We don't want them having to open another browser tab or log into a separate portal. Do you have a Teams integration?\" **Marcus Reed:** \"Yes, absolutely. The Microsoft Teams integration is one of our most popular requests, and I have great news: it is basically right around the corner. Our engineering team has a working connector, and it's almost ready for general release. We are putting the finishing touches on it. You'll be able to install the NovaLearn bot directly from the Teams app store, pin it to the sidebar, and your employees can interact with it just like they are chatting with a colleague. It will support the exact same permission structures and citations as our web interface.\" **Michael Chang:** \"Oh, that's perfect. If we can get that up and running for the pilot, that would be a huge win. When you say 'almost ready,' what does that mean? Can we include it in our pilot starting in July?\" **Marcus Reed:** \"I don't see why not. We are in the final stages. We can talk to our implementation lead, Lina Park, about setting you up with our early access build for the pilot. It's basically done, so we should be able to turn it on for your workspace when we launch.\" *(Note: This is a significant sales overclaim. The official Product Roadmap and Release Notes, NL-014, states that the Teams integration is currently 'in design / planned for Q4 2026' and is not generally available. Furthermore, the internal Slack thread NL-027 reveals that the Teams connector is in a very early proof-of-concept phase, lacking security controls and tenant isolation, and is far from ready for customer deployment.)* **Michael Chang:** \"That's great. What about other integrations? We use Zendesk for our external support tickets. Can NovaLearn pull information from solved Zendesk tickets to help our agents?\" **Sarah Jenkins:** \"Yes! We have an approved Zendesk integration connector. It can sync with your solved ticket database and index the resolution steps. This is a standard feature on both our Growth and Enterprise plans. It takes about an hour to configure.\" ---",
+                "content_sha256": "0d61049bff0d464392f9fc08573aa1f718c3512242213fc540fcdfbd8832c2e9",
+                "reference": "NL-023#NL-023-S04"
+              },
+              {
+                "content": "[NL-023#NL-023-S05] Transcript  -  Security and Retention\n**Linda Torres:** \"I want to jump in on the security and data governance side. I'm the one who has to sign off on the security review. We are handling sensitive shipping logs, customer addresses, and proprietary warehouse routing procedures. How does NovaLearn handle customer data isolation? Is our data co-mingled with other clients in your database?\" **Sarah Jenkins:** \"That is a critical question, Linda. Security is the foundation of our platform. We use logical isolation for all customer workspaces. Each customer has their own dedicated database container and encryption keys. Your data is completely isolated at rest and in transit. We never co-mingle your documents or search queries with other tenants, and your data is never used to train our base AI models. We are SOC 2 Type II certified and undergo annual third-party penetration testing.\" **Linda Torres:** \"Okay, logical isolation is standard. What about data retention and deletion? If we run a pilot and decide not to move forward, or if we eventually terminate our contract, what is the deletion policy? We require that our data be wiped completely from your systems. How long does that take?\" **Sarah Jenkins:** \"We fully respect your data ownership. If you terminate the contract or request deletion, we delete your data immediately from all our active databases and indexes. Nothing remains on our live servers. We make sure that once you say go, the data is completely wiped. Our engineering team has a script that truncates all workspace tables and marks the file blocks for overwriting.\" **Linda Torres:** \"That sounds fine verbally, but is that immediate deletion guaranteed in the standard contract? Specifically, does the 'immediate' deletion apply to cold storage backups? Our legal team requires a signed DPA that explicitly guarantees deletion of all customer data, including backups, within 30 days of termination.\" **Sarah Jenkins:** \"Yes, we can write that into the custom terms for your agreement. We pride ourselves on being compliance-friendly, so we can ensure immediate deletion upon contract termination is part of our commitment to Apex. We do this for our larger clients regularly.\" *(Note: This statement is an informal sales claim that conflicts with official policy. The Security and Data Governance Policy, NL-007, states that standard data deletion occurs 'within 90 days after contract termination' to allow for backup cycles and system audits. Custom immediate deletion requires special approval and is not standard, despite the sales rep's verbal assurances. In practice, NovaLearn's standard backup rotation schedule is 90 days, making a 30-day backup scrub technically unfeasible without manual engineer intervention, which is highly restricted.)* **Linda Torres:** \"Okay, we'll need that in writing in the DPA. Now, what about SSO? We use Okta for all employee access. Do you support SAML-based SSO?\" **Sarah Jenkins:** \"Yes, Okta SSO is fully supported. It is included in our Enterprise plan. It allows you to enforce multi-factor authentication (MFA) and manage user provisioning directly through your Okta portal.\" **Linda Torres:** \"And what about role-based access? If we ingest our employee directories, can we map active directory roles to document sets? For example, we don't want warehouse staff seeing HR policies about payroll, and vice versa.\" **Marcus Reed:** \"Yes, absolutely. Our Enterprise plan supports advanced role-based access controls (RBAC) and permission mapping. You can sync your active directory groups directly to our system, and define rules like 'Only users in the HR-Group AD role can query documents in the HR-Manuals workspace.' When a user queries TutorChat, the system checks their active session permissions in real-time and filters out any answers derived from documents they don't have access to. They won't even know those documents exist.\" ---",
+                "content_sha256": "540ab341784567cf4ca801a1f17bb7f1e0f92f4fba271057feef6a025113044a",
+                "reference": "NL-023#NL-023-S05"
+              }
+            ],
+            "source_id": "NL-023",
+            "tool": "read_public_source"
+          },
+          "turn": 1
+        },
+        {
+          "action": {
+            "action": "answer",
+            "answer": "Before broad TutorChat rollout for an Enterprise customer, NovaLearn should: (1) Run a pilot with 100–300 users in a high-impact department (e.g., customer support) rather than a small team, to justify the onboarding investment and drive adoption [NL-023#NL-023-S03]; (2) Verify the Microsoft Teams integration is actually generally available and secure before promising it, since the sales claim conflicts with the official roadmap (NL-014) and internal status (NL-027) — ensure the connector has proper security controls and tenant isolation [NL-023#NL-023-S04]; (3) Align all security and data governance commitments with official policy (NL-007): confirm standard data deletion is within 90 days (not immediate), ensure the DPA includes explicit backup deletion terms, and verify SSO (Okta) and RBAC capabilities are fully supported [NL-023#NL-023-S05]; (4) Ensure data isolation and compliance (SOC 2, penetration testing) are documented and verified [NL-023#NL-023-S05]; and (5) Assign a dedicated customer success resource to structure KnowledgeHub ingestion and clean up legacy documents before scaling [NL-023#NL-023-S03]."
+          },
+          "turn": 2
+        }
+      ],
+      "trial_id": "f5-trial-01",
+      "verifier_failures": [
+        "required_source_coverage_incomplete"
+      ],
+      "wall_time_ms": 46777.378083
+    },
+    {
+      "answer": "Before broad TutorChat rollout for an Enterprise customer, NovaLearn should: (1) run a pilot with 100–300 users in high-impact departments (e.g., customer support) rather than a small team, to justify onboarding investment and drive adoption [NL-023#NL-023-S03]; (2) verify the Microsoft Teams integration is actually production-ready—the sales claim of 'almost ready' conflicts with the official roadmap (in design/planned Q4 2026) and the internal proof-of-concept lacking security controls, so NovaLearn must not promise it for the pilot [NL-023#NL-023-S04]; (3) align data deletion commitments with the official policy—standard deletion is within 90 days, not immediate, and custom 30-day backup scrubbing requires special approval, so the DPA must reflect the feasible timeline [NL-023#NL-023-S05]; (4) confirm RBAC and SAML SSO (e.g., Okta) are fully configured and tested, including real-time permission filtering so users only see documents they are authorized to access [NL-023#NL-023-S05]; (5) validate security and compliance claims (SOC 2 Type II, logical isolation, no co-mingling, no training on customer data) and ensure the customer's security review is satisfied [NL-023#NL-023-S05]; (6) ensure the Zendesk integration is properly configured for the pilot [NL-023#NL-023-S04]; and (7) assign a dedicated customer success resource to structure KnowledgeHub ingestion, especially for messy legacy documents [NL-023#NL-023-S03]. These steps address the gaps between sales overclaims and official policies, mitigating risk before enterprise-wide rollout.",
+      "cost_usd": "0.000285210",
+      "dead_ends": 0,
+      "evidence_coverage": 0.0,
+      "latency_ms": 12996.0,
+      "provider_receipts": [
+        {
+          "completion_tokens": 228,
+          "cost_usd": "0.000052038",
+          "latency_ms": 2708,
+          "path": "results/v2/frontier/f5/provider/f5-S026-high-f5-trial-01-turn-1.json",
+          "prompt_tokens": 327,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 204,
+          "request_id": "gen-1786135113-nbUg0iaezN3HPpBXgZcY",
+          "sha256": "6ac9f9689cf51c377f12279b01d3026c6bd6f737379e7e46a7d1f662d5fe1899"
+        },
+        {
+          "completion_tokens": 863,
+          "cost_usd": "0.000233172",
+          "latency_ms": 10288,
+          "path": "results/v2/frontier/f5/provider/f5-S026-high-f5-trial-01-turn-2.json",
+          "prompt_tokens": 3732,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 495,
+          "request_id": "gen-1786135118-cBU3seciz9UiXVBO2rt0",
+          "sha256": "a1653748f94c7aced29e3798579974ce5bd91d613be730156dbd3fb95f7a706f"
+        }
+      ],
+      "reasoning_effort": "high",
+      "record_sha256": "72a51d41f8cf6fcfb2eccf740c6a34ad484ecfcff81951639f02aa1446b5bb38",
+      "required_source_count": 4,
+      "status": "completed",
+      "strategy_id": "bounded_search",
+      "task_id": "S026",
+      "task_success": false,
+      "tool_calls": 1,
+      "total_provider_tokens": 5150,
+      "transcript": [
+        {
+          "action": {
+            "action": "read_public_source",
+            "source_id": "NL-023"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "content": "[NL-023#NL-023-S01] Call Metadata\n* **Date:** June 10, 2026 * **Time:** 11:00 AM - 11:45 AM EST * **Location:** Zoom Enterprise Recording ID: REC-99238-APEX * **CRM Opportunity Link:** SFDC-OPP-2026-88421 * **Participants:** * **Marcus Reed** - VP of Sales, NovaLearn AI (VP Sales) * **Sarah Jenkins** - Senior Account Executive, NovaLearn AI (Account Executive) * **Michael Chang** - Director of Learning & Development, Apex Global Solutions (Prospect) * **Linda Torres** - VP of Security & Compliance, Apex Global Solutions (Prospect) * **Reference Policies Circulated:** NL-007_security_data_governance_policy.md (draft summary), NL-008_ai_assistant_reliability_policy.md (excerpt). *(Note: This call transcript is classified as an informal sales discovery record with an authority level of 2. It contains conversational exchanges, customer requirements, and non-binding explanations by sales representatives. It does not establish binding contractual terms or official policy. For verified specifications on pricing, security protocols, or product roadmaps, refer to NL-003, NL-007, and NL-014, which carry authority levels of 5 and 4.)* ---",
+                "content_sha256": "9dc9500c37b2b2321930a7a0291bf0966c2e1babf6244611af9f410ebbca3781",
+                "reference": "NL-023#NL-023-S01"
+              },
+              {
+                "content": "[NL-023#NL-023-S02] Prospect Context\nApex Global Solutions is a global logistics and supply chain services provider with approximately 3,500 employees across North America. The organization is undergoing a digital transformation of its employee enablement systems. They have a massive repository of Standard Operating Procedures (SOPs), customer-support guides, compliance manuals, and safety protocols, currently scattered across multiple legacy document repositories. They are seeking an AI-powered assistant to help their customer-facing teams and warehouse staff retrieve accurate training and compliance information. ---",
+                "content_sha256": "9bdad571510c5a6adea16cd0fde38af3b21a3bacac127e3d2469c9d3809ceccf",
+                "reference": "NL-023#NL-023-S02"
+              },
+              {
+                "content": "[NL-023#NL-023-S03] Transcript  -  Business Need\n**Marcus Reed:** \"Well, Michael, Linda, thank you for jumping on the phone with us today. Sarah and I are really excited to show you what NovaLearn can do. To kick things off, Michael, I'd love to hear a bit more about your current setup at Apex. What are the main pain points your L&D team is facing, and what would a successful AI deployment look like for you?\" **Michael Chang:** \"Thanks, Marcus. Glad to be here. To put it bluntly, our internal knowledge base is a disaster. We have been growing quickly over the last five years, and we've acquired three smaller logistics companies. As a result, we have training documentation, safety procedures, and customer support templates spread across two different SharePoint servers, a legacy Confluence instance, and random shared network drives. Our customer support agents - we have about 800 of them - spend a massive amount of time just trying to find answers when customers call. They are searching through multiple tabs, and they often give conflicting information because they find outdated documents. For example, our shipping policies changed in January, but we still have agent guides from 2024 active on one of our SharePoint drives. And on the warehouse side, we have strict OSHA safety guidelines and Department of Transportation compliance rules for our drivers. If a warehouse employee needs to look up the protocol for handling hazardous material or a driver needs to check truck maintenance logs, they need the exact answer immediately. Right now, they have to sift through a 300-page PDF manual on a desktop computer. We want an AI assistant where they can type a question and get an immediate, accurate answer with a link to the exact source page. We need absolute accuracy here because a compliance violation in safety protocols can cost us thousands in fines.\" **Sarah Jenkins:** \"That is a classic scenario we see all the time, Michael. NovaLearn was built precisely to solve this type of scattered documentation problem. Our KnowledgeHub module handles the ingestion from SharePoint, local files, and help centers, and our TutorChat interface acts as the single assistant that employees can query. The key is that TutorChat doesn't just guess the answer; it extracts it from your approved files and provides a direct, clickable citation. Let me ask: are you thinking of rolling this out to all 3,500 employees at once, or are you planning a pilot?\" **Michael Chang:** \"We definitely want to start with a pilot. We were thinking of rolling it out first to our Customer Support team, which is about 150 users. Actually, I was speaking with a colleague at another company who used a competitor, and he recommended that we start with our smallest, most agile team - our digital product team, which is only about 30 people. He suggested that startups and small teams are much easier to roll out, and we'd see higher adoption metrics. Do you find that to be the case? Is it better to focus on small teams first rather than our core operations? My main concern is that if we go too big too fast, we'll run into user friction, and people will just stop using the assistant if they get bad answers in the first week.\" **Sarah Jenkins:** \"Oh, absolutely. We love starting with small, agile teams. Startups and small business segments represent a major sweet spot for us in terms of speed. We can set up a small team in just a couple of weeks, and the adoption is usually off the charts because they are quick to adapt and don't have legacy processes. We can get a pilot live for a small group very quickly. That said, our platform is fully enterprise-grade, and we have many large clients. But starting with a smaller group like your L&D administrative staff or a small support pod is a great way to build momentum. However, our data metrics show that the real long-term business impact occurs when we scale to your core operational teams, like the 800 support agents, where the reduction in average handle time translates directly to dollar savings.\" **Michael Chang:** \"But doesn't that require a lot more cleanup? I mean, our product team's documentation is relatively clean and markdown-based. Our customer support documents are a mix of legacy PDFs, old DOCX files, and spreadsheets. If we pilot with the support team, aren't we risking failure due to the messiness of their files?\" **Sarah Jenkins:** \"It is a bit more work upfront, yes, but we guide you through that. We assign a dedicated customer success resource to help structure the KnowledgeHub ingestion. We believe the pilot is best run where the pain is highest, which is support, rather than a small team that already has good retrieval workflows.\" *(Note: While Sarah Jenkins notes sales enthusiasm for the startup/small team segment, NovaLearn's official business metrics in NL-012 show that SMB and startup clients have a much higher logo churn of 4.8% and lower expansion rates, whereas mid-market and enterprise segments demonstrate the highest Net Revenue Retention (116%) and customer satisfaction (NPS of 52 for Enterprise,",
+                "content_sha256": "68495482ae756b51696d5c792b24dcdfc7e03a91e31c54787c65e5d0377cf7e0",
+                "reference": "NL-023#NL-023-S03"
+              },
+              {
+                "content": "[NL-023#NL-023-S03] Transcript  -  Business Need\nwe guide you through that. We assign a dedicated customer success resource to help structure the KnowledgeHub ingestion. We believe the pilot is best run where the pain is highest, which is support, rather than a small team that already has good retrieval workflows.\" *(Note: While Sarah Jenkins notes sales enthusiasm for the startup/small team segment, NovaLearn's official business metrics in NL-012 show that SMB and startup clients have a much higher logo churn of 4.8% and lower expansion rates, whereas mid-market and enterprise segments demonstrate the highest Net Revenue Retention (116%) and customer satisfaction (NPS of 52 for Enterprise, 47 for Mid-Market vs. 31 for SMB). The recommendation for mid-market and enterprise clients is to run pilots with 100 to 300 users in high-impact departments to justify the onboarding investment.)* ---",
+                "content_sha256": "884e891a8471804797327c2e660b1435bce6b8fcfbe93967b1f0e5b9942e1862",
+                "reference": "NL-023#NL-023-S03"
+              },
+              {
+                "content": "[NL-023#NL-023-S04] Transcript  -  Integrations\n**Michael Chang:** \"That makes sense. In terms of where the employees will interact with the assistant, we are a heavy Microsoft Teams organization. Our support agents have Teams open all day, and our warehouse managers use the Teams mobile app. We really want the assistant to live inside Teams. We don't want them having to open another browser tab or log into a separate portal. Do you have a Teams integration?\" **Marcus Reed:** \"Yes, absolutely. The Microsoft Teams integration is one of our most popular requests, and I have great news: it is basically right around the corner. Our engineering team has a working connector, and it's almost ready for general release. We are putting the finishing touches on it. You'll be able to install the NovaLearn bot directly from the Teams app store, pin it to the sidebar, and your employees can interact with it just like they are chatting with a colleague. It will support the exact same permission structures and citations as our web interface.\" **Michael Chang:** \"Oh, that's perfect. If we can get that up and running for the pilot, that would be a huge win. When you say 'almost ready,' what does that mean? Can we include it in our pilot starting in July?\" **Marcus Reed:** \"I don't see why not. We are in the final stages. We can talk to our implementation lead, Lina Park, about setting you up with our early access build for the pilot. It's basically done, so we should be able to turn it on for your workspace when we launch.\" *(Note: This is a significant sales overclaim. The official Product Roadmap and Release Notes, NL-014, states that the Teams integration is currently 'in design / planned for Q4 2026' and is not generally available. Furthermore, the internal Slack thread NL-027 reveals that the Teams connector is in a very early proof-of-concept phase, lacking security controls and tenant isolation, and is far from ready for customer deployment.)* **Michael Chang:** \"That's great. What about other integrations? We use Zendesk for our external support tickets. Can NovaLearn pull information from solved Zendesk tickets to help our agents?\" **Sarah Jenkins:** \"Yes! We have an approved Zendesk integration connector. It can sync with your solved ticket database and index the resolution steps. This is a standard feature on both our Growth and Enterprise plans. It takes about an hour to configure.\" ---",
+                "content_sha256": "0d61049bff0d464392f9fc08573aa1f718c3512242213fc540fcdfbd8832c2e9",
+                "reference": "NL-023#NL-023-S04"
+              },
+              {
+                "content": "[NL-023#NL-023-S05] Transcript  -  Security and Retention\n**Linda Torres:** \"I want to jump in on the security and data governance side. I'm the one who has to sign off on the security review. We are handling sensitive shipping logs, customer addresses, and proprietary warehouse routing procedures. How does NovaLearn handle customer data isolation? Is our data co-mingled with other clients in your database?\" **Sarah Jenkins:** \"That is a critical question, Linda. Security is the foundation of our platform. We use logical isolation for all customer workspaces. Each customer has their own dedicated database container and encryption keys. Your data is completely isolated at rest and in transit. We never co-mingle your documents or search queries with other tenants, and your data is never used to train our base AI models. We are SOC 2 Type II certified and undergo annual third-party penetration testing.\" **Linda Torres:** \"Okay, logical isolation is standard. What about data retention and deletion? If we run a pilot and decide not to move forward, or if we eventually terminate our contract, what is the deletion policy? We require that our data be wiped completely from your systems. How long does that take?\" **Sarah Jenkins:** \"We fully respect your data ownership. If you terminate the contract or request deletion, we delete your data immediately from all our active databases and indexes. Nothing remains on our live servers. We make sure that once you say go, the data is completely wiped. Our engineering team has a script that truncates all workspace tables and marks the file blocks for overwriting.\" **Linda Torres:** \"That sounds fine verbally, but is that immediate deletion guaranteed in the standard contract? Specifically, does the 'immediate' deletion apply to cold storage backups? Our legal team requires a signed DPA that explicitly guarantees deletion of all customer data, including backups, within 30 days of termination.\" **Sarah Jenkins:** \"Yes, we can write that into the custom terms for your agreement. We pride ourselves on being compliance-friendly, so we can ensure immediate deletion upon contract termination is part of our commitment to Apex. We do this for our larger clients regularly.\" *(Note: This statement is an informal sales claim that conflicts with official policy. The Security and Data Governance Policy, NL-007, states that standard data deletion occurs 'within 90 days after contract termination' to allow for backup cycles and system audits. Custom immediate deletion requires special approval and is not standard, despite the sales rep's verbal assurances. In practice, NovaLearn's standard backup rotation schedule is 90 days, making a 30-day backup scrub technically unfeasible without manual engineer intervention, which is highly restricted.)* **Linda Torres:** \"Okay, we'll need that in writing in the DPA. Now, what about SSO? We use Okta for all employee access. Do you support SAML-based SSO?\" **Sarah Jenkins:** \"Yes, Okta SSO is fully supported. It is included in our Enterprise plan. It allows you to enforce multi-factor authentication (MFA) and manage user provisioning directly through your Okta portal.\" **Linda Torres:** \"And what about role-based access? If we ingest our employee directories, can we map active directory roles to document sets? For example, we don't want warehouse staff seeing HR policies about payroll, and vice versa.\" **Marcus Reed:** \"Yes, absolutely. Our Enterprise plan supports advanced role-based access controls (RBAC) and permission mapping. You can sync your active directory groups directly to our system, and define rules like 'Only users in the HR-Group AD role can query documents in the HR-Manuals workspace.' When a user queries TutorChat, the system checks their active session permissions in real-time and filters out any answers derived from documents they don't have access to. They won't even know those documents exist.\" ---",
+                "content_sha256": "540ab341784567cf4ca801a1f17bb7f1e0f92f4fba271057feef6a025113044a",
+                "reference": "NL-023#NL-023-S05"
+              }
+            ],
+            "source_id": "NL-023",
+            "tool": "read_public_source"
+          },
+          "turn": 1
+        },
+        {
+          "action": {
+            "action": "answer",
+            "answer": "Before broad TutorChat rollout for an Enterprise customer, NovaLearn should: (1) run a pilot with 100–300 users in high-impact departments (e.g., customer support) rather than a small team, to justify onboarding investment and drive adoption [NL-023#NL-023-S03]; (2) verify the Microsoft Teams integration is actually production-ready—the sales claim of 'almost ready' conflicts with the official roadmap (in design/planned Q4 2026) and the internal proof-of-concept lacking security controls, so NovaLearn must not promise it for the pilot [NL-023#NL-023-S04]; (3) align data deletion commitments with the official policy—standard deletion is within 90 days, not immediate, and custom 30-day backup scrubbing requires special approval, so the DPA must reflect the feasible timeline [NL-023#NL-023-S05]; (4) confirm RBAC and SAML SSO (e.g., Okta) are fully configured and tested, including real-time permission filtering so users only see documents they are authorized to access [NL-023#NL-023-S05]; (5) validate security and compliance claims (SOC 2 Type II, logical isolation, no co-mingling, no training on customer data) and ensure the customer's security review is satisfied [NL-023#NL-023-S05]; (6) ensure the Zendesk integration is properly configured for the pilot [NL-023#NL-023-S04]; and (7) assign a dedicated customer success resource to structure KnowledgeHub ingestion, especially for messy legacy documents [NL-023#NL-023-S03]. These steps address the gaps between sales overclaims and official policies, mitigating risk before enterprise-wide rollout."
+          },
+          "turn": 2
+        }
+      ],
+      "trial_id": "f5-trial-01",
+      "verifier_failures": [
+        "required_source_coverage_incomplete"
+      ],
+      "wall_time_ms": 15472.573167
+    },
+    {
+      "answer": "Sales should use the **Corpus Readiness Checklist** before promising enterprise deployment dates. This checklist, mandated for new customers before starting the onboarding clock, must establish clear criteria for source cleanup, define minimum OCR standards for ingested files (since scanned/image-only PDFs delay onboarding and fail go-live quality checks), and provide templates for role-based permission mappings [NL-015#NL-015-S04][NL-015#NL-015-S07][NL-015#NL-015-S09]. It should also address SSO and security review requirements, and ensure the pilot meets the 85% citation correctness threshold with zero critical permission failures before broad rollout [NL-015#NL-015-S04]. Additionally, sales must verify claims with other departments—do not sign custom SLAs or promise immediate data deletion without consulting Security, do not quote final enterprise pricing on discovery calls, and do not guarantee roadmap dates (e.g., Teams integration, WorkflowCoach) as contractual commitments [NL-009#NL-009-S08][NL-014#NL-014-S01].",
+      "cost_usd": "0.000416610",
+      "dead_ends": 0,
+      "evidence_coverage": 0.2,
+      "latency_ms": 12099.0,
+      "provider_receipts": [
+        {
+          "completion_tokens": 101,
+          "cost_usd": "0.000041652",
+          "latency_ms": 2994,
+          "path": "results/v2/frontier/f5/provider/f5-S025-low-f5-trial-02-turn-1.json",
+          "prompt_tokens": 312,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 112,
+          "request_id": "gen-1786135128-nG2ZFygigaYtegiLVmVO",
+          "sha256": "46fd01c5d2791add68019b18db23107ff8d9c6fec3ff1f7bf37ca42dbfceda32"
+        },
+        {
+          "completion_tokens": 825,
+          "cost_usd": "0.000374958",
+          "latency_ms": 9105,
+          "path": "results/v2/frontier/f5/provider/f5-S025-low-f5-trial-02-turn-2.json",
+          "prompt_tokens": 2721,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 663,
+          "request_id": "gen-1786135132-RiJay7i7QgIkHLOd6Shk",
+          "sha256": "56e36d6efb50e004dd4a4ba35d9fd6090e97a3d422651b0c58f2dba627773460"
+        }
+      ],
+      "reasoning_effort": "low",
+      "record_sha256": "158c272c2796181ba2d8846e158dad92e1fd15fa600b801886f2ddaa62dd742b",
+      "required_source_count": 5,
+      "status": "completed",
+      "strategy_id": "bounded_search",
+      "task_id": "S025",
+      "task_success": false,
+      "tool_calls": 1,
+      "total_provider_tokens": 3959,
+      "transcript": [
+        {
+          "action": {
+            "action": "search_public_chunks",
+            "query": "checklist sales enterprise deployment dates"
+          },
+          "tool_result": {
+            "query": "checklist sales enterprise deployment dates",
+            "results": [
+              {
+                "content": "[NL-009#NL-009-S08] Claims Requiring Verification\nAs a sales team, we want to be helpful and enthusiastic. However, to avoid legal and operational risks, some claims must be verified with other departments. ### 1. Legal and Data Retention Policies Do not sign custom SLAs or promise immediate data deletion without consulting Priya Raman (Security and Governance Lead). While we present a highly responsive deletion capability in sales pitches, the official corporate policy dictates standard timeline limits for data removal. Always cross-reference the Security Policy (NL-007) for binding timelines, which outline standard deletion within 90 days of contract termination. Any custom data-decommissioning agreements must go through formal legal review. ### 2. Pricing and Packaging Changes Do not offer custom discounts on the Starter or Growth plans. All discounts must be approved by Marcus Reed (VP Sales) and must align with the current pricing sheet (NL-003). Any reference to historical prices (like the $900/month Starter plan from the 2025 proposal) is deprecated and must not be used in active proposals. Enterprise plan pricing starts at $8,500/month but is subject to a security review, seat count, and integration requirements. Do not quote final enterprise pricing on discovery calls. ### 3. Product Roadmap and Future Modules When prospects ask about upcoming integrations (like Microsoft Teams) or new modules (like WorkflowCoach), consult Sofia Almeida (VP Product) or the official Product Roadmap (NL-014). Do not guarantee specific launch dates. For example, while sales reps may tell customers that the Microsoft Teams integration is almost ready based on informal discussion, the roadmap states it is in the planning and design phase for Q4 2026. The WorkflowCoach module is scheduled for public beta in September 2026, but internal notes suggest it could slide to November. Always frame roadmap dates as targets, not contractual guarantees. *** **DISCLAIMER:** This sales playbook is for internal training purposes only. It is a lower-authority sales enablement resource (Authority Level 2). It does not constitute a legal contract, and its claims do not supersede official company policies. Always refer to official security (NL-007), reliability (NL-008), and pricing (NL-003) documents for definitive facts.",
+                "content_sha256": "888430a9a7f3d9e1067ab034137c84c8b7ecf2880051560f5ae9bc87ffe3d1e6",
+                "reference": "NL-009#NL-009-S08"
+              },
+              {
+                "content": "[NL-015#NL-015-S04] Discussion  -  Enterprise Onboarding\nJordan Lee led a discussion on the operational challenges in customer onboarding and implementation. **Jordan Lee (Customer Success):** \"We are seeing a median onboarding time of 5.8 weeks across all segments, but as David pointed out, Enterprise is averaging 8.7 weeks. This is a problem because sales continues to promise a 4-to-6 week rollout during the contracting phase. When it takes 9 weeks, the customer gets frustrated, and it delays our revenue recognition. The primary blockers are not on our engineering side; they are administrative and compliance-related. Specifically: 1. **Permission Mapping:** Enterprise customers have complex active directory setups and role-based access rules. Mapping who is allowed to see what in TutorChat takes weeks of alignment. 2. **SSO and Security Review:** Standard enterprise security reviews often drag on, particularly for clients in financial services and healthcare. 3. **Data Cleanup and Scanned PDFs:** Clients are dumping raw folders into KnowledgeHub. A massive portion of these files are scanned, image-only PDFs. Because our citation engine requires a text layer for reliable linking, these scanned files need OCR. Without OCR, their citation accuracy drops, and they fail our go-live quality checks.\" **Sofia Almeida (Product):** \"We need to enforce better boundaries. I propose we create a 'Corpus Readiness Checklist' that sales shares during the discovery phase. If a customer has thousands of scanned PDFs, we need to explicitly tell them that onboarding will be delayed unless they run OCR on their end first, or wait for our upcoming automated OCR pipeline. Jordan, what is the go-live quality threshold right now?\" **Jordan Lee (Customer Success):** \"According to our AI Assistant Reliability Policy, the pilot deployment must pass an 85% citation correctness threshold and have zero critical permission failures before we allow a broad rollout. For Enterprise clients, we recommend a pilot size of 100 to 300 users. Meeting that 85% threshold is very difficult when their ingested corpus is filled with image-only policy documents.\" ---",
+                "content_sha256": "cdb8bef48c2ae37116ec77f44657a335e20c7594e225df2f9cf9abff44603f85",
+                "reference": "NL-015#NL-015-S04"
+              },
+              {
+                "content": "[NL-015#NL-015-S07] Decisions\nThe leadership team aligned on the following strategic decisions: | Area | Strategic Decision | Responsibility | |---|---|---| | **ICP Focus** | Maintain primary focus on regulated mid-market and enterprise segments. Sales will not pivot resources to target SMB/startups. | Marcus Reed | | **Product Priorities** | Prioritize the Advanced OCR Pipeline for August 2026 release. Teams integration remains in design for Q4 2026. | Sofia Almeida / Leon Grayson | | **WorkflowCoach** | Retain external roadmap target of September 2026 public beta, but prepare internal sales and support teams for a slip to November 2026. | Nora Kim / Sofia Almeida | | **Onboarding** | Implement a mandatory 'Corpus Readiness Checklist' for new customers before starting the onboarding clock. | Jordan Lee | ---",
+                "content_sha256": "9ed70c9555b82c5fd27e2752858fc893482bf8c2357693b1f446b05d542cc58b",
+                "reference": "NL-015#NL-015-S07"
+              },
+              {
+                "content": "[NL-015#NL-015-S09] Action Items\n* **Sofia Almeida:** Draft internal product update outlining the contingency timeline and scope adjustments for the WorkflowCoach module by July 5. This update must detail the specific features that will be deferred to the November public release, including cross-workspace permission synchronization, and define the criteria for the September private beta cohort. * **Leon Grayson:** Finalize the technical design document for the Advanced OCR Pipeline and initiate sandbox load testing by July 10. The load tests must specifically simulate high-volume document ingestion queues with scanned PDF packages of varying layouts to verify the retry backoff mechanisms established in the postmortem policy. * **Jordan Lee & Lina Park:** Collaborate on the draft of the 'Corpus Readiness Checklist' and share it with the sales enablement team for review by July 8. The checklist must establish clear criteria for source cleanup, define the minimum OCR standards for ingested files, and provide templates for role-based permission mappings. * **Marcus Reed:** Review the active pipeline for Q3 and Q4 to identify any accounts where the September WorkflowCoach launch was presented as a hard contractual commitment, and draft mitigation strategies by July 12. Marcus will also coordinate with Sales Enablement to update pitch decks to reflect the primary value of our current modules rather than pre-selling the Teams integration. * **David Okafor:** Prepare a detailed cohort analysis of SMB churn versus mid-market customer acquisition costs to support Sales training materials. The analysis should break down the June 2026 MRR contribution by customer segment and correlate logo churn rates with onboarding duration to prove the long-term value of the regulated mid-market and enterprise ICP. * **Priya Raman (Security - notified post-meeting):** Review the proposed Microsoft Teams bot authorization model and map out tenant isolation requirements in a formal security briefing by July 15, ensuring compliance with the logical isolation standards in NL-007.",
+                "content_sha256": "4a9333e617813439a96a220554e0c966e097174cbce3888e8aebcde977ae92a5",
+                "reference": "NL-015#NL-015-S09"
+              },
+              {
+                "content": "[NL-014#NL-014-S01] Roadmap Overview\nThis document defines the official product development roadmap, release schedule, and version history for the NovaLearn AI platform in 2026. The information contained herein represents our current engineering priorities and product strategy, as established by the Product Management and Engineering leadership. Our primary goal for 2026 is to transition the NovaLearn platform from a passive knowledge retrieval tool into an active, compliant, and guided learning system. To achieve this, our engineering efforts are focused on three core themes: 1. **Accuracy and Grounding (Reliability)**: Improving citation extraction and parsing performance, particularly for scanned legacy documentation, which is our primary technical driver of onboarding delays. 2. **Operational Enablement**: Introducing guided workflow assistance to support frontline employees during complex procedures. 3. **Enterprise Security and Scaling**: Simplifying role-based permission mappings and expanding collaboration integrations to support large corporate rollouts. ### Strategic Priorities and Engineering Methodology Our development lifecycle follows a structured dual-track agile framework to maintain high-velocity execution while ensuring absolute compliance with security standards: * **Product Discovery Track**: Led by Sofia Almeida (VP Product) and Nora Kim (Product Marketing Lead), this track gathers feedback from enterprise client advisory boards, support operations datasets, and customer success reviews. This ensures that roadmap items directly address real-world challenges faced by key customer segments, particularly in highly regulated industries. * **Product Delivery Track**: Under the leadership of Leon Grayson (CTO) and Squad Leads, this track governs architecture design, sprint executions, automated regression testing, security reviews, and rollout schedules. Every feature on this roadmap goes through a strict deployment pipeline before general availability: 1. **Design & Security Review**: Evaluation of permission isolation, API security, and encryption standards led by Priya Raman (Security and Governance Lead). 2. **Internal Alpha**: Deployed to the internal NovaLearn sandbox environment for testing by support and engineering teams. 3. **Private Pilot**: Rolled out to a limited group of 5-10 designated mid-market or enterprise customers (such as Acme Manufacturing or Atlas Logistics) to validate performance under live operational conditions. 4. **Public Beta**: Offered to all customers on Growth and Enterprise plans with a toggle in the Admin Console. 5. **General Availability (GA)**: Fully deployed as the default active component for all eligible plans. *Disclaimer: This roadmap is intended for planning purposes only. While we make every effort to achieve the release dates specified herein, the timelines are subject to modification based on engineering capacity, QA testing results, and customer pilot feedback. Roadmap targets do not constitute contractual commitments or guarantees of future feature availability.* ---",
+                "content_sha256": "f0ab16c018506cc396285cfde1a902acbb44d86c8249f80d0126c7eff182ac4d",
+                "reference": "NL-014#NL-014-S01"
+              }
+            ],
+            "tool": "search_public_chunks"
+          },
+          "turn": 1
+        },
+        {
+          "action": {
+            "action": "answer",
+            "answer": "Sales should use the **Corpus Readiness Checklist** before promising enterprise deployment dates. This checklist, mandated for new customers before starting the onboarding clock, must establish clear criteria for source cleanup, define minimum OCR standards for ingested files (since scanned/image-only PDFs delay onboarding and fail go-live quality checks), and provide templates for role-based permission mappings [NL-015#NL-015-S04][NL-015#NL-015-S07][NL-015#NL-015-S09]. It should also address SSO and security review requirements, and ensure the pilot meets the 85% citation correctness threshold with zero critical permission failures before broad rollout [NL-015#NL-015-S04]. Additionally, sales must verify claims with other departments—do not sign custom SLAs or promise immediate data deletion without consulting Security, do not quote final enterprise pricing on discovery calls, and do not guarantee roadmap dates (e.g., Teams integration, WorkflowCoach) as contractual commitments [NL-009#NL-009-S08][NL-014#NL-014-S01]."
+          },
+          "turn": 2
+        }
+      ],
+      "trial_id": "f5-trial-02",
+      "verifier_failures": [
+        "required_source_coverage_incomplete"
+      ],
+      "wall_time_ms": 13842.765625
+    },
+    {
+      "answer": null,
+      "cost_usd": "0.000444474",
+      "dead_ends": 0,
+      "evidence_coverage": 0.0,
+      "latency_ms": 3539.0,
+      "provider_receipts": [
+        {
+          "completion_tokens": 146,
+          "cost_usd": "0.000049752",
+          "latency_ms": 1734,
+          "path": "results/v2/frontier/f5/provider/f5-S025-high-f5-trial-02-turn-1.json",
+          "prompt_tokens": 312,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 125,
+          "request_id": "gen-1786135142-oR1x8krrogK6ToyqlmOa",
+          "sha256": "c1659d297faa1d9f3f25a6965a5f1cf3b88784be7ca79d3304860ae4b0bed6a5"
+        },
+        {
+          "completion_tokens": 81,
+          "cost_usd": "0.000394722",
+          "latency_ms": 1805,
+          "path": "results/v2/frontier/f5/provider/f5-S025-high-f5-trial-02-turn-2.json",
+          "prompt_tokens": 4275,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 68,
+          "request_id": "gen-1786135145-kc27z4lIwxlabuvNzNob",
+          "sha256": "7ad604954878c64ba2d917598fd652655ba2f4efc3c529e1ea133678c2817fc8"
+        }
+      ],
+      "reasoning_effort": "high",
+      "record_sha256": "7e5a750179964ac0a3b89a334fbac419f588526628c061f51b09b62a1e447a3b",
+      "required_source_count": 5,
+      "status": "failed",
+      "strategy_id": "bounded_search",
+      "task_id": "S025",
+      "task_success": false,
+      "tool_calls": 2,
+      "total_provider_tokens": 4814,
+      "transcript": [
+        {
+          "action": {
+            "action": "read_public_source",
+            "source_id": "NL-015"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "content": "[NL-015#NL-015-S01] Meeting Context\n* **Date:** June 26, 2026 * **Time:** 10:00 AM - 12:30 PM EST * **Location:** Google Meet (Remote) * **Facilitator:** Maya Patel (CEO) * **Purpose:** Mid-year strategy review, addressing product roadmap status (specifically WorkflowCoach and Teams integration), customer segment results (specifically MM/Enterprise vs SMB/Startups), and onboarding delays. * **Pre-reads and Reference Materials:** Circulated prior to the meeting: NL-012_quarterly_business_metrics_q2_2026.md (draft), NL-014_product_roadmap_release_notes_2026.md, and the preliminary Q2 Cohort Churn Analysis report by David Okafor. * **Notes Distribution:** Restricted to internal executive leadership, product management directors, and engineering leads. * **Meeting Background:** This session was convened to align the executive team on key product development trade-offs for the second half of 2026 (H2 2026), specifically resolving resource allocation conflicts between customer onboarding acceleration, security compliance requirements, and public-facing roadmap commitments. *(Note: These strategy review notes have an authority level of 2 (informal internal notes). They reflect active discussions and non-binding considerations of the executive team. They do not supersede official corporate policies, pricing structures, or security protocols. For authoritative guidelines, consult NL-003 for pricing, NL-007 for data governance, and NL-008 for assistant reliability standards.)* ---",
+                "content_sha256": "3b084ebd08cc0104d4515eb18cc47b6069ff5662eed60ed79cba3840435e0252",
+                "reference": "NL-015#NL-015-S01"
+              },
+              {
+                "content": "[NL-015#NL-015-S02] Attendees\n* **Maya Patel** - Chief Executive Officer (CEO) * **Sofia Almeida** - VP of Product (VP Product) * **Leon Grayson** - Chief Technology Officer (CTO) * **Jordan Lee** - Head of Customer Success (Head of CS) * **Marcus Reed** - VP of Sales (VP Sales) * **David Okafor** - Data Analyst (Data Analyst) * **Nora Kim** - Product Marketing Lead (Product Marketing Lead) ---",
+                "content_sha256": "2f290791eb35deb5903f4d30435d9dd5e11aa8fcff116ad2b918724bd09c2e5e",
+                "reference": "NL-015#NL-015-S02"
+              },
+              {
+                "content": "[NL-015#NL-015-S03] Discussion  -  ICP and Growth\nThe meeting opened with a review of the preliminary Q2 2026 business performance and customer segments, led by David Okafor and Marcus Reed. **Marcus Reed (Sales):** \"Looking at the pipeline for the second half of the year, we are seeing a lot of inbound interest from smaller companies and startups, especially in the educational technology space. They want a fast, plug-and-play solution. If we look at our sales cycle, SMBs and startups like EduVantage Labs are closing in under 3 weeks. They don't have massive security reviews or permission-mapping audits. They just pay with a credit card on the Starter plan. I really think we should adjust our marketing spend and sales focus to double down on this segment. It's the path of least resistance to hit our MRR targets for Q3 and Q4.\" **David Okafor (Analytics):** \"I have to look at the actual numbers here, Marcus. While it's true that the sales cycle for SMB is shorter - averaging about 3.5 weeks of onboarding - the retention metrics tell a very different story. Based on the Q2 data we've aggregated, our overall monthly logo churn is averaging 2.7%. But when you break that down by segment, SMB is sitting at a 4.8% monthly churn rate. Compare that to Mid-Market at 2.1% and Enterprise at 1.3%. Mid-market and enterprise have significantly better retention. Furthermore, our expansion revenue in Q2 shows that Mid-market generated $64,000 in expansions and Enterprise generated $91,000, whereas SMB only brought in $18,000. The long-term value is overwhelmingly in the regulated mid-market and enterprise space.\" **Jordan Lee (Customer Success):** \"I completely agree with David. SMB accounts are highly volatile. They buy the Starter plan for $1,200/month, they use it for basic FAQ lookup, and then they churn the moment their internal needs change or they run out of funding. Our implementation resources are stretched thin when we have to onboard dozens of small teams. Enterprise and mid-market accounts, like BrightPath Healthcare and Beacon Insurance, take longer to onboard - averaging 8.7 weeks for Enterprise and 5.2 weeks for Mid-Market - but they stick around. Their Net Revenue Retention (NRR) is what's keeping us at 116% overall. Our NPS in Enterprise is 52 and Mid-Market is 47, whereas SMB is only 31. The users in larger companies get far more value from features like CourseBuilder and our permission-governance tools.\" **Maya Patel (CEO):** \"The strategic direction of NovaLearn remains clear: our Ideal Customer Profile (ICP) is regulated mid-market and enterprise organizations. These are companies with 500 to 10,000 employees, heavy internal documentation, and a high cost of incorrect answers. We cannot pivot our strategy to chase quick SMB sales that churn out in six months. Marcus, your team needs to focus on qualifying enterprise prospects and navigating their security reviews. Let's talk about how we can address the onboarding bottlenecks to make the enterprise sales cycle less painful, rather than avoiding the enterprise segment altogether.\" *(Note: This discussion highlights the contrast between sales team anecdotes and data-backed performance. While Sales highlights fast acquisition of Starter customers at $1,200/month, the analytics data in NL-012 corroborates David and Jordan's view: SMB churn (4.8%) is too high to support sustainable growth, whereas mid-market and enterprise segments exhibit superior NPS (47 and 52, respectively) and strong expansion metrics, confirming the validity of the regulated enterprise ICP.)* ---",
+                "content_sha256": "8ff63da9a77411cefdb3fa7fa89cb2495a11475af278dee48f86fd47eca7d9c3",
+                "reference": "NL-015#NL-015-S03"
+              },
+              {
+                "content": "[NL-015#NL-015-S04] Discussion  -  Enterprise Onboarding\nJordan Lee led a discussion on the operational challenges in customer onboarding and implementation. **Jordan Lee (Customer Success):** \"We are seeing a median onboarding time of 5.8 weeks across all segments, but as David pointed out, Enterprise is averaging 8.7 weeks. This is a problem because sales continues to promise a 4-to-6 week rollout during the contracting phase. When it takes 9 weeks, the customer gets frustrated, and it delays our revenue recognition. The primary blockers are not on our engineering side; they are administrative and compliance-related. Specifically: 1. **Permission Mapping:** Enterprise customers have complex active directory setups and role-based access rules. Mapping who is allowed to see what in TutorChat takes weeks of alignment. 2. **SSO and Security Review:** Standard enterprise security reviews often drag on, particularly for clients in financial services and healthcare. 3. **Data Cleanup and Scanned PDFs:** Clients are dumping raw folders into KnowledgeHub. A massive portion of these files are scanned, image-only PDFs. Because our citation engine requires a text layer for reliable linking, these scanned files need OCR. Without OCR, their citation accuracy drops, and they fail our go-live quality checks.\" **Sofia Almeida (Product):** \"We need to enforce better boundaries. I propose we create a 'Corpus Readiness Checklist' that sales shares during the discovery phase. If a customer has thousands of scanned PDFs, we need to explicitly tell them that onboarding will be delayed unless they run OCR on their end first, or wait for our upcoming automated OCR pipeline. Jordan, what is the go-live quality threshold right now?\" **Jordan Lee (Customer Success):** \"According to our AI Assistant Reliability Policy, the pilot deployment must pass an 85% citation correctness threshold and have zero critical permission failures before we allow a broad rollout. For Enterprise clients, we recommend a pilot size of 100 to 300 users. Meeting that 85% threshold is very difficult when their ingested corpus is filled with image-only policy documents.\" ---",
+                "content_sha256": "cdb8bef48c2ae37116ec77f44657a335e20c7594e225df2f9cf9abff44603f85",
+                "reference": "NL-015#NL-015-S04"
+              },
+              {
+                "content": "[NL-015#NL-015-S05] Discussion  -  WorkflowCoach Timeline\nSofia Almeida and Leon Grayson provided an update on the status of the upcoming WorkflowCoach module. **Sofia Almeida (Product):** \"Our official public product roadmap, which we share with customers and board members, has the WorkflowCoach public beta scheduled for September 2026. This module is critical because it moves TutorChat from passive QA to active, step-by-step operational guidance. However, we have some development hurdles that we need to address.\" **Leon Grayson (CTO):** \"To be frank, the September 2026 target is in serious jeopardy. We are hitting roadblocks with the state management engine for multi-step operational tracking. When an employee is going through a multi-step compliance procedure, the system has to maintain context across a long session, query multiple documents dynamically, and verify permissions at each step. Currently, we are seeing: * High latency during step transition (sometimes up to 4 seconds). * Issues with permission inheritance. If a step in a public SOP references a restricted document, the system is failing to hide that restricted information for unauthorized users. If we want to release a secure, enterprise-grade module that complies with our data governance standards, we cannot rush this. If we try to hit September, we will have to cut corners on the permission checks. My realistic engineering estimate is that we need to push the public beta release to November 2026.\" **Marcus Reed (VP Sales):** \"A slip to November is going to kill us in the field. I have three enterprise pipeline deals - including Apex Global - where the decision-makers are expecting to test WorkflowCoach in September. If we tell them it's delayed, they will put the contract on hold. Can we release a limited private beta for selected clients in September and keep the public beta target in November?\" **Sofia Almeida (Product):** \"A private beta in September is possible, but only for customers who do not require complex permission mapping - meaning they have flat document structures and no sensitive compliance data. But for regulated clients like BrightPath Healthcare, we cannot compromise. We will stick to the official public roadmap target of September 2026 for external messaging for now, but internally we need to align on a November slip contingency plan. Product Marketing needs to prepare messaging in case we have to push the public launch.\" ---",
+                "content_sha256": "62b726cd966723e41773f15e389a2813fe96a4715228b0dc017569254516fc50",
+                "reference": "NL-015#NL-015-S05"
+              },
+              {
+                "content": "[NL-015#NL-015-S06] Discussion  -  OCR vs Teams Integration Priority\nA debate arose regarding the allocation of engineering resources for the next sprint cycle, specifically contrasting the Advanced OCR Pipeline with the Microsoft Teams Integration. **Marcus Reed (VP Sales):** \"We need to shift resources to the Microsoft Teams integration. Almost every prospect we talk to is a Teams shop. They don't want their employees opening another browser tab for TutorChat; they want it inside Teams. LearnPilot already has a basic Teams connector, and they are beating us on this in mid-market pitches. I know the roadmap has Teams in design for Q4, but we need to move it up. If we can get a pilot Teams integration out by August, we can unlock a massive amount of revenue.\" **Leon Grayson (CTO):** \"Marcus, we cannot just 'shift resources' without breaking something else. Right now, my engineering team is fully committed to the Advanced OCR Pipeline, which is scheduled for release in August 2026. The OCR pipeline is not a nice-to-have; it is a critical system stability requirement. Our support queue is absolutely clogged. Elena Costa is screaming at us because 27% of our support tickets in May were related to import issues and broken citations from scanned PDFs. If we don't fix OCR, the system is useless for compliance-heavy clients. Furthermore, Teams integration is a massive security undertaking. Building a Microsoft Teams bot that supports our logical workspace isolation and respects role-based access control (RBAC) requires a complete redesign of our auth layer. If we rush a Teams connector, we risk a tenant-isolation breach. I am not putting our security certification at risk for a premature Teams launch.\" **Sofia Almeida (Product):** \"Leon is right. If we build a Teams integration now, we will just be delivering inaccurate, un-cited answers to a larger audience inside their chat app. We must solve the underlying data ingestion and citation problem first. The OCR pipeline must remain our top priority for August. The Teams integration will stay in the design phase for Q4, with development slated for early 2027. We need to help Sales sell the value of our security and citation accuracy rather than promising features that are not ready.\" ---",
+                "content_sha256": "afa8c505d7cbeca8c2d9db36ebb6302c2e161b78d386c5b353e7e0646fa4a03d",
+                "reference": "NL-015#NL-015-S06"
+              },
+              {
+                "content": "[NL-015#NL-015-S07] Decisions\nThe leadership team aligned on the following strategic decisions: | Area | Strategic Decision | Responsibility | |---|---|---| | **ICP Focus** | Maintain primary focus on regulated mid-market and enterprise segments. Sales will not pivot resources to target SMB/startups. | Marcus Reed | | **Product Priorities** | Prioritize the Advanced OCR Pipeline for August 2026 release. Teams integration remains in design for Q4 2026. | Sofia Almeida / Leon Grayson | | **WorkflowCoach** | Retain external roadmap target of September 2026 public beta, but prepare internal sales and support teams for a slip to November 2026. | Nora Kim / Sofia Almeida | | **Onboarding** | Implement a mandatory 'Corpus Readiness Checklist' for new customers before starting the onboarding clock. | Jordan Lee | ---",
+                "content_sha256": "9ed70c9555b82c5fd27e2752858fc893482bf8c2357693b1f446b05d542cc58b",
+                "reference": "NL-015#NL-015-S07"
+              },
+              {
+                "content": "[NL-015#NL-015-S08] Open Questions\n1. **WorkflowCoach Scope:** Can we deliver a simplified, single-workspace version of WorkflowCoach for non-regulated customers in September to satisfy the sales pipeline, while delaying the full permission-sync version for enterprise clients? 2. **Pricing Packaging:** Should we introduce a surcharge or separate tier for high-volume OCR processing to offset cloud vision API costs, or package it as a standard feature of the Growth and Enterprise plans? 3. **Teams Integration Partner:** Should we evaluate a third-party integration partner to accelerate the Teams bot framework, or build it entirely in-house to maintain strict security control? ---",
+                "content_sha256": "8e2b0e0f50f3e2bcad6439bc14e400d6b4c482753e794257bb7f311448d822e9",
+                "reference": "NL-015#NL-015-S08"
+              },
+              {
+                "content": "[NL-015#NL-015-S09] Action Items\n* **Sofia Almeida:** Draft internal product update outlining the contingency timeline and scope adjustments for the WorkflowCoach module by July 5. This update must detail the specific features that will be deferred to the November public release, including cross-workspace permission synchronization, and define the criteria for the September private beta cohort. * **Leon Grayson:** Finalize the technical design document for the Advanced OCR Pipeline and initiate sandbox load testing by July 10. The load tests must specifically simulate high-volume document ingestion queues with scanned PDF packages of varying layouts to verify the retry backoff mechanisms established in the postmortem policy. * **Jordan Lee & Lina Park:** Collaborate on the draft of the 'Corpus Readiness Checklist' and share it with the sales enablement team for review by July 8. The checklist must establish clear criteria for source cleanup, define the minimum OCR standards for ingested files, and provide templates for role-based permission mappings. * **Marcus Reed:** Review the active pipeline for Q3 and Q4 to identify any accounts where the September WorkflowCoach launch was presented as a hard contractual commitment, and draft mitigation strategies by July 12. Marcus will also coordinate with Sales Enablement to update pitch decks to reflect the primary value of our current modules rather than pre-selling the Teams integration. * **David Okafor:** Prepare a detailed cohort analysis of SMB churn versus mid-market customer acquisition costs to support Sales training materials. The analysis should break down the June 2026 MRR contribution by customer segment and correlate logo churn rates with onboarding duration to prove the long-term value of the regulated mid-market and enterprise ICP. * **Priya Raman (Security - notified post-meeting):** Review the proposed Microsoft Teams bot authorization model and map out tenant isolation requirements in a formal security briefing by July 15, ensuring compliance with the logical isolation standards in NL-007.",
+                "content_sha256": "4a9333e617813439a96a220554e0c966e097174cbce3888e8aebcde977ae92a5",
+                "reference": "NL-015#NL-015-S09"
+              }
+            ],
+            "source_id": "NL-015",
+            "tool": "read_public_source"
+          },
+          "turn": 1
+        },
+        {
+          "action": {
+            "action": "search_public_chunks",
+            "query": "Corpus Readiness Checklist sales enterprise deployment dates"
+          },
+          "tool_result": {
+            "query": "Corpus Readiness Checklist sales enterprise deployment dates",
+            "results": [
+              {
+                "content": "[NL-015#NL-015-S07] Decisions\nThe leadership team aligned on the following strategic decisions: | Area | Strategic Decision | Responsibility | |---|---|---| | **ICP Focus** | Maintain primary focus on regulated mid-market and enterprise segments. Sales will not pivot resources to target SMB/startups. | Marcus Reed | | **Product Priorities** | Prioritize the Advanced OCR Pipeline for August 2026 release. Teams integration remains in design for Q4 2026. | Sofia Almeida / Leon Grayson | | **WorkflowCoach** | Retain external roadmap target of September 2026 public beta, but prepare internal sales and support teams for a slip to November 2026. | Nora Kim / Sofia Almeida | | **Onboarding** | Implement a mandatory 'Corpus Readiness Checklist' for new customers before starting the onboarding clock. | Jordan Lee | ---",
+                "content_sha256": "9ed70c9555b82c5fd27e2752858fc893482bf8c2357693b1f446b05d542cc58b",
+                "reference": "NL-015#NL-015-S07"
+              },
+              {
+                "content": "[NL-015#NL-015-S04] Discussion  -  Enterprise Onboarding\nJordan Lee led a discussion on the operational challenges in customer onboarding and implementation. **Jordan Lee (Customer Success):** \"We are seeing a median onboarding time of 5.8 weeks across all segments, but as David pointed out, Enterprise is averaging 8.7 weeks. This is a problem because sales continues to promise a 4-to-6 week rollout during the contracting phase. When it takes 9 weeks, the customer gets frustrated, and it delays our revenue recognition. The primary blockers are not on our engineering side; they are administrative and compliance-related. Specifically: 1. **Permission Mapping:** Enterprise customers have complex active directory setups and role-based access rules. Mapping who is allowed to see what in TutorChat takes weeks of alignment. 2. **SSO and Security Review:** Standard enterprise security reviews often drag on, particularly for clients in financial services and healthcare. 3. **Data Cleanup and Scanned PDFs:** Clients are dumping raw folders into KnowledgeHub. A massive portion of these files are scanned, image-only PDFs. Because our citation engine requires a text layer for reliable linking, these scanned files need OCR. Without OCR, their citation accuracy drops, and they fail our go-live quality checks.\" **Sofia Almeida (Product):** \"We need to enforce better boundaries. I propose we create a 'Corpus Readiness Checklist' that sales shares during the discovery phase. If a customer has thousands of scanned PDFs, we need to explicitly tell them that onboarding will be delayed unless they run OCR on their end first, or wait for our upcoming automated OCR pipeline. Jordan, what is the go-live quality threshold right now?\" **Jordan Lee (Customer Success):** \"According to our AI Assistant Reliability Policy, the pilot deployment must pass an 85% citation correctness threshold and have zero critical permission failures before we allow a broad rollout. For Enterprise clients, we recommend a pilot size of 100 to 300 users. Meeting that 85% threshold is very difficult when their ingested corpus is filled with image-only policy documents.\" ---",
+                "content_sha256": "cdb8bef48c2ae37116ec77f44657a335e20c7594e225df2f9cf9abff44603f85",
+                "reference": "NL-015#NL-015-S04"
+              },
+              {
+                "content": "[NL-015#NL-015-S09] Action Items\n* **Sofia Almeida:** Draft internal product update outlining the contingency timeline and scope adjustments for the WorkflowCoach module by July 5. This update must detail the specific features that will be deferred to the November public release, including cross-workspace permission synchronization, and define the criteria for the September private beta cohort. * **Leon Grayson:** Finalize the technical design document for the Advanced OCR Pipeline and initiate sandbox load testing by July 10. The load tests must specifically simulate high-volume document ingestion queues with scanned PDF packages of varying layouts to verify the retry backoff mechanisms established in the postmortem policy. * **Jordan Lee & Lina Park:** Collaborate on the draft of the 'Corpus Readiness Checklist' and share it with the sales enablement team for review by July 8. The checklist must establish clear criteria for source cleanup, define the minimum OCR standards for ingested files, and provide templates for role-based permission mappings. * **Marcus Reed:** Review the active pipeline for Q3 and Q4 to identify any accounts where the September WorkflowCoach launch was presented as a hard contractual commitment, and draft mitigation strategies by July 12. Marcus will also coordinate with Sales Enablement to update pitch decks to reflect the primary value of our current modules rather than pre-selling the Teams integration. * **David Okafor:** Prepare a detailed cohort analysis of SMB churn versus mid-market customer acquisition costs to support Sales training materials. The analysis should break down the June 2026 MRR contribution by customer segment and correlate logo churn rates with onboarding duration to prove the long-term value of the regulated mid-market and enterprise ICP. * **Priya Raman (Security - notified post-meeting):** Review the proposed Microsoft Teams bot authorization model and map out tenant isolation requirements in a formal security briefing by July 15, ensuring compliance with the logical isolation standards in NL-007.",
+                "content_sha256": "4a9333e617813439a96a220554e0c966e097174cbce3888e8aebcde977ae92a5",
+                "reference": "NL-015#NL-015-S09"
+              },
+              {
+                "content": "[NL-023#NL-023-S07] Sales Rep Follow-Up Notes\n* **Prospect:** Apex Global Solutions * **Key Contacts:** Michael Chang (L&D), Linda Torres (Security) * **Estimated Deal Size:** $8,500/month ($102,000 ARR) + $15,000 implementation fee (Enterprise Plan). * **Key Requirements:** Microsoft Teams integration (critical driver for the deal), Active Directory permission mapping (due to HR and warehouse document segregation), Okta SSO, compliance audit logs, and custom data deletion guarantees (requested 30-day backup scrub clause). * **Next Steps:** 1. Send Linda the Security and Data Governance Policy (`NL-007`) and the AI Assistant Reliability Policy (`NL-008`). Note: need to prepare her for the 90-day standard deletion policy if they push back on standard terms. 2. Follow up with Leon Grayson to confirm we can get them onto the 'early access' Teams integration build for their July pilot. (Sales rep note: Leon will likely push back given the standup notes and Slack discussions about tenant isolation, but we must advocate for this to secure the ARR). 3. Draft a custom Enterprise proposal with a 150-user pilot scope, pre-negotiating standard expansion seats up to 1,000 learners as customer support scales. 4. Coordinate with Lina Park to draft a preliminary 'Corpus Readiness Checklist' specifically highlighting the scanned PDF and OCR requirements to manage Michael's expectations about the 8-to-10 week timeline. * **Sales Rep Assessment:** High-intent buyer. L&D is feeling major pain with search time, and Security is engaged. The primary hook is the Teams integration. We must position this as almost ready to keep the deal moving, even if engineering says Q4. We can handle the delay during onboarding. If we don't present Teams as a near-term delivery, they might look at LearnPilot.",
+                "content_sha256": "c58dce6b80ddb3f84a60a799e5f2358986aa524ee2858e195be7a0ede888afa4",
+                "reference": "NL-023#NL-023-S07"
+              },
+              {
+                "content": "[NL-020#NL-020-S07] Lessons Learned\nThe Atlas Logistics pilot provided valuable insights that will help refine our implementation playbook for mid-market customers: 1. **Document Preparation is Crucial:** The success at Atlas confirms that pre-ingestion document cleanup is the most effective way to prevent citation errors. We should make document cleanup a mandatory phase for all onboarding projects, rather than an optional recommendation, providing clients with standardized formatting templates. 2. **Keep Permissions Simple:** Mid-market accounts benefit from keeping workspace permissions straightforward. We should advise Growth Plan clients to avoid complex, nested folder permissions and instead use broad, department-level workspaces to minimize configuration errors. 3. **Frontline Teams Need Mobile Optimization:** For customers with floor staff (manufacturers, logistics, retail), a standard web browser interface is not ideal. We must prioritize mobile-friendly UI designs and messaging integrations (like the planned Teams bot) to drive frontline adoption. ### Operational Onboarding Readiness Checklist Lina Park recommends a standard 5-step checklist for all mid-market implementations: * *Step 1: Ingestion Queue Readiness Audit* - Verify all documents are text-based or run pre-ingestion OCR. * *Step 2: Permissions Mapping Review* - Validate folder-level groups match team structures. * *Step 3: Frontline Hardware Check* - Verify display resolutions and authentication timeouts on rugged devices. * *Step 4: Supervisor Training Webinars* - Conduct shift-level walkthroughs to drive user buy-in. * *Step 5: Custom CSAT Feedback Loops* - Set up bi-weekly feedback surveys to catch citation errors early. ---",
+                "content_sha256": "4ca9d5d32b4dd8fd767d3be11e7e20d656f2f2191ad01f3014b4c5670adbec00",
+                "reference": "NL-020#NL-020-S07"
+              }
+            ],
+            "tool": "search_public_chunks"
+          },
+          "turn": 2
+        }
+      ],
+      "trial_id": "f5-trial-02",
+      "verifier_failures": [
+        "cumulative_token_limit_would_be_exceeded",
+        "no_terminal_answer",
+        "required_source_coverage_incomplete"
+      ],
+      "wall_time_ms": 5211.199125
+    },
+    {
+      "answer": "Before broad TutorChat rollout for an Enterprise customer, NovaLearn should complete the following steps: (1) Ensure corpus readiness by addressing scanned/image-only PDFs (e.g., via OCR or manual text-layer preparation) so that citation accuracy can meet the Enterprise threshold of ≥90% correct citations and 100% grounded answers [NL-015#NL-015-S04][NL-005#NL-005-S08]. (2) Complete permission mapping and SSO/security reviews to guarantee zero critical permission failures and 100% enforcement of restricted-document access [NL-015#NL-015-S04][NL-005#NL-005-S08]. (3) Run the full UAT suite: Scenario A (50 factual queries, ≥90% correct citations, 100% grounded), Scenario B (20 out-of-scope queries, 100% 'insufficient evidence' responses), and Scenario C (30 security/penetration queries, 100% enforcement) [NL-005#NL-005-S08]. (4) Verify data refresh connectors so that updates to SharePoint/Google Drive are reflected within the scheduled window [NL-005#NL-005-S08]. (5) Secure formal go-live approval from project sponsors and the compliance team, especially for regulated industries where citation integrity and version control are critical [NL-005#NL-005-S08][NL-018#NL-018-S03]. (6) Conduct a pilot with 100–300 users and pass the 85% citation correctness threshold (with zero critical permission failures) before broad rollout [NL-015#NL-015-S04]. (7) After approval, open the tenant to the full learner population and transition account management to the dedicated CSM/support team [NL-005#NL-005-S08].",
+      "cost_usd": "0.000607086",
+      "dead_ends": 0,
+      "evidence_coverage": 0.25,
+      "latency_ms": 23370.0,
+      "provider_receipts": [
+        {
+          "completion_tokens": 605,
+          "cost_usd": "0.000119898",
+          "latency_ms": 9347,
+          "path": "results/v2/frontier/f5/provider/f5-S026-low-f5-trial-02-turn-1.json",
+          "prompt_tokens": 327,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 594,
+          "request_id": "gen-1786135147-qHXTosH2ubDxIVqLktGm",
+          "sha256": "18e69daa9ef0793b6b5d404c036b1fe3a9abbafe564fe571910e3cebd24d3d33"
+        },
+        {
+          "completion_tokens": 960,
+          "cost_usd": "0.000487188",
+          "latency_ms": 14023,
+          "path": "results/v2/frontier/f5/provider/f5-S026-low-f5-trial-02-turn-2.json",
+          "prompt_tokens": 3698,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 595,
+          "request_id": "gen-1786135160-U5BQnxNh1o6QNyJKKqCY",
+          "sha256": "6aa057206824788c2cbbb9482b32cfbd591e34eacc9ff863af43834711b83c31"
+        }
+      ],
+      "reasoning_effort": "low",
+      "record_sha256": "de4e0055b2436e40f1884750148a8d1bfdb156fc1bcc731c3e8a29be048432b9",
+      "required_source_count": 4,
+      "status": "completed",
+      "strategy_id": "bounded_search",
+      "task_id": "S026",
+      "task_success": false,
+      "tool_calls": 1,
+      "total_provider_tokens": 5590,
+      "transcript": [
+        {
+          "action": {
+            "action": "search_public_chunks",
+            "query": "TutorChat rollout steps enterprise"
+          },
+          "tool_result": {
+            "query": "TutorChat rollout steps enterprise",
+            "results": [
+              {
+                "content": "[NL-028#NL-028-S08] When to Contact Support\nWe are committed to helping you get the most out of NovaLearn AI. If you encounter technical issues or system errors, our support team is available to assist. ### Troubleshooting Before Contacting Support Before submitting a support ticket, try these basic troubleshooting steps: * **Check File Ingestion Logs**: If a file is not appearing in search, check the upload status in KnowledgeHub to verify it has indexed successfully. * **Verify Permissions**: If a user is receiving different answers in TutorChat, check that their account is assigned to the correct security group in the Admin Console. * **Clear Browser Cache**: If you experience UI issues or loading delays, clear your browser cache or try logging in using an incognito window. ### Submitting a Support Ticket If you cannot resolve the issue, submit a support ticket via the portal or email. To speed up resolution, please include: * Your Organization/Workspace Name. * The Username of the affected user. * The specific error codes displayed (e.g. `ERR-SCIM-` or `ERR-PARSING-`). * The exact query text asked in TutorChat and the source IDs of any documents involved. ### Incident Priorities and Response Times (SLAs) Support requests are categorized based on their operational impact. Response timelines are governed by your subscription plan as defined below: | Incident Priority | Impact Level | Starter SLA | Growth SLA | Enterprise SLA | |---|---|---|---|---| | **Severity 1 (Critical Outage)** | Core platform modules (e.g. TutorChat, Ingestion) are completely inaccessible for all users. | 2 Business Days | 4 Business Hours | 1 Hour (24/7/365 Coverage) | | **Severity 2 (Degraded Operations)** | Primary modules are functional, but key features (e.g., OCR pipeline, SSO sync) fail consistently. | 2 Business Days | 8 Business Hours | 4 Business Hours | | **Severity 3 (Minor Issues)** | General usability issues, minor UI misalignments, or simple documentation questions. | 3 Business Days | 24 Business Hours | 12 Business Hours | ### Support Ticket Submission Template When submitting a ticket via email (`support@novalearn.ai`), use the following structured format to prevent back-and-forth communication delays: ```text ==================================================================== NOVALEARN SUPPORT TICKET SUBMISSION ==================================================================== Tenant/Workspace Name: [e.g., Acme-Manufacturing-Production] Affected Username(s): [e.g., j.doe@acmepaper.com] Subscription Plan: [Starter / Growth / Enterprise] Primary Module: [KnowledgeHub / TutorChat / CourseBuilder / Admin] Error Code Displayed: [e.g., ERR-PARSING-FORMAT] Outage Status: [Severity 1 / Severity 2 / Severity 3] Description of Issue: [Provide a concise summary of the issue. Detail the steps needed to reproduce the error and outline what troubleshooting steps have already been attempted.] Steps to Reproduce: 1. Navigate to... 2. Click on... 3. Upload file... Associated Source IDs: [e.g., NL-005, NL-028] ==================================================================== ``` Using the above template ensures that our support engineering team can replicate the issue and trace workspace permissions immediately, reducing average resolution times by over 40%.",
+                "content_sha256": "86edac81d2e43dc5751497bfcdb6481653a780547afcb3f0aa13a41668390577",
+                "reference": "NL-028#NL-028-S08"
+              },
+              {
+                "content": "[NL-005#NL-005-S08] Phase 6  -  Evaluation and Go-Live\nThe final phase (taking 1 week for Growth and 2 weeks for Enterprise) determines whether the implementation has met the quality and security bars required for broad organizational rollout. ### User Acceptance Testing (UAT) Scenario Framework During the evaluation audit, the implementation lead runs a standard evaluation suite comprising three core testing scenarios: 1. **Scenario A: Factual Retrieval Audit (50 Queries)** * *Method*: Ask 50 specific factual questions spanning HR, operations, and product specs. * *Success Metric*: >= 85% (Growth) or >= 90% (Enterprise) of answers must contain correct citations. 100% of answers must be grounded (no hallucinations). 2. **Scenario B: Out-of-Scope Gaps Test (20 Queries)** * *Method*: Ask 20 queries on topics intentionally excluded from the ingested corpus. * *Success Metric*: 100% of responses must return the \"insufficient evidence\" standard response, with zero speculation. 3. **Scenario C: Security and Permission Penetration Test (30 Queries)** * *Method*: Query restricted documents using credentials with lower-level clearance. * *Success Metric*: 100% enforcement. Zero restricted facts can be leaked. Key Activities: * **Accuracy and Citation Audit**: Run the UAT suite. If any scenario fails to meet the target thresholds, the implementation is paused for content remediation. * **Data Refresh Verification**: Test the document sync connectors to ensure that updates made to SharePoint or Google Drive files are correctly reflected in TutorChat within the scheduled window. * **Go-Live Approval**: Secure formal sign-off from the project sponsors and compliance team. * **Production Rollout**: Open the tenant to the entire learner population and transition account management from the Implementation Specialist to the dedicated CSM or support team. ---",
+                "content_sha256": "c54fc87d695c6e8a217853258907c43093a9ac5e6ac73b122a7b14180c11c0f7",
+                "reference": "NL-005#NL-005-S08"
+              },
+              {
+                "content": "[NL-017#NL-017-S06] Transcript  -  Pain Points\n**Lina Park [00:15:00]:** Aside from permission mapping and citation trust, are there other pain points your team has faced? What about the actual document ingestion process? **Frank Kowalski [00:15:15]:** The document upload speed is fine, but document quality is a challenge. We have a lot of legacy SOPs that were scanned as images ten years ago. When we upload those PDFs to the KnowledgeHub, TutorChat often struggles to extract the text. Sometimes it misses entire steps in a checklist. We found out that we have to run these PDFs through an OCR tool on our own computers first to make sure there is a text layer before we upload them. That's another manual step for my team. We really need the KnowledgeHub to do that OCR work automatically when we upload the files. It would save us from having to manage external software licenses and spend hours checking the text quality. Another issue is integration. Our supervisors spend most of their time in their email or on Microsoft Teams coordinating shifts. They've asked if TutorChat can be integrated directly into Teams so they don't have to keep another browser window open. We saw in your documentation that you have a Slack integration pilot, but we don't use Slack. We are a Microsoft shop. A Teams integration would make adoption much easier for our supervisors, who are already using Teams on their mobile phones to coordinate floor schedules. **Jordan Lee [00:16:50]:** We are currently planning the design phase for the Teams integration, targeting Q4 2026. I know that's further out than you would like, but we want to make sure it handles enterprise permission scopes correctly. Regarding the scanned PDFs, our engineering team is working on an advanced OCR ingestion pipeline targeted for release in August. **Frank Kowalski [00:17:15]:** That OCR pipeline will be helpful, but we need it sooner rather than later. Right now, my team is holding off on uploading another 300 legacy manuals because we don't have the time to manually run OCR on all of them. If we can get early access to that OCR tool, we could finish our ingestion phase and proceed with the full rollout much faster. It's the manual pre-processing that is holding us back. **Jordan Lee [00:17:35]:** That makes complete sense. We will also coordinate with our product marketing lead, Nora Kim, to send you some documentation on how we plan to structure the upcoming OCR beta testing group. If your IT director is willing, we'd love to have Acme participate as a primary validator. **Frank Kowalski [00:17:50]:** I'm sure we can arrange that. Anything that cuts down this prep work and gets our manuals online sooner is a win for us. We'll cooperate with whatever testing you need. ---",
+                "content_sha256": "25ce2b2828a33556034a950c287d7658ab4f13617fc664255d32fc29d73a5c53",
+                "reference": "NL-017#NL-017-S06"
+              },
+              {
+                "content": "[NL-015#NL-015-S04] Discussion  -  Enterprise Onboarding\nJordan Lee led a discussion on the operational challenges in customer onboarding and implementation. **Jordan Lee (Customer Success):** \"We are seeing a median onboarding time of 5.8 weeks across all segments, but as David pointed out, Enterprise is averaging 8.7 weeks. This is a problem because sales continues to promise a 4-to-6 week rollout during the contracting phase. When it takes 9 weeks, the customer gets frustrated, and it delays our revenue recognition. The primary blockers are not on our engineering side; they are administrative and compliance-related. Specifically: 1. **Permission Mapping:** Enterprise customers have complex active directory setups and role-based access rules. Mapping who is allowed to see what in TutorChat takes weeks of alignment. 2. **SSO and Security Review:** Standard enterprise security reviews often drag on, particularly for clients in financial services and healthcare. 3. **Data Cleanup and Scanned PDFs:** Clients are dumping raw folders into KnowledgeHub. A massive portion of these files are scanned, image-only PDFs. Because our citation engine requires a text layer for reliable linking, these scanned files need OCR. Without OCR, their citation accuracy drops, and they fail our go-live quality checks.\" **Sofia Almeida (Product):** \"We need to enforce better boundaries. I propose we create a 'Corpus Readiness Checklist' that sales shares during the discovery phase. If a customer has thousands of scanned PDFs, we need to explicitly tell them that onboarding will be delayed unless they run OCR on their end first, or wait for our upcoming automated OCR pipeline. Jordan, what is the go-live quality threshold right now?\" **Jordan Lee (Customer Success):** \"According to our AI Assistant Reliability Policy, the pilot deployment must pass an 85% citation correctness threshold and have zero critical permission failures before we allow a broad rollout. For Enterprise clients, we recommend a pilot size of 100 to 300 users. Meeting that 85% threshold is very difficult when their ingested corpus is filled with image-only policy documents.\" ---",
+                "content_sha256": "cdb8bef48c2ae37116ec77f44657a335e20c7594e225df2f9cf9abff44603f85",
+                "reference": "NL-015#NL-015-S04"
+              },
+              {
+                "content": "[NL-018#NL-018-S03] Transcript  -  Compliance Requirements\n**Jordan Lee [00:01:45]:** Good morning, everyone. Thank you for joining us today. Aris, Sarah, we appreciate you sharing your time to help us review the pilot phase of NovaLearn at BrightPath. Today, we want to focus on your compliance requirements, check in on how the clinical teams are using the system, and address the ingestion challenges you've highlighted. Sarah, let's start with you from the compliance perspective. How does the regulatory framework impact this rollout? **Sarah Jenkins [00:02:15]:** Thanks, Jordan. To put it simply: in healthcare, compliance isn't just about avoiding audit fines or passing a checklist. It is a matter of patient safety and clinical liability. Every clinical decision made by our nurses and physicians must align with our approved internal guidelines and standards. These guidelines are updated continuously based on new medical research, hospital board reviews, and Joint Commission regulatory changes. Our Clinical Document Integrity Group, which consists of 8 senior clinical editors, is responsible for reviewing and approving all modifications before they are published to our repositories. When we evaluated NovaLearn, the appeal was the ability to ingest our internal knowledge repository and make it queryable. But our compliance committee had a major concern: we cannot allow a generative model to summarize medical advice without direct, auditable proof of where that advice came from. If TutorChat tells a nurse that the dosage for a pediatric patient is 5 milligrams, that answer must cite the specific clinical policy sheet, down to the page and section. If the citation is missing or wrong, we cannot permit clinicians to use the tool. It is that simple. We are subject to regular audits by the Joint Commission and state health departments, and they will look at how we distribute clinical information to our staff. If we cannot prove that our information channels are reliable, our accreditation is at risk. **Jordan Lee [00:03:10]:** How exactly do your clinical editors evaluate a new clinical policy or update before it enters your knowledge base? **Sarah Jenkins [00:03:25]:** It is a rigorous process. First, our clinical board writes the update, then it's run through a peer-review panel for clinical accuracy, and finally it goes to the Clinical Document Integrity Group. They check it for formatting, clear headings, and ensure it links to federal regulations. Only then is it uploaded to SharePoint. When we import this to NovaLearn, we need to preserve that validation history. If TutorChat synthesizes information across multiple documents, we need to know exactly which versions of SOP 402 or 403 it matched, because if it blends an older version with a newer version, it could violate our clinical standards. **Dr. Aris Vance [00:03:45]:** I'll add to what Sarah said. The clinical team was initially very excited. Our nurses are busy, and hunting through SharePoint for a policy document on pediatric IV setups is a major pain point. If they can ask TutorChat, \"What is the flush sequence for a pediatric central line?\" and get a clean list of steps, it saves valuable time and keeps them at the bedside. For instance, the flush sequence protocol for a pediatric central venous catheter involves specific steps: verifying the line's patency, scrubbing the hub for 15 seconds, flushing with 5 mL of sterile normal saline, administering the prescribed medication, and then performing a final flush with saline followed by a heparin lock solution. This is documented under PICU SOP 402 and PICU SOP 403. Having this layout in TutorChat prevents nurses from having to walk back to a desktop terminal on a busy shift. But clinicians are trained to verify everything. If a nurse clicks a citation link to verify a step, and the link takes them to the general SharePoint home page, or to an adult central line protocol instead of the pediatric one, they won't use it. It becomes a safety risk. During our pilot review last week, we noticed that several critical emergency procedures had missing or incorrect citations. That is why we have paused the expansion to other departments. We need to resolve these citation accuracy issues first. ---",
+                "content_sha256": "931d8265136ddef7dda4ec65a11a016021608dd7da1debe0410be965d9378b35",
+                "reference": "NL-018#NL-018-S03"
+              }
+            ],
+            "tool": "search_public_chunks"
+          },
+          "turn": 1
+        },
+        {
+          "action": {
+            "action": "answer",
+            "answer": "Before broad TutorChat rollout for an Enterprise customer, NovaLearn should complete the following steps: (1) Ensure corpus readiness by addressing scanned/image-only PDFs (e.g., via OCR or manual text-layer preparation) so that citation accuracy can meet the Enterprise threshold of ≥90% correct citations and 100% grounded answers [NL-015#NL-015-S04][NL-005#NL-005-S08]. (2) Complete permission mapping and SSO/security reviews to guarantee zero critical permission failures and 100% enforcement of restricted-document access [NL-015#NL-015-S04][NL-005#NL-005-S08]. (3) Run the full UAT suite: Scenario A (50 factual queries, ≥90% correct citations, 100% grounded), Scenario B (20 out-of-scope queries, 100% 'insufficient evidence' responses), and Scenario C (30 security/penetration queries, 100% enforcement) [NL-005#NL-005-S08]. (4) Verify data refresh connectors so that updates to SharePoint/Google Drive are reflected within the scheduled window [NL-005#NL-005-S08]. (5) Secure formal go-live approval from project sponsors and the compliance team, especially for regulated industries where citation integrity and version control are critical [NL-005#NL-005-S08][NL-018#NL-018-S03]. (6) Conduct a pilot with 100–300 users and pass the 85% citation correctness threshold (with zero critical permission failures) before broad rollout [NL-015#NL-015-S04]. (7) After approval, open the tenant to the full learner population and transition account management to the dedicated CSM/support team [NL-005#NL-005-S08]."
+          },
+          "turn": 2
+        }
+      ],
+      "trial_id": "f5-trial-02",
+      "verifier_failures": [
+        "required_source_coverage_incomplete"
+      ],
+      "wall_time_ms": 24974.6455
+    },
+    {
+      "answer": "Before broad TutorChat rollout for an Enterprise customer, NovaLearn should: (1) run a controlled pilot with 100–300 users in a high-impact department (e.g., customer support) to validate adoption and accuracy before scaling, as recommended for enterprise clients [NL-023#NL-023-S03]; (2) ensure the Microsoft Teams integration is generally available, secure, and tenant-isolated before promising it to enterprise customers, since the official roadmap places it in Q4 2026 and internal status shows it is only a proof-of-concept lacking security controls [NL-023#NL-023-S04]; (3) align all security and data governance commitments (e.g., data deletion timelines, RBAC, SSO) with official policies (NL-007) and ensure the DPA reflects actual capabilities, avoiding overclaims about immediate deletion [NL-023#NL-023-S05]; (4) verify that the Zendesk integration and other connectors are production-ready and fully supported [NL-023#NL-023-S04]; and (5) assign a dedicated customer success resource to manage KnowledgeHub ingestion and document cleanup, especially for legacy PDFs and mixed file formats [NL-023#NL-023-S03].",
+      "cost_usd": "0.000299790",
+      "dead_ends": 0,
+      "evidence_coverage": 0.25,
+      "latency_ms": 33569.0,
+      "provider_receipts": [
+        {
+          "completion_tokens": 144,
+          "cost_usd": "0.000036918",
+          "latency_ms": 1497,
+          "path": "results/v2/frontier/f5/provider/f5-S026-high-f5-trial-02-turn-1.json",
+          "prompt_tokens": 327,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 134,
+          "request_id": "gen-1786135172-vJ0YcKRe8S62uHEFx3g3",
+          "sha256": "8f579519364b0e2cde9319e9b8c094b06eaeedf35bec4170919c8d08aafedceb"
+        },
+        {
+          "completion_tokens": 1028,
+          "cost_usd": "0.000262872",
+          "latency_ms": 32072,
+          "path": "results/v2/frontier/f5/provider/f5-S026-high-f5-trial-02-turn-2.json",
+          "prompt_tokens": 3732,
+          "provider": "DeepInfra",
+          "reasoning_tokens": 891,
+          "request_id": "gen-1786135174-qBF2Apq8r5h1D7cvu83d",
+          "sha256": "52c74bd8f4557b139c2d0207fa9f7b2014ed52af60a4908ea29f013c2b0aeaf1"
+        }
+      ],
+      "reasoning_effort": "high",
+      "record_sha256": "9013a85b49b2b86a323f90882eff8dd6167bf9ec917776df680a9275c739b76e",
+      "required_source_count": 4,
+      "status": "completed",
+      "strategy_id": "bounded_search",
+      "task_id": "S026",
+      "task_success": false,
+      "tool_calls": 1,
+      "total_provider_tokens": 5231,
+      "transcript": [
+        {
+          "action": {
+            "action": "read_public_source",
+            "source_id": "NL-023"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "content": "[NL-023#NL-023-S01] Call Metadata\n* **Date:** June 10, 2026 * **Time:** 11:00 AM - 11:45 AM EST * **Location:** Zoom Enterprise Recording ID: REC-99238-APEX * **CRM Opportunity Link:** SFDC-OPP-2026-88421 * **Participants:** * **Marcus Reed** - VP of Sales, NovaLearn AI (VP Sales) * **Sarah Jenkins** - Senior Account Executive, NovaLearn AI (Account Executive) * **Michael Chang** - Director of Learning & Development, Apex Global Solutions (Prospect) * **Linda Torres** - VP of Security & Compliance, Apex Global Solutions (Prospect) * **Reference Policies Circulated:** NL-007_security_data_governance_policy.md (draft summary), NL-008_ai_assistant_reliability_policy.md (excerpt). *(Note: This call transcript is classified as an informal sales discovery record with an authority level of 2. It contains conversational exchanges, customer requirements, and non-binding explanations by sales representatives. It does not establish binding contractual terms or official policy. For verified specifications on pricing, security protocols, or product roadmaps, refer to NL-003, NL-007, and NL-014, which carry authority levels of 5 and 4.)* ---",
+                "content_sha256": "9dc9500c37b2b2321930a7a0291bf0966c2e1babf6244611af9f410ebbca3781",
+                "reference": "NL-023#NL-023-S01"
+              },
+              {
+                "content": "[NL-023#NL-023-S02] Prospect Context\nApex Global Solutions is a global logistics and supply chain services provider with approximately 3,500 employees across North America. The organization is undergoing a digital transformation of its employee enablement systems. They have a massive repository of Standard Operating Procedures (SOPs), customer-support guides, compliance manuals, and safety protocols, currently scattered across multiple legacy document repositories. They are seeking an AI-powered assistant to help their customer-facing teams and warehouse staff retrieve accurate training and compliance information. ---",
+                "content_sha256": "9bdad571510c5a6adea16cd0fde38af3b21a3bacac127e3d2469c9d3809ceccf",
+                "reference": "NL-023#NL-023-S02"
+              },
+              {
+                "content": "[NL-023#NL-023-S03] Transcript  -  Business Need\n**Marcus Reed:** \"Well, Michael, Linda, thank you for jumping on the phone with us today. Sarah and I are really excited to show you what NovaLearn can do. To kick things off, Michael, I'd love to hear a bit more about your current setup at Apex. What are the main pain points your L&D team is facing, and what would a successful AI deployment look like for you?\" **Michael Chang:** \"Thanks, Marcus. Glad to be here. To put it bluntly, our internal knowledge base is a disaster. We have been growing quickly over the last five years, and we've acquired three smaller logistics companies. As a result, we have training documentation, safety procedures, and customer support templates spread across two different SharePoint servers, a legacy Confluence instance, and random shared network drives. Our customer support agents - we have about 800 of them - spend a massive amount of time just trying to find answers when customers call. They are searching through multiple tabs, and they often give conflicting information because they find outdated documents. For example, our shipping policies changed in January, but we still have agent guides from 2024 active on one of our SharePoint drives. And on the warehouse side, we have strict OSHA safety guidelines and Department of Transportation compliance rules for our drivers. If a warehouse employee needs to look up the protocol for handling hazardous material or a driver needs to check truck maintenance logs, they need the exact answer immediately. Right now, they have to sift through a 300-page PDF manual on a desktop computer. We want an AI assistant where they can type a question and get an immediate, accurate answer with a link to the exact source page. We need absolute accuracy here because a compliance violation in safety protocols can cost us thousands in fines.\" **Sarah Jenkins:** \"That is a classic scenario we see all the time, Michael. NovaLearn was built precisely to solve this type of scattered documentation problem. Our KnowledgeHub module handles the ingestion from SharePoint, local files, and help centers, and our TutorChat interface acts as the single assistant that employees can query. The key is that TutorChat doesn't just guess the answer; it extracts it from your approved files and provides a direct, clickable citation. Let me ask: are you thinking of rolling this out to all 3,500 employees at once, or are you planning a pilot?\" **Michael Chang:** \"We definitely want to start with a pilot. We were thinking of rolling it out first to our Customer Support team, which is about 150 users. Actually, I was speaking with a colleague at another company who used a competitor, and he recommended that we start with our smallest, most agile team - our digital product team, which is only about 30 people. He suggested that startups and small teams are much easier to roll out, and we'd see higher adoption metrics. Do you find that to be the case? Is it better to focus on small teams first rather than our core operations? My main concern is that if we go too big too fast, we'll run into user friction, and people will just stop using the assistant if they get bad answers in the first week.\" **Sarah Jenkins:** \"Oh, absolutely. We love starting with small, agile teams. Startups and small business segments represent a major sweet spot for us in terms of speed. We can set up a small team in just a couple of weeks, and the adoption is usually off the charts because they are quick to adapt and don't have legacy processes. We can get a pilot live for a small group very quickly. That said, our platform is fully enterprise-grade, and we have many large clients. But starting with a smaller group like your L&D administrative staff or a small support pod is a great way to build momentum. However, our data metrics show that the real long-term business impact occurs when we scale to your core operational teams, like the 800 support agents, where the reduction in average handle time translates directly to dollar savings.\" **Michael Chang:** \"But doesn't that require a lot more cleanup? I mean, our product team's documentation is relatively clean and markdown-based. Our customer support documents are a mix of legacy PDFs, old DOCX files, and spreadsheets. If we pilot with the support team, aren't we risking failure due to the messiness of their files?\" **Sarah Jenkins:** \"It is a bit more work upfront, yes, but we guide you through that. We assign a dedicated customer success resource to help structure the KnowledgeHub ingestion. We believe the pilot is best run where the pain is highest, which is support, rather than a small team that already has good retrieval workflows.\" *(Note: While Sarah Jenkins notes sales enthusiasm for the startup/small team segment, NovaLearn's official business metrics in NL-012 show that SMB and startup clients have a much higher logo churn of 4.8% and lower expansion rates, whereas mid-market and enterprise segments demonstrate the highest Net Revenue Retention (116%) and customer satisfaction (NPS of 52 for Enterprise,",
+                "content_sha256": "68495482ae756b51696d5c792b24dcdfc7e03a91e31c54787c65e5d0377cf7e0",
+                "reference": "NL-023#NL-023-S03"
+              },
+              {
+                "content": "[NL-023#NL-023-S03] Transcript  -  Business Need\nwe guide you through that. We assign a dedicated customer success resource to help structure the KnowledgeHub ingestion. We believe the pilot is best run where the pain is highest, which is support, rather than a small team that already has good retrieval workflows.\" *(Note: While Sarah Jenkins notes sales enthusiasm for the startup/small team segment, NovaLearn's official business metrics in NL-012 show that SMB and startup clients have a much higher logo churn of 4.8% and lower expansion rates, whereas mid-market and enterprise segments demonstrate the highest Net Revenue Retention (116%) and customer satisfaction (NPS of 52 for Enterprise, 47 for Mid-Market vs. 31 for SMB). The recommendation for mid-market and enterprise clients is to run pilots with 100 to 300 users in high-impact departments to justify the onboarding investment.)* ---",
+                "content_sha256": "884e891a8471804797327c2e660b1435bce6b8fcfbe93967b1f0e5b9942e1862",
+                "reference": "NL-023#NL-023-S03"
+              },
+              {
+                "content": "[NL-023#NL-023-S04] Transcript  -  Integrations\n**Michael Chang:** \"That makes sense. In terms of where the employees will interact with the assistant, we are a heavy Microsoft Teams organization. Our support agents have Teams open all day, and our warehouse managers use the Teams mobile app. We really want the assistant to live inside Teams. We don't want them having to open another browser tab or log into a separate portal. Do you have a Teams integration?\" **Marcus Reed:** \"Yes, absolutely. The Microsoft Teams integration is one of our most popular requests, and I have great news: it is basically right around the corner. Our engineering team has a working connector, and it's almost ready for general release. We are putting the finishing touches on it. You'll be able to install the NovaLearn bot directly from the Teams app store, pin it to the sidebar, and your employees can interact with it just like they are chatting with a colleague. It will support the exact same permission structures and citations as our web interface.\" **Michael Chang:** \"Oh, that's perfect. If we can get that up and running for the pilot, that would be a huge win. When you say 'almost ready,' what does that mean? Can we include it in our pilot starting in July?\" **Marcus Reed:** \"I don't see why not. We are in the final stages. We can talk to our implementation lead, Lina Park, about setting you up with our early access build for the pilot. It's basically done, so we should be able to turn it on for your workspace when we launch.\" *(Note: This is a significant sales overclaim. The official Product Roadmap and Release Notes, NL-014, states that the Teams integration is currently 'in design / planned for Q4 2026' and is not generally available. Furthermore, the internal Slack thread NL-027 reveals that the Teams connector is in a very early proof-of-concept phase, lacking security controls and tenant isolation, and is far from ready for customer deployment.)* **Michael Chang:** \"That's great. What about other integrations? We use Zendesk for our external support tickets. Can NovaLearn pull information from solved Zendesk tickets to help our agents?\" **Sarah Jenkins:** \"Yes! We have an approved Zendesk integration connector. It can sync with your solved ticket database and index the resolution steps. This is a standard feature on both our Growth and Enterprise plans. It takes about an hour to configure.\" ---",
+                "content_sha256": "0d61049bff0d464392f9fc08573aa1f718c3512242213fc540fcdfbd8832c2e9",
+                "reference": "NL-023#NL-023-S04"
+              },
+              {
+                "content": "[NL-023#NL-023-S05] Transcript  -  Security and Retention\n**Linda Torres:** \"I want to jump in on the security and data governance side. I'm the one who has to sign off on the security review. We are handling sensitive shipping logs, customer addresses, and proprietary warehouse routing procedures. How does NovaLearn handle customer data isolation? Is our data co-mingled with other clients in your database?\" **Sarah Jenkins:** \"That is a critical question, Linda. Security is the foundation of our platform. We use logical isolation for all customer workspaces. Each customer has their own dedicated database container and encryption keys. Your data is completely isolated at rest and in transit. We never co-mingle your documents or search queries with other tenants, and your data is never used to train our base AI models. We are SOC 2 Type II certified and undergo annual third-party penetration testing.\" **Linda Torres:** \"Okay, logical isolation is standard. What about data retention and deletion? If we run a pilot and decide not to move forward, or if we eventually terminate our contract, what is the deletion policy? We require that our data be wiped completely from your systems. How long does that take?\" **Sarah Jenkins:** \"We fully respect your data ownership. If you terminate the contract or request deletion, we delete your data immediately from all our active databases and indexes. Nothing remains on our live servers. We make sure that once you say go, the data is completely wiped. Our engineering team has a script that truncates all workspace tables and marks the file blocks for overwriting.\" **Linda Torres:** \"That sounds fine verbally, but is that immediate deletion guaranteed in the standard contract? Specifically, does the 'immediate' deletion apply to cold storage backups? Our legal team requires a signed DPA that explicitly guarantees deletion of all customer data, including backups, within 30 days of termination.\" **Sarah Jenkins:** \"Yes, we can write that into the custom terms for your agreement. We pride ourselves on being compliance-friendly, so we can ensure immediate deletion upon contract termination is part of our commitment to Apex. We do this for our larger clients regularly.\" *(Note: This statement is an informal sales claim that conflicts with official policy. The Security and Data Governance Policy, NL-007, states that standard data deletion occurs 'within 90 days after contract termination' to allow for backup cycles and system audits. Custom immediate deletion requires special approval and is not standard, despite the sales rep's verbal assurances. In practice, NovaLearn's standard backup rotation schedule is 90 days, making a 30-day backup scrub technically unfeasible without manual engineer intervention, which is highly restricted.)* **Linda Torres:** \"Okay, we'll need that in writing in the DPA. Now, what about SSO? We use Okta for all employee access. Do you support SAML-based SSO?\" **Sarah Jenkins:** \"Yes, Okta SSO is fully supported. It is included in our Enterprise plan. It allows you to enforce multi-factor authentication (MFA) and manage user provisioning directly through your Okta portal.\" **Linda Torres:** \"And what about role-based access? If we ingest our employee directories, can we map active directory roles to document sets? For example, we don't want warehouse staff seeing HR policies about payroll, and vice versa.\" **Marcus Reed:** \"Yes, absolutely. Our Enterprise plan supports advanced role-based access controls (RBAC) and permission mapping. You can sync your active directory groups directly to our system, and define rules like 'Only users in the HR-Group AD role can query documents in the HR-Manuals workspace.' When a user queries TutorChat, the system checks their active session permissions in real-time and filters out any answers derived from documents they don't have access to. They won't even know those documents exist.\" ---",
+                "content_sha256": "540ab341784567cf4ca801a1f17bb7f1e0f92f4fba271057feef6a025113044a",
+                "reference": "NL-023#NL-023-S05"
+              }
+            ],
+            "source_id": "NL-023",
+            "tool": "read_public_source"
+          },
+          "turn": 1
+        },
+        {
+          "action": {
+            "action": "answer",
+            "answer": "Before broad TutorChat rollout for an Enterprise customer, NovaLearn should: (1) run a controlled pilot with 100–300 users in a high-impact department (e.g., customer support) to validate adoption and accuracy before scaling, as recommended for enterprise clients [NL-023#NL-023-S03]; (2) ensure the Microsoft Teams integration is generally available, secure, and tenant-isolated before promising it to enterprise customers, since the official roadmap places it in Q4 2026 and internal status shows it is only a proof-of-concept lacking security controls [NL-023#NL-023-S04]; (3) align all security and data governance commitments (e.g., data deletion timelines, RBAC, SSO) with official policies (NL-007) and ensure the DPA reflects actual capabilities, avoiding overclaims about immediate deletion [NL-023#NL-023-S05]; (4) verify that the Zendesk integration and other connectors are production-ready and fully supported [NL-023#NL-023-S04]; and (5) assign a dedicated customer success resource to manage KnowledgeHub ingestion and document cleanup, especially for legacy PDFs and mixed file formats [NL-023#NL-023-S03]."
+          },
+          "turn": 2
+        }
+      ],
+      "trial_id": "f5-trial-02",
+      "verifier_failures": [
+        "required_source_coverage_incomplete"
+      ],
+      "wall_time_ms": 35066.035417
+    }
+  ],
+  "status": "demonstration_pending_result_review",
+  "task_ids": [
+    "S025",
+    "S026"
+  ],
+  "trial_ids": [
+    "f5-trial-01",
+    "f5-trial-02"
+  ]
+}

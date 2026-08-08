@@ -1,0 +1,11 @@
+{
+  "approved_at": "2026-08-08T03:00:21Z",
+  "artifact_sha256": "869be1e1158de1c616728be6170fb4f6ca84d60eeedae6c5b9ad50f7504559b9",
+  "decision": "accept-negative",
+  "experiment_id": "F3",
+  "pending_gate_artifact_sha256": "ccf3685c5e16bac59806fccdce2a1092d8ba0cfb47ddbd99b6aecbba2a95eae9",
+  "reviewer": "Kevin Araujo",
+  "reviewer_role": "sole_human_reviewer",
+  "schema_version": "contextlab.frontier-result-approval.v1",
+  "technical_record_sha256": "e54d607bb5c2481c0ce935bfe8410f491fa063a756b1a3c3e44c6471db8acf0e"
+}

@@ -1,0 +1,160 @@
+{
+  "actual_usd": 8.09536e-05,
+  "answer": "Growth Plan quote: **$3,600/month** base price, including up to **2,000 learners** and **10 admin seats**, with **priority support**. A **one-time onboarding fee of $7,500** applies. These figures reflect the active 2026 pricing schedule [NL-003#NL-003-S02]; older 2025 proposal figures are obsolete and superseded [NL-004#NL-004-S02].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 3248.0,
+  "policy": "M4",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M4-high-S065",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Build a concise Growth plan quote that includes monthly base price, learner and admin limits, support tier, and the one-time onboarding fee.",
+      "suite": "static",
+      "task_family": "table_prose_join",
+      "task_id": "S065"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2321,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "789e6a6f3b3c4985314a97a6",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-003-S03"
+        ],
+        "token_count": 284
+      },
+      {
+        "evidence_id": "1a80802691ee19fe640bb9dc",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S05"
+        ],
+        "token_count": 319
+      },
+      {
+        "evidence_id": "ba53eaee43fc8791b90e738c",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-001-S05"
+        ],
+        "token_count": 369
+      },
+      {
+        "evidence_id": "5786a29c4734fe1ce1667b81",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-004-S02"
+        ],
+        "token_count": 112
+      },
+      {
+        "evidence_id": "5f5a43d38863a7d8b2224bd6",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-003-S02"
+        ],
+        "token_count": 92
+      },
+      {
+        "evidence_id": "d8f95402880ce5338d3a7213",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-004-S03"
+        ],
+        "token_count": 316
+      },
+      {
+        "evidence_id": "a5ff36067237079ca697dce5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-006-S09"
+        ],
+        "token_count": 216
+      },
+      {
+        "evidence_id": "1c6b5adf62c8602947421ee1",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-004-S04"
+        ],
+        "token_count": 613
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "789e6a6f3b3c4985314a97a6",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-003-S03"
+        ],
+        "token_count": 284
+      },
+      {
+        "evidence_id": "1a80802691ee19fe640bb9dc",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S05"
+        ],
+        "token_count": 319
+      },
+      {
+        "evidence_id": "ba53eaee43fc8791b90e738c",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-001-S05"
+        ],
+        "token_count": 369
+      },
+      {
+        "evidence_id": "5786a29c4734fe1ce1667b81",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-004-S02"
+        ],
+        "token_count": 112
+      },
+      {
+        "evidence_id": "5f5a43d38863a7d8b2224bd6",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-003-S02"
+        ],
+        "token_count": 92
+      },
+      {
+        "evidence_id": "d8f95402880ce5338d3a7213",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-004-S03"
+        ],
+        "token_count": 316
+      },
+      {
+        "evidence_id": "a5ff36067237079ca697dce5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-006-S09"
+        ],
+        "token_count": 216
+      },
+      {
+        "evidence_id": "1c6b5adf62c8602947421ee1",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-004-S04"
+        ],
+        "token_count": 613
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

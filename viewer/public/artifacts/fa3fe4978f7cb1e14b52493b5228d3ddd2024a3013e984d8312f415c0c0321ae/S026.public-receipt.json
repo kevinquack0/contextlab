@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.00108514,
+  "answer": "Before broad TutorChat rollout to an Enterprise customer, NovaLearn should:\n\n1. **Complete SSO and permission audits.** Enterprise accounts are currently running limited pilots and have not deployed TutorChat broadly \"pending SSO and permission audits\" [NL-030-S03]. These audits are essential because enterprise onboarding is delayed by \"permission mapping friction\" from source repositories to NovaLearn workspaces [NL-011-S01]. SSO is GA for Enterprise plans via Okta, Azure AD, Ping Identity, and OneLogin [NL-002-S11].\n\n2. **Run a pilot with 100–300 users in high-impact departments first.** The official recommendation for mid-market and enterprise clients is to run pilots at this scale to justify the onboarding investment [NL-023-S03 note]. This approach also aligns with the customer's stated concern about scaling too fast and risking user friction [NL-023-S03].\n\n3. **Assign a dedicated customer success resource to structure KnowledgeHub ingestion.** This helps handle the messy document cleanup (legacy PDFs, DOCX, spreadsheets) and guides the ingestion process [NL-023-S03].\n\n4. **Set correct integration expectations.** Do not promise Microsoft Teams support for the launch, as it is strictly a future release (planned for Q4 2026, with a restricted pilot in October 2026). Sales and Slack communications may suggest it is \"ready,\" but official roadmap contradicts this [NL-014-S07]. Only the Slack connector is available as a limited pilot for select accounts [NL-002-S11].\n\n5. **Ensure document source connectors and API access are configured correctly.** Use the scheduled SharePoint connector (daily sync with ACL mapping) or the enterprise API with its 150-request-per-minute rate limit to manage ingestion and queries during rollout [NL-002-S11].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 16654.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-low-S026",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What steps should NovaLearn take before broad TutorChat rollout for an Enterprise customer?",
+      "suite": "static",
+      "task_family": "procedural_guidance",
+      "task_id": "S026"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3163,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "f0a3bc67ffc7adf602f94725",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-002-S11"
+        ],
+        "token_count": 491
+      },
+      {
+        "evidence_id": "3f1058d8c2619c159d7bb695",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-023-S03"
+        ],
+        "token_count": 862
+      },
+      {
+        "evidence_id": "13bf85d114b12f95733e3e71",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-030-S03"
+        ],
+        "token_count": 214
+      },
+      {
+        "evidence_id": "ada0add953b3a394c4e6e6d7",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-002-S03"
+        ],
+        "token_count": 522
+      },
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      },
+      {
+        "evidence_id": "2eaa9ee1079f5723a6dbb176",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-023-S03"
+        ],
+        "token_count": 134
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "f0a3bc67ffc7adf602f94725",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-002-S11"
+        ],
+        "token_count": 491
+      },
+      {
+        "evidence_id": "3f1058d8c2619c159d7bb695",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-023-S03"
+        ],
+        "token_count": 862
+      },
+      {
+        "evidence_id": "13bf85d114b12f95733e3e71",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-030-S03"
+        ],
+        "token_count": 214
+      },
+      {
+        "evidence_id": "ada0add953b3a394c4e6e6d7",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-002-S03"
+        ],
+        "token_count": 522
+      },
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      },
+      {
+        "evidence_id": "2eaa9ee1079f5723a6dbb176",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-023-S03"
+        ],
+        "token_count": 134
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

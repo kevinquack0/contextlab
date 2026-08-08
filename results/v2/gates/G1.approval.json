@@ -1,0 +1,11 @@
+{
+  "approved_at": "2026-08-06T16:42:27Z",
+  "artifact_sha256": "e614c5e5b4f6a3dc61396da044d003e961f0237f36ed9b7d22d82753facaefac",
+  "g0_approval_artifact_sha256": "ce69578b801f7d95299bc9db14861ede7f0f8d7f41e1d79317c695171a400055",
+  "gate": "G1",
+  "reviewer": "Kevin Araujo",
+  "schema_version": "contextlab.g1-kevin-approval.v1",
+  "status": "approved",
+  "technical_evidence_sha256": "5d7480819030d7a1c6a8e371a227e56f9d57ef122e94856c61f09f603a0f3773",
+  "technical_gate_artifact_sha256": "84cb75a42556251ceacb96cc36fe9f257c304336e8fdb7224bb73ab2f1f0f5ea"
+}

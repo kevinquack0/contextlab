@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0007788368,
+  "answer": "Based on official metrics and customer success reports, NovaLearn should prioritize the **regulated mid-market and enterprise segments**.\n\nReasons:\n\n- These segments generate 83.8% of recurring revenue, with enterprise accounts showing monthly logo churn of just 1.3% and NPS of 52, and mid-market accounts showing 2.1% monthly churn and predictable growth [NL-016#NL-016-S03].\n- Regulated mid-market and enterprise segments have lower churn, higher expansion revenue ($155,000 combined vs $18,000 for SMB), and significantly higher NPS, making them the strongest business opportunity [NL-012#NL-012-S09].\n- Segment NPS scores confirm this: enterprise is highest at 52, mid-market at 47, and SMB lowest at 31 [NL-012#NL-012-S08].\n- Enterprise unit economics are far superior, with an LTV:CAC ratio of 16.0x versus 8.3x for SMB [NL-016#NL-016-S03].\n- SMB accounts show high churn (4.8% monthly), low NPS (31), and weak adoption, prompting a strategic shift of outbound sales away from SMBs [NL-016#NL-016-S03].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 6881.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-high-S016",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Across official metrics and customer success reports, which customer segment should NovaLearn prioritize and why?",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S016"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2822,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      },
+      {
+        "evidence_id": "624a898fd5dd52607e945140",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-010-S01"
+        ],
+        "token_count": 380
+      },
+      {
+        "evidence_id": "986b6ad2cfc2a9742372e488",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-012-S08"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      },
+      {
+        "evidence_id": "a8fc8d591099588c56805227",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-010-S02"
+        ],
+        "token_count": 356
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      },
+      {
+        "evidence_id": "624a898fd5dd52607e945140",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-010-S01"
+        ],
+        "token_count": 380
+      },
+      {
+        "evidence_id": "986b6ad2cfc2a9742372e488",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-012-S08"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      },
+      {
+        "evidence_id": "a8fc8d591099588c56805227",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-010-S02"
+        ],
+        "token_count": 356
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

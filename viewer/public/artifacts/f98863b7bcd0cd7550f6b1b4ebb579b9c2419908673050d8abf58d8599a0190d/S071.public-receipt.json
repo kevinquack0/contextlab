@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.000355012,
+  "answer": "Beacon’s adoption metrics are strong overall: KnowledgeHub is at 96.0%, TutorChat at 92.2%, and CourseBuilder at 80.4%—all above their respective targets of 90%, 85%, and 75%. InsightDash, however, is underperforming at 35.5% versus a 50% target [NL-025-S03]. The account also shows operational impact: new adjuster onboarding fell from 6.2 to 4.0 weeks, and support escalations declined by 22% [NL-025-S04].\n\nDespite that health, expansion is not ready “without conditions.” Beacon’s IT department stated they cannot move forward with broad rollout until SCIM provisioning is fully operational, because their security guidelines forbid manual seat assignments [NL-025-S05]. There is also a monitored ingestion citation lag of 15–30 minutes during policy updates, which creates temporary risk of outdated citations; mitigation currently requires scheduling updates after business hours [NL-025-S05]. Additionally, InsightDash adoption remains below target, and a Q3 feedback workshop is planned to address it [NL-025-S03] [NL-025-S07]. The Q3 plan targets SCIM implementation by August 15 and ongoing monitoring of ingestion queue performance [NL-025-S07].\n\nTherefore, Beacon is in excellent account health and positioned for the planned September expansion, but it is not ready for unconditional expansion. Expansion should be conditioned on SCIM being fully operational, ingestion citation lag being actively monitored/mitigated, and InsightDash reporting requirements being addressed.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 10627.0,
+  "policy": "M2",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M2-high-S071",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Join Beacon Insurance's adoption metrics with its open issues to explain whether the account is ready for further expansion without conditions.",
+      "suite": "static",
+      "task_family": "table_prose_join",
+      "task_id": "S071"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2447,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "be4a2af05fb404c276896f46",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-025-S05"
+        ],
+        "token_count": 256
+      },
+      {
+        "evidence_id": "2d4bff8a08a8269847d60019",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-025-S01"
+        ],
+        "token_count": 262
+      },
+      {
+        "evidence_id": "a49ef2bdf648a1ceaf906a01",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-025-S02"
+        ],
+        "token_count": 276
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "005924b5bad7d85f53f97cce",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-025-S07"
+        ],
+        "token_count": 417
+      },
+      {
+        "evidence_id": "1dc45758eeff083a06c8cd3f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-025-S06"
+        ],
+        "token_count": 264
+      },
+      {
+        "evidence_id": "facc207a7612866698457b2d",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-025-S04"
+        ],
+        "token_count": 267
+      },
+      {
+        "evidence_id": "d89ec4331ff412188be6d01b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-020-S08"
+        ],
+        "token_count": 433
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "be4a2af05fb404c276896f46",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-025-S05"
+        ],
+        "token_count": 256
+      },
+      {
+        "evidence_id": "2d4bff8a08a8269847d60019",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-025-S01"
+        ],
+        "token_count": 262
+      },
+      {
+        "evidence_id": "a49ef2bdf648a1ceaf906a01",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-025-S02"
+        ],
+        "token_count": 276
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "005924b5bad7d85f53f97cce",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-025-S07"
+        ],
+        "token_count": 417
+      },
+      {
+        "evidence_id": "1dc45758eeff083a06c8cd3f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-025-S06"
+        ],
+        "token_count": 264
+      },
+      {
+        "evidence_id": "facc207a7612866698457b2d",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-025-S04"
+        ],
+        "token_count": 267
+      },
+      {
+        "evidence_id": "d89ec4331ff412188be6d01b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-020-S08"
+        ],
+        "token_count": 433
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0006184304,
+  "answer": "WorkflowCoach is NovaLearn AI's upcoming guided workflow assistant [NL-002#NL-002-S07]. Its current state is a restricted private beta: it is enabled for approximately 11% of active customers, primarily selected mid-market logistics and enterprise manufacturing clients such as Acme Manufacturing [NL-002#NL-002-S07][NL-014#NL-014-S05]. Until the official public beta, access remains limited to approved pilot accounts [NL-002#NL-002-S07]. Feedback from the private beta has highlighted the need for offline caching of step lists and automated photo verification of physical tasks [NL-014#NL-014-S05].\n\nOfficially, the public beta is targeted for September 2026, with v2.9.0 dated September 29, 2026 [NL-014#NL-014-S03][NL-014#NL-014-S05][NL-015#NL-015-S05]. That release is planned for all active Growth and Enterprise accounts, allowing admins to designate documents as \"Workflow Guides\" and enroll users in guided execution paths [NL-014#NL-014-S05]. However, internal sources indicate the September target may slip to November 2026 due to dependencies on the Advanced OCR Pipeline and the Okta permission synchronization engine [NL-002#NL-002-S07][NL-014#NL-014-S05]. The CTO states the September target is in serious jeopardy because of high latency during step transitions (up to 4 seconds), permission inheritance failures that could expose restricted documents to unauthorized users, and the need to avoid cutting corners on permission checks; his realistic engineering estimate is November 2026 [NL-015#NL-015-S05]. Product leadership says external messaging will stick to the official September roadmap for now, but internally the team is aligning on a November slip contingency; a September private beta is possible only for customers with flat document structures and no sensitive compliance data, not for regulated clients such as BrightPath Healthcare [NL-015#NL-015-S05].\n\nPlanned functionality includes parsing procedural documents into sequential operational blocks, guiding employees step-by-step with confirmations, verification photo uploads, or compliance questions, and recording completed steps in the tenant compliance log; skipped or failed validation steps are flagged and the shift supervisor is notified, maintaining a detailed audit history [NL-002#NL-002-S07]. The v2.9.0 specification adds input validation before unlocking the next step, OCR-based photo verification, and write-once PostgreSQL compliance logging [NL-014#NL-014-S03].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 17973.0,
+  "policy": "M4",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M4-high-S012",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Synthesize the current state of WorkflowCoach using official and informal sources.",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S012"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2671,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "b9443f003b5b1e23530b9ae4",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-002-S07"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "899be70e9a0dfc7ac2408c8f",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-014-S05"
+        ],
+        "token_count": 202
+      },
+      {
+        "evidence_id": "6db700a5840ee68f3cced38e",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-015-S05"
+        ],
+        "token_count": 376
+      },
+      {
+        "evidence_id": "a526e97072908a4d148027e9",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-014-S03"
+        ],
+        "token_count": 544
+      },
+      {
+        "evidence_id": "5a6310118e7e6b9d7a74674a",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-015-S08"
+        ],
+        "token_count": 94
+      },
+      {
+        "evidence_id": "cab54df7fa13cdb4b208e10f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-001-S03"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "509ba4b002f13b9f26a37ff5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S09"
+        ],
+        "token_count": 298
+      },
+      {
+        "evidence_id": "ce0e7b9c89f794db76f1745e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-002-S02"
+        ],
+        "token_count": 400
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "b9443f003b5b1e23530b9ae4",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-002-S07"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "899be70e9a0dfc7ac2408c8f",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-014-S05"
+        ],
+        "token_count": 202
+      },
+      {
+        "evidence_id": "6db700a5840ee68f3cced38e",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-015-S05"
+        ],
+        "token_count": 376
+      },
+      {
+        "evidence_id": "a526e97072908a4d148027e9",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-014-S03"
+        ],
+        "token_count": 544
+      },
+      {
+        "evidence_id": "5a6310118e7e6b9d7a74674a",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-015-S08"
+        ],
+        "token_count": 94
+      },
+      {
+        "evidence_id": "cab54df7fa13cdb4b208e10f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-001-S03"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "509ba4b002f13b9f26a37ff5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S09"
+        ],
+        "token_count": 298
+      },
+      {
+        "evidence_id": "ce0e7b9c89f794db76f1745e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-002-S02"
+        ],
+        "token_count": 400
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

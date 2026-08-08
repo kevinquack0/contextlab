@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0004407368,
+  "answer": "Before promising enterprise deployment dates, sales should verify a pre-sales checklist that includes:\n\n- **Corpus Readiness Checklist:** Share it during discovery and specifically highlight scanned PDF/OCR requirements so the customer understands the 8–10 week Enterprise timeline and any delay risk. [NL-023-S07] [NL-015-S04]\n- **Mandatory pre-onboarding format audit:** Require the prospect to submit ~20 core documents for format analysis; if scanned PDFs are present, flag this early so Customer Success can adjust the target timeline. [NL-031-S06]\n- **Enterprise implementation blockers:** Confirm readiness for Active Directory permission mapping, SSO/security review, and data cleanup/scanned PDF handling, because these are the main drivers of the 8.7-week actual median and rollout delays. [NL-015-S04]\n- **Standard Enterprise timeline expectation:** Use the 8–10 week target with the understanding that success depends on executive alignment and pre-cleared security/SSO. [NL-031-S02]\n- **Roadmap and integration dates:** Consult Sofia Almeida or the official Product Roadmap for upcoming features/integrations, do not guarantee launch dates, and frame roadmap dates as targets, not contractual guarantees. [NL-009-S08] Management is enforcing that sales must not promise immediate Teams support. [NL-016-S05]\n\nANSWER_STATUS: answer  \nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 15026.0,
+  "policy": "M4",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M4-high-S025",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What checklist should sales use before promising enterprise deployment dates?",
+      "suite": "static",
+      "task_family": "procedural_guidance",
+      "task_id": "S025"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2219,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "7c71cf17cc9cef4289226df4",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S08"
+        ],
+        "token_count": 341
+      },
+      {
+        "evidence_id": "0a1a1ed25c28765411d11fe9",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-023-S07"
+        ],
+        "token_count": 271
+      },
+      {
+        "evidence_id": "70d98523a51cb150cf721a04",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-031-S06"
+        ],
+        "token_count": 164
+      },
+      {
+        "evidence_id": "ab359c7f221435d74218a441",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-031-S02"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      },
+      {
+        "evidence_id": "f617beda911dd75c55163ef0",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-005-S08"
+        ],
+        "token_count": 250
+      },
+      {
+        "evidence_id": "005924b5bad7d85f53f97cce",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-025-S07"
+        ],
+        "token_count": 417
+      },
+      {
+        "evidence_id": "cc98d3827d141d5d4363d01e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-016-S05"
+        ],
+        "token_count": 218
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "7c71cf17cc9cef4289226df4",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S08"
+        ],
+        "token_count": 341
+      },
+      {
+        "evidence_id": "0a1a1ed25c28765411d11fe9",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-023-S07"
+        ],
+        "token_count": 271
+      },
+      {
+        "evidence_id": "70d98523a51cb150cf721a04",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-031-S06"
+        ],
+        "token_count": 164
+      },
+      {
+        "evidence_id": "ab359c7f221435d74218a441",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-031-S02"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      },
+      {
+        "evidence_id": "f617beda911dd75c55163ef0",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-005-S08"
+        ],
+        "token_count": 250
+      },
+      {
+        "evidence_id": "005924b5bad7d85f53f97cce",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-025-S07"
+        ],
+        "token_count": 417
+      },
+      {
+        "evidence_id": "cc98d3827d141d5d4363d01e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-016-S05"
+        ],
+        "token_count": 218
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

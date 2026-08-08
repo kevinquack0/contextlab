@@ -1,0 +1,41 @@
+{
+  "answer": "At the current snapshot, the approved primary audience for the sales ICP is \"regulated enterprises\" [NLV2-TL-07-E02#TL-07-E02]. This is a final event with authority level 5, effective 2026-01-01, with open validity. Although an earlier final event with authority level 3 stated \"midmarket teams\" [NLV2-TL-07-E01#TL-07-E01], the higher-authority event (level 5) controls the conflicting value. The memory claim reflecting the same value remains current and cites the same raw event [claim-TL-07-E02].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: claim-TL-07-E02",
+  "metadata": {
+    "actual_usd": "0.000209328",
+    "cached_prompt_tokens": 5760,
+    "completion_tokens": 648,
+    "cost_source": "openrouter_response_usage",
+    "error": null,
+    "generation_metadata_status": "pending",
+    "generation_time_ms": null,
+    "input_price_ceiling_usd_per_million": "0.154",
+    "key_status_before_call": {
+      "limit_reset": null,
+      "limit_usd": "15",
+      "remaining_usd": "12.826362452",
+      "usage_usd": "2.173637548"
+    },
+    "latency_ms": 5531,
+    "latency_source": "local_round_trip",
+    "live_route": {
+      "input_usd_per_million": "0.14000000",
+      "output_usd_per_million": "0.28000000",
+      "provider": "DeepSeek"
+    },
+    "local_round_trip_ms": 5531,
+    "native_completion_tokens": 648,
+    "native_prompt_tokens": 5844,
+    "native_reasoning_tokens": 495,
+    "output_price_ceiling_usd_per_million": "0.308",
+    "prompt_tokens": 5844,
+    "provider": "DeepSeek",
+    "reasoning_effort": "high",
+    "request_id": "gen-1785998948-9wI0709VIAIr7F00QPS7",
+    "requested_model": "deepseek/deepseek-v4-flash-0731",
+    "resolved_model": "deepseek/deepseek-v4-flash-0731",
+    "retry_count": 0
+  },
+  "run_id": "g3-public-v1-M3-high-T013",
+  "schema_version": "contextlab.generation-result.v1",
+  "task_id": "T013"
+}

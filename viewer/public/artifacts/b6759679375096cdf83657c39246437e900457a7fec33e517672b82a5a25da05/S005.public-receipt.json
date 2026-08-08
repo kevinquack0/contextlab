@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0001080352,
+  "answer": "KnowledgeHub adoption among active customers in Q2 2026 was **91%** [NL-030#NL-030-S02]. This is based on aggregate data across all **79 active customer accounts** for the period April 1–June 30, 2026 [NL-030#NL-030-S01]. The 9% who did not use it had completed initial document uploads in Q1 and added no new files during Q2 [NL-030#NL-030-S02].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 3561.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-high-S005",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What is the KnowledgeHub adoption percentage among active customers in Q2 2026?",
+      "suite": "static",
+      "task_family": "direct_fact",
+      "task_id": "S005"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2061,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "8a69b9393c3eae6e8908ea8c",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-030-S02"
+        ],
+        "token_count": 282
+      },
+      {
+        "evidence_id": "515d383ad82c82a7b862ced8",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-030-S01"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "13bf85d114b12f95733e3e71",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-030-S03"
+        ],
+        "token_count": 214
+      },
+      {
+        "evidence_id": "e11f16a68f267cae748bb7ce",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-030-S04"
+        ],
+        "token_count": 286
+      },
+      {
+        "evidence_id": "9f3680084ed1b86ada28ebf7",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-030-S05"
+        ],
+        "token_count": 183
+      },
+      {
+        "evidence_id": "a97b2a0c54a44664dfbefb23",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-011-S02"
+        ],
+        "token_count": 302
+      },
+      {
+        "evidence_id": "2d4bff8a08a8269847d60019",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-025-S01"
+        ],
+        "token_count": 262
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "8a69b9393c3eae6e8908ea8c",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-030-S02"
+        ],
+        "token_count": 282
+      },
+      {
+        "evidence_id": "515d383ad82c82a7b862ced8",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-030-S01"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "13bf85d114b12f95733e3e71",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-030-S03"
+        ],
+        "token_count": 214
+      },
+      {
+        "evidence_id": "e11f16a68f267cae748bb7ce",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-030-S04"
+        ],
+        "token_count": 286
+      },
+      {
+        "evidence_id": "9f3680084ed1b86ada28ebf7",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-030-S05"
+        ],
+        "token_count": 183
+      },
+      {
+        "evidence_id": "a97b2a0c54a44664dfbefb23",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-011-S02"
+        ],
+        "token_count": 302
+      },
+      {
+        "evidence_id": "2d4bff8a08a8269847d60019",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-025-S01"
+        ],
+        "token_count": 262
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

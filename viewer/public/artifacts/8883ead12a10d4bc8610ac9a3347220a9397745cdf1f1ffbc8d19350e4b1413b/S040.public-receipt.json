@@ -1,0 +1,144 @@
+{
+  "actual_usd": 0.0006497624,
+  "answer": "Based on the evidence, the best context strategy for pricing and metrics questions is to anchor on the **authoritative, current, single-source documents** — specifically the official pricing schedule (NL-003) and the quantitative segment/metrics reports (NL-012, NL-016, and the metrics table in NL-001). These documents explicitly designate themselves (or the data they contain) as the sole source of truth for their respective domains. For pricing, NL-003 states it is \"the sole source of truth for all sales proposals, contract renewals, and financial audits\" [NL-003#NL-003-S01]. For metrics, NL-016 and NL-012 provide the official churn, NPS, and financial figures [NL-016#NL-016-S03][NL-012#NL-012-S09], while NL-001 presents the official ICP metrics table [NL-001#NL-001-S04]. This strategy prevents reliance on outdated or informal models (e.g., the 2025 pricing proposal) [NL-003#NL-003-S01] and avoids contradictions from anecdotal sources.\n\nFor cross-document business recommendations, the best strategy is a **multi-document synthesis that prioritizes official quantitative metrics and resolves conflicts in favor of these metrics over promotional or anecdotal claims**. This is necessary because the sales playbook and a salesperson's pitch contain advice that directly contradicts the official metrics. For example, in NL-023, Sarah Jenkins enthusiastically recommends starting with small/startup teams and notes they are a \"major sweet spot,\" [NL-023#NL-023-S03] but this conflicts with the official metrics: NL-016 explicitly states that \"our sales playbook (NL-009) previously highlighted education startups as a high-growth sector, our metrics prove that smaller startups... show weak long-term retention compared to regulated mid-market and enterprise companies\" [NL-016#NL-016-S03]. Similarly, NL-012 highlights that SMBs have high churn (4.8% vs 1.3% enterprise) and that mid-market/enterprise segments drive the best opportunity [NL-012#NL-012-S09]. Thus, the cross-document strategy must synthesize NL-001, NL-012, NL-016, and NL-009 while resolving conflicts by treating the official business metrics (NL-012, NL-016, NL-001) as the authoritative truth over anecdotal sales enthusiasm (NL-023) or out-of-date playbook positioning (NL-009).\n\nConcretely:\n- For pricing and metrics questions, use a **strict single-source/authoritative-document retrieval** strategy (NL-003 for pricing; NL-012/NL-016/NL-001 for metrics).\n- For cross-document business recommendations, use a **conflict-resolving synthesis** that aggregates all relevant documents and weights the official operational metrics (NL-012, NL-016, NL-001) above sales playbook claims (NL-009) and in-role sales pitches (NL-023).\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 19210.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-low-S040",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Which context strategy would likely be best for answering NovaLearn pricing and metrics questions, and which for cross-document business recommendations?",
+      "suite": "static",
+      "task_family": "recommendation",
+      "task_id": "S040"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3113,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "c4e213cc3c67ca5f2e79b8af",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S01"
+        ],
+        "token_count": 278
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      },
+      {
+        "evidence_id": "3f1058d8c2619c159d7bb695",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-023-S03"
+        ],
+        "token_count": 862
+      },
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "3eee11910fe7e10e8c8456c9",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-001-S04"
+        ],
+        "token_count": 368
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "c4e213cc3c67ca5f2e79b8af",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S01"
+        ],
+        "token_count": 278
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      },
+      {
+        "evidence_id": "3f1058d8c2619c159d7bb695",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-023-S03"
+        ],
+        "token_count": 862
+      },
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "3eee11910fe7e10e8c8456c9",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-001-S04"
+        ],
+        "token_count": 368
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

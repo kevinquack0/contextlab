@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.000711704,
+  "answer": "A scanned, image-only PDF blocks TutorChat go-live because the ingestion pipeline depends on an embedded text layer. The KnowledgeHub expects documents to have a text layer before ingestion; if a document is image-only, the system cannot index the text or generate citation anchors [NL-018#NL-018-S05]. The standard PDF parser fails to detect text layers in image-only documents, resulting in empty indexes unless external OCR pre-processing is applied [NL-031#NL-031-S04]. When customers sneak raw TIFFs/PNGs inside PDF containers, the parser fails to find text and produces a generic import error [NL-021#NL-021-S02]. This leads to empty document models or TutorChat being unable to generate citations [NL-029#NL-029-S05].\n\nAt retrieval time, TutorChat either returns an answer with no source citations because it cannot find text offsets, or the citation points to the entire document — for example, page 1 of a 250-page PDF — rather than the exact section [NL-021#NL-021-S02]. The failed extraction can also cause omitted content, as in the scanned neonatal ventilator protocol where TutorChat missed two critical alarm threshold steps because text extraction failed on that page [NL-018#NL-018-S05].\n\nBecause automated OCR is unavailable, customers or the CS team must manually OCR pre-process the files, adding weeks to onboarding [NL-010#NL-010-S06]. Northstar Financial’s pilot kickoff was delayed by three weeks due to external OCR processing [NL-010#NL-010-S06]. BrightPath Healthcare experienced the longest onboarding time, 9.5 weeks, because of manual formatting checks on scanned compliance files [NL-031#NL-031-S04].\n\nAt the reliability gate, the current indexing system lacks advanced OCR, so scanned PDFs return incomplete citations and fail the go-live validation threshold of 85% citation correctness [NL-031#NL-031-S04]. Compliance officers refuse to sign off on a general rollout because medical staff cannot verify answers when citations are missing or point to a 200-page document [NL-021#NL-021-S02]. Consequently, BrightPath remains restricted to its initial 100-user group and cannot move to the full 6,500 employees until the scanned-PDF citation problem is solved [NL-021#NL-021-S02].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 20332.0,
+  "policy": "M2",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M2-high-S059",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Trace how a poor scanned PDF can prevent an enterprise TutorChat deployment from reaching go-live, from ingestion through the reliability gate.",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S059"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3176,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "77cf8912f7f7754f60627223",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S06"
+        ],
+        "token_count": 345
+      },
+      {
+        "evidence_id": "737d455e1a0f414db4fc3d0a",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-018-S05"
+        ],
+        "token_count": 600
+      },
+      {
+        "evidence_id": "bb6dd6175f7e6c59ef563902",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-031-S04"
+        ],
+        "token_count": 308
+      },
+      {
+        "evidence_id": "c3c0f50b25602a7046c22758",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-029-S05"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "5269b4023a1896927d99f3f3",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-011-S04"
+        ],
+        "token_count": 330
+      },
+      {
+        "evidence_id": "ca5e2872f4378be0d2195566",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-005-S05"
+        ],
+        "token_count": 448
+      },
+      {
+        "evidence_id": "d07c7812ffc9ef2ca2cbc063",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-020-S06"
+        ],
+        "token_count": 358
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "77cf8912f7f7754f60627223",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S06"
+        ],
+        "token_count": 345
+      },
+      {
+        "evidence_id": "737d455e1a0f414db4fc3d0a",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-018-S05"
+        ],
+        "token_count": 600
+      },
+      {
+        "evidence_id": "bb6dd6175f7e6c59ef563902",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-031-S04"
+        ],
+        "token_count": 308
+      },
+      {
+        "evidence_id": "c3c0f50b25602a7046c22758",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-029-S05"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "5269b4023a1896927d99f3f3",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-011-S04"
+        ],
+        "token_count": 330
+      },
+      {
+        "evidence_id": "ca5e2872f4378be0d2195566",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-005-S05"
+        ],
+        "token_count": 448
+      },
+      {
+        "evidence_id": "d07c7812ffc9ef2ca2cbc063",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-020-S06"
+        ],
+        "token_count": 358
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

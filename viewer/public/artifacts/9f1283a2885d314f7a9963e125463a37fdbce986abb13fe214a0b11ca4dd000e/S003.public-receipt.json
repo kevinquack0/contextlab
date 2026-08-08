@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.000735,
+  "answer": "NovaLearn reported **79 active customers** as of June 30, 2026. This is confirmed by the Q2 2026 official business metrics report, which states the quarter closed with 79 active customers [NL-012#NL-012-S01], and that the active customer base grew to 79 companies at the end of Q2 2026 [NL-012#NL-012-S02]. The product module adoption report also confirms 79 active customers as of the end of Q2 [NL-030#NL-030-S01], and the June 2026 board update corroborates 79 active customer accounts [NL-016#NL-016-S01].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 7039.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-low-S003",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "How many active customers did NovaLearn report as of June 30, 2026?",
+      "suite": "static",
+      "task_family": "direct_fact",
+      "task_id": "S003"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2449,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "8dd22619af834e755b16b2ff",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-012-S02"
+        ],
+        "token_count": 304
+      },
+      {
+        "evidence_id": "ab49a76bab7f1386d4b3f42d",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-001-S02"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "515d383ad82c82a7b862ced8",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-030-S01"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      },
+      {
+        "evidence_id": "986b6ad2cfc2a9742372e488",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-012-S08"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      },
+      {
+        "evidence_id": "1d0401e009d19924c4bb721a",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-012-S01"
+        ],
+        "token_count": 307
+      },
+      {
+        "evidence_id": "4e818a27fde33c6fe7a2a9c7",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-012-S10"
+        ],
+        "token_count": 404
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "8dd22619af834e755b16b2ff",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-012-S02"
+        ],
+        "token_count": 304
+      },
+      {
+        "evidence_id": "ab49a76bab7f1386d4b3f42d",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-001-S02"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "515d383ad82c82a7b862ced8",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-030-S01"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      },
+      {
+        "evidence_id": "986b6ad2cfc2a9742372e488",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-012-S08"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      },
+      {
+        "evidence_id": "1d0401e009d19924c4bb721a",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-012-S01"
+        ],
+        "token_count": 307
+      },
+      {
+        "evidence_id": "4e818a27fde33c6fe7a2a9c7",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-012-S10"
+        ],
+        "token_count": 404
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

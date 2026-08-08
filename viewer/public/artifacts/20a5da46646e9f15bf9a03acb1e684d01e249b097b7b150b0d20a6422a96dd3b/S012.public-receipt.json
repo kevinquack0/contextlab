@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0005992504,
+  "answer": "Based on the official public roadmap and internal engineering updates, WorkflowCoach is currently in a restricted private beta phase, enabled for approximately 11% of active customers, primarily mid-market logistics and enterprise manufacturing clients such as Acme Manufacturing [NL-002#NL-002-S07] [NL-014#NL-014-S05]. The official public beta target is September 2026 [NL-002#NL-002-S07] [NL-014#NL-014-S05], with a specific release date of September 29, 2026, which will be available to all active Growth and Enterprise accounts [NL-014#NL-014-S03] [NL-014#NL-014-S05].\n\nHowever, internal sources indicate the September target is in serious jeopardy. The CTO reported high latency during step transitions (up to 4 seconds) and issues with permission inheritance, where restricted documents are being exposed to unauthorized users, and provided a realistic engineering estimate of a November 2026 release [NL-015#NL-015-S05]. Internal roadmaps and standups also cite dependencies on the Advanced OCR Pipeline and Okta permission synchronization engine as delays, potentially slipping the public beta to November 2026 [NL-002#NL-002-S07] [NL-014#NL-014-S05].\n\nContingency plans specify a September private beta for customers with flat document structures and no sensitive compliance data, while deferring full permission-sync features (including cross-workspace permission synchronization) to the November public release [NL-015#NL-015-S05] [NL-015#NL-015-S09]. A draft internal product update on this contingency timeline is due July 5 [NL-015#NL-015-S09].\n\nPlanned core capabilities include ingesting procedural documents (checklists, compliance manuals, safety SOPs) and parsing them into sequential operational blocks, guiding users step-by-step with confirmations, photo uploads, or compliance questions [NL-002#NL-002-S07]. Every completed step is recorded in the tenant's compliance log, with skips or failed validations flagged and supervisors notified [NL-002#NL-002-S07] [NL-014#NL-014-S03]. The release brings a write-once PostgreSQL compliance log table that records timestamps, user IDs, and input payloads [NL-014#NL-014-S03].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 16187.0,
+  "policy": "M4",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M4-low-S012",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Synthesize the current state of WorkflowCoach using official and informal sources.",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S012"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2671,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "b9443f003b5b1e23530b9ae4",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-002-S07"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "899be70e9a0dfc7ac2408c8f",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-014-S05"
+        ],
+        "token_count": 202
+      },
+      {
+        "evidence_id": "6db700a5840ee68f3cced38e",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-015-S05"
+        ],
+        "token_count": 376
+      },
+      {
+        "evidence_id": "a526e97072908a4d148027e9",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-014-S03"
+        ],
+        "token_count": 544
+      },
+      {
+        "evidence_id": "5a6310118e7e6b9d7a74674a",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-015-S08"
+        ],
+        "token_count": 94
+      },
+      {
+        "evidence_id": "cab54df7fa13cdb4b208e10f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-001-S03"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "509ba4b002f13b9f26a37ff5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S09"
+        ],
+        "token_count": 298
+      },
+      {
+        "evidence_id": "ce0e7b9c89f794db76f1745e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-002-S02"
+        ],
+        "token_count": 400
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "b9443f003b5b1e23530b9ae4",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-002-S07"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "899be70e9a0dfc7ac2408c8f",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-014-S05"
+        ],
+        "token_count": 202
+      },
+      {
+        "evidence_id": "6db700a5840ee68f3cced38e",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-015-S05"
+        ],
+        "token_count": 376
+      },
+      {
+        "evidence_id": "a526e97072908a4d148027e9",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-014-S03"
+        ],
+        "token_count": 544
+      },
+      {
+        "evidence_id": "5a6310118e7e6b9d7a74674a",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-015-S08"
+        ],
+        "token_count": 94
+      },
+      {
+        "evidence_id": "cab54df7fa13cdb4b208e10f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-001-S03"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "509ba4b002f13b9f26a37ff5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S09"
+        ],
+        "token_count": 298
+      },
+      {
+        "evidence_id": "ce0e7b9c89f794db76f1745e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-002-S02"
+        ],
+        "token_count": 400
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

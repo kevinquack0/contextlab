@@ -1,0 +1,144 @@
+{
+  "actual_usd": 0.00128982,
+  "answer": "For pricing questions, the best context strategy is to reference **NL-003**, because it is explicitly designated as the official pricing, packaging, and licensing document, effective June 1, 2026, and the sole source of truth for all sales proposals and renewals. It also explicitly prohibits using deprecated 2025 pricing models [NL-003#NL-003-S01].  \nFor metrics questions, use the official metrics reports **NL-012**, **NL-016**, and **NL-001**. NL-012 presents compiled metrics and strategic conclusions on churn, expansion, and onboarding [NL-012#NL-012-S09], NL-016 provides the quarterly segment analysis with churn, NPS, and revenue data [NL-016#NL-016-S03], and NL-001 contains the official Q2 2026 segment metrics table (onboarding, NPS, churn, etc.) [NL-001#NL-001-S04].  \nFor cross-document business recommendations, the best strategy is an **integrative and conflict-resolution approach** combining the sales playbook (NL-009) with the authoritative metrics documents (NL-012, NL-016, NL-001), defaulting to the metrics documents when they contradict the playbook or sales calls. Evidence shows that NL-016 explicitly corrects the sales playbook's focus on startups by citing metrics showing weak retention [NL-016#NL-016-S03], and the note in NL-023 records that official business metrics in NL-012 contradict the sales rep's enthusiasm for small teams/SMBs due to high churn [NL-023#NL-023-S03]. Thus, for recommendations, synthesize the playbook's buyer personas [NL-009#NL-009-S02] with the authoritative segments in NL-016 and NL-001, and always resolve disputes in favor of the quantified metrics.\n\nANSWER_STATUS: answer  \nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 21765.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-low-S040",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Which context strategy would likely be best for answering NovaLearn pricing and metrics questions, and which for cross-document business recommendations?",
+      "suite": "static",
+      "task_family": "recommendation",
+      "task_id": "S040"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3113,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "c4e213cc3c67ca5f2e79b8af",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S01"
+        ],
+        "token_count": 278
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      },
+      {
+        "evidence_id": "3f1058d8c2619c159d7bb695",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-023-S03"
+        ],
+        "token_count": 862
+      },
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "3eee11910fe7e10e8c8456c9",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-001-S04"
+        ],
+        "token_count": 368
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "c4e213cc3c67ca5f2e79b8af",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S01"
+        ],
+        "token_count": 278
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      },
+      {
+        "evidence_id": "3f1058d8c2619c159d7bb695",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-023-S03"
+        ],
+        "token_count": 862
+      },
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "3eee11910fe7e10e8c8456c9",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-001-S04"
+        ],
+        "token_count": 368
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

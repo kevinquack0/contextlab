@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.00075292,
+  "answer": "The actual Q2 median duration for a mid-market Growth implementation was **5.2 weeks**, not the planning guide's target of 4–6 weeks. The planning guide lists the Growth target timeline as 4–6 weeks, but the actual historical median recorded in Q2 2026 was 5.2 weeks [NL-031#NL-031-S02]. This 5.2-week median is confirmed in the Q2 business metrics report for the Mid-market segment [NL-012#NL-012-S03] and in the median onboarding durations dataset [NL-012#NL-012-S06]. The sample accounts (Atlas Logistics 4.2, Acme Manufacturing 5.4, Meridian Retail Group 6.0) average to the same 5.2 weeks [NL-031#NL-031-S03].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 5845.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-low-S054",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "How long did a typical mid-market Growth implementation actually take in the Q2 data, rather than in the planning guide?",
+      "suite": "static",
+      "task_family": "paraphrase",
+      "task_id": "S054"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2234,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "ab359c7f221435d74218a441",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-031-S02"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "0be3b7cb19510c1e5865082d",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-031-S07"
+        ],
+        "token_count": 263
+      },
+      {
+        "evidence_id": "790d0e0f0141f0a669ed0e89",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-012-S05"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "84e14be125f6f7ec0307e707",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-031-S01"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "adeca626775913468145d8c5",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-012-S03"
+        ],
+        "token_count": 350
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "ab359c7f221435d74218a441",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-031-S02"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "0be3b7cb19510c1e5865082d",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-031-S07"
+        ],
+        "token_count": 263
+      },
+      {
+        "evidence_id": "790d0e0f0141f0a669ed0e89",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-012-S05"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "84e14be125f6f7ec0307e707",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-031-S01"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "adeca626775913468145d8c5",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-012-S03"
+        ],
+        "token_count": 350
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

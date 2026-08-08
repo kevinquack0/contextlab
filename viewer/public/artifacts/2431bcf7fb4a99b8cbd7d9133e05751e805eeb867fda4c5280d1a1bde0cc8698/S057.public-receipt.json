@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0003633056,
+  "answer": "**Recommendation: Yes, NovaLearn should fund the advanced OCR work before accelerating Teams integration.** \n\nThe evidence clearly prioritizes OCR based on current support demand, onboarding impact, and roadmap/security status:\n\n1.  **Current Support Demand:** Scanned PDF processing is the primary driver of citation errors and customer onboarding delays, and implementing the Advanced OCR Pipeline (scheduled for August 2026) is the company's highest technical priority [NL-001#NL-001-S08]. This is compounded by the fact that 27% of May support tickets were related to import issues and broken citations from scanned PDFs [NL-015#NL-015-S06]. The CTO explicitly states that OCR is a \"critical system stability requirement\" and that the support queue is \"absolutely clogged\" without it [NL-015#NL-015-S06].\n\n2.  **Onboarding Impact:** Operational friction around permission mapping and ingestion of scanned PDFs remains the primary onboarding bottleneck [NL-016#NL-016-S01]. The OCR pipeline directly resolves this. In contrast, a Teams integration would not solve the underlying ingestion problem; as the VP of Product notes, building Teams now would only \"deliver inaccurate, un-cited answers to a larger audience inside their chat app\" [NL-015#NL-015-S06]. We must solve the data ingestion and citation problem first [NL-015#NL-015-S06].\n\n3.  **Roadmap and Security Status:** The official roadmap states Teams is in the design phase for Q4 2026 and not generally available [NL-001#NL-001-S08][NL-014#NL-014-S01]. The CTO warns that rushing a Teams connector risks a tenant-isolation breach because it requires a complete redesign of the auth layer to support logical workspace isolation and RBAC [NL-015#NL-015-S06]. While there is high demand for Teams [NL-011#NL-011-S07], the CTO and VP of Product both agree OCR must remain the top priority for August, with Teams development slated for early 2027 [NL-015#NL-015-S06]. A sales overclaim suggesting Teams was \"almost ready\" is explicitly contradicted by the official roadmap and internal Slack threads indicating the connector is in a very early proof-of-concept phase lacking security controls [NL-023#NL-023-S04].\n\nTherefore, funding OCR first addresses the immediate support and onboarding crisis without jeopardizing security, while Teams acceleration would create a higher-risk, lower-value outcome at this time.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 11460.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-low-S057",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Should NovaLearn fund the advanced OCR work before accelerating Teams integration? Connect current support demand, onboarding impact, and roadmap status in the recommendation.",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S057"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3140,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "741f4c3a347f1f1ac053fe05",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-001-S08"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "f87510dafd2290bcd49e0518",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-011-S07"
+        ],
+        "token_count": 241
+      },
+      {
+        "evidence_id": "43c96dd62dc57047b9c6345b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-016-S07"
+        ],
+        "token_count": 702
+      },
+      {
+        "evidence_id": "29341b88d42007518d742629",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-032-S05"
+        ],
+        "token_count": 404
+      },
+      {
+        "evidence_id": "2a1b3db4f36165eb931ec1f5",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-023-S04"
+        ],
+        "token_count": 405
+      },
+      {
+        "evidence_id": "b44ee1b8062f18ffbf44f3d8",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-014-S01"
+        ],
+        "token_count": 407
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "741f4c3a347f1f1ac053fe05",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-001-S08"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "f87510dafd2290bcd49e0518",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-011-S07"
+        ],
+        "token_count": 241
+      },
+      {
+        "evidence_id": "43c96dd62dc57047b9c6345b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-016-S07"
+        ],
+        "token_count": 702
+      },
+      {
+        "evidence_id": "29341b88d42007518d742629",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-032-S05"
+        ],
+        "token_count": 404
+      },
+      {
+        "evidence_id": "2a1b3db4f36165eb931ec1f5",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-023-S04"
+        ],
+        "token_count": 405
+      },
+      {
+        "evidence_id": "b44ee1b8062f18ffbf44f3d8",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-014-S01"
+        ],
+        "token_count": 407
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

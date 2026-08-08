@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.000232624,
+  "answer": "The nuance is that PDF citation support is not guaranteed for all PDFs. The platform broadly advertises precise page/paragraph-level citations, but this capability is highly dependent on document quality: natively digital PDFs with text layers work well, whereas scanned, photocopied, or image-only PDFs require OCR and often fail to produce accurate citations [NL-002#NL-002-S09]. Scanned PDFs without a native text layer can result in missing citations, incorrect page links, or the system saying it cannot find the answer even when the information exists [NL-002#NL-002-S09]. OCR is heuristic, so blurry, low-resolution, or complex-layout scans can cause broken citations and gaps in retrieval [NL-006#NL-006-S03]. Even after fixes, remaining citation tickets are almost entirely linked to scanned, image-only PDFs, where TutorChat links to the start of the file rather than the specific page [NL-011#NL-011-S05]. Enterprise examples show legacy scanned PDFs still pointing to page one of a large document or generating no citation at all [NL-018#NL-018-S04]. The recommendation is to convert scanned documents to digital, text-searchable PDFs before upload [NL-002#NL-002-S09][NL-006#NL-006-S03].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 7144.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-high-S032",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "A public help article implies PDF citations are fully supported. What nuance should be included?",
+      "suite": "static",
+      "task_family": "authority_conflict",
+      "task_id": "S032"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3029,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "8a886e3b2dc947136d3079ed",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-028-S03"
+        ],
+        "token_count": 359
+      },
+      {
+        "evidence_id": "5d9ec15aed06692a3997cf52",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-002-S09"
+        ],
+        "token_count": 332
+      },
+      {
+        "evidence_id": "d7e9eca24d700532782ab314",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-006-S04"
+        ],
+        "token_count": 464
+      },
+      {
+        "evidence_id": "8c3a97eff9330d6cb053267c",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-010-S05"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "56e7718f31acc9f0481bbf40",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-008-S02"
+        ],
+        "token_count": 417
+      },
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "59e68fefd9fe397cacad7704",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-011-S05"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "2e72fabcdcd1c2b8e704abdd",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-018-S04"
+        ],
+        "token_count": 299
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "8a886e3b2dc947136d3079ed",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-028-S03"
+        ],
+        "token_count": 359
+      },
+      {
+        "evidence_id": "5d9ec15aed06692a3997cf52",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-002-S09"
+        ],
+        "token_count": 332
+      },
+      {
+        "evidence_id": "d7e9eca24d700532782ab314",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-006-S04"
+        ],
+        "token_count": 464
+      },
+      {
+        "evidence_id": "8c3a97eff9330d6cb053267c",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-010-S05"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "56e7718f31acc9f0481bbf40",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-008-S02"
+        ],
+        "token_count": 417
+      },
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "59e68fefd9fe397cacad7704",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-011-S05"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "2e72fabcdcd1c2b8e704abdd",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-018-S04"
+        ],
+        "token_count": 299
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

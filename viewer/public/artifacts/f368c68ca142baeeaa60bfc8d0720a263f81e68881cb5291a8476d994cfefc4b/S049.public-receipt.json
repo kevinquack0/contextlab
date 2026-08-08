@@ -1,0 +1,160 @@
+{
+  "actual_usd": 6.00768e-05,
+  "answer": "The recurring charge for NovaLearn's entry package (Starter plan) is **$1,200 per month**, before any onboarding fees or add-ons [NL-003#NL-003-S02] [NL-001#NL-001-S05].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 2525.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-high-S049",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What is the recurring charge for NovaLearn's entry package, before onboarding or add-ons?",
+      "suite": "static",
+      "task_family": "paraphrase",
+      "task_id": "S049"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2169,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "4df4892f35cacfa07daf7b1d",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-003-S04"
+        ],
+        "token_count": 205
+      },
+      {
+        "evidence_id": "5f5a43d38863a7d8b2224bd6",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S02"
+        ],
+        "token_count": 92
+      },
+      {
+        "evidence_id": "ba53eaee43fc8791b90e738c",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-001-S05"
+        ],
+        "token_count": 369
+      },
+      {
+        "evidence_id": "1a80802691ee19fe640bb9dc",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-003-S05"
+        ],
+        "token_count": 319
+      },
+      {
+        "evidence_id": "a472d8d7f5cc0dd98296adc1",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-003-S07"
+        ],
+        "token_count": 385
+      },
+      {
+        "evidence_id": "c4e213cc3c67ca5f2e79b8af",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-003-S01"
+        ],
+        "token_count": 278
+      },
+      {
+        "evidence_id": "789e6a6f3b3c4985314a97a6",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-003-S03"
+        ],
+        "token_count": 284
+      },
+      {
+        "evidence_id": "5e89bbc1fe4ccd8dcd9e55fe",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-003-S06"
+        ],
+        "token_count": 237
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "4df4892f35cacfa07daf7b1d",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-003-S04"
+        ],
+        "token_count": 205
+      },
+      {
+        "evidence_id": "5f5a43d38863a7d8b2224bd6",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S02"
+        ],
+        "token_count": 92
+      },
+      {
+        "evidence_id": "ba53eaee43fc8791b90e738c",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-001-S05"
+        ],
+        "token_count": 369
+      },
+      {
+        "evidence_id": "1a80802691ee19fe640bb9dc",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-003-S05"
+        ],
+        "token_count": 319
+      },
+      {
+        "evidence_id": "a472d8d7f5cc0dd98296adc1",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-003-S07"
+        ],
+        "token_count": 385
+      },
+      {
+        "evidence_id": "c4e213cc3c67ca5f2e79b8af",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-003-S01"
+        ],
+        "token_count": 278
+      },
+      {
+        "evidence_id": "789e6a6f3b3c4985314a97a6",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-003-S03"
+        ],
+        "token_count": 284
+      },
+      {
+        "evidence_id": "5e89bbc1fe4ccd8dcd9e55fe",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-003-S06"
+        ],
+        "token_count": 237
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

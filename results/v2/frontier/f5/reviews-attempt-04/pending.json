@@ -1,0 +1,31 @@
+{
+  "ai_reviews": [
+    {
+      "decision": "pass",
+      "findings": [],
+      "invocation_receipt_sha256": "b5390f9a9bb2e380993c58117042c0645b97ac2b1a082d1078b2e4b75b02e85b",
+      "review_artifact_sha256": "086cdba3a99e57b776fd196af3ee0a1c79eac3c84fa22b2d4d4c9a28f499e35a",
+      "reviewer_id": "gpt-5.6-sol-high"
+    },
+    {
+      "decision": "pass",
+      "findings": [],
+      "invocation_receipt_sha256": "880c91e47e7bfe36a72c09e13a3e8124195618f32a1e8092379b373ccd714585",
+      "review_artifact_sha256": "5e887c074158bc84a8a9fcd8790cd54a3da853a22895a67a26cb5893f29a86ff",
+      "reviewer_id": "gpt-5.6-terra-high"
+    }
+  ],
+  "artifact_sha256": "cb0fb47f6d38f04f31face4c2b5f682f6e3f118f45d2322266a07fde7d20ca54",
+  "experiment_id": "F5",
+  "final_status": "blocked-pending-kevin",
+  "human_approval": {
+    "reviewer": "Kevin Araujo",
+    "status": "pending",
+    "technical_record_sha256": "62ea0884b22fc9e474a5abc17cc8ce4ad2c355d9eb8db3194b377adaa6b980f3"
+  },
+  "proposed_decision": "accept-negative",
+  "schema_version": "contextlab.frontier-result-gate.v1",
+  "technical_artifact_sha256": "b3efcecbe3973b564605848497c9da8f5f49af4ee231f6dbcee1d8be57f13872",
+  "technical_record_sha256": "62ea0884b22fc9e474a5abc17cc8ce4ad2c355d9eb8db3194b377adaa6b980f3",
+  "technical_status": "passed"
+}

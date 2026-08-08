@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.00098588,
+  "answer": "Citation complaints fell sharply after the April 2026 release. Q1 citation-accuracy tickets were 72 in January, 79 in February, and 88 in March, while Q2 tickets dropped to 42 in April, 31 in May, and 24 in June [NL-011#NL-011-S05]. The Q2 report confirms complaints \"decreased significantly\" [NL-016#NL-016-S04] and \"dropped significantly\" [NL-011#NL-011-S03]. However, they did not reach zero—the remaining May and June tickets are almost entirely tied to scanned, image-only PDFs, where TutorChat struggles to establish citation anchors and often links to the file start [NL-011#NL-011-S05].\n\nThe planned product work that directly addresses the remaining scanned-document problem is the **Advanced OCR Pipeline**. Per the Q1 action items, Product must finalize requirements for an integrated OCR pipeline to address scanned PDF challenges, with a target to launch the OCR pilot by August 2026 [NL-010#NL-010-S10]. Per the later discussion, this pipeline is scheduled for release in August 2026 and will automatically extract text and layout structures from scanned files, enabling page-specific citations [NL-024#NL-024-S04].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 13341.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-low-S062",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "How did citation complaints change from Q1 to Q2, and which planned product work directly addresses the remaining scanned-document problem?",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S062"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2868,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "59e68fefd9fe397cacad7704",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-011-S05"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "8c3a97eff9330d6cb053267c",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S05"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "f0a3f49cd95f203d40679b2b",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-016-S04"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "b9d30231fce583811d5f4df4",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-011-S03"
+        ],
+        "token_count": 363
+      },
+      {
+        "evidence_id": "2e72fabcdcd1c2b8e704abdd",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-018-S04"
+        ],
+        "token_count": 299
+      },
+      {
+        "evidence_id": "6e82cff6b6af139f915a9c70",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-010-S10"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "59e68fefd9fe397cacad7704",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-011-S05"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "8c3a97eff9330d6cb053267c",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S05"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "f0a3f49cd95f203d40679b2b",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-016-S04"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "b9d30231fce583811d5f4df4",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-011-S03"
+        ],
+        "token_count": 363
+      },
+      {
+        "evidence_id": "2e72fabcdcd1c2b8e704abdd",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-018-S04"
+        ],
+        "token_count": 299
+      },
+      {
+        "evidence_id": "6e82cff6b6af139f915a9c70",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-010-S10"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0001388408,
+  "answer": "Based on the Q2 2026 segment metrics, the **Enterprise segment** is strongest across all three indicators:\n\n- **NPS:** Highest at 52 [NL-012-S03][NL-011-S08]\n- **Monthly churn:** Lowest at 1.3% [NL-012-S03][NL-016-S03]\n- **Expansion revenue:** Highest at $91,000, representing 52.6% of all expansion revenue [NL-012-S03][NL-012-S05]\n\nMid-market is second on each metric (NPS 47, churn 2.1%, $64,000 expansion), while SMB trails significantly [NL-012-S03].\n\nANSWER_STATUS: answer  \nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 4762.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-high-S038",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Which customer segment appears strongest by NPS, churn, and expansion metrics?",
+      "suite": "static",
+      "task_family": "table_prose_join",
+      "task_id": "S038"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2849,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "adeca626775913468145d8c5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-012-S03"
+        ],
+        "token_count": 350
+      },
+      {
+        "evidence_id": "76c70410cd26bd9dc9d5eba7",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-011-S08"
+        ],
+        "token_count": 307
+      },
+      {
+        "evidence_id": "790d0e0f0141f0a669ed0e89",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-012-S05"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "a97b2a0c54a44664dfbefb23",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-011-S02"
+        ],
+        "token_count": 302
+      },
+      {
+        "evidence_id": "a8fc8d591099588c56805227",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-010-S02"
+        ],
+        "token_count": 356
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "adeca626775913468145d8c5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-012-S03"
+        ],
+        "token_count": 350
+      },
+      {
+        "evidence_id": "76c70410cd26bd9dc9d5eba7",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-011-S08"
+        ],
+        "token_count": 307
+      },
+      {
+        "evidence_id": "790d0e0f0141f0a669ed0e89",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-012-S05"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "a97b2a0c54a44664dfbefb23",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-011-S02"
+        ],
+        "token_count": 302
+      },
+      {
+        "evidence_id": "a8fc8d591099588c56805227",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-010-S02"
+        ],
+        "token_count": 356
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

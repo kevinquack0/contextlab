@@ -1,0 +1,12 @@
+{
+  "context_budget_tokens": 3200,
+  "prompt_version": "contextlab.memory-answer.v1",
+  "run_id": "g3-public-v1-M4-low-S052",
+  "task": {
+    "question_text": "After a standard contract ends, by when does NovaLearn complete its normal tenant-data decommissioning, absent signed custom terms?",
+    "suite": "static",
+    "task_family": "paraphrase",
+    "task_id": "S052"
+  },
+  "viewer_projection_schema": "contextlab.public-prompt-envelope.v1"
+}

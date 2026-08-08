@@ -1,0 +1,144 @@
+{
+  "actual_usd": 0.0007882056,
+  "answer": "The three sources converge on the same core position, with each contributing a distinct layer:\n\n**Support FAQ (NL-006):** Scanned PDFs require OCR; without it the standard parser extracts zero text, making files unsearchable and citations impossible [NL-006#NL-006-S03]. OCR is heuristic: blurry or low-resolution scans, handwriting, and complex multi-column layouts cause misread characters and broken citations, knowledge gaps, and longer processing times [NL-006#NL-006-S03]. Recommended resolutions include verifying OCR is enabled, exporting a digital text-searchable PDF instead of scanning a printed sheet, and using the Advanced OCR Pipeline (Enterprise or Growth add-on) [NL-006#NL-006-S03]. Tables are garbled because OCR reads line-by-line across columns, so the FAQ recommends converting to CSV/XLSX or using clear dark grid lines [NL-006#NL-006-S03]. The standard OCR engine ignores handwriting and physical annotations, so such notes must be transcribed into digital text in a DOCX or Markdown file to be searchable [NL-006#NL-006-S03].\n\n**Product guide (NL-002):** PDF is the default format and scanned/image-only PDFs require OCR processing, with page/paragraph citation precision for PDFs generally [NL-002#NL-002-S08]. It also documents ingestion queue capacity limits per plan (Growth: 200 documents parallel; Enterprise: up to 1,000 parallel threads), with overflow placed in a sequential ingestion buffer [NL-002#NL-002-S08].\n\n**Customer interviews (NL-021, NL-024, NL-018, NL-017):** Ingestion/OCR issues are the single largest support category — 112 of 412 tickets (~27%) in May 2026 [NL-021#NL-021-S02]. Enterprise customers (e.g., BrightPath Healthcare, Northstar Financial) have 40–50% of files as scanned PDFs without a text layer; TutorChat either returns answers with no citations or citations pointing to the entire document, and CSAT dropped from 4.5 to 3.8 [NL-021#NL-021-S02]. The standard parser indexes a scan as one large metadata block, and current workarounds are to export native DOCX/text files or exclude scans from the active corpus [NL-024#NL-024-S04]. Deleted scans are immediately marked inactive and update visible within 5 minutes [NL-024#NL-024-S04]. In clinical settings, OCR failures caused omitted critical ventilator alarm thresholds [NL-018#NL-018-S05]. Manual OCR pre-processing is a severe labor bottleneck — ~12,000 pages requiring ~3 months of IT effort [NL-018#NL-018-S05] — and customers explicitly ask for the KnowledgeHub to do OCR automatically rather than requiring external tools [NL-017#NL-017-S06]. All customer accounts point to the Advanced OCR ingestion pipeline, targeted for August 2026 release, as the awaited fix [NL-024#NL-024-S04][NL-018#NL-018-S05][NL-017#NL-017-S06].\n\n**Collective takeaway:** All three sources agree that scanned/image-only PDFs are unprocessable without OCR, that OCR is error-prone on low-quality or layout-complex scans, that manual OCR is an unacceptable burden on customers, and that the near-term fix is using native text-based files while the Advanced OCR Pipeline (August 2026) is the planned automated solution.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 21935.0,
+  "policy": "M4",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M4-low-S015",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What do the support FAQ, product guide, and customer interviews collectively say about scanned PDF handling?",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S015"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3124,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      },
+      {
+        "evidence_id": "737d455e1a0f414db4fc3d0a",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-018-S05"
+        ],
+        "token_count": 600
+      },
+      {
+        "evidence_id": "b64ebbdc0022a41572d20236",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-021-S06"
+        ],
+        "token_count": 411
+      },
+      {
+        "evidence_id": "b7a62160b1949d1ea6aff4e1",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-017-S06"
+        ],
+        "token_count": 481
+      },
+      {
+        "evidence_id": "0d6d524f7215bdc787c36fc5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-002-S08"
+        ],
+        "token_count": 250
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      },
+      {
+        "evidence_id": "737d455e1a0f414db4fc3d0a",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-018-S05"
+        ],
+        "token_count": 600
+      },
+      {
+        "evidence_id": "b64ebbdc0022a41572d20236",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-021-S06"
+        ],
+        "token_count": 411
+      },
+      {
+        "evidence_id": "b7a62160b1949d1ea6aff4e1",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-017-S06"
+        ],
+        "token_count": 481
+      },
+      {
+        "evidence_id": "0d6d524f7215bdc787c36fc5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-002-S08"
+        ],
+        "token_count": 250
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

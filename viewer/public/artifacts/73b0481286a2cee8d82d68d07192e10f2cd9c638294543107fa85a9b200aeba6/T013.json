@@ -1,0 +1,41 @@
+{
+  "answer": "At the current snapshot, two final evidence events conflict on the Sales ICP primary audience. The lower-authority event value is \u201cmidmarket teams\u201d [NLV2-TL-07-E01#TL-07-E01], while the higher-authority event value is \u201cregulated enterprises\u201d [NLV2-TL-07-E02#TL-07-E02]. Because the higher-authority, later-published final evidence is authoritative for the approved value, the approved primary audience for the sales ICP is **\u201cregulated enterprises\u201d** [NLV2-TL-07-E02#TL-07-E02].\n\nANSWER_STATUS: answer  \nUSED_MEMORY_CLAIMS: none",
+  "metadata": {
+    "actual_usd": "0.00098476",
+    "cached_prompt_tokens": 0,
+    "completion_tokens": 633,
+    "cost_source": "openrouter_response_usage",
+    "error": null,
+    "generation_metadata_status": "pending",
+    "generation_time_ms": null,
+    "input_price_ceiling_usd_per_million": "0.154",
+    "key_status_before_call": {
+      "limit_reset": null,
+      "limit_usd": "15",
+      "remaining_usd": "13.116139486",
+      "usage_usd": "1.883860514"
+    },
+    "latency_ms": 6859,
+    "latency_source": "local_round_trip",
+    "live_route": {
+      "input_usd_per_million": "0.14000000",
+      "output_usd_per_million": "0.28000000",
+      "provider": "DeepSeek"
+    },
+    "local_round_trip_ms": 6859,
+    "native_completion_tokens": 633,
+    "native_prompt_tokens": 5768,
+    "native_reasoning_tokens": 492,
+    "output_price_ceiling_usd_per_million": "0.308",
+    "prompt_tokens": 5768,
+    "provider": "DeepSeek",
+    "reasoning_effort": "high",
+    "request_id": "gen-1785997288-XhS2gsa1UQwUqvEdOR9Q",
+    "requested_model": "deepseek/deepseek-v4-flash-0731",
+    "resolved_model": "deepseek/deepseek-v4-flash-0731",
+    "retry_count": 0
+  },
+  "run_id": "g3-public-v1-M0-high-T013",
+  "schema_version": "contextlab.generation-result.v1",
+  "task_id": "T013"
+}

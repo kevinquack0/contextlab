@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.00028238,
+  "answer": "Based on the Q2 2026 telemetry for generally available modules, **Admin Console** had the highest adoption at **100%**, and **InsightDash** had the lowest at **58%** [NL-030#NL-030-S02]. InsightDash is explicitly noted as the lowest among GA modules [NL-030#NL-030-S02]. WorkflowCoach is excluded from this comparison because it is a private/internal beta (11% adoption) and the report explicitly instructs not to generalize its adoption as representative of the market footprint [NL-030#NL-030-S02] [NL-030#NL-030-S05].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 7774.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-low-S068",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Which generally available module had the highest Q2 adoption and which had the lowest? Keep WorkflowCoach's beta percentage separate from general availability.",
+      "suite": "static",
+      "task_family": "table_prose_join",
+      "task_id": "S068"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 1971,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "8a69b9393c3eae6e8908ea8c",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-030-S02"
+        ],
+        "token_count": 282
+      },
+      {
+        "evidence_id": "515d383ad82c82a7b862ced8",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-030-S01"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "13bf85d114b12f95733e3e71",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-030-S03"
+        ],
+        "token_count": 214
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "b9443f003b5b1e23530b9ae4",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-002-S07"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "9f3680084ed1b86ada28ebf7",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-030-S05"
+        ],
+        "token_count": 183
+      },
+      {
+        "evidence_id": "899be70e9a0dfc7ac2408c8f",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-014-S05"
+        ],
+        "token_count": 202
+      },
+      {
+        "evidence_id": "9b3f91e25856e999ec741cda",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-030-S06"
+        ],
+        "token_count": 298
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "8a69b9393c3eae6e8908ea8c",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-030-S02"
+        ],
+        "token_count": 282
+      },
+      {
+        "evidence_id": "515d383ad82c82a7b862ced8",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-030-S01"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "13bf85d114b12f95733e3e71",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-030-S03"
+        ],
+        "token_count": 214
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "b9443f003b5b1e23530b9ae4",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-002-S07"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "9f3680084ed1b86ada28ebf7",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-030-S05"
+        ],
+        "token_count": 183
+      },
+      {
+        "evidence_id": "899be70e9a0dfc7ac2408c8f",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-014-S05"
+        ],
+        "token_count": 202
+      },
+      {
+        "evidence_id": "9b3f91e25856e999ec741cda",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-030-S06"
+        ],
+        "token_count": 298
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

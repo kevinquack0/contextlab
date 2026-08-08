@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.00118244,
+  "answer": "Yes, NovaLearn should prioritize the OCR pipeline work before Teams integration.\n\n**Business Recommendation Rationale:**\n\n1. **OCR is the highest technical priority and a critical system stability requirement.** Scanned policy documents are the primary driver of citation errors and customer onboarding delays, making the Advanced OCR Pipeline (scheduled for August 2026) the top technical priority [NL-001-S08]. The support queue is severely impacted: 27% of May support tickets were related to import issues and broken citations from scanned PDFs. Without fixing OCR, the system is useless for compliance-heavy clients [NL-015-S06].\n\n2. **Building Teams first would worsen the core problem.** If Teams is built now, NovaLearn would deliver inaccurate, un-cited answers to a larger audience inside their chat app. The underlying data ingestion and citation problem must be solved first [NL-015-S06]. Rushing Teams would expose more users to the broken citations that already clog the support queue.\n\n3. **Teams integration carries significant security risks that require careful design.** Building a Microsoft Teams bot that supports logical workspace isolation and role-based access control (RBAC) requires a complete redesign of the auth layer. Rushing it risks a tenant-isolation breach and jeopardizes security certification [NL-015-S06]. The Teams integration is scheduled for design in Q4 2026, with development in early 2027 [NL-015-S06], and is designed to enforce active user permissions—a key differentiator since LearnPilot's Teams integration lacks permission enforcement [NL-032-S02].\n\n4. **While Teams is the most common feature request** [NL-011-S07], prioritizing OCR aligns with long-term trust and revenue. Fixing the root cause—citation accuracy—is foundational before scaling to a new surface like Teams. Although LearnPilot has a Teams connector, its lack of permission enforcement is a significant vulnerability NovaLearn can exploit by launching a secure version later [NL-032-S02].\n\n**Conclusion:** Keep the OCR pipeline as the top priority for August, and let Teams stay on its planned Q4 design / early 2027 development timeline. This protects system stability, security certification, and citation accuracy, which are the platform's core value proposition.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 20487.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-low-S039",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Should NovaLearn prioritize OCR pipeline work before Teams integration? Give a business recommendation grounded in the corpus.",
+      "suite": "static",
+      "task_family": "recommendation",
+      "task_id": "S039"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3003,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "29341b88d42007518d742629",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-032-S05"
+        ],
+        "token_count": 404
+      },
+      {
+        "evidence_id": "741f4c3a347f1f1ac053fe05",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-001-S08"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      },
+      {
+        "evidence_id": "414db3ff44876c4bc80c019e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-032-S02"
+        ],
+        "token_count": 266
+      },
+      {
+        "evidence_id": "a51e2a1f1ee52f745968283e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-009-S05"
+        ],
+        "token_count": 559
+      },
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "5040d007a019cff6b3f3f981",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-002-S01"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "f87510dafd2290bcd49e0518",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-011-S07"
+        ],
+        "token_count": 241
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "29341b88d42007518d742629",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-032-S05"
+        ],
+        "token_count": 404
+      },
+      {
+        "evidence_id": "741f4c3a347f1f1ac053fe05",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-001-S08"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      },
+      {
+        "evidence_id": "414db3ff44876c4bc80c019e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-032-S02"
+        ],
+        "token_count": 266
+      },
+      {
+        "evidence_id": "a51e2a1f1ee52f745968283e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-009-S05"
+        ],
+        "token_count": 559
+      },
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "5040d007a019cff6b3f3f981",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-002-S01"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "f87510dafd2290bcd49e0518",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-011-S07"
+        ],
+        "token_count": 241
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

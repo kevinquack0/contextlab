@@ -1,0 +1,144 @@
+{
+  "actual_usd": 0.0003334856,
+  "answer": "The support FAQ, product guide, and customer interviews collectively describe scanned PDFs as image-only files that lack an embedded text layer, so they require Optical Character Recognition (OCR) to become searchable and citable. Without OCR, the standard parser extracts zero text, causing broken citations, missing content, and longer processing times [NL-006#NL-006-S03]. The product guide confirms that scanned/image-only PDFs require OCR processing and that citation precision for PDFs is at page/paragraph level [NL-002#NL-002-S08]. Customer interviews corroborate this: support ticket data shows OCR issues are the largest category (27% of tickets), with scanned PDFs causing missing citations or citations pointing to whole documents [NL-021#NL-021-S02]. BrightPath reports ~45% of their corpus is scanned, leading to citation links pointing to page 1 of large documents [NL-024#NL-024-S04]. A clinical user describes TutorChat omitting critical ventilator alarm steps because text extraction failed on a scanned page [NL-018#NL-018-S05]. Customers also note that manual OCR preprocessing is a major bottleneck, delaying ingestion [NL-018#NL-018-S05] [NL-017#NL-017-S06].\n\nCollective recommendations include: always prefer native text-based files (DOCX, text) over scans [NL-006#NL-006-S03] [NL-024#NL-024-S04]; enable the OCR engine or use the Advanced OCR Pipeline (Enterprise/Growth add-on, targeted for release in August 2026) that uses layout-aware vision models [NL-006#NL-006-S03] [NL-024#NL-024-S04] [NL-018#NL-018-S05] [NL-017#NL-017-S06]; when scanning is unavoidable, ensure good scan quality (clear grid lines for tables) and transcribe handwriting into digital text [NL-006#NL-006-S03]. Engineering discussions add operational constraints: scanned PDFs should be processed in a separate batch OCR queue with per-tenant rate limiting and page caps (Starter 100, Growth 500, Enterprise 2000 pages) to avoid blocking fast uploads and memory exhaustion [NL-021#NL-021-S06]. Security requires temporary OCR files be kept in encrypted scratch space and wiped after processing [NL-021#NL-021-S06]. For now, excluding scans or converting them to native text is the only path to high-precision citations until the Advanced OCR Pipeline is available [NL-024#NL-024-S04].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 10803.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-low-S015",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What do the support FAQ, product guide, and customer interviews collectively say about scanned PDF handling?",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S015"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3124,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      },
+      {
+        "evidence_id": "737d455e1a0f414db4fc3d0a",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-018-S05"
+        ],
+        "token_count": 600
+      },
+      {
+        "evidence_id": "b64ebbdc0022a41572d20236",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-021-S06"
+        ],
+        "token_count": 411
+      },
+      {
+        "evidence_id": "b7a62160b1949d1ea6aff4e1",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-017-S06"
+        ],
+        "token_count": 481
+      },
+      {
+        "evidence_id": "0d6d524f7215bdc787c36fc5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-002-S08"
+        ],
+        "token_count": 250
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      },
+      {
+        "evidence_id": "737d455e1a0f414db4fc3d0a",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-018-S05"
+        ],
+        "token_count": 600
+      },
+      {
+        "evidence_id": "b64ebbdc0022a41572d20236",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-021-S06"
+        ],
+        "token_count": 411
+      },
+      {
+        "evidence_id": "b7a62160b1949d1ea6aff4e1",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-017-S06"
+        ],
+        "token_count": 481
+      },
+      {
+        "evidence_id": "0d6d524f7215bdc787c36fc5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-002-S08"
+        ],
+        "token_count": 250
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

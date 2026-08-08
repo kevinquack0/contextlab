@@ -1,0 +1,41 @@
+{
+  "answer": "Under the official Security and Data Governance Policy (NL-007-S06), standard tenant-data decommissioning is described as \u201cexecuted within 90 days after contract termination to ensure complete cleanup across all backup archives.\u201d However, the policy\u2019s detailed operational workflow separately specifies that data in cold storage backups is deleted according to the standard 30-day backup rotation cycle, ensuring \u201cfull cryptographic erasure within 120 days of contract termination.\u201d Because the question asks for completion of the full tenant-data decommissioning (which the policy explicitly includes for cold storage backups), the complete decommissioning is finished within **120 days** after contract termination. The 90-day figure applies to active disks and primary databases, but the full erasure of all tenant data, including cold storage backups, extends to 120 days. Absent signed custom terms, this 120-day timeline governs.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "metadata": {
+    "actual_usd": "0.0018295256",
+    "cached_prompt_tokens": 4352,
+    "completion_tokens": 6457,
+    "cost_source": "openrouter_response_usage",
+    "error": null,
+    "generation_metadata_status": "pending",
+    "generation_time_ms": null,
+    "input_price_ceiling_usd_per_million": "0.154",
+    "key_status_before_call": {
+      "limit_reset": null,
+      "limit_usd": "15",
+      "remaining_usd": "12.908628819",
+      "usage_usd": "2.091371181"
+    },
+    "latency_ms": 46612,
+    "latency_source": "local_round_trip",
+    "live_route": {
+      "input_usd_per_million": "0.14000000",
+      "output_usd_per_million": "0.28000000",
+      "provider": "DeepSeek"
+    },
+    "local_round_trip_ms": 46612,
+    "native_completion_tokens": 6457,
+    "native_prompt_tokens": 4419,
+    "native_reasoning_tokens": 6266,
+    "output_price_ceiling_usd_per_million": "0.308",
+    "prompt_tokens": 4419,
+    "provider": "DeepSeek",
+    "reasoning_effort": "low",
+    "request_id": "gen-1785998309-N6D7VVakeDbQMpyyHLY0",
+    "requested_model": "deepseek/deepseek-v4-flash-0731",
+    "resolved_model": "deepseek/deepseek-v4-flash-0731",
+    "retry_count": 0
+  },
+  "run_id": "g3-public-v1-M2-low-S052",
+  "schema_version": "contextlab.generation-result.v1",
+  "task_id": "S052"
+}

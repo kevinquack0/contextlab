@@ -1,0 +1,210 @@
+{
+  "actual_usd": 0.0001022392,
+  "answer": "As of 2026-01-15, the authoritative sales ICP identified the primary audience as \"regulated enterprises\" [NLV2-TL-07-E02#TL-07-E02]. This evidence has authority level 5 and was effective from 2026-01-01 with open validity. A lower-authority record (authority level 3) previously listed \"midmarket teams\" [NLV2-TL-07-E01#TL-07-E01], but the higher-authority, final record governs.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: claim-TL-07-E02",
+  "latency_ms": 3327.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-high-T014",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "As of 2026-01-15, what primary audience did the authoritative sales ICP identify?",
+      "suite": "temporal",
+      "task_family": "knowledge_update",
+      "task_id": "T014"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 469,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "0259bc6eef616b4f3167ec03",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "TL-07-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "87b1854edab917573f9f057b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "TL-07-E02"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "b3a14467daa751cc4480de76",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "TL-09-E01"
+        ],
+        "token_count": 48
+      },
+      {
+        "evidence_id": "4c567abf24e2fa3694ae41c5",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "TL-02-E02"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "9416e41c31967f45e48a8fb2",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "TL-02-E01"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "aec7bd1a9caa9cfb24d355b1",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "TL-01-E02"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "8f83b44e109c782e0e1d677b",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "TL-14-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "687688dcc3e2c08a6280634b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "TL-01-E01"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "raw-TL-08-E01",
+        "rank": 1006,
+        "raw_evidence_ids": [
+          "TL-08-E01"
+        ],
+        "token_count": 47
+      }
+    ],
+    "memory_candidate_evidence": [
+      {
+        "evidence_id": "claim-TL-07-E01",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "TL-07-E01"
+        ],
+        "token_count": 27
+      },
+      {
+        "evidence_id": "claim-TL-07-E02",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "TL-07-E02"
+        ],
+        "token_count": 27
+      }
+    ],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "0259bc6eef616b4f3167ec03",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "TL-07-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "87b1854edab917573f9f057b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "TL-07-E02"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "b3a14467daa751cc4480de76",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "TL-09-E01"
+        ],
+        "token_count": 48
+      },
+      {
+        "evidence_id": "4c567abf24e2fa3694ae41c5",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "TL-02-E02"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "9416e41c31967f45e48a8fb2",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "TL-02-E01"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "aec7bd1a9caa9cfb24d355b1",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "TL-01-E02"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "8f83b44e109c782e0e1d677b",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "TL-14-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "687688dcc3e2c08a6280634b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "TL-01-E01"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "raw-TL-08-E01",
+        "rank": 1006,
+        "raw_evidence_ids": [
+          "TL-08-E01"
+        ],
+        "token_count": 47
+      }
+    ],
+    "selected_memory_evidence": [
+      {
+        "evidence_id": "claim-TL-07-E01",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "TL-07-E01"
+        ],
+        "token_count": 27
+      },
+      {
+        "evidence_id": "claim-TL-07-E02",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "TL-07-E02"
+        ],
+        "token_count": 27
+      }
+    ]
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

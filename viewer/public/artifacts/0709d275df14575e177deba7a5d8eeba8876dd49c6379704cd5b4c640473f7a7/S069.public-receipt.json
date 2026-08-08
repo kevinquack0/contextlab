@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0002068808,
+  "answer": "Comparing Mid-market and Enterprise on the three requested metrics (as of Q2 2026, per the segment performance table [NL-012#NL-012-S03]):\n\n- **NPS:** Mid-market = 47; Enterprise = 52. Enterprise has the higher NPS [NL-012#NL-012-S03], also echoed in NL-016-S03 and NL-011-S08.\n- **Monthly churn:** Mid-market = 2.1%; Enterprise = 1.3%. Enterprise is more stable, with lower monthly logo churn [NL-012#NL-012-S03], confirmed by David Okafor in NL-015-S03.\n- **Expansion revenue:** Mid-market = $64,000; Enterprise = $91,000 (combined $155,000, vs. SMB's $18,000). Enterprise contributes the largest expansion revenue, and together these segments generated 83.8% of recurring revenue [NL-012#NL-012-S03], [NL-016#NL-016-S03], [NL-012#NL-012-S09].\n\n**Connection to the board's H2 priority:** The data supports an H2 focus on regulated mid-market and enterprise customers. Leadership explicitly confirmed this ICP in NL-015-S03 (Maya Patel) and NL-016-S03 (shifting outbound sales away from SMBs). Strategic conclusions in NL-012-S09 prioritize these segments and direct engineering/product efforts to streamline onboarding (e.g., automated permission mapping, advanced OCR) and to prioritize public release of WorkflowCoach in H2 2026 as an expansion path for mid-market and enterprise accounts. The superior NPS, lower churn, and higher expansion revenue in these segments justify that H2 priority [NL-012#NL-012-S09], [NL-016#NL-016-S03], [NL-012#NL-012-S05].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 6521.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-low-S069",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Use the segment metrics to compare Mid-market and Enterprise on NPS, churn, and expansion revenue, then connect the figures to the board's H2 priority.",
+      "suite": "static",
+      "task_family": "table_prose_join",
+      "task_id": "S069"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2864,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "adeca626775913468145d8c5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-012-S03"
+        ],
+        "token_count": 350
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      },
+      {
+        "evidence_id": "76c70410cd26bd9dc9d5eba7",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-011-S08"
+        ],
+        "token_count": 307
+      },
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      },
+      {
+        "evidence_id": "790d0e0f0141f0a669ed0e89",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-012-S05"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "fed9df8867e9054c7893af8a",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-016-S02"
+        ],
+        "token_count": 317
+      },
+      {
+        "evidence_id": "a8fc8d591099588c56805227",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-010-S02"
+        ],
+        "token_count": 356
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "adeca626775913468145d8c5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-012-S03"
+        ],
+        "token_count": 350
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      },
+      {
+        "evidence_id": "76c70410cd26bd9dc9d5eba7",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-011-S08"
+        ],
+        "token_count": 307
+      },
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      },
+      {
+        "evidence_id": "790d0e0f0141f0a669ed0e89",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-012-S05"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "fed9df8867e9054c7893af8a",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-016-S02"
+        ],
+        "token_count": 317
+      },
+      {
+        "evidence_id": "a8fc8d591099588c56805227",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-010-S02"
+        ],
+        "token_count": 356
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

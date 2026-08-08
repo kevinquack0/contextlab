@@ -1,0 +1,608 @@
+{
+  "actual_usd": 0.000251188,
+  "answer": "At the current snapshot, the Nimbus integration does not have an active \"supported\" status. The earlier event setting support_status to \"supported\" [NLV2-TL-15-E01#TL-15-E01] was tombstoned by a later higher-authority event with a null value and lifecycle target TL-15-E01 [NLV2-TL-15-E02#TL-15-E02]. Therefore, the support status is no longer recorded as supported.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 8359.0,
+  "policy": "M4",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M4-high-T029",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "At the current snapshot, what is the support status of the Nimbus integration?",
+      "suite": "temporal",
+      "task_family": "knowledge_update",
+      "task_id": "T029"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 1671,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "a2acda006722bac2a92c6a12",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "TL-15-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "fd26024cd355cbbc41993f3b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "TL-15-E02"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "197961befc6a770218d5ee4d",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "TL-04-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "29d22791853e756383cfddf8",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "TL-12-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "81f209d8c676281a17ff99c1",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "TL-12-E02"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "231d4f517dd578862d69d650",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "TL-18-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "010bf3e0306c07ef9f364d01",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "TL-17-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "9ef19bd657772545aa884b1e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "TL-11-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-01-E01",
+        "rank": 1000,
+        "raw_evidence_ids": [
+          "TL-01-E01"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "raw-TL-02-E01",
+        "rank": 1001,
+        "raw_evidence_ids": [
+          "TL-02-E01"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "raw-TL-14-E01",
+        "rank": 1002,
+        "raw_evidence_ids": [
+          "TL-14-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-01-E02",
+        "rank": 1003,
+        "raw_evidence_ids": [
+          "TL-01-E02"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "raw-TL-02-E02",
+        "rank": 1004,
+        "raw_evidence_ids": [
+          "TL-02-E02"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "raw-TL-07-E01",
+        "rank": 1005,
+        "raw_evidence_ids": [
+          "TL-07-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-08-E01",
+        "rank": 1006,
+        "raw_evidence_ids": [
+          "TL-08-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-07-E02",
+        "rank": 1007,
+        "raw_evidence_ids": [
+          "TL-07-E02"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-09-E01",
+        "rank": 1008,
+        "raw_evidence_ids": [
+          "TL-09-E01"
+        ],
+        "token_count": 48
+      },
+      {
+        "evidence_id": "raw-TL-10-E01",
+        "rank": 1009,
+        "raw_evidence_ids": [
+          "TL-10-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-16-E01",
+        "rank": 1013,
+        "raw_evidence_ids": [
+          "TL-16-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-13-E01",
+        "rank": 1014,
+        "raw_evidence_ids": [
+          "TL-13-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-13-E02",
+        "rank": 1015,
+        "raw_evidence_ids": [
+          "TL-13-E02"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-03-E01",
+        "rank": 1016,
+        "raw_evidence_ids": [
+          "TL-03-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-09-E02",
+        "rank": 1017,
+        "raw_evidence_ids": [
+          "TL-09-E02"
+        ],
+        "token_count": 48
+      },
+      {
+        "evidence_id": "raw-TL-19-E01",
+        "rank": 1018,
+        "raw_evidence_ids": [
+          "TL-19-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-20-E01",
+        "rank": 1019,
+        "raw_evidence_ids": [
+          "TL-20-E01"
+        ],
+        "token_count": 48
+      },
+      {
+        "evidence_id": "raw-TL-19-E02",
+        "rank": 1021,
+        "raw_evidence_ids": [
+          "TL-19-E02"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-20-E02",
+        "rank": 1022,
+        "raw_evidence_ids": [
+          "TL-20-E02"
+        ],
+        "token_count": 48
+      },
+      {
+        "evidence_id": "raw-TL-10-E02",
+        "rank": 1023,
+        "raw_evidence_ids": [
+          "TL-10-E02"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-14-E02",
+        "rank": 1024,
+        "raw_evidence_ids": [
+          "TL-14-E02"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-16-E02",
+        "rank": 1025,
+        "raw_evidence_ids": [
+          "TL-16-E02"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-11-E02",
+        "rank": 1028,
+        "raw_evidence_ids": [
+          "TL-11-E02"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-08-E02",
+        "rank": 1029,
+        "raw_evidence_ids": [
+          "TL-08-E02"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-05-E01",
+        "rank": 1031,
+        "raw_evidence_ids": [
+          "TL-05-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-06-E01",
+        "rank": 1033,
+        "raw_evidence_ids": [
+          "TL-06-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-05-E02",
+        "rank": 1034,
+        "raw_evidence_ids": [
+          "TL-05-E02"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-06-E02",
+        "rank": 1035,
+        "raw_evidence_ids": [
+          "TL-06-E02"
+        ],
+        "token_count": 46
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "a2acda006722bac2a92c6a12",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "TL-15-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "fd26024cd355cbbc41993f3b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "TL-15-E02"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "197961befc6a770218d5ee4d",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "TL-04-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "29d22791853e756383cfddf8",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "TL-12-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "81f209d8c676281a17ff99c1",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "TL-12-E02"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "231d4f517dd578862d69d650",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "TL-18-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "010bf3e0306c07ef9f364d01",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "TL-17-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "9ef19bd657772545aa884b1e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "TL-11-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-01-E01",
+        "rank": 1000,
+        "raw_evidence_ids": [
+          "TL-01-E01"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "raw-TL-02-E01",
+        "rank": 1001,
+        "raw_evidence_ids": [
+          "TL-02-E01"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "raw-TL-14-E01",
+        "rank": 1002,
+        "raw_evidence_ids": [
+          "TL-14-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-01-E02",
+        "rank": 1003,
+        "raw_evidence_ids": [
+          "TL-01-E02"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "raw-TL-02-E02",
+        "rank": 1004,
+        "raw_evidence_ids": [
+          "TL-02-E02"
+        ],
+        "token_count": 45
+      },
+      {
+        "evidence_id": "raw-TL-07-E01",
+        "rank": 1005,
+        "raw_evidence_ids": [
+          "TL-07-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-08-E01",
+        "rank": 1006,
+        "raw_evidence_ids": [
+          "TL-08-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-07-E02",
+        "rank": 1007,
+        "raw_evidence_ids": [
+          "TL-07-E02"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-09-E01",
+        "rank": 1008,
+        "raw_evidence_ids": [
+          "TL-09-E01"
+        ],
+        "token_count": 48
+      },
+      {
+        "evidence_id": "raw-TL-10-E01",
+        "rank": 1009,
+        "raw_evidence_ids": [
+          "TL-10-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-16-E01",
+        "rank": 1013,
+        "raw_evidence_ids": [
+          "TL-16-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-13-E01",
+        "rank": 1014,
+        "raw_evidence_ids": [
+          "TL-13-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-13-E02",
+        "rank": 1015,
+        "raw_evidence_ids": [
+          "TL-13-E02"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-03-E01",
+        "rank": 1016,
+        "raw_evidence_ids": [
+          "TL-03-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-09-E02",
+        "rank": 1017,
+        "raw_evidence_ids": [
+          "TL-09-E02"
+        ],
+        "token_count": 48
+      },
+      {
+        "evidence_id": "raw-TL-19-E01",
+        "rank": 1018,
+        "raw_evidence_ids": [
+          "TL-19-E01"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-20-E01",
+        "rank": 1019,
+        "raw_evidence_ids": [
+          "TL-20-E01"
+        ],
+        "token_count": 48
+      },
+      {
+        "evidence_id": "raw-TL-19-E02",
+        "rank": 1021,
+        "raw_evidence_ids": [
+          "TL-19-E02"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-20-E02",
+        "rank": 1022,
+        "raw_evidence_ids": [
+          "TL-20-E02"
+        ],
+        "token_count": 48
+      },
+      {
+        "evidence_id": "raw-TL-10-E02",
+        "rank": 1023,
+        "raw_evidence_ids": [
+          "TL-10-E02"
+        ],
+        "token_count": 47
+      },
+      {
+        "evidence_id": "raw-TL-14-E02",
+        "rank": 1024,
+        "raw_evidence_ids": [
+          "TL-14-E02"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-16-E02",
+        "rank": 1025,
+        "raw_evidence_ids": [
+          "TL-16-E02"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-11-E02",
+        "rank": 1028,
+        "raw_evidence_ids": [
+          "TL-11-E02"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-08-E02",
+        "rank": 1029,
+        "raw_evidence_ids": [
+          "TL-08-E02"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-05-E01",
+        "rank": 1031,
+        "raw_evidence_ids": [
+          "TL-05-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-06-E01",
+        "rank": 1033,
+        "raw_evidence_ids": [
+          "TL-06-E01"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-05-E02",
+        "rank": 1034,
+        "raw_evidence_ids": [
+          "TL-05-E02"
+        ],
+        "token_count": 46
+      },
+      {
+        "evidence_id": "raw-TL-06-E02",
+        "rank": 1035,
+        "raw_evidence_ids": [
+          "TL-06-E02"
+        ],
+        "token_count": 46
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

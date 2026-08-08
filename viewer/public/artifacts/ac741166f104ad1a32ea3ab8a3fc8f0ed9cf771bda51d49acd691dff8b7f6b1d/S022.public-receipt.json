@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0002368688,
+  "answer": "Traditional support lookup tasks and structured BI-style questions differ mainly in query form, retrieval mechanism, output, and evaluation:\n\n- **Support lookup tasks** are natural-language questions answered from the knowledge corpus. Examples include policy lookup, onboarding procedures, and troubleshooting queries [NL-028#NL-028-S06], and support agents consulting resources for edge-case requests while a customer is on hold [NL-009#NL-009-S03]. TutorChat processes these via semantic querying, vector retrieval, permission filtering, reranking, and grounded, cited answer generation [NL-002#NL-002-S03]. They are also subject to the insufficient-evidence standard, where the assistant must not guess or hallucinate [NL-008#NL-008-S04], and are evaluated with metrics like citation correctness, groundedness, permission leakage, and retrieval precision [NL-008#NL-008-S08].\n\n- **Structured BI-style questions** are analytical aggregations over telemetry tables. The corpus describes SQL targets against the `support_tickets` table, such as `SELECT category, SUM(ticket_count) ... GROUP BY category`, segment-level averages, SLA bottleneck queries for tickets older than 48 hours, and CSAT aggregations by plan tier [NL-029#NL-029-S07].\n\nIn short, lookup tasks emphasize grounded, conversational answers with citations from documents, while BI-style questions emphasize structured SQL aggregation and reporting over tabular support metrics.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 7733.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-high-S022",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Compare traditional support lookup tasks with structured BI-style questions in this corpus.",
+      "suite": "static",
+      "task_family": "comparison",
+      "task_id": "S022"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2731,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "aeb61c6c76a026b346947204",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S03"
+        ],
+        "token_count": 353
+      },
+      {
+        "evidence_id": "ada0add953b3a394c4e6e6d7",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-002-S03"
+        ],
+        "token_count": 522
+      },
+      {
+        "evidence_id": "44227b33b1862c62171cbe82",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-008-S08"
+        ],
+        "token_count": 348
+      },
+      {
+        "evidence_id": "f31090ea2bedf930787c6721",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-028-S06"
+        ],
+        "token_count": 391
+      },
+      {
+        "evidence_id": "a8f289acf1dbdf46590b307e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-008-S04"
+        ],
+        "token_count": 239
+      },
+      {
+        "evidence_id": "8198c6a1826c44813cde157e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-029-S07"
+        ],
+        "token_count": 349
+      },
+      {
+        "evidence_id": "1184bb3ca469a844512dba44",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-023-S02"
+        ],
+        "token_count": 78
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "aeb61c6c76a026b346947204",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S03"
+        ],
+        "token_count": 353
+      },
+      {
+        "evidence_id": "ada0add953b3a394c4e6e6d7",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-002-S03"
+        ],
+        "token_count": 522
+      },
+      {
+        "evidence_id": "44227b33b1862c62171cbe82",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-008-S08"
+        ],
+        "token_count": 348
+      },
+      {
+        "evidence_id": "f31090ea2bedf930787c6721",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-028-S06"
+        ],
+        "token_count": 391
+      },
+      {
+        "evidence_id": "a8f289acf1dbdf46590b307e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-008-S04"
+        ],
+        "token_count": 239
+      },
+      {
+        "evidence_id": "8198c6a1826c44813cde157e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-029-S07"
+        ],
+        "token_count": 349
+      },
+      {
+        "evidence_id": "1184bb3ca469a844512dba44",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-023-S02"
+        ],
+        "token_count": 78
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

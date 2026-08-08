@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0004388104,
+  "answer": "Traditional support lookup tasks in this corpus involve retrieving specific, grounded facts or procedural steps from the corporate knowledge base. These are handled by TutorChat through semantic query processing, vector search, and grounded answer generation with inline citations, covering tasks like policy lookups and troubleshooting assistance [NL-028-S06], [NL-002-S03]. Such queries account for a defined segment of test workloads (40% direct lookup queries in the validation dataset) and are subject to permission filtering and the \"insufficient evidence\" standard when the corpus lacks specific facts [NL-008-S08], [NL-008-S04].\n\nStructured BI-style questions, by contrast, are programmatic SQL aggregations executed against telemetry/database schemas. This includes queries such as `SELECT category, SUM(ticket_count) FROM support_tickets WHERE period = 'May 2026' GROUP BY category` and `SELECT segment, AVG(ticket_count) FROM support_tickets GROUP BY segment`, as well as more advanced diagnostics for SLA bottleneck areas (e.g., extracting severity-1/2 tickets over 48 hours old) and tracking average customer CSAT scores per plan tier [NL-029-S07]. These are analytical/reporting tasks aimed at operational audits, trend tracking, and proactive bug identification rather than direct factual recovery [NL-029-S07].\n\nIn summary, lookup tasks extract a single documented answer from unstructured text (with citation verification and permission controls), while BI-style questions aggregate structured ticketing/reporting data to answer operational and trend-based questions [NL-028-S06], [NL-002-S03], [NL-029-S07].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 13677.0,
+  "policy": "M2",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M2-low-S022",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Compare traditional support lookup tasks with structured BI-style questions in this corpus.",
+      "suite": "static",
+      "task_family": "comparison",
+      "task_id": "S022"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2731,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "aeb61c6c76a026b346947204",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S03"
+        ],
+        "token_count": 353
+      },
+      {
+        "evidence_id": "ada0add953b3a394c4e6e6d7",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-002-S03"
+        ],
+        "token_count": 522
+      },
+      {
+        "evidence_id": "44227b33b1862c62171cbe82",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-008-S08"
+        ],
+        "token_count": 348
+      },
+      {
+        "evidence_id": "f31090ea2bedf930787c6721",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-028-S06"
+        ],
+        "token_count": 391
+      },
+      {
+        "evidence_id": "a8f289acf1dbdf46590b307e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-008-S04"
+        ],
+        "token_count": 239
+      },
+      {
+        "evidence_id": "8198c6a1826c44813cde157e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-029-S07"
+        ],
+        "token_count": 349
+      },
+      {
+        "evidence_id": "1184bb3ca469a844512dba44",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-023-S02"
+        ],
+        "token_count": 78
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "aeb61c6c76a026b346947204",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S03"
+        ],
+        "token_count": 353
+      },
+      {
+        "evidence_id": "ada0add953b3a394c4e6e6d7",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-002-S03"
+        ],
+        "token_count": 522
+      },
+      {
+        "evidence_id": "44227b33b1862c62171cbe82",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-008-S08"
+        ],
+        "token_count": 348
+      },
+      {
+        "evidence_id": "f31090ea2bedf930787c6721",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-028-S06"
+        ],
+        "token_count": 391
+      },
+      {
+        "evidence_id": "a8f289acf1dbdf46590b307e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-008-S04"
+        ],
+        "token_count": 239
+      },
+      {
+        "evidence_id": "8198c6a1826c44813cde157e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-029-S07"
+        ],
+        "token_count": 349
+      },
+      {
+        "evidence_id": "1184bb3ca469a844512dba44",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-023-S02"
+        ],
+        "token_count": 78
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

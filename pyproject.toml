@@ -1,0 +1,15 @@
+[project]
+name = "contextlab"
+version = "0.1.0"
+description = "Evidence-first laboratory for retrieval, temporal memory, and bounded search in enterprise AI."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Kevin Araujo" },
+]
+dependencies = []
+
+[tool.contextlab]
+python-test-command = "PYTHONPATH=evaluation/v2 python3 -m unittest discover -s evaluation/v2/tests -p 'test_*.py'"
+public-release-config = "public-release.json"
+

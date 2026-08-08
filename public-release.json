@@ -1,0 +1,329 @@
+{
+  "schema_version": "contextlab.public-release-config.v1",
+  "release_id": "portfolio-v1",
+  "limits": {
+    "max_file_bytes_exclusive": 10000000,
+    "max_total_bytes_exclusive": 100000000
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "required": true
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "required": true
+    },
+    {
+      "path": "README.md",
+      "required": true
+    },
+    {
+      "path": "docs/portfolio/AI_WORKING_METHOD.md",
+      "required": true
+    },
+    {
+      "path": "docs/portfolio/ARCHITECTURE.md",
+      "required": true
+    },
+    {
+      "path": "docs/portfolio/CASE_STUDY.md",
+      "required": true
+    },
+    {
+      "path": "docs/portfolio/CLAIMS.md",
+      "required": true
+    },
+    {
+      "path": "docs/portfolio/MY_ROLE.md",
+      "required": true
+    },
+    {
+      "path": "docs/portfolio/RELEASE_CHECKLIST.md",
+      "required": true
+    },
+    {
+      "path": "docs/portfolio/SOURCE_AND_AGENT_BOUNDARY.md",
+      "required": true
+    },
+    {
+      "path": "docs/portfolio/WALKTHROUGH_SCRIPT.md",
+      "required": true
+    },
+    {
+      "path": "docs/CONTEXTLAB_V2_EXPERIMENT_CHARTER.md",
+      "required": true
+    },
+    {
+      "path": "docs/portfolio/media/ContextLab_TCC_v1.pdf",
+      "required": true,
+      "sha256": "bf3efd964c0370fda2c7b37e2208f1775b8c5ac16b09b72af9f28d8eb2369864"
+    },
+    {
+      "path": "docs/portfolio/media/README.md",
+      "required": true
+    },
+    {
+      "path": "docs/portfolio/media/contextlab-poster-1200x630.jpg",
+      "required": true,
+      "sha256": "10e56c1b3d2a9e5edb7edc5f7d006a7b8368fa57c968fe695db4f81ad631ea83"
+    },
+    {
+      "path": "docs/portfolio/media/contextlab-walkthrough.mp4",
+      "required": true,
+      "sha256": "0f59964cf03ac66bc9bf3f6a3ce385bb46c46aa56c0ff1f41993419301e2f4e3"
+    },
+    {
+      "path": "docs/portfolio/media/contextlab-walkthrough.vtt",
+      "required": true,
+      "sha256": "4581136bea0b4311edd978158511dd2a0c1f0dd592ff1238cecc103dc4ad9dc1"
+    },
+    {
+      "path": "docs/portfolio/media/screenshots/01-hero-desktop.jpg",
+      "required": true,
+      "sha256": "b280941759a0820ebdc0be4d343953d97f5852ae76160761fd09be196ebf61ee"
+    },
+    {
+      "path": "docs/portfolio/media/screenshots/02-architecture-desktop.jpg",
+      "required": true,
+      "sha256": "e0775f0515ae51b47e39c3eaf3dded53ddb4601984f0523cc6bbc14c663fbd95"
+    },
+    {
+      "path": "docs/portfolio/media/screenshots/03-strategy-comparison-desktop.jpg",
+      "required": true,
+      "sha256": "41b2d4c7e54f178c9dc306bd7e935662a7ab530e9889769863e5d33c10edc78e"
+    },
+    {
+      "path": "docs/portfolio/media/screenshots/04-time-machine-desktop.jpg",
+      "required": true,
+      "sha256": "8d9ea5a8e705d3534ae355a0e50190f998bcf7bf05b7c83d4c7dfd0a3c3fe13b"
+    },
+    {
+      "path": "docs/portfolio/media/screenshots/05-run-replay-desktop.jpg",
+      "required": true,
+      "sha256": "6527f50f84a97e5f195431a16f252c827d2b9d1df8bf0b25af63393986358ff7"
+    },
+    {
+      "path": "evaluation/v2/tests/test_public_release.py",
+      "required": true
+    },
+    {
+      "path": "LICENSE",
+      "required": false
+    },
+    {
+      "path": "public-release.json",
+      "required": true
+    },
+    {
+      "path": "pyproject.toml",
+      "required": true
+    },
+    {
+      "path": "results/v2/frontier/F3_F5_DEMONSTRATION_SUMMARY.md",
+      "required": true
+    },
+    {
+      "path": "results/v2/frontier/f3/reviews-attempt-04/final.json",
+      "required": true,
+      "sha256": "81bc0ad40a828888df5430d8bc56fe56359fc17bab6fdac4c2c1ec12e2646595"
+    },
+    {
+      "path": "results/v2/frontier/f3/reviews-attempt-04/kevin.approval.json",
+      "required": true,
+      "sha256": "355f97a22bea402403c9944127b17c6dbed31c45199883d411a174c5d324182f"
+    },
+    {
+      "path": "results/v2/frontier/f3/reviews-attempt-04/pending.json",
+      "required": true,
+      "sha256": "e3de75210c9542a0f6809ab22bd86bf8736f318b44addc12d3b3d1c37a2b4ec9"
+    },
+    {
+      "path": "results/v2/frontier/f3/reviews-attempt-04/technical.json",
+      "required": true,
+      "sha256": "2641e6f8ba5cdcbbb7d8d54f9a52a1a2e7797f8e4e38c14585e27e3193e6ad91"
+    },
+    {
+      "path": "results/v2/frontier/f3/virtual_context_paging.attempt-06.final.json",
+      "required": true,
+      "sha256": "3e0bfd6833aa3732723f7d85eb9a296b650980f49b261f1a5edd44769814b819"
+    },
+    {
+      "path": "results/v2/frontier/f5/reviews-attempt-04/final.json",
+      "required": true,
+      "sha256": "f1850c8438cda8606ec9eb601bcd500663b292ec11316d072afc5910825736ec"
+    },
+    {
+      "path": "results/v2/frontier/f5/reviews-attempt-04/kevin.approval.json",
+      "required": true,
+      "sha256": "767b29266101571cc5ffb083ca7a31ae06e3d4ac21515ba5d162d2f38457d8a4"
+    },
+    {
+      "path": "results/v2/frontier/f5/reviews-attempt-04/pending.json",
+      "required": true,
+      "sha256": "276aeaba6514a55557a03f38e2ea99559c5a570605de89710913af86113d0473"
+    },
+    {
+      "path": "results/v2/frontier/f5/reviews-attempt-04/technical.json",
+      "required": true,
+      "sha256": "37d3eb6d66da4ddf785b62910c6c7b5811ff4b0dcf8e44962d9b1e6527a6315f"
+    },
+    {
+      "path": "results/v2/frontier/f5/bounded_search.final.json",
+      "required": true,
+      "sha256": "e917ca44cc44249a46690bcf551a6a798769c73c510517754f63326a1b553b1d"
+    },
+    {
+      "path": "results/v2/gates/G1.approval.json",
+      "required": true,
+      "sha256": "23413cc58eb44ebd69d17b84cad3f2d592fcac28c6351161a77459cb6c212522"
+    },
+    {
+      "path": "results/v2/gates/G1.json",
+      "required": true,
+      "sha256": "f89b68192108b4e8350d700c25f6a1a79fdb413ecea5ed9b273c45791320303a"
+    },
+    {
+      "path": "results/v2/gates/G2.approval.json",
+      "required": true,
+      "sha256": "0f52edeec723daf948ce9ab6d4ac7c85b885d9d9cde9e6bd0d38902fe17e239b"
+    },
+    {
+      "path": "results/v2/gates/G2.json",
+      "required": true,
+      "sha256": "d121050caab8fe38688035e88071cab467d53c831e0414ff808c1ea26b89aed2"
+    },
+    {
+      "path": "results/v2/gates/G3.json",
+      "required": true,
+      "sha256": "a0b1f91671782a83311f72392ea53e71a08c50bda16a157bd2d5c77ce1b4a29b"
+    },
+    {
+      "path": "results/v2/gates/G4.approval.json",
+      "required": true,
+      "sha256": "2cccaa287165e4ff572b84770ca8e891ee3dd9636b60de96bb0285dde4d0f2ef"
+    },
+    {
+      "path": "results/v2/gates/G4.json",
+      "required": true,
+      "sha256": "b93bb93bb2e04b1b67c2847d58496d84f28251b3663cbefeaa25740f1c9a21e9"
+    },
+    {
+      "path": "results/v2/memory/g3_public_generation_run.json",
+      "required": true,
+      "sha256": "38026a40099bf1523062cabca2100acde06550ddc7eee6ce4c7eb787d8178464"
+    },
+    {
+      "path": "results/v2/reviews/g3/kevin/final-gate-decision.json",
+      "required": true,
+      "sha256": "c0b154b1290b9bf26675f83afbd33e3a93bf64d0287cce8720dfb9cfcfe5e7e4"
+    },
+    {
+      "path": "scripts/public_release.py",
+      "required": true
+    },
+    {
+      "path": "viewer/README.md",
+      "required": true
+    },
+    {
+      "path": "viewer/.gitignore",
+      "required": true
+    },
+    {
+      "path": "viewer/eslint.config.js",
+      "required": true
+    },
+    {
+      "path": "viewer/index.html",
+      "required": true
+    },
+    {
+      "path": "viewer/package-lock.json",
+      "required": true
+    },
+    {
+      "path": "viewer/package.json",
+      "required": true
+    },
+    {
+      "path": "viewer/tsconfig.json",
+      "required": true
+    },
+    {
+      "path": "viewer/vite.config.ts",
+      "required": true
+    }
+  ],
+  "trees": [
+    {
+      "path": "evaluation/v2/contextlab_v2",
+      "suffixes": [
+        ".py"
+      ],
+      "required": true
+    },
+    {
+      "path": "viewer/src",
+      "suffixes": [
+        ".css",
+        ".json",
+        ".scss",
+        ".ts",
+        ".tsx"
+      ],
+      "required": true
+    },
+    {
+      "path": "viewer/tests",
+      "suffixes": [
+        ".json",
+        ".ts",
+        ".tsx"
+      ],
+      "required": true
+    }
+  ],
+  "story_metric_registry": {
+    "path": "viewer/src/story/evidence.json",
+    "required": true
+  },
+  "compact_viewer": {
+    "source_export_path": "viewer/public/contextlab-viewer.v1.json",
+    "source_export_sha256": "06a3a578ca475743d4c727ac6dd45db95a0f00b9b2eaad9173cc5597722165cd",
+    "excluded_artifacts": [
+      {
+        "path": "viewer/public/artifacts/01ac7303cb7241e3d9948ecdc550109721360348c5cb025eb39b70d69feb71a8/CONTEXTLAB_V2_DETAILED_ROADMAP.md",
+        "sha256": "01ac7303cb7241e3d9948ecdc550109721360348c5cb025eb39b70d69feb71a8",
+        "reason": "The historical roadmap links to private research notes that are outside the public allowlist. Current public methods and status are in docs/portfolio/.",
+        "replacement": {
+          "kind": "source",
+          "label": "Public source and agent boundary",
+          "mediaType": "text/markdown",
+          "path": "viewer/public/artifacts/d7664ba2ac072c77f4a30095cecd29fe6c06400fcb5bcc162089e1ae3ed603a1/SOURCE_AND_AGENT_BOUNDARY.md",
+          "sha256": "d7664ba2ac072c77f4a30095cecd29fe6c06400fcb5bcc162089e1ae3ed603a1",
+          "staticUrl": "./artifacts/d7664ba2ac072c77f4a30095cecd29fe6c06400fcb5bcc162089e1ae3ed603a1/SOURCE_AND_AGENT_BOUNDARY.md"
+        }
+      }
+    ],
+    "g2": {
+      "canonical_path": "results/v2/retrieval/public_component_lab.json",
+      "canonical_file_sha256": "6b59f8660d3185c5ee0cdf878c1e0703210e2acf5732f3894bea405f680eba20",
+      "canonical_artifact_sha256": "8955848dc438931351dcf5edaaed6ecdf821851eab5c025e7924480810d61a5a",
+      "legacy_public_path": "viewer/public/artifacts/e84bbeac05191d5b38ce796580a5bc45d3d79109e99e77415c054615f20288bd/public_component_lab.json",
+      "legacy_public_sha256": "e84bbeac05191d5b38ce796580a5bc45d3d79109e99e77415c054615f20288bd",
+      "additional_canonical_pointers": [
+        "/aggregate/by_method/R0/means/context_recall",
+        "/aggregate/by_method/R0/means/context_required_source_coverage",
+        "/aggregate/by_method/R0/means/retrieval_latency_ms",
+        "/cell_count",
+        "/method_count",
+        "/task_count"
+      ]
+    },
+    "g4_manifest": {
+      "canonical_path": "results/v2/viewer/g4_export_manifest.json",
+      "canonical_file_sha256": "ee0abf3c9c6d7881d3369e35618432ed1000776d1ce3bea6c12309bd802dbf43"
+    }
+  }
+}

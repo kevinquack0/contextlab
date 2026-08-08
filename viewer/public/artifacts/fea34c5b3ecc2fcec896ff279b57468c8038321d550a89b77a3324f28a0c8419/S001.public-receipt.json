@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0005362168,
+  "answer": "The current NovaLearn AI pricing tiers and monthly base prices, effective June 1, 2026, are:\n\n- **Starter**: $1,200/month [NL-003#NL-003-S01] [NL-003#NL-003-S02]\n- **Growth**: $3,600/month [NL-003#NL-003-S01] [NL-003#NL-003-S02]\n- **Enterprise**: From $8,500/month [NL-003#NL-003-S01] [NL-003#NL-003-S02]\n\nAll prices are in USD and exclude applicable sales taxes [NL-003#NL-003-S02]. This 2026 schedule supersedes prior pricing proposals [NL-003#NL-003-S01] [NL-001#NL-001-S05].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 3482.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-high-S001",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What are the current NovaLearn AI pricing tiers and monthly base prices?",
+      "suite": "static",
+      "task_family": "direct_fact",
+      "task_id": "S001"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2169,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "5f5a43d38863a7d8b2224bd6",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-003-S02"
+        ],
+        "token_count": 92
+      },
+      {
+        "evidence_id": "c4e213cc3c67ca5f2e79b8af",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S01"
+        ],
+        "token_count": 278
+      },
+      {
+        "evidence_id": "ba53eaee43fc8791b90e738c",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-001-S05"
+        ],
+        "token_count": 369
+      },
+      {
+        "evidence_id": "4df4892f35cacfa07daf7b1d",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-003-S04"
+        ],
+        "token_count": 205
+      },
+      {
+        "evidence_id": "1a80802691ee19fe640bb9dc",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-003-S05"
+        ],
+        "token_count": 319
+      },
+      {
+        "evidence_id": "a472d8d7f5cc0dd98296adc1",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-003-S07"
+        ],
+        "token_count": 385
+      },
+      {
+        "evidence_id": "5e89bbc1fe4ccd8dcd9e55fe",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-003-S06"
+        ],
+        "token_count": 237
+      },
+      {
+        "evidence_id": "789e6a6f3b3c4985314a97a6",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-003-S03"
+        ],
+        "token_count": 284
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "5f5a43d38863a7d8b2224bd6",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-003-S02"
+        ],
+        "token_count": 92
+      },
+      {
+        "evidence_id": "c4e213cc3c67ca5f2e79b8af",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S01"
+        ],
+        "token_count": 278
+      },
+      {
+        "evidence_id": "ba53eaee43fc8791b90e738c",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-001-S05"
+        ],
+        "token_count": 369
+      },
+      {
+        "evidence_id": "4df4892f35cacfa07daf7b1d",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-003-S04"
+        ],
+        "token_count": 205
+      },
+      {
+        "evidence_id": "1a80802691ee19fe640bb9dc",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-003-S05"
+        ],
+        "token_count": 319
+      },
+      {
+        "evidence_id": "a472d8d7f5cc0dd98296adc1",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-003-S07"
+        ],
+        "token_count": 385
+      },
+      {
+        "evidence_id": "5e89bbc1fe4ccd8dcd9e55fe",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-003-S06"
+        ],
+        "token_count": 237
+      },
+      {
+        "evidence_id": "789e6a6f3b3c4985314a97a6",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-003-S03"
+        ],
+        "token_count": 284
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

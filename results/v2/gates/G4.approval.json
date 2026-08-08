@@ -1,0 +1,10 @@
+{
+  "approved_at": "2026-08-06T21:10:13Z",
+  "artifact_sha256": "3b5db8d45a880a545096f8100f35d04e862653a7e60ae2bd8c82ffd57f6f3ed9",
+  "decision": "approved",
+  "pending_gate_artifact_sha256": "ec35c865577bd3fae4b9a716a15c705728ce15293f8c0e789c10418b2a6c6bfb",
+  "reviewer": "Kevin Araujo",
+  "reviewer_role": "sole_human_reviewer",
+  "schema_version": "contextlab.g4-human-approval.v1",
+  "technical_record_sha256": "58768647d72f0baf22f9f9873abbf63bf11a0496203bdf6508ef324d923d37ae"
+}

@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0007419552,
+  "answer": "The available evidence does not establish a **guaranteed** calendar day for Microsoft Teams integration to become generally available. The official roadmap [NL-014#NL-014-S04] lists a **target release date of November 24, 2026** for v2.11.0 (Microsoft Teams Connector), and [NL-014#NL-014-S07] describes it as \"Planned for Q4 2026\" with a restricted pilot beginning in October 2026. However, [NL-014#NL-014-S09] explicitly states that engineering risks (resource constraints, Microsoft Graph API changes) mean \"feature timelines may slip.\" Additionally, [NL-015#NL-015-S06] records the CTO stating the integration \"will stay in the design phase for Q4, with development slated for early 2027,\" contradicting the November 24, 2026 target. [NL-023#NL-023-S04] labels the claim that it is \"almost ready\" as a \"significant sales overclaim,\" confirming that the official status is \"in design / planned for Q4 2026\" and not generally available. Because the evidence contains a target date but explicitly frames it as non-guaranteed and includes conflicting internal timelines, there is no guaranteed calendar day in the evidence.\n\nANSWER_STATUS: abstain\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 20598.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-low-S078",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What calendar day is Microsoft Teams integration guaranteed to become generally available to every customer?",
+      "suite": "static",
+      "task_family": "abstention",
+      "task_id": "S078"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2461,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      },
+      {
+        "evidence_id": "2a1b3db4f36165eb931ec1f5",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-023-S04"
+        ],
+        "token_count": 405
+      },
+      {
+        "evidence_id": "f63767d9ce0958fb0543f00c",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-014-S09"
+        ],
+        "token_count": 330
+      },
+      {
+        "evidence_id": "4b003cdc9ed916687aadca66",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-027-S02"
+        ],
+        "token_count": 325
+      },
+      {
+        "evidence_id": "fd00e002f3874ce242be17c8",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-014-S04"
+        ],
+        "token_count": 395
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      },
+      {
+        "evidence_id": "34e03aef3244354b37f4a9af",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-007-S08"
+        ],
+        "token_count": 204
+      },
+      {
+        "evidence_id": "271c7e9df47964de5a313820",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-026-S04"
+        ],
+        "token_count": 248
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      },
+      {
+        "evidence_id": "2a1b3db4f36165eb931ec1f5",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-023-S04"
+        ],
+        "token_count": 405
+      },
+      {
+        "evidence_id": "f63767d9ce0958fb0543f00c",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-014-S09"
+        ],
+        "token_count": 330
+      },
+      {
+        "evidence_id": "4b003cdc9ed916687aadca66",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-027-S02"
+        ],
+        "token_count": 325
+      },
+      {
+        "evidence_id": "fd00e002f3874ce242be17c8",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-014-S04"
+        ],
+        "token_count": 395
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      },
+      {
+        "evidence_id": "34e03aef3244354b37f4a9af",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-007-S08"
+        ],
+        "token_count": 204
+      },
+      {
+        "evidence_id": "271c7e9df47964de5a313820",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-026-S04"
+        ],
+        "token_count": 248
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

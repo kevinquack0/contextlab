@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.000130004,
+  "answer": "The available evidence does not provide an exact percentage of citations that fail on scanned PDFs across all NovaLearn customers. The context mentions scanned PDF citation failures for specific customers (e.g., 60% scanned documents with failing citation mapping at one organization [NL-018-S04], and 45% scanned corpus with poor citation quality at another [NL-024-S04]), but no global cross-customer failure percentage is stated.\n\nANSWER_STATUS: abstain\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 3966.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-high-S077",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What exact percentage of citations fail on scanned PDFs across all NovaLearn customers?",
+      "suite": "static",
+      "task_family": "abstention",
+      "task_id": "S077"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3168,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "624a898fd5dd52607e945140",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S01"
+        ],
+        "token_count": 380
+      },
+      {
+        "evidence_id": "2472d4f2731fa173f738d466",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-002-S10"
+        ],
+        "token_count": 380
+      },
+      {
+        "evidence_id": "2e72fabcdcd1c2b8e704abdd",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-018-S04"
+        ],
+        "token_count": 299
+      },
+      {
+        "evidence_id": "5d9ec15aed06692a3997cf52",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-002-S09"
+        ],
+        "token_count": 332
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      },
+      {
+        "evidence_id": "cb9bee8e29bdd6e1fdc03f86",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-008-S09"
+        ],
+        "token_count": 410
+      },
+      {
+        "evidence_id": "8c3a97eff9330d6cb053267c",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-010-S05"
+        ],
+        "token_count": 458
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "624a898fd5dd52607e945140",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S01"
+        ],
+        "token_count": 380
+      },
+      {
+        "evidence_id": "2472d4f2731fa173f738d466",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-002-S10"
+        ],
+        "token_count": 380
+      },
+      {
+        "evidence_id": "2e72fabcdcd1c2b8e704abdd",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-018-S04"
+        ],
+        "token_count": 299
+      },
+      {
+        "evidence_id": "5d9ec15aed06692a3997cf52",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-002-S09"
+        ],
+        "token_count": 332
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      },
+      {
+        "evidence_id": "cb9bee8e29bdd6e1fdc03f86",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-008-S09"
+        ],
+        "token_count": 410
+      },
+      {
+        "evidence_id": "8c3a97eff9330d6cb053267c",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-010-S05"
+        ],
+        "token_count": 458
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

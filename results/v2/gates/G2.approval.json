@@ -1,0 +1,8 @@
+{
+  "approved_at": "2026-08-06T05:13:10Z",
+  "decision": "approved",
+  "gate_sha256": "47939addde8fcf68fa2a51de9c42627606e1a27fb81884a17496fbf97d436911",
+  "reviewer": "Kevin Araujo",
+  "reviewer_role": "human_reviewer",
+  "schema_version": "contextlab.g2-human-approval.v1"
+}

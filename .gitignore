@@ -1,0 +1,25 @@
+.DS_Store
+**/.DS_Store
+
+# Local Cursor IDE state
+.cursor/
+
+# Local browser/test scratch artifacts
+.playwright-mcp/
+tmp/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+.ruff_cache/
+
+# Local viewer dependencies (recreated with npm ci)
+viewer/node_modules/
+
+# Rejected/stale v2 evidence stays recoverable on this workstation but is not shipped.
+results/v2/gates/quarantine/
+results/v2/reviews/quarantine/
+results/v2/viewer/quarantine/
+
+# Office temporary files
+~$*

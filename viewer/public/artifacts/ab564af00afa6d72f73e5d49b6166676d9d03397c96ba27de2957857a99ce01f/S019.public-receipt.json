@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0006239688,
+  "answer": "The official roadmap consistently positions the Microsoft Teams integration as a future release, whereas informal sales and Slack claims aggressively overstate its readiness.\n\n- **Official Roadmap (NL-014)**: The Teams integration is listed as \"Under Active Design and Planning\" with a release target of \"Planned for Q4 2026 (v2.11.0, November release)\" [NL-014#NL-014-S07]. It explicitly states a restricted pilot begins in \"October 2026\" with selected accounts, and that it is strictly a future release [NL-014#NL-014-S07].\n- **Sales Overclaim (NL-023)**: Marcus Reed tells the prospect the integration is \"basically right around the corner\", has a \"working connector\", and can be included in a July pilot [NL-023#NL-023-S04]. The note in this file explicitly labels this a \"significant sales overclaim\" against the official roadmap [NL-023#NL-023-S04].\n- **Slack Reality (NL-027)**: While Marcus claims it is \"basically right around the corner\" [NL-027#NL-027-S02], the actual engineering status is a \"toy\" webhook demo with \"Zero tenant isolation\", \"Zero permission mapping\", \"Zero SSO\", and \"Zero formatting or citation links\" [NL-027#NL-027-S03]. The CTO states it is NOT \"right around the corner\" and that no code is actively being written for it [NL-027#NL-027-S03]. Engineering confirms deploying it would be a \"security nightmare\" and fail SOC 2 audit [NL-027#NL-027-S03].\n- **Sales Playbook (NL-009)**: Acknowledges sales reps \"may tell customers that the Microsoft Teams integration is almost ready\", but mandates the roadmap (NL-014) states it is in the \"planning and design phase for Q4 2026\" and that dates must be framed as targets, not guarantees [NL-009#NL-009-S08].\n- **Management Enforcement (NL-016)**: Confirms the reality is \"design and planning phase, scheduled for Q4 2026\", and notes management is \"actively enforcing sales training to ensure reps do not promise immediate Teams support\" [NL-016#NL-016-S05].\n- **Internal Strategy (NL-015)**: The CTO and Product VP state the Teams integration \"remains in the design phase for Q4, with development slated for early 2027\" and that a premature launch would risk a tenant-isolation breach, prioritizing the OCR pipeline instead [NL-015#NL-015-S06].\n\nIn summary, the official roadmap and engineering/leadership internally agree the integration is a Q4 2026 design-phase project with development starting later, while informal sales claims (and some Slack messages from sales) claim it is a nearly complete, deployable product for July or August, a contradiction explicitly flagged in the roadmap and internal Slack threads.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 17828.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-low-S019",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Compare the official Teams integration roadmap with informal sales or Slack claims.",
+      "suite": "static",
+      "task_family": "comparison",
+      "task_id": "S019"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2871,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "2a1b3db4f36165eb931ec1f5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-023-S04"
+        ],
+        "token_count": 405
+      },
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      },
+      {
+        "evidence_id": "70af491e77028109ca3dbf3b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-027-S04"
+        ],
+        "token_count": 566
+      },
+      {
+        "evidence_id": "7c71cf17cc9cef4289226df4",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-009-S08"
+        ],
+        "token_count": 341
+      },
+      {
+        "evidence_id": "4b003cdc9ed916687aadca66",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-027-S02"
+        ],
+        "token_count": 325
+      },
+      {
+        "evidence_id": "cc98d3827d141d5d4363d01e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-016-S05"
+        ],
+        "token_count": 218
+      },
+      {
+        "evidence_id": "b7880ffe19d9ba38ad0ff1e4",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-027-S03"
+        ],
+        "token_count": 462
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "2a1b3db4f36165eb931ec1f5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-023-S04"
+        ],
+        "token_count": 405
+      },
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      },
+      {
+        "evidence_id": "70af491e77028109ca3dbf3b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-027-S04"
+        ],
+        "token_count": 566
+      },
+      {
+        "evidence_id": "7c71cf17cc9cef4289226df4",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-009-S08"
+        ],
+        "token_count": 341
+      },
+      {
+        "evidence_id": "4b003cdc9ed916687aadca66",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-027-S02"
+        ],
+        "token_count": 325
+      },
+      {
+        "evidence_id": "cc98d3827d141d5d4363d01e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-016-S05"
+        ],
+        "token_count": 218
+      },
+      {
+        "evidence_id": "b7880ffe19d9ba38ad0ff1e4",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-027-S03"
+        ],
+        "token_count": 462
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

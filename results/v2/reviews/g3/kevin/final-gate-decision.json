@@ -1,0 +1,15 @@
+{
+  "ai_gate_review_sha256s": {
+    "claude-opus-5-medium": "69cf3d5822c9fc5ea9f8ce9cdad2f45bf45417d4b57f5133a4c50233970b2a1e",
+    "gpt-5.6-sol-high": "5ef1727e90db0f710fddb2a24b1d3f8a6eb02cd2a21bea83badbc6f950e92c16"
+  },
+  "artifact_sha256": "8e29b04856ceb9e240de7920c76816ffa11e0da01f871067dbc5d525ce66fdd1",
+  "decided_at": "2026-08-06T19:23:04Z",
+  "decision": "retain-simple",
+  "pending_gate_artifact_sha256": "4222693767c8dd8afc4f33372a7f5ea43392076741e073e37410c62ad8c4d6db",
+  "reviewer": "Kevin Araujo",
+  "reviewer_role": "sole_human_reviewer",
+  "schema_version": "contextlab.g3-kevin-decision.v1",
+  "selected_policy": null,
+  "technical_record_sha256": "8ec5a6c951097a56f510d4091eaab58ad35689b1a9a8b4fe0e17ad6c6879460b"
+}

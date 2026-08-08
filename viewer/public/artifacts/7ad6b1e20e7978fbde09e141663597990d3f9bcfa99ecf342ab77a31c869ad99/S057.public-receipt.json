@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.00098504,
+  "answer": "Yes, NovaLearn should fund the Advanced OCR work before accelerating Teams integration.\n\n**Support demand**: Scanned PDFs are the primary driver of citation errors and onboarding delays [NL-001]. This has caused a \"clogged\" support queue, with 27% of May support tickets related to import issues and broken citations from scanned PDFs [NL-015]. This operational friction around scanned PDFs remains the primary onboarding bottleneck [NL-016-S01].\n\n**Onboarding impact**: Scanned policy documents are the primary driver of customer onboarding delays [NL-001], and the OCR pipeline is a critical system stability requirement, not a nice-to-have [NL-015].\n\n**Roadmap status**: The Advanced OCR Pipeline is scheduled for August 2026 and is the highest technical priority [NL-001]. The Teams integration is only \"in design / planned for Q4 2026\" and not generally available [NL-023]. In fact, the Teams connector is in a very early proof-of-concept phase, lacking security controls and tenant isolation [NL-023]. Rushing a Teams connector risks a tenant-isolation breach and requires a complete redesign of the auth layer [NL-015], and would just deliver inaccurate, un-cited answers to a larger audience [NL-015]. Consequently, OCR must remain the top priority for August, with Teams staying in design for Q4 and development slated for early 2027 [NL-015].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 11862.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-low-S057",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Should NovaLearn fund the advanced OCR work before accelerating Teams integration? Connect current support demand, onboarding impact, and roadmap status in the recommendation.",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S057"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3140,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "741f4c3a347f1f1ac053fe05",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-001-S08"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "f87510dafd2290bcd49e0518",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-011-S07"
+        ],
+        "token_count": 241
+      },
+      {
+        "evidence_id": "43c96dd62dc57047b9c6345b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-016-S07"
+        ],
+        "token_count": 702
+      },
+      {
+        "evidence_id": "29341b88d42007518d742629",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-032-S05"
+        ],
+        "token_count": 404
+      },
+      {
+        "evidence_id": "2a1b3db4f36165eb931ec1f5",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-023-S04"
+        ],
+        "token_count": 405
+      },
+      {
+        "evidence_id": "b44ee1b8062f18ffbf44f3d8",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-014-S01"
+        ],
+        "token_count": 407
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "741f4c3a347f1f1ac053fe05",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-001-S08"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "f87510dafd2290bcd49e0518",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-011-S07"
+        ],
+        "token_count": 241
+      },
+      {
+        "evidence_id": "43c96dd62dc57047b9c6345b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-016-S07"
+        ],
+        "token_count": 702
+      },
+      {
+        "evidence_id": "29341b88d42007518d742629",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-032-S05"
+        ],
+        "token_count": 404
+      },
+      {
+        "evidence_id": "2a1b3db4f36165eb931ec1f5",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-023-S04"
+        ],
+        "token_count": 405
+      },
+      {
+        "evidence_id": "b44ee1b8062f18ffbf44f3d8",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-014-S01"
+        ],
+        "token_count": 407
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

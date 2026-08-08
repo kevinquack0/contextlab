@@ -1,0 +1,12 @@
+{
+  "context_budget_tokens": 3200,
+  "prompt_version": "contextlab.memory-answer.v1",
+  "run_id": "g3-public-v1-M4-high-T013",
+  "task": {
+    "question_text": "At the current snapshot, what is the approved primary audience for the sales ICP?",
+    "suite": "temporal",
+    "task_family": "temporal_reasoning",
+    "task_id": "T013"
+  },
+  "viewer_projection_schema": "contextlab.public-prompt-envelope.v1"
+}

@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0002951424,
+  "answer": "Before broad TutorChat rollout for an Enterprise customer, NovaLearn should:\n\n1. Complete SSO and permission audits for enterprise accounts, since Enterprise TutorChat adoption is currently low (44%) because several accounts are running limited pilots pending these audits [NL-030-S03].\n2. Run the rollout as a pilot in a high-impact department of 100–300 users to validate the deployment and justify the onboarding investment [NL-023-S03].\n3. Finish mapping nested permissions from source repositories (e.g., SharePoint, shared drives) to NovaLearn workspaces, as permission mapping complexity is a known onboarding delay driver [NL-011-S01]; TutorChat enforces role-based access via AD/Okta token mapping and filters out unauthorized document chunks [NL-002-S03].\n4. Ensure SSO is configured via supported providers (Okta, Microsoft Azure AD, Ping Identity, OneLogin) using SAML 2.0 or OIDC, since SSO is GA for Enterprise [NL-002-S11].\n5. Set accurate expectations for collaboration integrations: Microsoft Teams is not generally available and is only in design/planning for Q4 2026, while only the Slack connector is available as a limited pilot [NL-014-S07].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 9395.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-high-S026",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What steps should NovaLearn take before broad TutorChat rollout for an Enterprise customer?",
+      "suite": "static",
+      "task_family": "procedural_guidance",
+      "task_id": "S026"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3163,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "f0a3bc67ffc7adf602f94725",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-002-S11"
+        ],
+        "token_count": 491
+      },
+      {
+        "evidence_id": "3f1058d8c2619c159d7bb695",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-023-S03"
+        ],
+        "token_count": 862
+      },
+      {
+        "evidence_id": "13bf85d114b12f95733e3e71",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-030-S03"
+        ],
+        "token_count": 214
+      },
+      {
+        "evidence_id": "ada0add953b3a394c4e6e6d7",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-002-S03"
+        ],
+        "token_count": 522
+      },
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      },
+      {
+        "evidence_id": "2eaa9ee1079f5723a6dbb176",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-023-S03"
+        ],
+        "token_count": 134
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "f0a3bc67ffc7adf602f94725",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-002-S11"
+        ],
+        "token_count": 491
+      },
+      {
+        "evidence_id": "3f1058d8c2619c159d7bb695",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-023-S03"
+        ],
+        "token_count": 862
+      },
+      {
+        "evidence_id": "13bf85d114b12f95733e3e71",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-030-S03"
+        ],
+        "token_count": 214
+      },
+      {
+        "evidence_id": "ada0add953b3a394c4e6e6d7",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-002-S03"
+        ],
+        "token_count": 522
+      },
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      },
+      {
+        "evidence_id": "2eaa9ee1079f5723a6dbb176",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-023-S03"
+        ],
+        "token_count": 134
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

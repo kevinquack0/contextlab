@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0004001536,
+  "answer": "Customer feedback on citation reliability shifted from being the top Q1 complaint to a largely resolved issue in Q2, though some residual pain points remain. In Q1, citation reliability was the single most prominent complaint, with users reporting incorrect file links (42%), missing page numbers (28%), empty citations (18%), and broken links (12%) [NL-010-S05][NL-010-S01]. In Q2, following the April 2026 deployment, citation accuracy tickets declined steadily (42 in April, 31 in May, 24 in June) [NL-011-S05]. Overall NPS rose from 41 to 44, driven by the April fix, with improved trust in regulated industries and BrightPath Healthcare restarting their pilot [NL-011-S01][NL-011-S03]. However, remaining citation tickets in May and June are almost entirely linked to scanned, image-only PDFs, which still lack OCR processing, plus a minor indexing lag during peak hours [NL-011-S05][NL-016-S04].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 19395.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-low-S014",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "How do customer feedback trends change from Q1 to Q2 2026 regarding citation reliability?",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S014"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2594,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "59e68fefd9fe397cacad7704",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-011-S05"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "8c3a97eff9330d6cb053267c",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S05"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "b9d30231fce583811d5f4df4",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-011-S03"
+        ],
+        "token_count": 363
+      },
+      {
+        "evidence_id": "624a898fd5dd52607e945140",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-010-S01"
+        ],
+        "token_count": 380
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      },
+      {
+        "evidence_id": "a97b2a0c54a44664dfbefb23",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-011-S02"
+        ],
+        "token_count": 302
+      },
+      {
+        "evidence_id": "f0a3f49cd95f203d40679b2b",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-016-S04"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "617aee9913fb6f045ee38a38",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-010-S04"
+        ],
+        "token_count": 261
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "59e68fefd9fe397cacad7704",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-011-S05"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "8c3a97eff9330d6cb053267c",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S05"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "b9d30231fce583811d5f4df4",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-011-S03"
+        ],
+        "token_count": 363
+      },
+      {
+        "evidence_id": "624a898fd5dd52607e945140",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-010-S01"
+        ],
+        "token_count": 380
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      },
+      {
+        "evidence_id": "a97b2a0c54a44664dfbefb23",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-011-S02"
+        ],
+        "token_count": 302
+      },
+      {
+        "evidence_id": "f0a3f49cd95f203d40679b2b",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-016-S04"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "617aee9913fb6f045ee38a38",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-010-S04"
+        ],
+        "token_count": 261
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

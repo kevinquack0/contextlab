@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0010115168,
+  "answer": "WorkflowCoach is NovaLearn AI’s upcoming guided workflow assistant, currently in a restricted private beta rather than general availability. It is enabled for approximately 11% of active customers, primarily mid-market logistics and enterprise manufacturing clients such as Acme Manufacturing, who are testing factory-floor safety checks and assembly line onboarding [NL-002#NL-002-S07][NL-014#NL-014-S05][NL-001#NL-001-S03]. The private beta is being used to test the task parsing engine, mobile layouts, and completion logging; feedback so far has highlighted the need for offline caching of step lists and automated photo verification [NL-014#NL-014-S05].\n\nOfficially, the public beta is targeted for September 2026, with v2.9.0’s listed target date of September 29, 2026, and would be made available to all active Growth and Enterprise accounts [NL-014#NL-014-S03][NL-014#NL-014-S05]. This September target is also the date on the official product roadmap shared with customers and board members [NL-015#NL-015-S05].\n\nInformal sources indicate that the September date is at risk. Internal engineering standup notes and leadership reviews cite dependencies on the Advanced OCR Pipeline and Okta permission synchronization engine as potential causes for a delay to November 2026 [NL-002#NL-002-S07][NL-014#NL-014-S05]. The CTO estimated that September would require cutting corners on permission checks, citing high latency in step transitions (up to 4 seconds) and permission inheritance failures where restricted documents referenced by a public SOP may not be hidden from unauthorized users; his realistic estimate is a November 2026 public beta [NL-015#NL-015-S05]. Sales leadership warned that a slip could jeopardize enterprise deals such as Apex Global, and proposed a limited private beta in September for selected clients while moving the public beta target to November [NL-015#NL-015-S05]. Product leadership agreed that a September private beta is possible only for customers without complex permission mapping, while regulated clients like BrightPath Healthcare should not be compromised; internally, a November slip contingency plan is being aligned, with external messaging still sticking to the official September roadmap date [NL-015#NL-015-S05]. Action items also include drafting an internal product update by July 5 detailing features deferred to the November release, including cross-workspace permission synchronization, and defining criteria for the September private beta cohort [NL-015#NL-015-S09].\n\nPlanned capabilities include parsing procedural documents such as checklists, regulatory compliance manuals, and safety SOPs into sequential operational blocks; guiding employees step-by-step while prompting confirmations, photo uploads, or compliance answers before advancing; and recording each completed step in the tenant’s compliance log, flagging skipped safety steps or failed validations and notifying the shift supervisor for audit purposes [NL-002#NL-002-S07]. The v2.9.0 specification describes validating input against predefined conditions before unlocking the next step, and writing timestamp, user ID, and input payload into a write-once PostgreSQL compliance log table [NL-014#NL-014-S03].\n\nIn summary, the current state is a private beta with an official September 2026 public beta target, but informal internal signals and contingency planning indicate a likely slip to November 2026 pending QA and dependency completion. WorkflowCoach remains restricted to approved pilot accounts until official public release [NL-002#NL-002-S07].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 16097.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-high-S012",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Synthesize the current state of WorkflowCoach using official and informal sources.",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S012"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2671,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "b9443f003b5b1e23530b9ae4",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-002-S07"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "899be70e9a0dfc7ac2408c8f",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-014-S05"
+        ],
+        "token_count": 202
+      },
+      {
+        "evidence_id": "6db700a5840ee68f3cced38e",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-015-S05"
+        ],
+        "token_count": 376
+      },
+      {
+        "evidence_id": "a526e97072908a4d148027e9",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-014-S03"
+        ],
+        "token_count": 544
+      },
+      {
+        "evidence_id": "5a6310118e7e6b9d7a74674a",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-015-S08"
+        ],
+        "token_count": 94
+      },
+      {
+        "evidence_id": "cab54df7fa13cdb4b208e10f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-001-S03"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "509ba4b002f13b9f26a37ff5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S09"
+        ],
+        "token_count": 298
+      },
+      {
+        "evidence_id": "ce0e7b9c89f794db76f1745e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-002-S02"
+        ],
+        "token_count": 400
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "b9443f003b5b1e23530b9ae4",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-002-S07"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "899be70e9a0dfc7ac2408c8f",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-014-S05"
+        ],
+        "token_count": 202
+      },
+      {
+        "evidence_id": "6db700a5840ee68f3cced38e",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-015-S05"
+        ],
+        "token_count": 376
+      },
+      {
+        "evidence_id": "a526e97072908a4d148027e9",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-014-S03"
+        ],
+        "token_count": 544
+      },
+      {
+        "evidence_id": "5a6310118e7e6b9d7a74674a",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-015-S08"
+        ],
+        "token_count": 94
+      },
+      {
+        "evidence_id": "cab54df7fa13cdb4b208e10f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-001-S03"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "509ba4b002f13b9f26a37ff5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S09"
+        ],
+        "token_count": 298
+      },
+      {
+        "evidence_id": "ce0e7b9c89f794db76f1745e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-002-S02"
+        ],
+        "token_count": 400
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

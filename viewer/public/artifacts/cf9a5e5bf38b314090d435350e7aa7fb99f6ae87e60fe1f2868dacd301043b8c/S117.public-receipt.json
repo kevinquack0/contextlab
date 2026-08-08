@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0008164968,
+  "answer": "The supplied evidence does not mention the error code `ERR-ACL-MISMATCH`, so it is not possible to confirm which subsystem produced that specific error or what corrective actions apply to it.\n\nThe evidence does describe a separate incident involving the **document ingestion/indexing pipeline**, caused by an `AccessExclusiveLock` from a schema migration that triggered a worker retry storm and exhausted the PostgreSQL connection pool [NL-013#NL-013-S04][NL-013#NL-013-S01]. Immediate mitigation in that incident was rolling back the configuration deploy, flushing the retry queue, restarting import workers, and capping retries [NL-013#NL-013-S03][NL-013#NL-013-S07]. However, no evidence links those actions to `ERR-ACL-MISMATCH`.\n\nANSWER_STATUS: abstain\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 11216.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-high-S117",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "An upload log reports ERR-ACL-MISMATCH. Which subsystem failed, and what immediate corrective actions should support take?",
+      "suite": "static",
+      "task_family": "paraphrase",
+      "task_id": "S117"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2170,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "0009c9049a11fa2321013067",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-013-S08"
+        ],
+        "token_count": 81
+      },
+      {
+        "evidence_id": "b463e01a7324a49dc3cea1dd",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-013-S03"
+        ],
+        "token_count": 548
+      },
+      {
+        "evidence_id": "50af38121f5f41138cb8f594",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-013-S07"
+        ],
+        "token_count": 220
+      },
+      {
+        "evidence_id": "46adeaf024c21608b97be4f1",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-013-S04"
+        ],
+        "token_count": 338
+      },
+      {
+        "evidence_id": "e15a242d01a63eb87684595d",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-013-S05"
+        ],
+        "token_count": 176
+      },
+      {
+        "evidence_id": "f4a5a376f4a838513ecd7984",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-013-S02"
+        ],
+        "token_count": 334
+      },
+      {
+        "evidence_id": "18dc291c5c4dc8dbd6df3cd4",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-013-S01"
+        ],
+        "token_count": 233
+      },
+      {
+        "evidence_id": "44760b3b88722ce7cc7df136",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-013-S06"
+        ],
+        "token_count": 240
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "0009c9049a11fa2321013067",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-013-S08"
+        ],
+        "token_count": 81
+      },
+      {
+        "evidence_id": "b463e01a7324a49dc3cea1dd",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-013-S03"
+        ],
+        "token_count": 548
+      },
+      {
+        "evidence_id": "50af38121f5f41138cb8f594",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-013-S07"
+        ],
+        "token_count": 220
+      },
+      {
+        "evidence_id": "46adeaf024c21608b97be4f1",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-013-S04"
+        ],
+        "token_count": 338
+      },
+      {
+        "evidence_id": "e15a242d01a63eb87684595d",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-013-S05"
+        ],
+        "token_count": 176
+      },
+      {
+        "evidence_id": "f4a5a376f4a838513ecd7984",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-013-S02"
+        ],
+        "token_count": 334
+      },
+      {
+        "evidence_id": "18dc291c5c4dc8dbd6df3cd4",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-013-S01"
+        ],
+        "token_count": 233
+      },
+      {
+        "evidence_id": "44760b3b88722ce7cc7df136",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-013-S06"
+        ],
+        "token_count": 240
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

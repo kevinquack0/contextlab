@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0002373952,
+  "answer": "Typical/target onboarding durations are **4–6 weeks for Growth** and **8–10 weeks for Enterprise** [NL-005#NL-005-S02][NL-031#NL-031-S02].\n\nActual median onboarding durations in Q2 were **5.2 weeks for Growth** and **8.7 weeks for Enterprise** [NL-012#NL-012-S06][NL-031#NL-031-S02]. Sample tracked customers show Growth durations of 4.2, 5.4, and 6.0 weeks, and Enterprise durations of 8.2, 8.4, and 9.5 weeks [NL-012#NL-012-S06][NL-031#NL-031-S03].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 7595.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-high-S037",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What are the typical and actual onboarding durations for Growth and Enterprise customers?",
+      "suite": "static",
+      "task_family": "table_prose_join",
+      "task_id": "S037"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2104,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "ab359c7f221435d74218a441",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-031-S02"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "dd6f5deb172b5a7ebb643128",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-011-S06"
+        ],
+        "token_count": 216
+      },
+      {
+        "evidence_id": "84e14be125f6f7ec0307e707",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-031-S01"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "ab359c7f221435d74218a441",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-031-S02"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "dd6f5deb172b5a7ebb643128",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-011-S06"
+        ],
+        "token_count": 216
+      },
+      {
+        "evidence_id": "84e14be125f6f7ec0307e707",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-031-S01"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

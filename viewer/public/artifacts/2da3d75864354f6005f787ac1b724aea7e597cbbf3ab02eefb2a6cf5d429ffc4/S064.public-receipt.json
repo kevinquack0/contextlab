@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0006777288,
+  "answer": "The informal estimate in the standup note was \"maybe around 20 customers affected,\" corroborated by Raj as \"about 20 customer environments\" [NL-022#NL-022-S03]. The official postmortem audit of database transaction logs later confirmed exactly 17 customer workspaces were directly affected, thereby correcting the informal estimate [NL-022#NL-022-S03].\n\nThe corrective actions addressing recurrence are: (1) an immediate retry cap enforcing a maximum of 5 retries with exponential backoff and jitter, completed March 15, 2026 [NL-013#NL-013-S07]; (2) a schema migration policy mandating multi-stage, lock-free migrations with `NOT VALID` foreign keys, completed March 16, 2026 [NL-013#NL-013-S07]; (3) implementation of granular Redis queue monitoring alerts, targeting June 2026 [NL-013#NL-013-S07]; (4) ingestion load testing under connection-starvation scenarios, targeting July 2026 [NL-013#NL-013-S07]; and (5) separation of database connection pools for write-heavy background tasks versus read-heavy user interfaces, targeting August 2026 [NL-013#NL-013-S07]. Additionally, the SRE runbook's database recovery section was completely revised, and quarterly simulated disaster recovery drills were established to validate isolated connection flushing and load-shedding configurations [NL-013#NL-013-S09].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 17627.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-low-S064",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Reconcile the informal March incident estimate with the final impact, then identify the corrective work that addresses recurrence.",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S064"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2624,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "4d15ef86473ddd90b79908d6",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-013-S09"
+        ],
+        "token_count": 321
+      },
+      {
+        "evidence_id": "50af38121f5f41138cb8f594",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-013-S07"
+        ],
+        "token_count": 220
+      },
+      {
+        "evidence_id": "0087336d5f14a89e0028295e",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-022-S03"
+        ],
+        "token_count": 588
+      },
+      {
+        "evidence_id": "9794bf87a7b5a7f74ba79673",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-017-S08"
+        ],
+        "token_count": 136
+      },
+      {
+        "evidence_id": "0009c9049a11fa2321013067",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-013-S08"
+        ],
+        "token_count": 81
+      },
+      {
+        "evidence_id": "6e82cff6b6af139f915a9c70",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-010-S10"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "484538d2945f38005e6f4d11",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-011-S10"
+        ],
+        "token_count": 439
+      },
+      {
+        "evidence_id": "b463e01a7324a49dc3cea1dd",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-013-S03"
+        ],
+        "token_count": 548
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "4d15ef86473ddd90b79908d6",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-013-S09"
+        ],
+        "token_count": 321
+      },
+      {
+        "evidence_id": "50af38121f5f41138cb8f594",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-013-S07"
+        ],
+        "token_count": 220
+      },
+      {
+        "evidence_id": "0087336d5f14a89e0028295e",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-022-S03"
+        ],
+        "token_count": 588
+      },
+      {
+        "evidence_id": "9794bf87a7b5a7f74ba79673",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-017-S08"
+        ],
+        "token_count": 136
+      },
+      {
+        "evidence_id": "0009c9049a11fa2321013067",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-013-S08"
+        ],
+        "token_count": 81
+      },
+      {
+        "evidence_id": "6e82cff6b6af139f915a9c70",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-010-S10"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "484538d2945f38005e6f4d11",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-011-S10"
+        ],
+        "token_count": 439
+      },
+      {
+        "evidence_id": "b463e01a7324a49dc3cea1dd",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-013-S03"
+        ],
+        "token_count": 548
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

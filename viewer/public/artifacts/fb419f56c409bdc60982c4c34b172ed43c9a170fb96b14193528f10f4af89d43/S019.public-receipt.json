@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0004612272,
+  "answer": "Official roadmap (higher authority): The Microsoft Teams integration is under active design and planning with a release target of Q4 2026 (v2.11.0, November); a restricted pilot begins October 2026 with select accounts, and only the Slack connector is currently a limited pilot [NL-014#NL-014-S07]. The roadmap explicitly warns that sales playbooks and informal Slack communications may claim the Teams integration is “ready for deployment” or “nearly complete,” and says those claims are a contradiction [NL-014#NL-014-S07]. The sales playbook also instructs reps not to guarantee launch dates and states the roadmap places Teams in planning/design for Q4 2026 [NL-009#NL-009-S08]. Engineering planning confirms Teams stays in design for Q4 with development in early 2027, not an immediate release [NL-015#NL-015-S06].\n\nInformal sales/Slack claims: Marcus Reed told a prospect the Teams integration is “basically right around the corner,” has a working connector “almost ready for general release,” and could be included in a July pilot [NL-023#NL-023-S04]. In Slack, he asked for a pilot by July/August, told another prospect it was “basically right around the corner,” and called it a “simple chat wrapper” [NL-027#NL-027-S02]. He also proposed packaging the existing demo as an “alpha” or building a hardcoded custom container for Meridian [NL-027#NL-027-S04].\n\nThe Slack thread shows the informal claims are false: the existing demo is only a basic webhook with zero tenant isolation, zero permission mapping, zero SSO, and zero citation formatting; engineers call it a “toy” and a security nightmare [NL-027#NL-027-S03]. Product and infrastructure teams rejected the alpha/custom build because of multi-tenant security, compliance, and CI/CD risks [NL-027#NL-027-S04]. Customer Success noted that telling prospects Teams is “almost ready” creates a major expectation gap [NL-027#NL-027-S04].\n\nIn summary, the official roadmap treats Teams integration as a planned future release for Q4 2026, while informal sales and Slack claims overstate it as nearly complete and available for immediate pilots; the evidence shows the connector is only an early proof-of-concept not ready for deployment.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 15357.0,
+  "policy": "M4",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M4-high-S019",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Compare the official Teams integration roadmap with informal sales or Slack claims.",
+      "suite": "static",
+      "task_family": "comparison",
+      "task_id": "S019"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2871,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "2a1b3db4f36165eb931ec1f5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-023-S04"
+        ],
+        "token_count": 405
+      },
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      },
+      {
+        "evidence_id": "70af491e77028109ca3dbf3b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-027-S04"
+        ],
+        "token_count": 566
+      },
+      {
+        "evidence_id": "7c71cf17cc9cef4289226df4",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-009-S08"
+        ],
+        "token_count": 341
+      },
+      {
+        "evidence_id": "4b003cdc9ed916687aadca66",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-027-S02"
+        ],
+        "token_count": 325
+      },
+      {
+        "evidence_id": "cc98d3827d141d5d4363d01e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-016-S05"
+        ],
+        "token_count": 218
+      },
+      {
+        "evidence_id": "b7880ffe19d9ba38ad0ff1e4",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-027-S03"
+        ],
+        "token_count": 462
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "2a1b3db4f36165eb931ec1f5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-023-S04"
+        ],
+        "token_count": 405
+      },
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      },
+      {
+        "evidence_id": "70af491e77028109ca3dbf3b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-027-S04"
+        ],
+        "token_count": 566
+      },
+      {
+        "evidence_id": "7c71cf17cc9cef4289226df4",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-009-S08"
+        ],
+        "token_count": 341
+      },
+      {
+        "evidence_id": "4b003cdc9ed916687aadca66",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-027-S02"
+        ],
+        "token_count": 325
+      },
+      {
+        "evidence_id": "cc98d3827d141d5d4363d01e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-016-S05"
+        ],
+        "token_count": 218
+      },
+      {
+        "evidence_id": "b7880ffe19d9ba38ad0ff1e4",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-027-S03"
+        ],
+        "token_count": 462
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

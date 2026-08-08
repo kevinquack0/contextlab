@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0005052824,
+  "answer": "The playbook's target onboarding range for the Enterprise plan is **8 to 10 weeks** [NL-005#NL-005-S02] [NL-031#NL-031-S02] [NL-009#NL-009-S04] [NL-023#NL-023-S06]. The observed Enterprise average is **8.7 weeks** [NL-012#NL-012-S06] [NL-031#NL-031-S03], which falls squarely within (and in fact matches) the target timeline—the actual median duration for Enterprise is recorded as 8.7 weeks against the 8-10 week target [NL-031#NL-031-S02].\n\nThe observed Enterprise duration is longer than simpler plans (Starter at 3.5 weeks and Growth at 5.2 weeks) because Enterprise onboarding involves substantially more complex compliance, security, and data-processing activities that simpler plans do not require [NL-012#NL-012-S06]. Specifically, Enterprise implementations must accommodate security reviews, custom data-retention configurations, and single sign-on (SSO) setups via SAML/OIDC, as well as process scanned legacy PDF policies requiring OCR [NL-012#NL-012-S06] [NL-005#NL-005-S02]. They also include custom DPAs, nested Active Directory/Okta permission mapping, advanced OCR ingestion queues, BYOK configurations, and up to 3 weeks of formal UAT [NL-005#NL-005-S09] [NL-005#NL-005-S02]. Delays are primarily driven by permission mapping (45%), source ingestion cleanup (30%), and OCR processing (25%) [NL-012#NL-012-S06], and these tasks are necessary to meet the 85% citation correctness threshold and pass internal security reviews before go-live [NL-015#NL-015-S04] [NL-023#NL-023-S06]. In contrast, SMB customers upload clean, public-facing FAQs without complex permissions, and Growth customers have simpler permission structures [NL-012#NL-012-S06].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 13632.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-low-S066",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Compare the Enterprise onboarding range in the playbook with the observed Enterprise average, and explain why the observed duration is longer than simpler plans.",
+      "suite": "static",
+      "task_family": "table_prose_join",
+      "task_id": "S066"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2813,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "ab359c7f221435d74218a441",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-031-S02"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      },
+      {
+        "evidence_id": "63b020223557573133f38af2",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S04"
+        ],
+        "token_count": 477
+      },
+      {
+        "evidence_id": "3b16d141b34cc16d8e455465",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-023-S06"
+        ],
+        "token_count": 690
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "ab359c7f221435d74218a441",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-031-S02"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      },
+      {
+        "evidence_id": "63b020223557573133f38af2",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S04"
+        ],
+        "token_count": 477
+      },
+      {
+        "evidence_id": "3b16d141b34cc16d8e455465",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-023-S06"
+        ],
+        "token_count": 690
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

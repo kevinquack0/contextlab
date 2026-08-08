@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0008369368,
+  "answer": "Yes. The corpus supports prioritizing the Advanced OCR Pipeline before the Microsoft Teams integration.\n\n- Scanned PDF processing is the primary driver of citation errors and customer onboarding delays, making the Advanced OCR Pipeline the \"highest technical priority\" for NovaLearn [NL-001#NL-001-S08].\n- The OCR pipeline is described as a \"critical system stability requirement,\" not a nice-to-have: 27% of support tickets in May were related to import issues and broken citations from scanned PDFs [NL-015#NL-015-S06].\n- Teams integration is still in an earlier stage: it is in the design phase for Q4 2026, with development slated for early 2027, whereas OCR is scheduled for release in August 2026 [NL-001#NL-001-S08][NL-015#NL-015-S06].\n- Rushing Teams integration would risk delivering inaccurate, un-cited answers to a larger audience and could endanger tenant-isolation security, because a secure Teams bot requires a complete redesign of the auth layer [NL-015#NL-015-S06].\n- NovaLearn's sales messaging already positions the Teams integration as a security advantage: unlike LearnPilot's connector, NovaLearn's Teams integration is designed to enforce active user permissions [NL-032#NL-032-S05][NL-032#NL-032-S02].\n\nBusiness recommendation: Keep OCR first, keep Teams in Q4 design phase, and have Sales sell NovaLearn's citation accuracy and permission enforcement rather than an accelerated Teams launch [NL-015#NL-015-S06].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 8416.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-high-S039",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Should NovaLearn prioritize OCR pipeline work before Teams integration? Give a business recommendation grounded in the corpus.",
+      "suite": "static",
+      "task_family": "recommendation",
+      "task_id": "S039"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3003,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "29341b88d42007518d742629",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-032-S05"
+        ],
+        "token_count": 404
+      },
+      {
+        "evidence_id": "741f4c3a347f1f1ac053fe05",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-001-S08"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      },
+      {
+        "evidence_id": "414db3ff44876c4bc80c019e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-032-S02"
+        ],
+        "token_count": 266
+      },
+      {
+        "evidence_id": "a51e2a1f1ee52f745968283e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-009-S05"
+        ],
+        "token_count": 559
+      },
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "5040d007a019cff6b3f3f981",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-002-S01"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "f87510dafd2290bcd49e0518",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-011-S07"
+        ],
+        "token_count": 241
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "29341b88d42007518d742629",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-032-S05"
+        ],
+        "token_count": 404
+      },
+      {
+        "evidence_id": "741f4c3a347f1f1ac053fe05",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-001-S08"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      },
+      {
+        "evidence_id": "414db3ff44876c4bc80c019e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-032-S02"
+        ],
+        "token_count": 266
+      },
+      {
+        "evidence_id": "a51e2a1f1ee52f745968283e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-009-S05"
+        ],
+        "token_count": 559
+      },
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "5040d007a019cff6b3f3f981",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-002-S01"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "f87510dafd2290bcd49e0518",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-011-S07"
+        ],
+        "token_count": 241
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

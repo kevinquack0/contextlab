@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.00119896,
+  "answer": "Higher-authority sources indicate that the official Ideal Customer Profile (ICP) is regulated mid-market and enterprise organizations — not education startups — and that education startups fall into the SMB segment, which performs poorly on retention and expansion metrics.\n\n- **Official performance data** [NL-001-S04] states: \"our official performance metrics demonstrate that our Ideal Customer Profile (ICP) is concentrated in mid-market and enterprise companies operating in highly regulated fields,\" and it explicitly categorizes SMBs (which include technology startups such as education startups) as having \"significantly higher churn rates and lower expansion potential than mid-market and enterprise clients.\" [NL-001-S04]\n- **Executive leadership** confirmed this in a leadership meeting: CEO Maya Patel said, \"The strategic direction of NovaLearn remains clear: our Ideal Customer Profile (ICP) is regulated mid-market and enterprise organizations... We cannot pivot our strategy to chase quick SMB sales that churn out in six months.\" [NL-015-S03]\n- **Quantitative contrast** from analytics and customer success in that meeting: SMB monthly logo churn is 4.8% vs. 2.1% for Mid-Market and 1.3% for Enterprise; SMB NPS is 31 vs. 47 and 52; SMB expansion revenue is $18,000 vs. $64,000 (Mid-Market) and $91,000 (Enterprise). [NL-015-S03]\n- **Internal caveat in the sales material itself** [NL-009-S04] acknowledges that \"official metrics from Finance (such as the Q2 Business Metrics Report - NL-012) may highlight low initial contract values and elevated churn risks in this category\" and advises sales reps \"do not over-index on them for large-scale revenue quotas, and keep in mind that outbound sales resources must prioritize our core regulated mid-market and enterprise segments.\" [NL-009-S04]\n\nTherefore, higher-authority evidence (official metrics and executive direction) contradicts the sales material's enthusiastic labeling of education startups as the \"best ICP,\" showing instead that the official ICP is the regulated mid-market and enterprise segment.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 16874.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-low-S033",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Sales material says education startups are the best ICP. What do higher-authority sources indicate?",
+      "suite": "static",
+      "task_family": "authority_conflict",
+      "task_id": "S033"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3125,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "63b020223557573133f38af2",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S04"
+        ],
+        "token_count": 477
+      },
+      {
+        "evidence_id": "9a8f72ba60e01259bdc281d3",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-009-S07"
+        ],
+        "token_count": 285
+      },
+      {
+        "evidence_id": "3eee11910fe7e10e8c8456c9",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-001-S04"
+        ],
+        "token_count": 368
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "960b19b670e4fd65730cd357",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-009-S06"
+        ],
+        "token_count": 265
+      },
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "355bbc21dc16af5c7a2e8552",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-032-S01"
+        ],
+        "token_count": 240
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "63b020223557573133f38af2",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S04"
+        ],
+        "token_count": 477
+      },
+      {
+        "evidence_id": "9a8f72ba60e01259bdc281d3",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-009-S07"
+        ],
+        "token_count": 285
+      },
+      {
+        "evidence_id": "3eee11910fe7e10e8c8456c9",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-001-S04"
+        ],
+        "token_count": 368
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "960b19b670e4fd65730cd357",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-009-S06"
+        ],
+        "token_count": 265
+      },
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "355bbc21dc16af5c7a2e8552",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-032-S01"
+        ],
+        "token_count": 240
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

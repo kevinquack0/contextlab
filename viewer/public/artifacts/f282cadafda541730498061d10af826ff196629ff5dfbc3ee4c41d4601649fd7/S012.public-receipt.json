@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0005617304,
+  "answer": "WorkflowCoach is currently in a restricted private/internal beta phase, enabled for approximately 11% of active customers, specifically mid-market logistics and enterprise manufacturing clients such as Acme Manufacturing [NL-002-S07][NL-014-S05]. The official public roadmap target for the public beta is September 2026 (with v2.9.0 targeted for September 29, 2026), making it available to Growth and Enterprise accounts [NL-002-S07][NL-014-S05][NL-014-S03][NL-014-S01 note - let's use only given ones, NL-014-S03].\n\nHowever, there is a significant conflict between the official public messaging and internal engineering assessments. Internal standups and leadership reviews indicate the September 2026 target is in serious jeopardy due to dependencies on the Advanced OCR Pipeline and Okta permission synchronization engine, with a likely slip to November 2026 [NL-002-S07][NL-014-S05]. The CTO (Leon Grayson) reports technical hurdles including high latency during step transitions (up to 4 seconds) and permission inheritance failures where restricted documents are not hidden from unauthorized users [NL-015-S05]. He states that rushing the September release would require cutting corners on permission checks, and recommends November [NL-015-S05].\n\nIn response, a contingency plan is emerging: sales leadership proposes a limited private beta in September for selected clients (e.g., Apex Global) to protect deals, while delaying the full public beta to November [NL-015-S05]. Product leadership (Sofia Almeida) supports a September private beta only for customers without complex permission mapping (flat document structures, no sensitive compliance data), while regulated clients like BrightPath Healthcare must wait for the November full release [NL-015-S05]. Scope discussions explicitly frame a simplified, single-workspace version for September 2026 versus the full permission-sync version for enterprise clients [NL-015-S08]. Action items include drafting an internal update detailing deferred features (such as cross-workspace permission synchronization) and defining the criteria for the September private beta cohort [NL-015-S09].\n\nPlanned core capabilities for the release include ingesting procedural documents, parsing them into sequential steps, guiding users with prompts (verification photos, checkboxes, text regex), and recording every step in a write-once PostgreSQL compliance log, flagging skipped or failed validation steps [NL-002-S07][NL-014-S03]. The module is designed to link directly to KnowledgeHub's authoritative SOP documents [NL-001-S03].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 17099.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-low-S012",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Synthesize the current state of WorkflowCoach using official and informal sources.",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S012"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2671,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "b9443f003b5b1e23530b9ae4",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-002-S07"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "899be70e9a0dfc7ac2408c8f",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-014-S05"
+        ],
+        "token_count": 202
+      },
+      {
+        "evidence_id": "6db700a5840ee68f3cced38e",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-015-S05"
+        ],
+        "token_count": 376
+      },
+      {
+        "evidence_id": "a526e97072908a4d148027e9",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-014-S03"
+        ],
+        "token_count": 544
+      },
+      {
+        "evidence_id": "5a6310118e7e6b9d7a74674a",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-015-S08"
+        ],
+        "token_count": 94
+      },
+      {
+        "evidence_id": "cab54df7fa13cdb4b208e10f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-001-S03"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "509ba4b002f13b9f26a37ff5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S09"
+        ],
+        "token_count": 298
+      },
+      {
+        "evidence_id": "ce0e7b9c89f794db76f1745e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-002-S02"
+        ],
+        "token_count": 400
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "b9443f003b5b1e23530b9ae4",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-002-S07"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "899be70e9a0dfc7ac2408c8f",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-014-S05"
+        ],
+        "token_count": 202
+      },
+      {
+        "evidence_id": "6db700a5840ee68f3cced38e",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-015-S05"
+        ],
+        "token_count": 376
+      },
+      {
+        "evidence_id": "a526e97072908a4d148027e9",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-014-S03"
+        ],
+        "token_count": 544
+      },
+      {
+        "evidence_id": "5a6310118e7e6b9d7a74674a",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-015-S08"
+        ],
+        "token_count": 94
+      },
+      {
+        "evidence_id": "cab54df7fa13cdb4b208e10f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-001-S03"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "509ba4b002f13b9f26a37ff5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S09"
+        ],
+        "token_count": 298
+      },
+      {
+        "evidence_id": "ce0e7b9c89f794db76f1745e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-002-S02"
+        ],
+        "token_count": 400
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

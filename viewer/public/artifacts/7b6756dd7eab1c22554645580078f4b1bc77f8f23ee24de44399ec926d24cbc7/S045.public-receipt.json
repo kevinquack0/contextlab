@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.00092806,
+  "answer": "The higher-authority business evidence supports prioritizing **regulated mid-market and enterprise** organizations, not education startups. The quarterly segment analysis shows mid-market (28 accounts) and enterprise (9 accounts) together generate 83.8% of recurring revenue, with monthly churn of 2.1% and 1.3% respectively versus 4.8% for SMBs [NL-016#NL-016-S03]. The CEO explicitly affirmed the ICP as regulated mid-market and enterprise (500–10,000 employees, heavy documentation, high cost of incorrect answers), and leadership rejected pivoting to chase quick SMB sales [NL-015#NL-015-S03]. The sales playbook's earlier emphasis on education startups is explicitly superseded: \"our metrics prove that smaller startups (such as EduVantage Labs) show weak long-term retention compared to regulated mid-market and enterprise companies\" [NL-016#NL-016-S03].\n\nThe trade-off: this segment requires **longer onboarding and higher acquisition cost**. Enterprise onboarding takes a median of 8.7 weeks due to permission and security complexities, and mid-market averages 5.2 weeks [NL-016#NL-016-S03]. Enterprise CAC is $22,000 (versus $3,000 for SMB), but LTV exceeds $350,000, yielding a 16.0x LTV:CAC ratio compared to SMB's 8.3x [NL-016#NL-016-S03]. So the trade-off is slower, more expensive deal cycles with security-review navigation, in exchange for dramatically better retention, expansion revenue, and long-term value.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 9746.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-low-S045",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Sales notes emphasize education startups as NovaLearn's best market. Which segment priority is supported by the higher-authority business evidence, and what trade-off comes with it?",
+      "suite": "static",
+      "task_family": "authority_conflict",
+      "task_id": "S045"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3014,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "9a8f72ba60e01259bdc281d3",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-009-S07"
+        ],
+        "token_count": 285
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "706cb2c599a15ec297195848",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-032-S03"
+        ],
+        "token_count": 340
+      },
+      {
+        "evidence_id": "ab49a76bab7f1386d4b3f42d",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-001-S02"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "4ed168c756a66b36f7103c70",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-032-S04"
+        ],
+        "token_count": 201
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "9a8f72ba60e01259bdc281d3",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-009-S07"
+        ],
+        "token_count": 285
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "706cb2c599a15ec297195848",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-032-S03"
+        ],
+        "token_count": 340
+      },
+      {
+        "evidence_id": "ab49a76bab7f1386d4b3f42d",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-001-S02"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "4ed168c756a66b36f7103c70",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-032-S04"
+        ],
+        "token_count": 201
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

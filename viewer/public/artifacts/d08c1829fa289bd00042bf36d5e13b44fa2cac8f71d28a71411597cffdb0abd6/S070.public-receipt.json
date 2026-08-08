@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.000320572,
+  "answer": "The Atlas Logistics pilot (March 1–April 30, 2026, 80 users across dispatching and warehouse teams) was highly successful [NL-020#NL-020-S01]. The measured results from the final two weeks (April 15–30, 2026) show all targets were exceeded: Weekly Active Usage 87.5% vs >75% target; Query Success Rate 84.2% vs >80%; Citation Accuracy 88.6% vs >85%, improving from 74% in March after the April 15 citation validation update; Median Onboarding Duration 4.8 weeks vs 5.0-week target, a 1.2-week reduction from the 6.0-week historical average; Support Escalation Decline 18.4% vs >15%; Average Query Latency 1.8 seconds vs <2.0 seconds [NL-020#NL-020-S04]. Remaining gaps included some queries related to legacy scanned manuals [NL-020#NL-020-S04].\n\nKey lessons from the pilot were that pre-ingestion document cleanup is the most critical factor for citation accuracy, simple folder-level permissions work best for mid-market accounts, and frontline teams need mobile-friendly UI and messaging integrations [NL-020#NL-020-S05][NL-020#NL-020-S07]. Friction points to address before expansion included ingestion queue delays and duplicate uploads (e.g., the same HAZMAT manual uploaded four times causing citation errors), poor mobile usability on rugged tablets and Zebra devices with small text, glove input issues, re-authentication and Wi-Fi drops, and InsightDash analytics gaps lacking query-level detail and CSV exports [NL-020#NL-020-S06].\n\nThe Customer Success recommendation is a full company-wide rollout in phases: Q3 2026 expand Growth Plan from 80 to 500 users across Chicago, Dallas, and Atlanta with a $2,500 expansion fee and two training webinars by Lina Park; August 2026 implement the advanced OCR ingestion pipeline for legacy scanned manifests and inspection logs; Q4 2026 assess whether user count exceeds the 2,000-learner Growth Plan limit, transitioning to the Enterprise Plan ($8,500/month) with Microsoft Teams integration if delivery drivers are included; Q1 2027 establish an automated API pipeline syncing the dispatch database with KnowledgeHub, plus automated query audits and quarterly compliance reports [NL-020#NL-020-S08].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 9465.0,
+  "policy": "M2",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M2-high-S070",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Summarize the Atlas Logistics pilot by joining its measured result table with the lessons and expansion recommendation.",
+      "suite": "static",
+      "task_family": "table_prose_join",
+      "task_id": "S070"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2533,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "0a749057dd58d852a28e8ef2",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-020-S01"
+        ],
+        "token_count": 286
+      },
+      {
+        "evidence_id": "d89ec4331ff412188be6d01b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-020-S08"
+        ],
+        "token_count": 433
+      },
+      {
+        "evidence_id": "e61f9e5210a39c731d25e454",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-020-S03"
+        ],
+        "token_count": 259
+      },
+      {
+        "evidence_id": "f24bc5ce064d5b27e028e633",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-020-S05"
+        ],
+        "token_count": 368
+      },
+      {
+        "evidence_id": "8c4f4253fc1e3c7b58524380",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-020-S07"
+        ],
+        "token_count": 222
+      },
+      {
+        "evidence_id": "d07c7812ffc9ef2ca2cbc063",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-020-S06"
+        ],
+        "token_count": 358
+      },
+      {
+        "evidence_id": "03f9aa93d3725897d6fd678f",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-020-S04"
+        ],
+        "token_count": 225
+      },
+      {
+        "evidence_id": "5e361e5712d2319b7fc96724",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-020-S02"
+        ],
+        "token_count": 382
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "0a749057dd58d852a28e8ef2",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-020-S01"
+        ],
+        "token_count": 286
+      },
+      {
+        "evidence_id": "d89ec4331ff412188be6d01b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-020-S08"
+        ],
+        "token_count": 433
+      },
+      {
+        "evidence_id": "e61f9e5210a39c731d25e454",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-020-S03"
+        ],
+        "token_count": 259
+      },
+      {
+        "evidence_id": "f24bc5ce064d5b27e028e633",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-020-S05"
+        ],
+        "token_count": 368
+      },
+      {
+        "evidence_id": "8c4f4253fc1e3c7b58524380",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-020-S07"
+        ],
+        "token_count": 222
+      },
+      {
+        "evidence_id": "d07c7812ffc9ef2ca2cbc063",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-020-S06"
+        ],
+        "token_count": 358
+      },
+      {
+        "evidence_id": "03f9aa93d3725897d6fd678f",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-020-S04"
+        ],
+        "token_count": 225
+      },
+      {
+        "evidence_id": "5e361e5712d2319b7fc96724",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-020-S02"
+        ],
+        "token_count": 382
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

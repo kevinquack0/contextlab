@@ -1,0 +1,18 @@
+{
+  "artifact_sha256": "b3efcecbe3973b564605848497c9da8f5f49af4ee231f6dbcee1d8be57f13872",
+  "claim": "This eight-cell bounded-search demonstration records mean evidence coverage of 0.14375 and bounded-search task_success of 0.00. The saved comparator accepted-proxy rates are 0.25 for R5 and 0.00 for R6, with mean evidence coverage of 0.05 and 0.00. The comparator proxy is not a correctness grade. Accept as a negative, no-promotion demonstration, not a significance result.",
+  "experiment_id": "F5",
+  "frontier_entry_gate_sha256": "d7f4a44cdd7ad3cf721824961436dd21eb7d5d58a7133b280d5744510cbc2ed0",
+  "proposed_decision": "accept-negative",
+  "review_status": "pending-ai-review",
+  "schema_version": "contextlab.frontier-result-technical.v1",
+  "source_artifacts": [
+    {
+      "artifact_sha256": "aa0b68ab988836da3c52825fbd5e27d385528b741b3aa0bf1bc470910bd82377",
+      "file_sha256": "e917ca44cc44249a46690bcf551a6a798769c73c510517754f63326a1b553b1d",
+      "path": "results/v2/frontier/f5/bounded_search.final.json"
+    }
+  ],
+  "source_artifacts_sha256": "9a2f8d37506ae85bf3950ce905c51880133522d05a9861ed7afdc7bf198ec7c7",
+  "technical_record_sha256": "62ea0884b22fc9e474a5abc17cc8ce4ad2c355d9eb8db3194b377adaa6b980f3"
+}

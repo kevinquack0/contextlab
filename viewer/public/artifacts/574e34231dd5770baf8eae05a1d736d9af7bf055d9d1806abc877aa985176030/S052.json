@@ -1,0 +1,41 @@
+{
+  "answer": "Under NovaLearn\u2019s official Security and Data Governance Policy, standard tenant-data deletion is completed within **90 days after contract termination**. The policy states that permanent deletion of all tenant data from active disks and primary databases is completed within 60 days of the suspension window (90 days total from contract termination), and this 90-day window is the standard SLA ensuring thorough deletion across all backup servers. [NL-007#NL-007-S06] [NL-019#NL-019-S05]\n\nNote: The same policy also mentions that cold-storage backup cryptographic erasure occurs within 120 days of contract termination due to the backup rotation cycle [NL-007#NL-007-S06]. However, the standard SLA and the explicit \u201ccomplete cleanup across all backup archives\u201d statement both refer to 90 days, and the 90-day figure is confirmed as the standard policy in NL-019. Absent signed custom terms, the normal decommissioning timeline is therefore 90 days.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "metadata": {
+    "actual_usd": "0.0009870056",
+    "cached_prompt_tokens": 4352,
+    "completion_tokens": 3448,
+    "cost_source": "openrouter_response_usage",
+    "error": null,
+    "generation_metadata_status": "pending",
+    "generation_time_ms": null,
+    "input_price_ceiling_usd_per_million": "0.154",
+    "key_status_before_call": {
+      "limit_reset": null,
+      "limit_usd": "15",
+      "remaining_usd": "12.772004465",
+      "usage_usd": "2.227995535"
+    },
+    "latency_ms": 26602,
+    "latency_source": "local_round_trip",
+    "live_route": {
+      "input_usd_per_million": "0.14000000",
+      "output_usd_per_million": "0.28000000",
+      "provider": "DeepSeek"
+    },
+    "local_round_trip_ms": 26602,
+    "native_completion_tokens": 3448,
+    "native_prompt_tokens": 4419,
+    "native_reasoning_tokens": 3233,
+    "output_price_ceiling_usd_per_million": "0.308",
+    "prompt_tokens": 4419,
+    "provider": "DeepSeek",
+    "reasoning_effort": "low",
+    "request_id": "gen-1785999381-JdNZTBKcxnu4NT7zoZQp",
+    "requested_model": "deepseek/deepseek-v4-flash-0731",
+    "resolved_model": "deepseek/deepseek-v4-flash-0731",
+    "retry_count": 0
+  },
+  "run_id": "g3-public-v1-M4-low-S052",
+  "schema_version": "contextlab.generation-result.v1",
+  "task_id": "S052"
+}

@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0010255168,
+  "answer": "A poor scanned, image-only PDF blocks go-live through the following chain:\n\n1. **Ingestion failure**: The current ingestion pipeline relies on standard PDF text extraction, so an image-only PDF has no detectable text layer, leading to an empty document model and empty index [NL-029-S05]. KnowledgeHub cannot extract text from these files without advanced OCR, causing failed or incomplete ingestion [NL-010-S06]. The standard PDF parser fails on image-only documents, producing empty indexes unless external OCR pre-processing is applied [NL-031-S04].\n\n2. **Retrieval and citation degradation**: Because no text is indexed, TutorChat either misses the content entirely or returns incomplete answers [NL-018-S05]. When it does answer from such files, it either returns no source citations because it cannot find text offsets, or it cites the entire document (e.g., page 1 of a 250-page PDF) instead of the exact section [NL-021-S02]. This violates reliability guidelines [NL-021-S02].\n\n3. **Reliability gate failure**: Scanned PDFs return incomplete citations, failing the go-live validation threshold that requires 85% citation correctness [NL-031-S04]. Compliance officers then refuse to sign off on rollout; for example, BrightPath Healthcare remained restricted to its 100-user pilot and could not expand to 6,500 employees until the citation issue was solved [NL-021-S02].\n\n4. **Manual OCR workaround delays go-live**: The temporary workaround — manual external OCR pre-processing and verification — adds weeks to onboarding, e.g., Northstar Financial’s pilot was delayed by three weeks [NL-010-S06], and BrightPath’s manual formatting checks on scanned compliance files produced the longest onboarding time at 9.5 weeks [NL-031-S04], preventing timely go-live.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 14032.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-high-S059",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Trace how a poor scanned PDF can prevent an enterprise TutorChat deployment from reaching go-live, from ingestion through the reliability gate.",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S059"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3176,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "77cf8912f7f7754f60627223",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S06"
+        ],
+        "token_count": 345
+      },
+      {
+        "evidence_id": "737d455e1a0f414db4fc3d0a",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-018-S05"
+        ],
+        "token_count": 600
+      },
+      {
+        "evidence_id": "bb6dd6175f7e6c59ef563902",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-031-S04"
+        ],
+        "token_count": 308
+      },
+      {
+        "evidence_id": "c3c0f50b25602a7046c22758",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-029-S05"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "5269b4023a1896927d99f3f3",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-011-S04"
+        ],
+        "token_count": 330
+      },
+      {
+        "evidence_id": "ca5e2872f4378be0d2195566",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-005-S05"
+        ],
+        "token_count": 448
+      },
+      {
+        "evidence_id": "d07c7812ffc9ef2ca2cbc063",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-020-S06"
+        ],
+        "token_count": 358
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "77cf8912f7f7754f60627223",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S06"
+        ],
+        "token_count": 345
+      },
+      {
+        "evidence_id": "737d455e1a0f414db4fc3d0a",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-018-S05"
+        ],
+        "token_count": 600
+      },
+      {
+        "evidence_id": "bb6dd6175f7e6c59ef563902",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-031-S04"
+        ],
+        "token_count": 308
+      },
+      {
+        "evidence_id": "c3c0f50b25602a7046c22758",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-029-S05"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "5269b4023a1896927d99f3f3",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-011-S04"
+        ],
+        "token_count": 330
+      },
+      {
+        "evidence_id": "ca5e2872f4378be0d2195566",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-005-S05"
+        ],
+        "token_count": 448
+      },
+      {
+        "evidence_id": "d07c7812ffc9ef2ca2cbc063",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-020-S06"
+        ],
+        "token_count": 358
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

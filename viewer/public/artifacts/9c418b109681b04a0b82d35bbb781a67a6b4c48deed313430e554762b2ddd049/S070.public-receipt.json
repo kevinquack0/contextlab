@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.00125832,
+  "answer": "The Atlas Logistics pilot (March 1–April 30, 2026) met or exceeded all quantitative benchmarks, and the measured results directly justify the recommended expansion phases, which also incorporate the operational lessons learned from the pilot.\n\n**Measured Results (target vs. actual) [NL-020#NL-020-S04]:**\n- Weekly Active Usage: 87.5% actual vs. >75.0% target (Exceeded) [NL-020#NL-020-S04]\n- Query Success Rate: 84.2% actual vs. >80.0% target (Exceeded) [NL-020#NL-020-S04]\n- Citation Accuracy: 88.6% actual vs. >85.0% target (Exceeded), rising from 74% in March to 88.6% in April, directly linked to the April 15 citation validation update [NL-020#NL-020-S04]\n- Median Onboarding Duration: 4.8 weeks actual vs. 5.0 weeks target (Exceeded), down from a historical 6.0 weeks [NL-020#NL-020-S04]\n- Support Escalation Decline: 18.4% actual vs. >15.0% target (Exceeded) [NL-020#NL-020-S04]\n- Average Query Latency: 1.8 sec actual vs. <2.0 sec target (Exceeded) [NL-020#NL-020-S04]\n\n**Lessons Learned [NL-020#NL-020-S05, NL-020#NL-020-S06, NL-020#NL-020-S07]:**\n- The single most critical success factor was the pre-ingestion document cleanup, which consolidated fragmented files and removed duplicates, ensuring high citation accuracy [NL-020#NL-020-S05]. This leads to a playbook lesson to make document cleanup mandatory [NL-020#NL-020-S07].\n- Straightforward, folder-level permissions (two folders) were sufficient and avoided configuration delays [NL-020#NL-020-S05]. Playbook lesson: keep permissions simple for mid-market clients [NL-020#NL-020-S07].\n- The pilot revealed three specific friction points: 1) ingestion queue delays and duplicate uploads (caused by the March 14, 2026 outage `NL-013`) leading to temporary citation errors; 2) mobile device usability issues on rugged tablets/handhelds (small text, hard scrolling, Okta re-authentication every 2 hours, Wi-Fi drops) — leading to the lesson that frontline teams need mobile optimization; and 3) analytical gaps in InsightDash (no visibility into exact query strings or weekly CSV exports) [NL-020#NL-020-S06]. The playbook lessons explicitly call for mandatory document prep, simple permissions, and mobile optimization for floor staff [NL-020#NL-020-S07].\n\n**Expansion Recommendation [NL-020#NL-020-S08]:**\n- **Phase 1 (Q3 2026):** Expand from 80 to 500 users (dispatchers, warehouse supervisors, CS reps) across Chicago, Dallas, and Atlanta; $2,500 onboarding fee; two training webinars by Lina Park [NL-020#NL-020-S08].\n- **Phase 2 (August 2026):** Implement the advanced OCR ingestion pipeline to import legacy scanned shipping manifests and forklift inspection logs without manual pre-processing [NL-020#NL-020-S08] — directly addressing the document ingestion and cleanup friction identified in the lessons [NL-020#NL-020-S06].\n- **Phase 3 (Q4 2026):** If the user count exceeds 2,000 (e.g., adding 1,500 delivery drivers), transition to the Enterprise Plan ($8,500/month) and deploy Microsoft Teams integration for mobile query access during routes [NL-020#NL-020-S08] — directly addressing the mobile usability needs identified as a lesson [NL-020#NL-020-S07].\n- **Phase 4 (Q1 2027):** Establish an automated data pipeline via REST API (weekly sync of freight guidelines/compliance logs) and configure an automated query audit script to measure response groundedness, with results summarized in quarterly performance reports [NL-020#NL-020-S08] — addressing the analytical and citation-accuracy gaps noted during the pilot [NL-020#NL-020-S06].\n\nIn joining the results with the plan, the exceeded metrics (e.g., 88.6% citation accuracy, 87.5% WAU) provide the evidence base to proceed, while the Phase 2–4 recommendations are explicitly designed to mitigate the lessons learned (legacy document handling, mobile frontline access, analytics/query visibility) [NL-020#NL-020-S04, NL-020#NL-020-S08].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 21756.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-low-S070",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Summarize the Atlas Logistics pilot by joining its measured result table with the lessons and expansion recommendation.",
+      "suite": "static",
+      "task_family": "table_prose_join",
+      "task_id": "S070"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2533,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "0a749057dd58d852a28e8ef2",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-020-S01"
+        ],
+        "token_count": 286
+      },
+      {
+        "evidence_id": "d89ec4331ff412188be6d01b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-020-S08"
+        ],
+        "token_count": 433
+      },
+      {
+        "evidence_id": "e61f9e5210a39c731d25e454",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-020-S03"
+        ],
+        "token_count": 259
+      },
+      {
+        "evidence_id": "f24bc5ce064d5b27e028e633",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-020-S05"
+        ],
+        "token_count": 368
+      },
+      {
+        "evidence_id": "8c4f4253fc1e3c7b58524380",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-020-S07"
+        ],
+        "token_count": 222
+      },
+      {
+        "evidence_id": "d07c7812ffc9ef2ca2cbc063",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-020-S06"
+        ],
+        "token_count": 358
+      },
+      {
+        "evidence_id": "03f9aa93d3725897d6fd678f",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-020-S04"
+        ],
+        "token_count": 225
+      },
+      {
+        "evidence_id": "5e361e5712d2319b7fc96724",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-020-S02"
+        ],
+        "token_count": 382
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "0a749057dd58d852a28e8ef2",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-020-S01"
+        ],
+        "token_count": 286
+      },
+      {
+        "evidence_id": "d89ec4331ff412188be6d01b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-020-S08"
+        ],
+        "token_count": 433
+      },
+      {
+        "evidence_id": "e61f9e5210a39c731d25e454",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-020-S03"
+        ],
+        "token_count": 259
+      },
+      {
+        "evidence_id": "f24bc5ce064d5b27e028e633",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-020-S05"
+        ],
+        "token_count": 368
+      },
+      {
+        "evidence_id": "8c4f4253fc1e3c7b58524380",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-020-S07"
+        ],
+        "token_count": 222
+      },
+      {
+        "evidence_id": "d07c7812ffc9ef2ca2cbc063",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-020-S06"
+        ],
+        "token_count": 358
+      },
+      {
+        "evidence_id": "03f9aa93d3725897d6fd678f",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-020-S04"
+        ],
+        "token_count": 225
+      },
+      {
+        "evidence_id": "5e361e5712d2319b7fc96724",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-020-S02"
+        ],
+        "token_count": 382
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

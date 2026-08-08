@@ -1,0 +1,23 @@
+{
+  "policy": "M1",
+  "run_id": "g3-public-v1-M1-high-T013",
+  "selected_memory_evidence": [
+    {
+      "evidence_id": "claim-TL-07-E01",
+      "rank": 1,
+      "raw_evidence_ids": [
+        "TL-07-E01"
+      ],
+      "token_count": 27
+    },
+    {
+      "evidence_id": "claim-TL-07-E02",
+      "rank": 2,
+      "raw_evidence_ids": [
+        "TL-07-E02"
+      ],
+      "token_count": 27
+    }
+  ],
+  "viewer_projection_schema": "contextlab.public-memory-selection.v2"
+}

@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0002157176,
+  "answer": "Higher-authority sources contradict the sales material's claim that education startups are the best ICP. The official Q2 metrics show NovaLearn's ICP is concentrated in regulated mid-market and enterprise organizations, not startups [NL-001#NL-001-S04]. SMB/startups show high churn (4.8% monthly logo churn), low NPS (31), and low expansion revenue ($18,000), versus mid-market (2.1% churn, NPS 47, $64,000 expansion) and enterprise (1.3% churn, NPS 52, $91,000 expansion) [NL-015#NL-015-S03]. The CEO explicitly states the company cannot pivot strategy to chase quick SMB sales that churn out in six months, and that the ICP is regulated mid-market and enterprise [NL-015#NL-015-S03]. Even the sales material itself includes a caveat that Finance metrics show education startups carry low contract values and elevated churn risk, and that outbound resources must prioritize core regulated segments [NL-009#NL-009-S04]. Competitive positioning also targets regulated mid-market/enterprise, with LearnPilot assigned to SMB/non-regulated startups [NL-009#NL-009-S07].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 7216.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-high-S033",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Sales material says education startups are the best ICP. What do higher-authority sources indicate?",
+      "suite": "static",
+      "task_family": "authority_conflict",
+      "task_id": "S033"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3125,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "63b020223557573133f38af2",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S04"
+        ],
+        "token_count": 477
+      },
+      {
+        "evidence_id": "9a8f72ba60e01259bdc281d3",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-009-S07"
+        ],
+        "token_count": 285
+      },
+      {
+        "evidence_id": "3eee11910fe7e10e8c8456c9",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-001-S04"
+        ],
+        "token_count": 368
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "960b19b670e4fd65730cd357",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-009-S06"
+        ],
+        "token_count": 265
+      },
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "355bbc21dc16af5c7a2e8552",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-032-S01"
+        ],
+        "token_count": 240
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "63b020223557573133f38af2",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S04"
+        ],
+        "token_count": 477
+      },
+      {
+        "evidence_id": "9a8f72ba60e01259bdc281d3",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-009-S07"
+        ],
+        "token_count": 285
+      },
+      {
+        "evidence_id": "3eee11910fe7e10e8c8456c9",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-001-S04"
+        ],
+        "token_count": 368
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "960b19b670e4fd65730cd357",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-009-S06"
+        ],
+        "token_count": 265
+      },
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "355bbc21dc16af5c7a2e8552",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-032-S01"
+        ],
+        "token_count": 240
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.000465472,
+  "answer": "Based on the evidence, Beacon Insurance is **not ready for further expansion without conditions**. While adoption metrics are strong in most areas, two open issues—particularly the SCIM provisioning requirement—explicitly preclude an unconditional expansion.\n\n**Adoption metrics:**\n- KnowledgeHub exceeded its 90% target at 96.0% [NL-025-S03].\n- TutorChat exceeded its 85% target at 92.2% [NL-025-S03].\n- CourseBuilder exceeded its 75% target at 80.4% [NL-025-S03].\n- InsightDash underperformed its 50% target at only 35.5% [NL-025-S03].\n\n**Open issues and conditions:**\n- **SCIM provisioning (hard condition):** Beacon's IT department emphasized that they \"cannot move forward with broad rollout until SCIM is fully operational, as their internal security guidelines forbid manual seat assignments for security compliance reasons\" [NL-025-S05]. The Q3 action plan includes implementing SCIM user sync as a deliverable by August 15, 2026 [NL-025-S07]. Since the expansion target is September 2026 [NL-025-S06], this implementation is a mandatory precondition that must be completed before the expanded rollout proceeds.\n- **Ingestion citation lag (ongoing risk):** There is a 15-30 minute lag before TutorChat displays updated citations during bulk uploads, creating a temporary risk of adjusters referencing outdated guidelines [NL-025-S05]. The Q3 plan includes monitoring this queue with automated alerts to ensure the lag does not exceed acceptable thresholds [NL-025-S07]. This issue is being managed via mitigation (scheduling updates after 6 PM EST), but it remains a condition to be actively monitored and controlled [NL-025-S05].\n\nTherefore, expansion is conditional on (1) completing SCIM implementation to satisfy Beacon's security compliance requirements, and (2) successfully maintaining the ingestion lag mitigation and monitoring controls to prevent citation-trust risks.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 14072.0,
+  "policy": "M2",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M2-low-S071",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Join Beacon Insurance's adoption metrics with its open issues to explain whether the account is ready for further expansion without conditions.",
+      "suite": "static",
+      "task_family": "table_prose_join",
+      "task_id": "S071"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2447,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "be4a2af05fb404c276896f46",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-025-S05"
+        ],
+        "token_count": 256
+      },
+      {
+        "evidence_id": "2d4bff8a08a8269847d60019",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-025-S01"
+        ],
+        "token_count": 262
+      },
+      {
+        "evidence_id": "a49ef2bdf648a1ceaf906a01",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-025-S02"
+        ],
+        "token_count": 276
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "005924b5bad7d85f53f97cce",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-025-S07"
+        ],
+        "token_count": 417
+      },
+      {
+        "evidence_id": "1dc45758eeff083a06c8cd3f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-025-S06"
+        ],
+        "token_count": 264
+      },
+      {
+        "evidence_id": "facc207a7612866698457b2d",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-025-S04"
+        ],
+        "token_count": 267
+      },
+      {
+        "evidence_id": "d89ec4331ff412188be6d01b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-020-S08"
+        ],
+        "token_count": 433
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "be4a2af05fb404c276896f46",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-025-S05"
+        ],
+        "token_count": 256
+      },
+      {
+        "evidence_id": "2d4bff8a08a8269847d60019",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-025-S01"
+        ],
+        "token_count": 262
+      },
+      {
+        "evidence_id": "a49ef2bdf648a1ceaf906a01",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-025-S02"
+        ],
+        "token_count": 276
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "005924b5bad7d85f53f97cce",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-025-S07"
+        ],
+        "token_count": 417
+      },
+      {
+        "evidence_id": "1dc45758eeff083a06c8cd3f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-025-S06"
+        ],
+        "token_count": 264
+      },
+      {
+        "evidence_id": "facc207a7612866698457b2d",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-025-S04"
+        ],
+        "token_count": 267
+      },
+      {
+        "evidence_id": "d89ec4331ff412188be6d01b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-020-S08"
+        ],
+        "token_count": 433
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

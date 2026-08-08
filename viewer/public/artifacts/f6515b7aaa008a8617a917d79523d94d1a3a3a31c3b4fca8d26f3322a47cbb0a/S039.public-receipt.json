@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0004965072,
+  "answer": "Yes. NovaLearn should prioritize the Advanced OCR Pipeline before the Microsoft Teams integration. The engineering and product leadership directly state that the OCR pipeline is a **critical system stability requirement**, noting that 27% of support tickets in May were related to import issues and broken citations from scanned PDFs, which clogs the support queue [NL-015#NL-015-S06]. Scanned PDFs are the primary driver of citation errors and onboarding delays, and fixing this is the highest technical priority [NL-001#NL-001-S08]. Furthermore, Product leadership argues that rushing a Teams integration now would deliver inaccurate, un-cited answers to a larger audience, and that the underlying ingestion and citation problem must be solved first [NL-015#NL-015-S06]. The Teams integration also carries major security risk—it requires a complete redesign of the auth layer to support logical workspace isolation and RBAC, and rushing it could cause a tenant-isolation breach and jeopardize security certification [NL-015#NL-015-S06].\n\nWhile the Teams integration is the most common feature request and is in high demand [NL-011#NL-011-S07], and sales wants to move it up to unlock revenue [NL-015#NL-015-S06], the current roadmap correctly keeps Teams in the design phase for Q4 2026, with development slated for early 2027 [NL-001#NL-001-S08]. Prioritizing OCR first aligns with the company's high-trust positioning: NovaLearn's talk tracks emphasize that their structured onboarding and accuracy (citation correctness) is superior to LearnPilot's instant but flawed ingest [NL-032#NL-032-S05]. Deploying Teams before fixing the core data ingestion would scale the existing support and accuracy problems, harming the trust and security posture that differentiates NovaLearn in enterprise deals. Therefore, the business recommendation is to keep the OCR pipeline as the top priority for August 2026, and maintain the Teams integration on the Q4 2026 design timeline.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 14293.0,
+  "policy": "M2",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M2-low-S039",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Should NovaLearn prioritize OCR pipeline work before Teams integration? Give a business recommendation grounded in the corpus.",
+      "suite": "static",
+      "task_family": "recommendation",
+      "task_id": "S039"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3003,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "29341b88d42007518d742629",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-032-S05"
+        ],
+        "token_count": 404
+      },
+      {
+        "evidence_id": "741f4c3a347f1f1ac053fe05",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-001-S08"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      },
+      {
+        "evidence_id": "414db3ff44876c4bc80c019e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-032-S02"
+        ],
+        "token_count": 266
+      },
+      {
+        "evidence_id": "a51e2a1f1ee52f745968283e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-009-S05"
+        ],
+        "token_count": 559
+      },
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "5040d007a019cff6b3f3f981",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-002-S01"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "f87510dafd2290bcd49e0518",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-011-S07"
+        ],
+        "token_count": 241
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "29341b88d42007518d742629",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-032-S05"
+        ],
+        "token_count": 404
+      },
+      {
+        "evidence_id": "741f4c3a347f1f1ac053fe05",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-001-S08"
+        ],
+        "token_count": 242
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      },
+      {
+        "evidence_id": "414db3ff44876c4bc80c019e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-032-S02"
+        ],
+        "token_count": 266
+      },
+      {
+        "evidence_id": "a51e2a1f1ee52f745968283e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-009-S05"
+        ],
+        "token_count": 559
+      },
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "5040d007a019cff6b3f3f981",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-002-S01"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "f87510dafd2290bcd49e0518",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-011-S07"
+        ],
+        "token_count": 241
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

@@ -1,0 +1,55 @@
+@use '@carbon/styles/scss/config' with (
+  $css--font-face: false
+);
+@use '@carbon/react/scss/reset';
+@use '@carbon/react/scss/zone';
+@use '@carbon/react/scss/components/accordion';
+@use '@carbon/react/scss/components/button';
+@use '@carbon/react/scss/components/code-snippet';
+@use '@carbon/react/scss/components/data-table';
+@use '@carbon/react/scss/components/notification';
+@use '@carbon/react/scss/components/progress-bar';
+@use '@carbon/react/scss/components/search';
+@use '@carbon/react/scss/components/select';
+@use '@carbon/react/scss/components/skeleton-styles';
+@use '@carbon/react/scss/components/tag';
+
+@font-face {
+  font-display: swap;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin1.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin1.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin1.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Latin1.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  src: url('@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Latin1.woff2') format('woff2');
+}

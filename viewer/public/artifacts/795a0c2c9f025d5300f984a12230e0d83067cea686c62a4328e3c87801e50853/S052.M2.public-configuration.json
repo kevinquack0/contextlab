@@ -1,0 +1,19 @@
+{
+  "policy": "M2",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M2-low-S052",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "After a standard contract ends, by when does NovaLearn complete its normal tenant-data decommissioning, absent signed custom terms?",
+      "suite": "static",
+      "task_family": "paraphrase",
+      "task_id": "S052"
+    }
+  },
+  "viewer_projection_schema": "contextlab.public-run-configuration.v1"
+}

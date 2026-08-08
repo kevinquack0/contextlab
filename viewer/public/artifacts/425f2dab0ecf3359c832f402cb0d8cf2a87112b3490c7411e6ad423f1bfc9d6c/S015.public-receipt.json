@@ -1,0 +1,144 @@
+{
+  "actual_usd": 0.00142534,
+  "answer": "The support FAQ, product guide, and customer interviews collectively describe a consistent picture of scanned PDF handling: image-only (scanned) PDFs lack a native text layer, so they cannot be parsed by the standard text extraction pipeline and require Optical Character Recognition (OCR) to become searchable and citable. This creates a major pain point because OCR is heuristic and unreliable for poor-quality scans, leading to broken or imprecise citations, missing content, and significant manual pre-processing burdens for customers.\n\n**From the support FAQ** [NL-006-S03]:\n- Scanned PDFs require OCR; without it, no text is extracted and citations cannot be generated.\n- OCR is heuristic: blurry, low-resolution, handwritten, or complex-layout scans cause misreads and broken paragraphs, resulting in broken citations, gaps in knowledge, and longer processing times.\n- Resolution steps: check upload metadata for OCR enablement, instruct users to export digital text-searchable PDFs rather than scanning, and recommend the Advanced OCR Pipeline (Enterprise or Growth add-on) for difficult scans.\n- Tables in PDFs may be garbled by OCR; the FAQ suggests converting to CSV/XLSX or formatting tables with clear dark grid lines.\n- Handwriting and physical annotations are ignored by standard OCR; they must be transcribed into digital text (DOCX/Markdown) to be searchable.\n\n**From the product guide** [NL-002-S08]:\n- PDFs are the default format, but scanned or image-only PDFs require OCR processing (noted in the PDF row's \"Notes and Recommendations\" column).\n\n**From customer interviews**:\n- **Customer success/support teams** [NL-021-S02]: Enterprise customers (e.g., BrightPath Healthcare, Northstar Financial) have 40–50% of ingested files as scanned PDFs without text layers. TutorChat either returns answers with no citations or citations pointing to the entire document (e.g., page 1 of a 250-page PDF), violating reliability guidelines. This caused CSAT to drop from 4.5 to 3.8. Users also sneak TIFF/PNG images inside PDF containers, which the parser fails to read.\n- **BrightPath and NovaLearn** [NL-024-S04]: BrightPath's corpus is ~45% scanned; citations point to page 1 of a 150-page doc. NovaLearn confirms the standard parser indexes image-only scans as a single large metadata block, preventing page-specific citations. Recommendations: source cleanup (upload native DOCX/text) or exclude scans from the active corpus until the Advanced OCR Pipeline (scheduled for August 2026) is released.\n- **Healthcare customer (Dr. Vance)** [NL-018-S05]: Manual OCR pre-processing is a massive bottleneck (12,000 pages, 9 weeks onboarding, only 1/3 ingested). Text extraction failures caused TutorChat to miss critical safety steps (e.g., ventilator alarm settings). The user demands an automated OCR pipeline plus validation checks and a preview interface for clinical editors to review/correct extracted text.\n- **Acme customer (Frank Kowalski)** [NL-017-S06]: The platform often misses entire steps from scanned legacy SOPs; they must run external OCR tools before uploading. They are withholding 300 legacy manuals until the automated OCR pipeline (August 2026) becomes available.\n\nCollectively, all sources agree that scanned PDFs are the leading cause of citation and ingestion failures, that OCR is mandatory but imperfect, that manual pre-processing is unsustainable for large legacy archives, and that a reliable automated OCR pipeline (planned for August 2026) is the expected remedy to restore searchable text and page-specific citations.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 26921.0,
+  "policy": "M0",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M0-low-S015",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What do the support FAQ, product guide, and customer interviews collectively say about scanned PDF handling?",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S015"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3124,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      },
+      {
+        "evidence_id": "737d455e1a0f414db4fc3d0a",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-018-S05"
+        ],
+        "token_count": 600
+      },
+      {
+        "evidence_id": "b64ebbdc0022a41572d20236",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-021-S06"
+        ],
+        "token_count": 411
+      },
+      {
+        "evidence_id": "b7a62160b1949d1ea6aff4e1",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-017-S06"
+        ],
+        "token_count": 481
+      },
+      {
+        "evidence_id": "0d6d524f7215bdc787c36fc5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-002-S08"
+        ],
+        "token_count": 250
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "b79787f9ef7e11cae1ecdc9e",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-006-S03"
+        ],
+        "token_count": 458
+      },
+      {
+        "evidence_id": "47093e0b0ae9f3a918e5c4bb",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-021-S02"
+        ],
+        "token_count": 473
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      },
+      {
+        "evidence_id": "737d455e1a0f414db4fc3d0a",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-018-S05"
+        ],
+        "token_count": 600
+      },
+      {
+        "evidence_id": "b64ebbdc0022a41572d20236",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-021-S06"
+        ],
+        "token_count": 411
+      },
+      {
+        "evidence_id": "b7a62160b1949d1ea6aff4e1",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-017-S06"
+        ],
+        "token_count": 481
+      },
+      {
+        "evidence_id": "0d6d524f7215bdc787c36fc5",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-002-S08"
+        ],
+        "token_count": 250
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

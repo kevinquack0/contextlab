@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0002479904,
+  "answer": "The available evidence does not contain the median number of seconds that an admin spent in each weekly InsightDash session during Q2 2026. While `NL-002-S05` states that InsightDash tracks \"session durations\" as part of its adoption metrics, and `NL-030-S01` describes the telemetry methodology used to collect adoption data, neither document (nor any other in the context) provides a specific numeric value for median admin session length in seconds for InsightDash during Q2 2026. Adoption rates for InsightDash are given (e.g., 35.5% in Q2 2026 in `NL-025-S03`), but no session-duration statistic is supplied.\n\nANSWER_STATUS: abstain\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 7167.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-low-S120",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What was the median number of seconds that an admin spent in each weekly InsightDash session during Q2 2026?",
+      "suite": "static",
+      "task_family": "abstention",
+      "task_id": "S120"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2185,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "51d818a8d0b495764e06ace4",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-010-S07"
+        ],
+        "token_count": 214
+      },
+      {
+        "evidence_id": "7ab86de43e1ed3228b5fa074",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-002-S05"
+        ],
+        "token_count": 251
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "a97b2a0c54a44664dfbefb23",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-011-S02"
+        ],
+        "token_count": 302
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "adeca626775913468145d8c5",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-012-S03"
+        ],
+        "token_count": 350
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "515d383ad82c82a7b862ced8",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-030-S01"
+        ],
+        "token_count": 260
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "51d818a8d0b495764e06ace4",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-010-S07"
+        ],
+        "token_count": 214
+      },
+      {
+        "evidence_id": "7ab86de43e1ed3228b5fa074",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-002-S05"
+        ],
+        "token_count": 251
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "a97b2a0c54a44664dfbefb23",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-011-S02"
+        ],
+        "token_count": 302
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "adeca626775913468145d8c5",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-012-S03"
+        ],
+        "token_count": 350
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "515d383ad82c82a7b862ced8",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-030-S01"
+        ],
+        "token_count": 260
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

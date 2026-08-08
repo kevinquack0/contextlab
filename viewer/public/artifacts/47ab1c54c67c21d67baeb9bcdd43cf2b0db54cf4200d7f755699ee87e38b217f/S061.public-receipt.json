@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0001984136,
+  "answer": "Meridian Retail Group is at **High Risk** of non-renewal because its two main pain points conflict directly with NovaLearn's current product roadmap and permission architecture.\n\n- **Integration roadmap conflict:** Meridian’s store managers need TutorChat inside Microsoft Teams on mobile devices, and sales gave informal assurances in 2025 that this was “almost ready.” However, the official product roadmap (`NL-014`) shows the Teams connector is still in design for Q4 2026, which is after Meridian’s October 15, 2026 renewal date. This gap directly drives renewal risk because the VP of Retail Operations cannot justify paying for a system floor staff cannot easily access [NL-026-S02][NL-026-S04].\n- **Permission-friction evidence:** Meridian’s decentralized structure requires strict division-level permissions, but the Growth Plan relies on manual folder-based controls, causing ongoing configuration errors [NL-026-S02]. The plan also lacks SCIM/Active Directory automated user-group synchronization, which is restricted to the Enterprise Plan, creating administrative overhead when store managers leave or transfer [NL-026-S04].\n- **Ticket evidence ties the risk to permission friction:** In May 2026, Meridian submitted 18 tickets, including 8 permission verification failures (lockouts from return policy folders, assistant managers accessing restricted regional data), plus 6 TutorChat citation errors and 4 ingestion stalls. Slow resolution (median 4.2 days) eroded trust and was cited by their VP as a reason to consider alternatives [NL-026-S03].\n\nThe proposed intervention directly addresses both: a pro-bono Enterprise upgrade enables automated SCIM/AD provisioning, a manual permission audit is planned as a temporary workaround, and Product will discuss a limited private preview of the Teams bot in late Q3 [NL-026-S05][NL-026-S06].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 6596.0,
+  "policy": "M4",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M4-high-S061",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Explain how Meridian Retail's renewal risk relates to NovaLearn's current integration roadmap and permission-friction evidence.",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S061"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2563,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "aa341d91885a833af993d16a",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-026-S01"
+        ],
+        "token_count": 189
+      },
+      {
+        "evidence_id": "3af309502162ecd69350da8b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-026-S02"
+        ],
+        "token_count": 293
+      },
+      {
+        "evidence_id": "271c7e9df47964de5a313820",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-026-S04"
+        ],
+        "token_count": 248
+      },
+      {
+        "evidence_id": "df8bdbd6fddf8422c6ad7a59",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-026-S03"
+        ],
+        "token_count": 248
+      },
+      {
+        "evidence_id": "79ddf9cfcbfc0a57a9ed1353",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-026-S05"
+        ],
+        "token_count": 185
+      },
+      {
+        "evidence_id": "e664bab3aec2104f9d075656",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-026-S06"
+        ],
+        "token_count": 457
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "aa341d91885a833af993d16a",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-026-S01"
+        ],
+        "token_count": 189
+      },
+      {
+        "evidence_id": "3af309502162ecd69350da8b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-026-S02"
+        ],
+        "token_count": 293
+      },
+      {
+        "evidence_id": "271c7e9df47964de5a313820",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-026-S04"
+        ],
+        "token_count": 248
+      },
+      {
+        "evidence_id": "df8bdbd6fddf8422c6ad7a59",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-026-S03"
+        ],
+        "token_count": 248
+      },
+      {
+        "evidence_id": "79ddf9cfcbfc0a57a9ed1353",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-026-S05"
+        ],
+        "token_count": 185
+      },
+      {
+        "evidence_id": "e664bab3aec2104f9d075656",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-026-S06"
+        ],
+        "token_count": 457
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

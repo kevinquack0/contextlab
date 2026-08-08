@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0001996736,
+  "answer": "For a Growth customer paying annually:\n\n- Base monthly price: $3,600/month [NL-003-S02] [NL-001-S05]\n- Annual base before discount: $3,600 × 12 = $43,200\n- Annual prepayment discount: 10% on the base subscription fee [NL-003-S07] [NL-001-S05] → discount = $4,320 → discounted annual base = $38,880\n- Onboarding fee: $7,500 one-time [NL-003-S04] [NL-003-S02]; per policy, multi-year/annual discounts apply only to the base subscription fee and do not apply to onboarding fees [NL-003-S07], so the onboarding fee is not discounted and is not treated as MRR.\n- Combined total for the first year: $38,880 + $7,500 = $46,380.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 5145.0,
+  "policy": "M2",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M2-low-S063",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "For a Growth customer paying annually, combine the base price, onboarding fee, and applicable prepayment discount without treating the one-time fee as monthly recurring revenue.",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S063"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2398,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "1a80802691ee19fe640bb9dc",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-003-S05"
+        ],
+        "token_count": 319
+      },
+      {
+        "evidence_id": "a472d8d7f5cc0dd98296adc1",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S07"
+        ],
+        "token_count": 385
+      },
+      {
+        "evidence_id": "aa4a388733cb6e3101ad1a1c",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-003-S08"
+        ],
+        "token_count": 303
+      },
+      {
+        "evidence_id": "4df4892f35cacfa07daf7b1d",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-003-S04"
+        ],
+        "token_count": 205
+      },
+      {
+        "evidence_id": "ba53eaee43fc8791b90e738c",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-001-S05"
+        ],
+        "token_count": 369
+      },
+      {
+        "evidence_id": "1c6b5adf62c8602947421ee1",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-004-S04"
+        ],
+        "token_count": 613
+      },
+      {
+        "evidence_id": "5f5a43d38863a7d8b2224bd6",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-003-S02"
+        ],
+        "token_count": 92
+      },
+      {
+        "evidence_id": "5786a29c4734fe1ce1667b81",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-004-S02"
+        ],
+        "token_count": 112
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "1a80802691ee19fe640bb9dc",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-003-S05"
+        ],
+        "token_count": 319
+      },
+      {
+        "evidence_id": "a472d8d7f5cc0dd98296adc1",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S07"
+        ],
+        "token_count": 385
+      },
+      {
+        "evidence_id": "aa4a388733cb6e3101ad1a1c",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-003-S08"
+        ],
+        "token_count": 303
+      },
+      {
+        "evidence_id": "4df4892f35cacfa07daf7b1d",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-003-S04"
+        ],
+        "token_count": 205
+      },
+      {
+        "evidence_id": "ba53eaee43fc8791b90e738c",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-001-S05"
+        ],
+        "token_count": 369
+      },
+      {
+        "evidence_id": "1c6b5adf62c8602947421ee1",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-004-S04"
+        ],
+        "token_count": 613
+      },
+      {
+        "evidence_id": "5f5a43d38863a7d8b2224bd6",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-003-S02"
+        ],
+        "token_count": 92
+      },
+      {
+        "evidence_id": "5786a29c4734fe1ce1667b81",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-004-S02"
+        ],
+        "token_count": 112
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

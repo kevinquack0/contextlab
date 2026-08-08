@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0008759856,
+  "answer": "An account executive should correct the prospect by stating that \"immediate deletion\" is an informal sales claim that conflicts with the official Security and Data Governance Policy [NL-007-S06] [NL-032-S06]. The standard timeline is as follows: full system decommissioning takes up to 90 days after contract termination [NL-032-S06] [NL-019-S05]. Specifically, active databases and primary storage are permanently deleted within 90 days total from contract termination, while cold storage backups achieve full cryptographic erasure within 120 days of termination [NL-007-S06]. Note that while user access and TutorChat queries are revoked immediately, the physical deletion of database records and document chunks from primary storage and secure backups takes up to 90 days [NL-019-S05]. The critical qualification is that immediate deletion is not a standard offering; it requires a custom enterprise SLA negotiated and explicitly documented in the signed Data Processing Agreement (DPA) and configured by the engineering operations team [NL-007-S06]. For example, a custom SLA can commit to purging all active database records within 30 days and backup archives within 60 days [NL-019-S06] [NL-019-S07]. The AE must cite the official policy and overpromising creates legal risks and customer success friction [NL-032-S06].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 24734.0,
+  "policy": "M4",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M4-low-S041",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "A prospect was told that NovaLearn deletes all customer data immediately on request. What timeline and qualification should an account executive give instead?",
+      "suite": "static",
+      "task_family": "authority_conflict",
+      "task_id": "S041"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3120,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "f49235744cb2fa71cb0e0b63",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-007-S06"
+        ],
+        "token_count": 471
+      },
+      {
+        "evidence_id": "39eac38f0ea9bab68aca3aa1",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-023-S05"
+        ],
+        "token_count": 610
+      },
+      {
+        "evidence_id": "790c62cb40ce140299e17a94",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-019-S05"
+        ],
+        "token_count": 504
+      },
+      {
+        "evidence_id": "da503fd140633aea5f15ff2e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-032-S06"
+        ],
+        "token_count": 163
+      },
+      {
+        "evidence_id": "ebc5bfd8fb51f3953cb4a789",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-019-S07"
+        ],
+        "token_count": 90
+      },
+      {
+        "evidence_id": "58260ff68ac77c8d2d7e3320",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-019-S03"
+        ],
+        "token_count": 589
+      },
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "ab49a76bab7f1386d4b3f42d",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-001-S02"
+        ],
+        "token_count": 249
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "f49235744cb2fa71cb0e0b63",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-007-S06"
+        ],
+        "token_count": 471
+      },
+      {
+        "evidence_id": "39eac38f0ea9bab68aca3aa1",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-023-S05"
+        ],
+        "token_count": 610
+      },
+      {
+        "evidence_id": "790c62cb40ce140299e17a94",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-019-S05"
+        ],
+        "token_count": 504
+      },
+      {
+        "evidence_id": "da503fd140633aea5f15ff2e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-032-S06"
+        ],
+        "token_count": 163
+      },
+      {
+        "evidence_id": "ebc5bfd8fb51f3953cb4a789",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-019-S07"
+        ],
+        "token_count": 90
+      },
+      {
+        "evidence_id": "58260ff68ac77c8d2d7e3320",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-019-S03"
+        ],
+        "token_count": 589
+      },
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "ab49a76bab7f1386d4b3f42d",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-001-S02"
+        ],
+        "token_count": 249
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

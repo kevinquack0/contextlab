@@ -1,0 +1,41 @@
+{
+  "answer": "Based on NovaLearn AI's official Security and Data Governance Policy, standard tenant-data decommissioning is completed within **90 days** after contract termination, absent signed custom terms. The policy explicitly states: \"Standard deletion is executed within 90 days after contract termination to ensure complete cleanup across all backup archives\" [NL-007#NL-007-S06]. The detailed workflow confirms this timeline: primary storage erasure is completed within 60 days of suspension (90 days total from termination), and backup invalidation and cryptographic erasure occur on days 61\u201390, with compliance sign-off on day 91 [NL-007#NL-007-S06]. Corroborating transcripts also confirm that the physical deletion of database records and document chunks from primary storage and secure backups takes up to 90 days [NL-019#NL-019-S05]. Note: A single line within the policy mentions a separate 120-day figure for cold storage backups, but the operational workflow and the policy's own summary statement both establish the 90-day standard, and customer-facing officials consistently reaffirm 90 days as the standard SLA [NL-007#NL-007-S06], [NL-019#NL-019-S05]. Absent negotiated custom terms in a signed DPA, the decommissioning completes within 90 days.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "metadata": {
+    "actual_usd": "0.0013689256",
+    "cached_prompt_tokens": 4352,
+    "completion_tokens": 4812,
+    "cost_source": "openrouter_response_usage",
+    "error": null,
+    "generation_metadata_status": "pending",
+    "generation_time_ms": null,
+    "input_price_ceiling_usd_per_million": "0.154",
+    "key_status_before_call": {
+      "limit_reset": null,
+      "limit_usd": "15",
+      "remaining_usd": "12.985878163",
+      "usage_usd": "2.014121837"
+    },
+    "latency_ms": 37213,
+    "latency_source": "local_round_trip",
+    "live_route": {
+      "input_usd_per_million": "0.14000000",
+      "output_usd_per_million": "0.28000000",
+      "provider": "DeepSeek"
+    },
+    "local_round_trip_ms": 37213,
+    "native_completion_tokens": 4812,
+    "native_prompt_tokens": 4419,
+    "native_reasoning_tokens": 4526,
+    "output_price_ceiling_usd_per_million": "0.308",
+    "prompt_tokens": 4419,
+    "provider": "DeepSeek",
+    "reasoning_effort": "low",
+    "request_id": "gen-1785997754-6gZ0gBPWjEMhtP7j1LMd",
+    "requested_model": "deepseek/deepseek-v4-flash-0731",
+    "resolved_model": "deepseek/deepseek-v4-flash-0731",
+    "retry_count": 0
+  },
+  "run_id": "g3-public-v1-M1-low-S052",
+  "schema_version": "contextlab.generation-result.v1",
+  "task_id": "S052"
+}

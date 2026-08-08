@@ -1,0 +1,148 @@
+{
+  "aggregation": {
+    "binary_and_categorical": "majority_of_three",
+    "manual_override": false,
+    "ordinal": "median_of_three",
+    "preserve_individual_grades": true
+  },
+  "blind_fields": [
+    "task_id",
+    "strategy_id",
+    "reasoning_effort",
+    "provider_route",
+    "run_order",
+    "sealed_gold",
+    "other_reviewer_grades"
+  ],
+  "calibration": {
+    "agreement_thresholds": {
+      "accepted_match_rate_min": 0.85,
+      "ai_kevin_accepted_match_rate_min": 0.8,
+      "ai_kevin_mean_absolute_ordinal_difference_max": 0.75,
+      "exact_ordinal_rate_min": 0.65,
+      "within_one_ordinal_rate_min": 0.9
+    },
+    "action_on_ambiguous_rubric": "correct_rubric_and_restart_all_three_reviews",
+    "cells": 20,
+    "main_release_requires_approved_gate": true,
+    "packets_per_reviewer": 1,
+    "reference_location": "external_to_repository",
+    "runs_before_main_review": true
+  },
+  "human_review": {
+    "all_final_cells_required": true,
+    "reviewer": "Kevin Araujo",
+    "sole_human_reviewer": true,
+    "store": "resumable_sqlite"
+  },
+  "main_review": {
+    "cells_per_reviewer": 1600,
+    "packet_size": 20,
+    "packets_per_reviewer": 80,
+    "reasoning_efforts": ["low", "high"],
+    "strategy_lanes": ["full_context", "v1_dense_rag", "compiled_wiki", "text_to_sql", "promoted_v2"],
+    "task_count": 160
+  },
+  "randomization": {
+    "algorithm": "HMAC-SHA256 keyed ordering and blind IDs",
+    "identity_map_location": "external_to_public_packets",
+    "seed_minimum_bytes": 32,
+    "store_seed": false,
+    "store_seed_sha256": true
+  },
+  "repeats": {
+    "cells_per_reviewer": 80,
+    "fraction_of_main_cells": 0.05,
+    "hidden": true,
+    "packets_per_reviewer": 4,
+    "reblind_repeated_cells": true
+  },
+  "reviewers": [
+    {"human": false, "id": "gpt-5.6-sol-high", "invocation": "Codex subagent", "model": "gpt-5.6-sol", "reasoning": "high"},
+    {"human": false, "id": "claude-opus-5-medium", "invocation": "local Claude CLI", "model": "claude-opus-5", "reasoning": "medium"},
+    {"human": true, "id": "kevin", "invocation": "local review interface", "model": null, "reasoning": null}
+  ],
+  "rubric": {
+    "abstention_quality": {
+      "anchors": {
+        "correct": "The candidate abstains because the supplied evidence cannot support an answer.",
+        "incorrect": "The candidate abstains despite sufficient evidence, or answers when abstention is required.",
+        "not_applicable": "The candidate answers and the supplied evidence supports an answer."
+      },
+      "values": ["not_applicable", "correct", "incorrect"]
+    },
+    "correct_abstention_dimension_assignment": {
+      "authority_freshness": "Score whether the rationale accounts for the most authoritative applicable evidence at the requested time, including a material conflict, expiry, or retraction when that causes the abstention.",
+      "citation_support": "Score support for factual claims made in the rationale. The unavailable fact itself does not require a citation merely to justify abstaining.",
+      "completeness": "Score whether every requested part is addressed, the missing or conflicting evidence is identified when material, and no available answer is silently omitted.",
+      "factual_correctness": "Score whether the rationale correctly states why the supplied evidence is insufficient and makes no unsupported factual assertion.",
+      "rule": "When abstention_quality is correct, apply the four dimension scores to the abstention rationale. Use 3 when no defect is detected, 2 only for a minor non-critical defect, 1 for a material defect, and 0 only when the abstention is incorrect."
+    },
+    "accepted": {
+      "false_when": "overall_ordinal is 0 or 1, or any critical failure label applies",
+      "true_when": "overall_ordinal is 2 or 3 and no critical failure label applies",
+      "type": "boolean"
+    },
+    "dimension_anchors": {
+      "authority_freshness": {
+        "0": "Stale or lower-authority evidence determines the answer despite a controlling source.",
+        "1": "The core answer is not determined by a known stale or lower-authority source, but a material authority or freshness problem remains.",
+        "2": "The best available evidence controls, but at least one minor authority or freshness concern remains.",
+        "3": "The answer uses the most authoritative applicable evidence at the requested time; no authority or freshness concern is detected."
+      },
+      "citation_support": {
+        "0": "No citation supports the core answer, or cited evidence materially contradicts the core conclusion.",
+        "1": "At least one citation supports the core answer and no cited evidence materially contradicts it, but a material claim lacks direct support.",
+        "2": "Every material claim is supported, but at least one non-critical citation gap remains.",
+        "3": "Every stated claim that requires evidence is directly supported; no citation gap is detected."
+      },
+      "completeness": {
+        "0": "The response misses the core request.",
+        "1": "The core request is addressed, but a material requested part is missing.",
+        "2": "All core parts are present, but at least one minor omission or underdeveloped part remains.",
+        "3": "No requested part is omitted or underdeveloped."
+      },
+      "factual_correctness": {
+        "0": "The core conclusion is wholly wrong, invalid, or fabricated.",
+        "1": "The core conclusion remains materially valid, but one or more material factual errors remain.",
+        "2": "The core conclusion is correct; only a minor factual defect remains.",
+        "3": "No factual error is detected."
+      }
+    },
+    "failure_labels": [
+      "wrong_answer",
+      "material_omission",
+      "unsupported_material_claim",
+      "stale_or_low_authority",
+      "incorrect_abstention",
+      "provider_or_format_failure"
+    ],
+    "failure_label_dimension_constraints": {
+      "incorrect_abstention": "abstention_quality must be incorrect and overall_ordinal must be 0",
+      "material_omission": "completeness must be 0 or 1",
+      "provider_or_format_failure": "overall_ordinal must be 0",
+      "stale_or_low_authority": "authority_freshness must be 0 or 1",
+      "unsupported_material_claim": "citation_support must be 0 or 1",
+      "wrong_answer": "factual_correctness must be 0"
+    },
+    "ordinal_anchors": {
+      "0": "Unusable: at least one dimension is 0, or abstention quality is incorrect.",
+      "1": "Major defect: the lowest dimension is 1, or a critical failure label caps a higher base score at 1.",
+      "2": "Acceptable with a minor defect: the lowest dimension is exactly 2 and no critical failure label applies.",
+      "3": "Strong with no detected defect: all four dimensions are 3 and no critical failure label applies."
+    },
+    "overall_assignment": "Set overall_ordinal to the minimum of factual_correctness, completeness, citation_support, and authority_freshness. An incorrect abstention forces overall_ordinal to 0. Any critical failure label caps overall_ordinal at 1.",
+    "version": "contextlab.review-rubric.v5"
+  },
+  "schema_version": "contextlab.review-protocol.v1",
+  "stop_rules": [
+    "No aggregate may include a cell without Kevin's grade.",
+    "Do not start AI review until exact packet counts and frozen-packet byte and token preflight are reported to Kevin.",
+    "Do not enable paid reviewer overage.",
+    "If agreement is too low or materially strategy-dependent, report descriptively and do not force a ranking."
+  ],
+  "total_per_reviewer": {
+    "cells": 1700,
+    "packets": 85
+  }
+}

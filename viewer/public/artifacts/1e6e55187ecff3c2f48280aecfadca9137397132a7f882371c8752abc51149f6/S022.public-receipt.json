@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0006244504,
+  "answer": "Traditional support lookup tasks and structured BI-style questions operate on fundamentally different data and processes in this corpus.\n\n**Traditional support lookup tasks** are conversational, grounded, natural-language queries focused on retrieving specific facts, policies, procedures, or troubleshooting steps from unstructured documents (e.g., SOPs, manuals, clinical protocols). Examples include \"What is our reimbursement limit for business meals in Canada?\" or \"What are the recommended resolution steps when a SCIM sync fails?\" [NL-028#NL-028-S06]. These are handled by TutorChat through semantic query processing, vector search, and grounded answer generation with inline citations [NL-002#NL-002-S03]. These tasks historically involved switching between browser tabs, searching outdated wikis, or messaging Slack channels, causing long hold times [NL-009#NL-009-S03]. They also suffer from quality issues when source documents lack text layers (e.g., scanned PDFs), causing poor citation precision [NL-024#NL-024-S04]. Evaluation of these tasks focuses on Citation Correctness, Groundedness, Permission Leakage, and Retrieval Precision [NL-008#NL-008-S08].\n\n**Structured BI-style questions** instead operate on structured tabular data (like a `support_tickets` database) and require SQL aggregation and analytics rather than document retrieval. Examples include `SELECT category, SUM(ticket_count) FROM support_tickets GROUP BY category;` or `SELECT segment, AVG(ticket_count) FROM support_tickets GROUP BY segment;` [NL-029#NL-029-S07]. These queries track support efficiency trends, identify SLA bottlenecks (e.g., open severity 1/2 tickets older than 48 hours), and aggregate CSAT scores by plan tier [NL-029#NL-029-S07]. The outputs are numeric metrics and trend reports for SRE leads and customer success managers, not cited document excerpts [NL-029#NL-029-S07].\n\nIn summary, traditional support lookups answer \"what does the documentation say?\" by citing specific document chunks, whereas BI-style questions answer \"what do the metrics show?\" by aggregating relational data via SQL. The corpus treats them as distinct: the golden dataset for QA splits queries into 40% direct lookup, 30% cross-document synthesis, 20% security boundaries, and 10% out-of-scope, but does not include BI-style SQL aggregations [NL-008#NL-008-S08]; those are supported by separate telemetry and database schemas [NL-029#NL-029-S07].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 18676.0,
+  "policy": "M4",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M4-low-S022",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Compare traditional support lookup tasks with structured BI-style questions in this corpus.",
+      "suite": "static",
+      "task_family": "comparison",
+      "task_id": "S022"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2731,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "aeb61c6c76a026b346947204",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S03"
+        ],
+        "token_count": 353
+      },
+      {
+        "evidence_id": "ada0add953b3a394c4e6e6d7",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-002-S03"
+        ],
+        "token_count": 522
+      },
+      {
+        "evidence_id": "44227b33b1862c62171cbe82",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-008-S08"
+        ],
+        "token_count": 348
+      },
+      {
+        "evidence_id": "f31090ea2bedf930787c6721",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-028-S06"
+        ],
+        "token_count": 391
+      },
+      {
+        "evidence_id": "a8f289acf1dbdf46590b307e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-008-S04"
+        ],
+        "token_count": 239
+      },
+      {
+        "evidence_id": "8198c6a1826c44813cde157e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-029-S07"
+        ],
+        "token_count": 349
+      },
+      {
+        "evidence_id": "1184bb3ca469a844512dba44",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-023-S02"
+        ],
+        "token_count": 78
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "aeb61c6c76a026b346947204",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S03"
+        ],
+        "token_count": 353
+      },
+      {
+        "evidence_id": "ada0add953b3a394c4e6e6d7",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-002-S03"
+        ],
+        "token_count": 522
+      },
+      {
+        "evidence_id": "44227b33b1862c62171cbe82",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-008-S08"
+        ],
+        "token_count": 348
+      },
+      {
+        "evidence_id": "f31090ea2bedf930787c6721",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-028-S06"
+        ],
+        "token_count": 391
+      },
+      {
+        "evidence_id": "a8f289acf1dbdf46590b307e",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-008-S04"
+        ],
+        "token_count": 239
+      },
+      {
+        "evidence_id": "8198c6a1826c44813cde157e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-029-S07"
+        ],
+        "token_count": 349
+      },
+      {
+        "evidence_id": "1184bb3ca469a844512dba44",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-023-S02"
+        ],
+        "token_count": 78
+      },
+      {
+        "evidence_id": "2d7c058e62e6f13ed6344c1b",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-024-S04"
+        ],
+        "token_count": 451
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

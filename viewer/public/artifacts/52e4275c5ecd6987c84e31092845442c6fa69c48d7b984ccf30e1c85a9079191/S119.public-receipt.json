@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0008136184,
+  "answer": "For InsightDash in Q2 2026:\n\n- **Overall adoption/engagement:** 58% of active customers view InsightDash weekly [NL-030-S04]\n- **SMB:** 38% [NL-030-S03]\n- **Mid-Market:** 71% [NL-030-S03]\n- **Enterprise:** 89% [NL-030-S03]\n\nThe product team’s diagnosis of low overall engagement is that InsightDash requires users to build custom filters to view simple metrics (e.g., weekly query volume, top failed queries), and loading latency exceeds 5 seconds for accounts with more than 10,000 queries per month. The planned remediation is a Q3 redesign introducing pre-built templates and improving backend database index queries [NL-030-S04].\n\nANSWER_STATUS: answer  \nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 22223.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-high-S119",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "For InsightDash in Q2 2026, give the overall adoption rate and the SMB, Mid-Market, and Enterprise rates. Then explain the product team's diagnosis of low overall engagement and its planned remediation.",
+      "suite": "static",
+      "task_family": "table_prose_join",
+      "task_id": "S119"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2035,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "13bf85d114b12f95733e3e71",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-030-S03"
+        ],
+        "token_count": 214
+      },
+      {
+        "evidence_id": "e11f16a68f267cae748bb7ce",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-030-S04"
+        ],
+        "token_count": 286
+      },
+      {
+        "evidence_id": "51d818a8d0b495764e06ace4",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-010-S07"
+        ],
+        "token_count": 214
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "7ab86de43e1ed3228b5fa074",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-002-S05"
+        ],
+        "token_count": 251
+      },
+      {
+        "evidence_id": "617aee9913fb6f045ee38a38",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-010-S04"
+        ],
+        "token_count": 261
+      },
+      {
+        "evidence_id": "76c70410cd26bd9dc9d5eba7",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-011-S08"
+        ],
+        "token_count": 307
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "13bf85d114b12f95733e3e71",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-030-S03"
+        ],
+        "token_count": 214
+      },
+      {
+        "evidence_id": "e11f16a68f267cae748bb7ce",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-030-S04"
+        ],
+        "token_count": 286
+      },
+      {
+        "evidence_id": "51d818a8d0b495764e06ace4",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-010-S07"
+        ],
+        "token_count": 214
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "7ab86de43e1ed3228b5fa074",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-002-S05"
+        ],
+        "token_count": 251
+      },
+      {
+        "evidence_id": "617aee9913fb6f045ee38a38",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-010-S04"
+        ],
+        "token_count": 261
+      },
+      {
+        "evidence_id": "76c70410cd26bd9dc9d5eba7",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-011-S08"
+        ],
+        "token_count": 307
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

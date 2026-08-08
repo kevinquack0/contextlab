@@ -1,0 +1,74 @@
+{
+  "schema_version": "contextlab.g3-memory-protocol.v1",
+  "campaign_id": "g3-public-v1",
+  "entry_gate": {
+    "gate": "G2",
+    "required_human_approval": "approved",
+    "required_decision": "retain-simple",
+    "retriever_id": "R0"
+  },
+  "surface": {
+    "public_temporal_tasks": 28,
+    "external_sealed_temporal_tasks": 12,
+    "public_static_regression_tasks": 84,
+    "memory_policies": [
+      "M0",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "reasoning_efforts": [
+      "low",
+      "high"
+    ]
+  },
+  "generation": {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "deepseek",
+    "prompt_version": "contextlab.memory-answer.v1",
+    "temperature": 0.0,
+    "output_token_limit": 8192,
+    "context_budget_tokens": 3200,
+    "concurrency": 4,
+    "automatic_retries": 0
+  },
+  "retrieval": {
+    "static_source": "accepted-g2-r0-traces",
+    "temporal_source": "r0-dense-over-public-corpus-events",
+    "corpus_evidence_reserved": true
+  },
+  "episodes": {
+    "source_campaign": "prior-objectively-graded-runs-only",
+    "same_campaign_feedback": false,
+    "require_nonempty_seed_for_m4_claims": true
+  },
+  "acceptance": {
+    "primary_metric": "temporal_accuracy",
+    "provenance_minimum": 0.95,
+    "static_accuracy_regression_floor": -0.01,
+    "paired_bootstrap_resamples": 10000,
+    "paired_bootstrap_seed_name": "contextlab-g3-memory-paired-bootstrap-v1",
+    "paired_bootstrap_seed": 6427086973263857567,
+    "temporal_improvement_rule": "mean_delta_vs_m0_gt_0",
+    "failed_results_allowed_for_promotion": 0
+  },
+  "sealed_boundary": {
+    "task_ids": [
+      "T001",
+      "T002",
+      "T003",
+      "T004",
+      "T005",
+      "T006",
+      "T007",
+      "T008",
+      "T009",
+      "T010",
+      "T011",
+      "T012"
+    ],
+    "content_location": "external-only",
+    "shared_return": "aggregate-and-content-free-records-only"
+  }
+}

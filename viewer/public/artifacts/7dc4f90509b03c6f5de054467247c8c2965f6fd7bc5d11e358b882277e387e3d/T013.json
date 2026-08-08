@@ -1,0 +1,41 @@
+{
+  "answer": "At the current snapshot, the Sales ICP `primary_audience` has two active facts: TL-07-E01 states \"midmarket teams\" at authority level 3, and TL-07-E02 states \"regulated enterprises\" at authority level 5 [NLV2-TL-07-E01#TL-07-E01] [NLV2-TL-07-E02#TL-07-E02]. Since TL-07-E02 has the higher authority and reflects the current memory state [claim-TL-07-E02], the approved primary audience is **\"regulated enterprises\"**.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: claim-TL-07-E02",
+  "metadata": {
+    "actual_usd": "0.000287728",
+    "cached_prompt_tokens": 5760,
+    "completion_tokens": 857,
+    "cost_source": "openrouter_response_usage",
+    "error": null,
+    "generation_metadata_status": "pending",
+    "generation_time_ms": null,
+    "input_price_ceiling_usd_per_million": "0.154",
+    "key_status_before_call": {
+      "limit_reset": null,
+      "limit_usd": "15",
+      "remaining_usd": "12.757687768",
+      "usage_usd": "2.242312232"
+    },
+    "latency_ms": 8472,
+    "latency_source": "local_round_trip",
+    "live_route": {
+      "input_usd_per_million": "0.14000000",
+      "output_usd_per_million": "0.28000000",
+      "provider": "DeepSeek"
+    },
+    "local_round_trip_ms": 8472,
+    "native_completion_tokens": 857,
+    "native_prompt_tokens": 5986,
+    "native_reasoning_tokens": 713,
+    "output_price_ceiling_usd_per_million": "0.308",
+    "prompt_tokens": 5986,
+    "provider": "DeepSeek",
+    "reasoning_effort": "high",
+    "request_id": "gen-1785999482-Fdsp5hUS22AVNzctobyA",
+    "requested_model": "deepseek/deepseek-v4-flash-0731",
+    "resolved_model": "deepseek/deepseek-v4-flash-0731",
+    "retry_count": 0
+  },
+  "run_id": "g3-public-v1-M4-high-T013",
+  "schema_version": "contextlab.generation-result.v1",
+  "task_id": "T013"
+}

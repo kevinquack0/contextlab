@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0004083968,
+  "answer": "No, the Microsoft Teams collaboration-channel connector is not available to all customers now. It is currently in the \"Active Design and Planning\" phase, with a specific future release target rather than a general availability today [NL-014#NL-014-S07]. The official roadmap explicitly states the Teams integration is slated for design in Q4 2026 and is not generally available [NL-014#NL-014-S07], [NL-027#NL-027-S03]. Sales claims suggesting it is \"almost ready for general release\" (as seen in NL-023) are contradicted by the official Product Roadmap and internal engineering notes—the engineering lead confirms no active coding is underway and that the roadmap places it in the design phase for Q4 2026 [NL-023#NL-023-S04], [NL-027#NL-027-S03].\n\nThe planned release window is Q4 2026, specifically v2.11.0 with a target release date of November 24, 2026 [NL-014#NL-014-S07], [NL-014#NL-014-S04]. A restricted managed pilot of the Teams connector is scheduled to begin in October 2026 for selected financial and healthcare enterprise accounts, but this is not a general release [NL-014#NL-014-S07]. Therefore, the current phase is Active Design and Planning, and general availability is not expected until the planned Q4 2026 (November) release window.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 10867.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-low-S056",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Is the collaboration-channel connector for Microsoft Teams available to all customers now? State the current phase and planned release window.",
+      "suite": "static",
+      "task_family": "paraphrase",
+      "task_id": "S056"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2342,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      },
+      {
+        "evidence_id": "2a1b3db4f36165eb931ec1f5",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-023-S04"
+        ],
+        "token_count": 405
+      },
+      {
+        "evidence_id": "fd00e002f3874ce242be17c8",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-014-S04"
+        ],
+        "token_count": 395
+      },
+      {
+        "evidence_id": "f63767d9ce0958fb0543f00c",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-014-S09"
+        ],
+        "token_count": 330
+      },
+      {
+        "evidence_id": "b9443f003b5b1e23530b9ae4",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-002-S07"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "899be70e9a0dfc7ac2408c8f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-014-S05"
+        ],
+        "token_count": 202
+      },
+      {
+        "evidence_id": "5a6310118e7e6b9d7a74674a",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S08"
+        ],
+        "token_count": 94
+      },
+      {
+        "evidence_id": "b7880ffe19d9ba38ad0ff1e4",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-027-S03"
+        ],
+        "token_count": 462
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      },
+      {
+        "evidence_id": "2a1b3db4f36165eb931ec1f5",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-023-S04"
+        ],
+        "token_count": 405
+      },
+      {
+        "evidence_id": "fd00e002f3874ce242be17c8",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-014-S04"
+        ],
+        "token_count": 395
+      },
+      {
+        "evidence_id": "f63767d9ce0958fb0543f00c",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-014-S09"
+        ],
+        "token_count": 330
+      },
+      {
+        "evidence_id": "b9443f003b5b1e23530b9ae4",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-002-S07"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "899be70e9a0dfc7ac2408c8f",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-014-S05"
+        ],
+        "token_count": 202
+      },
+      {
+        "evidence_id": "5a6310118e7e6b9d7a74674a",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S08"
+        ],
+        "token_count": 94
+      },
+      {
+        "evidence_id": "b7880ffe19d9ba38ad0ff1e4",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-027-S03"
+        ],
+        "token_count": 462
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

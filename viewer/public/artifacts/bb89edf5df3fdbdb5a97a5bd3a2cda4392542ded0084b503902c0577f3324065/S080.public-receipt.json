@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0002343936,
+  "answer": "Based on the supplied evidence, no document provides a per-account breakdown of the 112 Import/OCR support tickets filed in May 2026. While the evidence names several customer accounts (e.g., Atlas Logistics, Acme Manufacturing, BrightPath Healthcare, Northstar Financial, EduVantage Labs, Harbor Foods) and mentions that \"BrightPath Healthcare alone accounted for 34 support tickets in May due to legacy compliance PDF indexing challenges\" [NL-029#NL-029-S04], it does not state that those 34 tickets are Import/OCR tickets, nor does it provide counts for any other named account for the Import/OCR category. The reports only give total ticket counts by segment and category, but not the account-level distribution for the 112 Import/OCR tickets.\n\nANSWER_STATUS: abstain\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 7670.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-low-S080",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Which named customer accounts generated the 112 Import/OCR support tickets in May 2026, and how many did each account submit?",
+      "suite": "static",
+      "task_family": "abstention",
+      "task_id": "S080"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2276,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "d80d44062ab530923f1a0065",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-029-S04"
+        ],
+        "token_count": 235
+      },
+      {
+        "evidence_id": "1e8a88b22de6e76f793917a7",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-012-S07"
+        ],
+        "token_count": 252
+      },
+      {
+        "evidence_id": "5e130d08d09acb496e43ac87",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-029-S01"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "3cb687ac883ead8acc36c10b",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-029-S02"
+        ],
+        "token_count": 284
+      },
+      {
+        "evidence_id": "7e4e10769bd5567ec10cb343",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-029-S06"
+        ],
+        "token_count": 196
+      },
+      {
+        "evidence_id": "8198c6a1826c44813cde157e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-029-S07"
+        ],
+        "token_count": 349
+      },
+      {
+        "evidence_id": "1aa307059d9c572a9518d138",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-029-S03"
+        ],
+        "token_count": 386
+      },
+      {
+        "evidence_id": "c3c0f50b25602a7046c22758",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-029-S05"
+        ],
+        "token_count": 314
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "d80d44062ab530923f1a0065",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-029-S04"
+        ],
+        "token_count": 235
+      },
+      {
+        "evidence_id": "1e8a88b22de6e76f793917a7",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-012-S07"
+        ],
+        "token_count": 252
+      },
+      {
+        "evidence_id": "5e130d08d09acb496e43ac87",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-029-S01"
+        ],
+        "token_count": 260
+      },
+      {
+        "evidence_id": "3cb687ac883ead8acc36c10b",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-029-S02"
+        ],
+        "token_count": 284
+      },
+      {
+        "evidence_id": "7e4e10769bd5567ec10cb343",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-029-S06"
+        ],
+        "token_count": 196
+      },
+      {
+        "evidence_id": "8198c6a1826c44813cde157e",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-029-S07"
+        ],
+        "token_count": 349
+      },
+      {
+        "evidence_id": "1aa307059d9c572a9518d138",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-029-S03"
+        ],
+        "token_count": 386
+      },
+      {
+        "evidence_id": "c3c0f50b25602a7046c22758",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-029-S05"
+        ],
+        "token_count": 314
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

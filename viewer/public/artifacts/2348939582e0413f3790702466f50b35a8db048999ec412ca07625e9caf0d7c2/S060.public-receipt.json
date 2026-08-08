@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.000494592,
+  "answer": "Beacon Insurance is a credible expansion example because its Q2 2026 adoption and outcome evidence demonstrate measurable value, and that value was already converted into paid expansion events during the quarter. Adoption metrics exceeded or met targets in most modules: KnowledgeHub at 96.0%, TutorChat at 92.2%, and CourseBuilder at 80.4%, against targets of 90%, 85%, and 75% respectively [NL-025-S03]. TutorChat weekly queries also rose from 4,200 in Q1 to 6,800 in Q2, showing deep daily workflow integration [NL-025-S03]. Outcomes included onboarding time reduced from 6.2 to 4.0 weeks, a 22% decline in support escalations, and citation trust at 94% [NL-025-S01][NL-025-S04].\n\nThe recorded Q2 expansion events reinforce this credibility: on 2026-05-15, Beacon Insurance generated $4,500 MRR from a multi-department expansion covering HR and Legal, and on 2026-06-25 it generated an additional $1,500 MRR for an additional workspace index partition [NL-012-S05]. These are concrete, already-paid expansions, not just future intentions. The account also expressed strong interest in the WorkflowCoach beta [NL-025-S01], with a specific expansion plan to add 600 seats, bringing total seats to 4,100 and increasing ACV by $24,000 to $136,000 [NL-025-S06]. Together, the adoption/outcome evidence and the recorded Q2 expansion events make Beacon Insurance a credible expansion example.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 14836.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-high-S060",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Why is Beacon Insurance a credible expansion example? Join its account adoption and outcome evidence with the recorded Q2 expansion events.",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S060"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2305,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "2d4bff8a08a8269847d60019",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-025-S01"
+        ],
+        "token_count": 262
+      },
+      {
+        "evidence_id": "1dc45758eeff083a06c8cd3f",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-025-S06"
+        ],
+        "token_count": 264
+      },
+      {
+        "evidence_id": "facc207a7612866698457b2d",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-025-S04"
+        ],
+        "token_count": 267
+      },
+      {
+        "evidence_id": "a49ef2bdf648a1ceaf906a01",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-025-S02"
+        ],
+        "token_count": 276
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "005924b5bad7d85f53f97cce",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-025-S07"
+        ],
+        "token_count": 417
+      },
+      {
+        "evidence_id": "790d0e0f0141f0a669ed0e89",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-012-S05"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "be4a2af05fb404c276896f46",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-025-S05"
+        ],
+        "token_count": 256
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "2d4bff8a08a8269847d60019",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-025-S01"
+        ],
+        "token_count": 262
+      },
+      {
+        "evidence_id": "1dc45758eeff083a06c8cd3f",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-025-S06"
+        ],
+        "token_count": 264
+      },
+      {
+        "evidence_id": "facc207a7612866698457b2d",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-025-S04"
+        ],
+        "token_count": 267
+      },
+      {
+        "evidence_id": "a49ef2bdf648a1ceaf906a01",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-025-S02"
+        ],
+        "token_count": 276
+      },
+      {
+        "evidence_id": "7878aa83447642577e696253",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-025-S03"
+        ],
+        "token_count": 272
+      },
+      {
+        "evidence_id": "005924b5bad7d85f53f97cce",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-025-S07"
+        ],
+        "token_count": 417
+      },
+      {
+        "evidence_id": "790d0e0f0141f0a669ed0e89",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-012-S05"
+        ],
+        "token_count": 291
+      },
+      {
+        "evidence_id": "be4a2af05fb404c276896f46",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-025-S05"
+        ],
+        "token_count": 256
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

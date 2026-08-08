@@ -1,0 +1,144 @@
+{
+  "actual_usd": 0.0003984624,
+  "answer": "For pricing questions, the best context strategy is to treat the official pricing schedule as the sole source of truth, because NL-003 declares itself the sole source of truth for proposals, renewals, and audits and forbids using historical or informal pricing models [NL-003#NL-003-S01].  \nFor metrics questions, the best strategy is to rely on official business-metrics reports rather than the sales playbook, using NL-012, NL-016, and NL-001 for churn, NPS, revenue, and segment data [NL-012#NL-012-S09], [NL-016#NL-016-S03], [NL-001#NL-001-S04].  \nFor cross-document business recommendations, the best strategy is reconciliation with conflict resolution: when sales-playbook or call-narrative claims conflict with official metrics, defer to the metrics evidence. For example, NL-016 explicitly corrects NL-009’s earlier emphasis on startups, showing SMBs have high churn and weak retention versus regulated mid-market and enterprise segments [NL-016#NL-016-S03], and NL-023’s note flags a seller’s startup-friendly claim against official SMB churn data [NL-023#NL-023-S03]. This prevents recommendations from being based on outdated or non-authoritative narrative content.\n\nANSWER_STATUS: answer  \nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 12391.0,
+  "policy": "M4",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M4-high-S040",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Which context strategy would likely be best for answering NovaLearn pricing and metrics questions, and which for cross-document business recommendations?",
+      "suite": "static",
+      "task_family": "recommendation",
+      "task_id": "S040"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 3113,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "c4e213cc3c67ca5f2e79b8af",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S01"
+        ],
+        "token_count": 278
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      },
+      {
+        "evidence_id": "3f1058d8c2619c159d7bb695",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-023-S03"
+        ],
+        "token_count": 862
+      },
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "3eee11910fe7e10e8c8456c9",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-001-S04"
+        ],
+        "token_count": 368
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "b8017d1a58227e816e084bd3",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-009-S01"
+        ],
+        "token_count": 444
+      },
+      {
+        "evidence_id": "c4e213cc3c67ca5f2e79b8af",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-003-S01"
+        ],
+        "token_count": 278
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      },
+      {
+        "evidence_id": "3f1058d8c2619c159d7bb695",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-023-S03"
+        ],
+        "token_count": 862
+      },
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "3eee11910fe7e10e8c8456c9",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-001-S04"
+        ],
+        "token_count": 368
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

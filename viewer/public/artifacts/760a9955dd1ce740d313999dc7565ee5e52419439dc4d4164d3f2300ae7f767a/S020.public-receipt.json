@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0011298224,
+  "answer": "**Comparison of Starter/Growth Onboarding Guidance vs. Actual Metrics**\n\n**Growth Plan:**  \n- **Guidance:** The formal guidance specifies a 4–6 week onboarding timeline for the Growth plan (mid-market customers with under 5,000 files and 500–2,000 learners), with a go-live target at Week 6 [NL-005#NL-005-S02].  \n- **Actual Metrics:**  \n  - Median onboarding duration: 5.2 weeks [NL-012#NL-012-S06].  \n  - Segment average (from sample calculation): 5.2 weeks [NL-031#NL-031-S03].  \n  - Another reported average for Mid-Market: 5.4 weeks [NL-010#NL-010-S02].  \n  - Sample accounts: Atlas Logistics (4.2 weeks), Acme Manufacturing (5.4 weeks), Meridian Retail Group (6.0 weeks) [NL-012#NL-012-S06].  \n- **Comparison:** The actual median and average (5.2 weeks) fall within the 4–6 week guidance, but the sample range extends to 6.0 weeks, hitting the upper bound of the guidance.\n\n**Starter Plan:**  \n- **Guidance:** The supplied evidence does not contain a defined onboarding duration target for the Starter plan. The only plan-specific guidance provided is for Growth (4–6 weeks) and Enterprise (8–10 weeks) [NL-005#NL-005-S02].  \n- **Actual Metrics:**  \n  - Median onboarding duration: 3.5 weeks [NL-012#NL-012-S06].  \n  - Segment average (from sample calculation): 3.5 weeks [NL-031#NL-031-S03].  \n  - Another reported average for SMB: 3.6 weeks [NL-010#NL-010-S02].  \n  - Sample accounts: EduVantage Labs (3.2 weeks), Harbor Foods (3.8 weeks) [NL-012#NL-012-S06].  \n- **Comparison:** Since no explicit Starter onboarding guidance is provided in the evidence, a direct guidance-vs-actual comparison for this plan cannot be made. The actual actuals show an average around 3.5 weeks, which is faster than the Growth guidance but without an official Starter target to compare against.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 30508.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-low-S020",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Compare Starter/Growth onboarding guidance with actual onboarding metrics.",
+      "suite": "static",
+      "task_family": "comparison",
+      "task_id": "S020"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2837,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "f617beda911dd75c55163ef0",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S08"
+        ],
+        "token_count": 250
+      },
+      {
+        "evidence_id": "c7a1d4004b0d64aae9b8ebb4",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-005-S11"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      },
+      {
+        "evidence_id": "a8fc8d591099588c56805227",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-010-S02"
+        ],
+        "token_count": 356
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "f617beda911dd75c55163ef0",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S08"
+        ],
+        "token_count": 250
+      },
+      {
+        "evidence_id": "c7a1d4004b0d64aae9b8ebb4",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-005-S11"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      },
+      {
+        "evidence_id": "de63f7ecccde4270ef05ef85",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-015-S03"
+        ],
+        "token_count": 564
+      },
+      {
+        "evidence_id": "a8fc8d591099588c56805227",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-010-S02"
+        ],
+        "token_count": 356
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

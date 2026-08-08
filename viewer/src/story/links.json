@@ -1,0 +1,37 @@
+{
+  "schema_version": "contextlab.story-links.v1",
+  "links": [
+    {
+      "id": "source",
+      "label": "Source repository",
+      "href": "https://github.com/kevinquack0/contextlab",
+      "target_path": null,
+      "sha256": null,
+      "release_state": "proposed"
+    },
+    {
+      "id": "code",
+      "label": "Evaluation and viewer code",
+      "href": "https://github.com/kevinquack0/contextlab/tree/main/evaluation/v2",
+      "target_path": "evaluation/v2",
+      "sha256": null,
+      "release_state": "proposed"
+    },
+    {
+      "id": "methodology",
+      "label": "Case-study methodology",
+      "href": "https://github.com/kevinquack0/contextlab/blob/main/docs/portfolio/CASE_STUDY.md",
+      "target_path": "docs/portfolio/CASE_STUDY.md",
+      "sha256": null,
+      "release_state": "proposed"
+    },
+    {
+      "id": "tcc",
+      "label": "PUCRS postgraduate TCC",
+      "href": "https://github.com/kevinquack0/contextlab/blob/main/docs/portfolio/media/ContextLab_TCC_v1.pdf",
+      "target_path": "docs/portfolio/media/ContextLab_TCC_v1.pdf",
+      "sha256": "bf3efd964c0370fda2c7b37e2208f1775b8c5ac16b09b72af9f28d8eb2369864",
+      "release_state": "proposed"
+    }
+  ]
+}

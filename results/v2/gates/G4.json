@@ -1,0 +1,118 @@
+{
+  "ai_invocation_receipts": [
+    {
+      "artifact_sha256": "e8f49fa01a28a3b21503abe9fb0f21dba3205ebcc85f417575d681f01311c4b8",
+      "completed_at": "2026-08-06T20:54:59Z",
+      "g4_verification_sha256": "486c2cf324e851d06d12547544b537fa916e348916083d158b6f2e07da106560",
+      "invocation_id": "019fd8d5-a26d-73c0-bc04-1b2b47046bdb",
+      "invocation_source": "codex-subagent",
+      "native_invocation_evidence_path": "results/v2/reviews/g4/gpt-5.6-sol-high/native-invocation.json",
+      "native_invocation_evidence_sha256": "6107c4e7ac25e27ac7290f99cf663c47ff71fd5075b227d02513593953168364",
+      "native_output_sha256": "535697c52321c8cd155f368d8d5c6be7fe5c79b1b8e9290115a8a271c2f121f0",
+      "reasoning_effort": "high",
+      "requested_model": "gpt-5.6-sol",
+      "resolved_model": "gpt-5.6-sol",
+      "review_payload_sha256": "a886141b29b13cd71c19f29702b99f065af34e04e08189263c8e7ac49bae96bb",
+      "reviewer_id": "gpt-5.6-sol-high",
+      "schema_version": "contextlab.g4-ai-invocation-receipt.v2",
+      "viewer_export_sha256": "06a3a578ca475743d4c727ac6dd45db95a0f00b9b2eaad9173cc5597722165cd",
+      "viewer_manifest_sha256": "ee0abf3c9c6d7881d3369e35618432ed1000776d1ce3bea6c12309bd802dbf43"
+    },
+    {
+      "artifact_sha256": "090c89f65e66d6fa01f8b27e082d85ef7884eeb19d69f80009e8c0049e8202fb",
+      "completed_at": "2026-08-06T20:59:38Z",
+      "g4_verification_sha256": "486c2cf324e851d06d12547544b537fa916e348916083d158b6f2e07da106560",
+      "invocation_id": "c7201cf2-f50b-4309-8f37-a3233fa81fa7",
+      "invocation_source": "claude-cli",
+      "native_invocation_evidence_path": "results/v2/reviews/g4/claude-opus-5-medium/native-invocation.json",
+      "native_invocation_evidence_sha256": "692a84e6987a8287145d11802ffcc0cc44a4aca31f3ebb81de7ca175ccb96fa5",
+      "native_output_sha256": "1d9a9eaea2ef98931f944b14694909a5987360d1e46dbda0faaedec0bd44d7ea",
+      "reasoning_effort": "medium",
+      "requested_model": "claude-opus-5",
+      "resolved_model": "claude-opus-5",
+      "review_payload_sha256": "864613762c3e9500116a3e65f1fb64303d5a8b6aa2b62396d6a1e34e02262ab0",
+      "reviewer_id": "claude-opus-5-medium",
+      "schema_version": "contextlab.g4-ai-invocation-receipt.v2",
+      "viewer_export_sha256": "06a3a578ca475743d4c727ac6dd45db95a0f00b9b2eaad9173cc5597722165cd",
+      "viewer_manifest_sha256": "ee0abf3c9c6d7881d3369e35618432ed1000776d1ce3bea6c12309bd802dbf43"
+    }
+  ],
+  "ai_reviews": [
+    {
+      "artifact_sha256": "ad716ee10c10caa7b27b8b22ac64c97defbc6f6c5dd05fc2767d27294a9feb18",
+      "completed_at": "2026-08-06T20:54:59Z",
+      "decision": "pass",
+      "g4_verification_sha256": "486c2cf324e851d06d12547544b537fa916e348916083d158b6f2e07da106560",
+      "invocation_receipt_path": "results/v2/reviews/g4/gpt-5.6-sol-high/invocation-receipt.json",
+      "invocation_receipt_sha256": "e8f49fa01a28a3b21503abe9fb0f21dba3205ebcc85f417575d681f01311c4b8",
+      "model_id": "gpt-5.6-sol",
+      "p0_findings": [],
+      "p1_findings": [],
+      "reasoning_effort": "high",
+      "reviewer_id": "gpt-5.6-sol-high",
+      "schema_version": "contextlab.g4-ai-review.v1",
+      "viewer_export_sha256": "06a3a578ca475743d4c727ac6dd45db95a0f00b9b2eaad9173cc5597722165cd",
+      "viewer_manifest_sha256": "ee0abf3c9c6d7881d3369e35618432ed1000776d1ce3bea6c12309bd802dbf43"
+    },
+    {
+      "artifact_sha256": "56eacfeae26adc4a45eedcb923db2d0fc2930043988d3c4587db647edac6435d",
+      "completed_at": "2026-08-06T20:59:38Z",
+      "decision": "pass",
+      "g4_verification_sha256": "486c2cf324e851d06d12547544b537fa916e348916083d158b6f2e07da106560",
+      "invocation_receipt_path": "results/v2/reviews/g4/claude-opus-5-medium/invocation-receipt.json",
+      "invocation_receipt_sha256": "090c89f65e66d6fa01f8b27e082d85ef7884eeb19d69f80009e8c0049e8202fb",
+      "model_id": "claude-opus-5",
+      "p0_findings": [],
+      "p1_findings": [],
+      "reasoning_effort": "medium",
+      "reviewer_id": "claude-opus-5-medium",
+      "schema_version": "contextlab.g4-ai-review.v1",
+      "viewer_export_sha256": "06a3a578ca475743d4c727ac6dd45db95a0f00b9b2eaad9173cc5597722165cd",
+      "viewer_manifest_sha256": "ee0abf3c9c6d7881d3369e35618432ed1000776d1ce3bea6c12309bd802dbf43"
+    }
+  ],
+  "artifact_sha256": "78bbedd2dc3404ee1ac57ec58d48710d05a03e8a833663e992bdd4f9281a2d33",
+  "final_decision": "passed",
+  "human_approval": {
+    "approved_at": "2026-08-06T21:10:13Z",
+    "reviewer": "Kevin Araujo",
+    "status": "approved",
+    "technical_record_sha256": "58768647d72f0baf22f9f9873abbf63bf11a0496203bdf6508ef324d923d37ae"
+  },
+  "schema_version": "contextlab.g4-final-gate.v1",
+  "technical_record_sha256": "58768647d72f0baf22f9f9873abbf63bf11a0496203bdf6508ef324d923d37ae",
+  "technical_status": "passed",
+  "verification": {
+    "artifact_sha256": "486c2cf324e851d06d12547544b537fa916e348916083d158b6f2e07da106560",
+    "checks": {
+      "g3_gate_replay": true,
+      "public_artifact_hashes": true,
+      "publication_binding": true,
+      "python_regression": true,
+      "sealed_boundary": true,
+      "secret_scan": true,
+      "static_route": true,
+      "viewer_contract": true,
+      "viewer_npm_check": true
+    },
+    "commands": [
+      {
+        "command": "npm run check",
+        "exit_code": 0,
+        "output_sha256": "752aba88a5ba8d3553250f80aaac8c147b10bb8247228bf66eee47ee3a6c8da5"
+      },
+      {
+        "command": "python viewer regression",
+        "exit_code": 0,
+        "output_sha256": "c7944917bd5fee48a37ba1d5bf2b8d8e44885fc579afb52bde6f95c124b4cbd6"
+      }
+    ],
+    "schema_version": "contextlab.g4-verification.v1",
+    "static_asset_count": 1515,
+    "static_assets_sha256": "1fa3c43533a07e492f57b7f26169337120f31d61625d68982d4a086c3e3656ee",
+    "viewer_export_sha256": "06a3a578ca475743d4c727ac6dd45db95a0f00b9b2eaad9173cc5597722165cd",
+    "viewer_manifest_sha256": "ee0abf3c9c6d7881d3369e35618432ed1000776d1ce3bea6c12309bd802dbf43"
+  },
+  "viewer_export_sha256": "06a3a578ca475743d4c727ac6dd45db95a0f00b9b2eaad9173cc5597722165cd",
+  "viewer_manifest_sha256": "ee0abf3c9c6d7881d3369e35618432ed1000776d1ce3bea6c12309bd802dbf43"
+}

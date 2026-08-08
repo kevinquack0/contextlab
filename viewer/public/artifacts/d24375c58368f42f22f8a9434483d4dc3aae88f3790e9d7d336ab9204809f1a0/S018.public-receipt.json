@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0001558704,
+  "answer": "The official pricing policy is the 2026 schedule effective June 1, 2026, which fully supersedes the deprecated 2025 pricing proposal [NL-003#NL-003-S08]. The deprecated 2025 proposal was never fully adopted and its rates are obsolete [NL-004#NL-004-S02].\n\nComparison of the deprecated 2025 proposal with the official 2026 pricing:\n\n- **Starter Plan**: Increased from $900/month to $1,200/month; onboarding fee adjusted from $1,500 to $2,500 [NL-004#NL-004-S05].\n- **Growth Plan**: Increased from $2,800/month to $3,600/month; onboarding fee adjusted from $4,500 to $7,500 [NL-004#NL-004-S05].\n- **Enterprise Plan**: Starting rate increased from $6,000/month to $8,500/month; onboarding fee adjusted from $10,000 to a minimum of $15,000 [NL-004#NL-004-S05].\n\nThe 2025 proposal was rejected because it was financially unsustainable due to underestimated infrastructure costs, OCR/PDF processing costs, permission mapping complexity, and support escalations [NL-004#NL-004-S04]. The 2026 schedule is the sole source of truth for all sales proposals, renewals, and audits, and the 2025 rates must not be quoted [NL-003#NL-003-S01].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 4335.0,
+  "policy": "M2",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M2-high-S018",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Compare the official pricing policy with the deprecated 2025 pricing proposal.",
+      "suite": "static",
+      "task_family": "comparison",
+      "task_id": "S018"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2538,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "55a72fe82d433730976641b1",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-004-S05"
+        ],
+        "token_count": 375
+      },
+      {
+        "evidence_id": "5786a29c4734fe1ce1667b81",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-004-S02"
+        ],
+        "token_count": 112
+      },
+      {
+        "evidence_id": "f8648c162deb16608cb9a963",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-004-S01"
+        ],
+        "token_count": 156
+      },
+      {
+        "evidence_id": "aa4a388733cb6e3101ad1a1c",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-003-S08"
+        ],
+        "token_count": 303
+      },
+      {
+        "evidence_id": "d8f95402880ce5338d3a7213",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-004-S03"
+        ],
+        "token_count": 316
+      },
+      {
+        "evidence_id": "c4e213cc3c67ca5f2e79b8af",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-003-S01"
+        ],
+        "token_count": 278
+      },
+      {
+        "evidence_id": "1c6b5adf62c8602947421ee1",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-004-S04"
+        ],
+        "token_count": 613
+      },
+      {
+        "evidence_id": "a472d8d7f5cc0dd98296adc1",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-003-S07"
+        ],
+        "token_count": 385
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "55a72fe82d433730976641b1",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-004-S05"
+        ],
+        "token_count": 375
+      },
+      {
+        "evidence_id": "5786a29c4734fe1ce1667b81",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-004-S02"
+        ],
+        "token_count": 112
+      },
+      {
+        "evidence_id": "f8648c162deb16608cb9a963",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-004-S01"
+        ],
+        "token_count": 156
+      },
+      {
+        "evidence_id": "aa4a388733cb6e3101ad1a1c",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-003-S08"
+        ],
+        "token_count": 303
+      },
+      {
+        "evidence_id": "d8f95402880ce5338d3a7213",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-004-S03"
+        ],
+        "token_count": 316
+      },
+      {
+        "evidence_id": "c4e213cc3c67ca5f2e79b8af",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-003-S01"
+        ],
+        "token_count": 278
+      },
+      {
+        "evidence_id": "1c6b5adf62c8602947421ee1",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-004-S04"
+        ],
+        "token_count": 613
+      },
+      {
+        "evidence_id": "a472d8d7f5cc0dd98296adc1",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-003-S07"
+        ],
+        "token_count": 385
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

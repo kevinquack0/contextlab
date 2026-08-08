@@ -1,0 +1,23 @@
+{
+  "artifact_sha256": "f18f7eb214a0d9c268ba028771127bd9ff068fd6454455b646cc8343ec42aebe",
+  "claim": "This 40-cell public demonstration records mean answer quality and recovered-evidence recall of 1.000 and 1.000 for managed working set, 0.525 and 0.500 for dense retrieval, and 0.500 and 0.000 for episodic memory. All ten full-history cells overflowed at the same 13,000-token budget. Accept as a negative, no-promotion demonstration, not a significance result.",
+  "experiment_id": "F3",
+  "frontier_entry_gate_sha256": "d7f4a44cdd7ad3cf721824961436dd21eb7d5d58a7133b280d5744510cbc2ed0",
+  "proposed_decision": "accept-negative",
+  "review_status": "pending-ai-review",
+  "schema_version": "contextlab.frontier-result-technical.v1",
+  "source_artifacts": [
+    {
+      "artifact_sha256": "4d17e196a9a380e79e1c76e97ac5ffbb75a4052112e63ed456eae780782704a1",
+      "file_sha256": "40e291bc6bc188bb598eb961d3777f1c2b9aeb994544052ccd1ddd6756f6ea3e",
+      "path": "results/v2/frontier/f3/virtual_context_paging.attempt-06.json"
+    },
+    {
+      "artifact_sha256": "84068a095877ad745dc1ec31ee8c130a4d542a7e1abe57402ab043de1c96b613",
+      "file_sha256": "3e0bfd6833aa3732723f7d85eb9a296b650980f49b261f1a5edd44769814b819",
+      "path": "results/v2/frontier/f3/virtual_context_paging.attempt-06.final.json"
+    }
+  ],
+  "source_artifacts_sha256": "13d5583edab51b2542ede529cd23933976e31848d2ee5e530df2aab3b0b1d496",
+  "technical_record_sha256": "e54d607bb5c2481c0ce935bfe8410f491fa063a756b1a3c3e44c6471db8acf0e"
+}

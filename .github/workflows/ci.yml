@@ -1,0 +1,60 @@
+name: verify
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  python-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run public release tool tests
+        run: python3 -m unittest evaluation/v2/tests/test_public_release.py
+      - name: Run the complete research suite when the private vault is present
+        shell: bash
+        run: |
+          if [[ -f evaluation/v2/tests/test_boundaries.py ]]; then
+            PYTHONPATH=evaluation/v2 python3 -m unittest discover -s evaluation/v2/tests -p 'test_*.py'
+          else
+            echo "Private-vault suite is not part of this curated checkout."
+          fi
+      - name: Reproduce or verify the public release
+        shell: bash
+        run: |
+          if [[ -f results/v2/retrieval/public_component_lab.json ]]; then
+            python3 scripts/public_release.py export --output "${RUNNER_TEMP}/contextlab-public"
+            python3 scripts/public_release.py verify --bundle-root "${RUNNER_TEMP}/contextlab-public"
+          else
+            python3 scripts/public_release.py verify --bundle-root .
+          fi
+
+  viewer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: viewer/package-lock.json
+      - name: Verify the standalone public viewer
+        shell: bash
+        run: |
+          viewer_root="${GITHUB_WORKSPACE}/viewer"
+          if [[ -f results/v2/retrieval/public_component_lab.json ]]; then
+            python3 scripts/public_release.py export --output "${RUNNER_TEMP}/contextlab-public"
+            viewer_root="${RUNNER_TEMP}/contextlab-public/viewer"
+          fi
+          cd "${viewer_root}"
+          npm ci
+          npm run check

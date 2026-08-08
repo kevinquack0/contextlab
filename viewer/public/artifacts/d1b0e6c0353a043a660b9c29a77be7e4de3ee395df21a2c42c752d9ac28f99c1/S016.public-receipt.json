@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0002339456,
+  "answer": "NovaLearn should prioritize **regulated mid-market and enterprise customer segments**. Official metrics and customer success reports consistently show these segments deliver the strongest business outcomes and best strategic fit.\n\n- **Higher retention and satisfaction:** Enterprise accounts have monthly logo churn of only 1.3% and NPS of 52, while mid-market accounts have 2.1% monthly churn and NPS of 47. By contrast, SMB churn averages 4.8% monthly with NPS of just 31 [NL-016#NL-016-S03] [NL-012#NL-012-S08].\n- **Superior expansion economics:** Mid-market and enterprise segments generated $155,000 in combined expansion revenue versus $18,000 for SMB. Enterprise LTV:CAC is 16.0x ($350,000+ LTV vs. $22,000 CAC), compared to SMB's 8.3x ($25,000 cap vs. $3,000 CAC) [NL-012#NL-012-S09] [NL-016#NL-016-S03].\n- **Best product-market fit in regulated sectors:** The highest-performing accounts, such as BrightPath Healthcare and Northstar Financial, require verified, citation-backed answers for compliance and risk protection. Enterprise customers specifically value citation grounding, data isolation, and role-based access controls, with one Northstar Financial admin noting TutorChat's page-level source references make it the only tool they can trust in front of auditors [NL-016#NL-016-S03] [NL-012#NL-012-S08].\n- **SMB is a strategic drag:** SMB customers lack dedicated L&D staff, struggle with document cleanup and indexing, and cannot justify the Starter price, leading to low adoption and high churn. NovaLearn has already shifted outbound sales focus away from SMBs [NL-016#NL-016-S03] [NL-010#NL-010-S01].\n\nThese conclusions are reinforced by Q2 2026 reporting, which identifies regulated mid-market and enterprise organizations as the most capital-efficient and high-retaining segments, and product strategy prioritizing expansion paths for those accounts [NL-016#NL-016-S01] [NL-012#NL-012-S09].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 7301.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-high-S016",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Across official metrics and customer success reports, which customer segment should NovaLearn prioritize and why?",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S016"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2822,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      },
+      {
+        "evidence_id": "624a898fd5dd52607e945140",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-010-S01"
+        ],
+        "token_count": 380
+      },
+      {
+        "evidence_id": "986b6ad2cfc2a9742372e488",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-012-S08"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      },
+      {
+        "evidence_id": "a8fc8d591099588c56805227",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-010-S02"
+        ],
+        "token_count": 356
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "f4a38df50b36b1c534a7aee5",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-016-S03"
+        ],
+        "token_count": 449
+      },
+      {
+        "evidence_id": "c542f94ebb7bb9baf405ac2e",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-012-S09"
+        ],
+        "token_count": 230
+      },
+      {
+        "evidence_id": "624a898fd5dd52607e945140",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-010-S01"
+        ],
+        "token_count": 380
+      },
+      {
+        "evidence_id": "986b6ad2cfc2a9742372e488",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-012-S08"
+        ],
+        "token_count": 249
+      },
+      {
+        "evidence_id": "9de0bd54bfe582154662e7ee",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-016-S01"
+        ],
+        "token_count": 379
+      },
+      {
+        "evidence_id": "a8fc8d591099588c56805227",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-010-S02"
+        ],
+        "token_count": 356
+      },
+      {
+        "evidence_id": "68320c33b5cf00e99bd50d84",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-009-S02"
+        ],
+        "token_count": 482
+      },
+      {
+        "evidence_id": "5e10e2044bbbe20099c85096",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-011-S01"
+        ],
+        "token_count": 297
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

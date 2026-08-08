@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0004663904,
+  "answer": "Documents NL-005, NL-012, NL-031, and NL-011 provide the evidence for typical Growth and Enterprise onboarding timelines.\n\n- The onboarding playbook (NL-005) defines the typical scheduled timelines: Growth Plan Onboarding is 4-6 weeks, while Enterprise Plan Onboarding is 8-10 weeks [NL-005#NL-005-S02]. This is further broken down by phase; for example, Phase 1 (Discovery) lasts 1 week for Growth and 1-2 weeks for Enterprise [NL-005#NL-005-S03], and the final Phase 6 (Go-Live Audit) takes 1 week for Growth and 2 weeks for Enterprise [NL-005#NL-005-S08].\n- The Q2 Business Metrics Report (NL-012) records the observed median onboarding durations: 5.2 weeks for Mid-Market (Growth plan) and 8.7 weeks for Enterprise (Enterprise plan) [NL-012#NL-012-S06].\n- The data validation document (NL-031) independently confirms the segment averages, aligning exactly with NL-012: 5.2 weeks for Mid-Market and 8.7 weeks for Enterprise [NL-031#NL-031-S03].\n- The Q2 2026 update (NL-011) also confirms these observed averages: Mid-Market at 5.2 weeks and Enterprise at 8.7 weeks [NL-011#NL-011-S06].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 12992.0,
+  "policy": "M1",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M1-low-S011",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Which documents provide evidence for typical Growth and Enterprise onboarding timelines?",
+      "suite": "static",
+      "task_family": "evidence_selection",
+      "task_id": "S011"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2354,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "3ac6b532187de2f692d66761",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S03"
+        ],
+        "token_count": 480
+      },
+      {
+        "evidence_id": "f617beda911dd75c55163ef0",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-005-S08"
+        ],
+        "token_count": 250
+      },
+      {
+        "evidence_id": "dd6f5deb172b5a7ebb643128",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-011-S06"
+        ],
+        "token_count": 216
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "29c90cc3c365a122e25cdca0",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-005-S02"
+        ],
+        "token_count": 314
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "5d42391750dd354b9e8e8270",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-031-S03"
+        ],
+        "token_count": 200
+      },
+      {
+        "evidence_id": "3ac6b532187de2f692d66761",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S03"
+        ],
+        "token_count": 480
+      },
+      {
+        "evidence_id": "f617beda911dd75c55163ef0",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-005-S08"
+        ],
+        "token_count": 250
+      },
+      {
+        "evidence_id": "dd6f5deb172b5a7ebb643128",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-011-S06"
+        ],
+        "token_count": 216
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

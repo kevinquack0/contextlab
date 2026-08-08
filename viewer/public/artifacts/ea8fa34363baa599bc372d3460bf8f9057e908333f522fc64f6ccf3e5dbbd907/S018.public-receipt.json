@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0004610704,
+  "answer": "The official pricing policy is the 2026 pricing schedule, effective June 1, 2026, which fully supersedes and replaces the deprecated 2025 pricing proposal [NL-003#NL-003-S08]. The deprecated proposal was drafted in late 2025, never fully adopted, and is preserved only for historical comparison [NL-004#NL-004-S01][NL-004#NL-004-S02].\n\nKey differences between the deprecated 2025 proposal and the official 2026 schedule:\n\n- **Starter Plan**: Deprecated 2025 was $900/month with a $1,500 onboarding fee [NL-004#NL-004-S02]. Official 2026 pricing increased this to $1,200/month, with the onboarding fee adjusted to $2,500 [NL-004#NL-004-S05].\n- **Growth Plan**: Deprecated 2025 was $2,800/month with a $4,500 onboarding fee [NL-004#NL-004-S02]. Official 2026 pricing increased this to $3,600/month, with the onboarding fee adjusted to $7,500 [NL-004#NL-004-S05].\n- **Enterprise Plan**: Deprecated 2025 started at $6,000/month with onboarding from $10,000 [NL-004#NL-004-S02]. Official 2026 pricing increased the starting rate to $8,500/month, with onboarding adjusted to a minimum of $15,000 [NL-004#NL-004-S05].\n\nThe 2025 proposal was rejected because it was financially unsustainable, driven by underestimated infrastructure costs, heavy scanned-PDF/OCR processing costs, permission-mapping complexity, and higher-than-expected support escalations [NL-004#NL-004-S04]. The 2026 schedule is the sole source of truth for all sales, renewals, and audits [NL-003#NL-003-S01]. Deprecated 2025 rates may not be quoted to prospects, and historical contracts must migrate to 2026 rates upon renewal, though customers may run out their current active term [NL-004#NL-004-S05][NL-004#NL-004-S01]. A transition grace period may apply in some cases, such as a one-time 90-day period billing Growth at a mid-tier rate of $3,100/month instead of the full $3,600/month, subject to approval and usage requirements [NL-003#NL-003-S08].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 12351.0,
+  "policy": "M4",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M4-high-S018",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "Compare the official pricing policy with the deprecated 2025 pricing proposal.",
+      "suite": "static",
+      "task_family": "comparison",
+      "task_id": "S018"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2538,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "55a72fe82d433730976641b1",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-004-S05"
+        ],
+        "token_count": 375
+      },
+      {
+        "evidence_id": "5786a29c4734fe1ce1667b81",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-004-S02"
+        ],
+        "token_count": 112
+      },
+      {
+        "evidence_id": "f8648c162deb16608cb9a963",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-004-S01"
+        ],
+        "token_count": 156
+      },
+      {
+        "evidence_id": "aa4a388733cb6e3101ad1a1c",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-003-S08"
+        ],
+        "token_count": 303
+      },
+      {
+        "evidence_id": "d8f95402880ce5338d3a7213",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-004-S03"
+        ],
+        "token_count": 316
+      },
+      {
+        "evidence_id": "c4e213cc3c67ca5f2e79b8af",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-003-S01"
+        ],
+        "token_count": 278
+      },
+      {
+        "evidence_id": "1c6b5adf62c8602947421ee1",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-004-S04"
+        ],
+        "token_count": 613
+      },
+      {
+        "evidence_id": "a472d8d7f5cc0dd98296adc1",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-003-S07"
+        ],
+        "token_count": 385
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "55a72fe82d433730976641b1",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-004-S05"
+        ],
+        "token_count": 375
+      },
+      {
+        "evidence_id": "5786a29c4734fe1ce1667b81",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-004-S02"
+        ],
+        "token_count": 112
+      },
+      {
+        "evidence_id": "f8648c162deb16608cb9a963",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-004-S01"
+        ],
+        "token_count": 156
+      },
+      {
+        "evidence_id": "aa4a388733cb6e3101ad1a1c",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-003-S08"
+        ],
+        "token_count": 303
+      },
+      {
+        "evidence_id": "d8f95402880ce5338d3a7213",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-004-S03"
+        ],
+        "token_count": 316
+      },
+      {
+        "evidence_id": "c4e213cc3c67ca5f2e79b8af",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-003-S01"
+        ],
+        "token_count": 278
+      },
+      {
+        "evidence_id": "1c6b5adf62c8602947421ee1",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-004-S04"
+        ],
+        "token_count": 613
+      },
+      {
+        "evidence_id": "a472d8d7f5cc0dd98296adc1",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-003-S07"
+        ],
+        "token_count": 385
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

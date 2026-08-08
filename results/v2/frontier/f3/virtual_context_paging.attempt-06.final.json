@@ -1,0 +1,2323 @@
+{
+  "artifact_sha256": "84068a095877ad745dc1ec31ee8c130a4d542a7e1abe57402ab043de1c96b613",
+  "catalog_sha256": "c8ac81758c4db6aa33401e4b7daa8da446b0e104233007f0b4d0aedbbf0fcac2",
+  "cells": [
+    {
+      "answer_quality_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "score": null,
+        "status": "unavailable"
+      },
+      "cell_result_sha256": "bb2bbcbc77d3ee6b8ecd434975b99aea95e7e51023865fbdb3fe2027258ae76c",
+      "evidence_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "recovered_evidence_recall": null,
+        "status": "unavailable"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0",
+        "error": "full_history_exceeds_token_budget",
+        "latency_ms": 0,
+        "ledger_reservation_id": "f3a05-full_history-f3-trial-01-low",
+        "native_usage": {
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "prompt_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "output_artifact": null,
+        "output_sha256": "32998c72e85bff4e5ea52d34349be8117c4a713e77312eaa90807c723169d3f4",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.14",
+          "output_usd_per_million": "0.28",
+          "source": "not_billed_overflow"
+        },
+        "provider": null,
+        "provider_repeat_sample_id": "f3-provider-repeat-01",
+        "reasoning_effort": "low",
+        "receipt_sha256": "c5b9a416b18af0c1ad01fdba1c1ba8c54505dd3a3e2d7f2177eca0458a9778ba",
+        "request_id": null,
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": null,
+        "retry_count": 0,
+        "run_spec_sha256": "9d8d30b0a0caa40c0d71e9b00c90c42e87a5745f22d68bb8ceff39319f934de4",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "failed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-01"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-01",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "9d8d30b0a0caa40c0d71e9b00c90c42e87a5745f22d68bb8ceff39319f934de4",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "full_history",
+      "trial_id": "f3-trial-01"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "score": null,
+        "status": "unavailable"
+      },
+      "cell_result_sha256": "c4cca2ee8a9c6cf4fd85690ace65a44f35418b7dd2a5c56859d3182fb7039ae6",
+      "evidence_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "recovered_evidence_recall": null,
+        "status": "unavailable"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0",
+        "error": "full_history_exceeds_token_budget",
+        "latency_ms": 0,
+        "ledger_reservation_id": "f3a05-full_history-f3-trial-01-high",
+        "native_usage": {
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "prompt_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "output_artifact": null,
+        "output_sha256": "32998c72e85bff4e5ea52d34349be8117c4a713e77312eaa90807c723169d3f4",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.14",
+          "output_usd_per_million": "0.28",
+          "source": "not_billed_overflow"
+        },
+        "provider": null,
+        "provider_repeat_sample_id": "f3-provider-repeat-01",
+        "reasoning_effort": "high",
+        "receipt_sha256": "238612f9c3b6ef139534de12f2f0b013e927e915a9139965b4d32aa05b4d83cd",
+        "request_id": null,
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": null,
+        "retry_count": 0,
+        "run_spec_sha256": "3353a10790068d23ed355df9e5108b1dc54ebeacd70ccd0c30d93423f9c7bdc2",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "failed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-01"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-01",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "3353a10790068d23ed355df9e5108b1dc54ebeacd70ccd0c30d93423f9c7bdc2",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "full_history",
+      "trial_id": "f3-trial-01"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "score": null,
+        "status": "unavailable"
+      },
+      "cell_result_sha256": "c9863eabab2aefcb8ee27fe2b01bc1c82a0d485304325d5e7ba6cfb96d7910bf",
+      "evidence_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "recovered_evidence_recall": null,
+        "status": "unavailable"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0",
+        "error": "full_history_exceeds_token_budget",
+        "latency_ms": 0,
+        "ledger_reservation_id": "f3a05-full_history-f3-trial-02-low",
+        "native_usage": {
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "prompt_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "output_artifact": null,
+        "output_sha256": "32998c72e85bff4e5ea52d34349be8117c4a713e77312eaa90807c723169d3f4",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.14",
+          "output_usd_per_million": "0.28",
+          "source": "not_billed_overflow"
+        },
+        "provider": null,
+        "provider_repeat_sample_id": "f3-provider-repeat-02",
+        "reasoning_effort": "low",
+        "receipt_sha256": "95f7b5cbcc7722a05d43b8c5de682dbb3f7e72728668169aa2851931108859c8",
+        "request_id": null,
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": null,
+        "retry_count": 0,
+        "run_spec_sha256": "fdb55296bee256453ebd4bff12f6f497b98c2643b0607e4154c292d43df9496c",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "failed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-02"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-02",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "fdb55296bee256453ebd4bff12f6f497b98c2643b0607e4154c292d43df9496c",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "full_history",
+      "trial_id": "f3-trial-02"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "score": null,
+        "status": "unavailable"
+      },
+      "cell_result_sha256": "6df1f2036312ba6f5608080002b1dcea501f804bc3be17bd9e20d93aef2730ad",
+      "evidence_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "recovered_evidence_recall": null,
+        "status": "unavailable"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0",
+        "error": "full_history_exceeds_token_budget",
+        "latency_ms": 0,
+        "ledger_reservation_id": "f3a05-full_history-f3-trial-02-high",
+        "native_usage": {
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "prompt_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "output_artifact": null,
+        "output_sha256": "32998c72e85bff4e5ea52d34349be8117c4a713e77312eaa90807c723169d3f4",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.14",
+          "output_usd_per_million": "0.28",
+          "source": "not_billed_overflow"
+        },
+        "provider": null,
+        "provider_repeat_sample_id": "f3-provider-repeat-02",
+        "reasoning_effort": "high",
+        "receipt_sha256": "c4a6103686d7da21e93062fb87494bdecd9f04dc55e06219dfc925a364d06709",
+        "request_id": null,
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": null,
+        "retry_count": 0,
+        "run_spec_sha256": "34caef54a6387fc7cf301ffa364f46d94a0d02a5a47d4bd1f49d7edaf1938647",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "failed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-02"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-02",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "34caef54a6387fc7cf301ffa364f46d94a0d02a5a47d4bd1f49d7edaf1938647",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "full_history",
+      "trial_id": "f3-trial-02"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "score": null,
+        "status": "unavailable"
+      },
+      "cell_result_sha256": "1e24efc6b685ef4d40fde5f8fb4fc5eafcd27fa5c6da65c05aa5c3d896aa7646",
+      "evidence_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "recovered_evidence_recall": null,
+        "status": "unavailable"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0",
+        "error": "full_history_exceeds_token_budget",
+        "latency_ms": 0,
+        "ledger_reservation_id": "f3a05-full_history-f3-trial-03-low",
+        "native_usage": {
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "prompt_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "output_artifact": null,
+        "output_sha256": "32998c72e85bff4e5ea52d34349be8117c4a713e77312eaa90807c723169d3f4",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.14",
+          "output_usd_per_million": "0.28",
+          "source": "not_billed_overflow"
+        },
+        "provider": null,
+        "provider_repeat_sample_id": "f3-provider-repeat-03",
+        "reasoning_effort": "low",
+        "receipt_sha256": "1e14df2432e3306dbb968b9aefeff73d16964bb17658a11a117d50bfed746e77",
+        "request_id": null,
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": null,
+        "retry_count": 0,
+        "run_spec_sha256": "093c45858da7aa8c22d2614545e43031649357f9fab33d375f2c608421886fc5",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "failed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-03"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-03",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "093c45858da7aa8c22d2614545e43031649357f9fab33d375f2c608421886fc5",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "full_history",
+      "trial_id": "f3-trial-03"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "score": null,
+        "status": "unavailable"
+      },
+      "cell_result_sha256": "1cefccd94e08787653fed2ff8fb36916a90765e65b1390dc1b473ec4089ed16b",
+      "evidence_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "recovered_evidence_recall": null,
+        "status": "unavailable"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0",
+        "error": "full_history_exceeds_token_budget",
+        "latency_ms": 0,
+        "ledger_reservation_id": "f3a05-full_history-f3-trial-03-high",
+        "native_usage": {
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "prompt_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "output_artifact": null,
+        "output_sha256": "32998c72e85bff4e5ea52d34349be8117c4a713e77312eaa90807c723169d3f4",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.14",
+          "output_usd_per_million": "0.28",
+          "source": "not_billed_overflow"
+        },
+        "provider": null,
+        "provider_repeat_sample_id": "f3-provider-repeat-03",
+        "reasoning_effort": "high",
+        "receipt_sha256": "48d6c2dc8adee006b477b35426551c6c3618f157e13df371e2b17e8bc1b1d7c9",
+        "request_id": null,
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": null,
+        "retry_count": 0,
+        "run_spec_sha256": "5f896118219b4844c511a02fb5a8252734e9c4d60150ca5f0b598db5923db8b3",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "failed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-03"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-03",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "5f896118219b4844c511a02fb5a8252734e9c4d60150ca5f0b598db5923db8b3",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "full_history",
+      "trial_id": "f3-trial-03"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "score": null,
+        "status": "unavailable"
+      },
+      "cell_result_sha256": "dce23990768b099da6fe487dbb6c309e7c4a5f876a4e48f8119e0a3155339a80",
+      "evidence_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "recovered_evidence_recall": null,
+        "status": "unavailable"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0",
+        "error": "full_history_exceeds_token_budget",
+        "latency_ms": 0,
+        "ledger_reservation_id": "f3a05-full_history-f3-trial-04-low",
+        "native_usage": {
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "prompt_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "output_artifact": null,
+        "output_sha256": "32998c72e85bff4e5ea52d34349be8117c4a713e77312eaa90807c723169d3f4",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.14",
+          "output_usd_per_million": "0.28",
+          "source": "not_billed_overflow"
+        },
+        "provider": null,
+        "provider_repeat_sample_id": "f3-provider-repeat-04",
+        "reasoning_effort": "low",
+        "receipt_sha256": "e57bc8867b0ba2f9ca2c9864432bec27a33e08b2b69e7e76bcc4837324fdbd80",
+        "request_id": null,
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": null,
+        "retry_count": 0,
+        "run_spec_sha256": "5cbd5d7532e7d046c907a55c9642b9b9e1c5c68cb28c6f6cafbda36bb70446cf",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "failed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-04"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-04",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "5cbd5d7532e7d046c907a55c9642b9b9e1c5c68cb28c6f6cafbda36bb70446cf",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "full_history",
+      "trial_id": "f3-trial-04"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "score": null,
+        "status": "unavailable"
+      },
+      "cell_result_sha256": "431f344d04948a2c9ac4951d39f72ef26b83605623f73d7411145f67a1c4a128",
+      "evidence_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "recovered_evidence_recall": null,
+        "status": "unavailable"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0",
+        "error": "full_history_exceeds_token_budget",
+        "latency_ms": 0,
+        "ledger_reservation_id": "f3a05-full_history-f3-trial-04-high",
+        "native_usage": {
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "prompt_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "output_artifact": null,
+        "output_sha256": "32998c72e85bff4e5ea52d34349be8117c4a713e77312eaa90807c723169d3f4",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.14",
+          "output_usd_per_million": "0.28",
+          "source": "not_billed_overflow"
+        },
+        "provider": null,
+        "provider_repeat_sample_id": "f3-provider-repeat-04",
+        "reasoning_effort": "high",
+        "receipt_sha256": "f3dd052dafac4bbe70516e784ee4c2cc7b22afc6cd6335ca8491da0facfa34d5",
+        "request_id": null,
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": null,
+        "retry_count": 0,
+        "run_spec_sha256": "d59d0aca7bbdc7d028a2591c5eda644f5e17d202ec56a732d55f5dddf78f7da5",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "failed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-04"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-04",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "d59d0aca7bbdc7d028a2591c5eda644f5e17d202ec56a732d55f5dddf78f7da5",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "full_history",
+      "trial_id": "f3-trial-04"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "score": null,
+        "status": "unavailable"
+      },
+      "cell_result_sha256": "cbdf23dad4045f56c7adebbc6a762f1110758f23471926d876838371ec5c2dd8",
+      "evidence_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "recovered_evidence_recall": null,
+        "status": "unavailable"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0",
+        "error": "full_history_exceeds_token_budget",
+        "latency_ms": 0,
+        "ledger_reservation_id": "f3a05-full_history-f3-trial-05-low",
+        "native_usage": {
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "prompt_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "output_artifact": null,
+        "output_sha256": "32998c72e85bff4e5ea52d34349be8117c4a713e77312eaa90807c723169d3f4",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.14",
+          "output_usd_per_million": "0.28",
+          "source": "not_billed_overflow"
+        },
+        "provider": null,
+        "provider_repeat_sample_id": "f3-provider-repeat-05",
+        "reasoning_effort": "low",
+        "receipt_sha256": "517042e4a64a8142b07710db8398249fee222c70fd8ba469f9fe91bea2ad3757",
+        "request_id": null,
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": null,
+        "retry_count": 0,
+        "run_spec_sha256": "26f6efed0eddac474952698af6c2f4ba3c26a2407233106cab5105756bba23e9",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "failed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-05"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-05",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "26f6efed0eddac474952698af6c2f4ba3c26a2407233106cab5105756bba23e9",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "full_history",
+      "trial_id": "f3-trial-05"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "score": null,
+        "status": "unavailable"
+      },
+      "cell_result_sha256": "784989fadc119de93f3f5178e369e2c47fcda7edf0d6f0cdac5c83d320a8d297",
+      "evidence_result": {
+        "artifact_path": null,
+        "artifact_sha256": null,
+        "recovered_evidence_recall": null,
+        "status": "unavailable"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0",
+        "error": "full_history_exceeds_token_budget",
+        "latency_ms": 0,
+        "ledger_reservation_id": "f3a05-full_history-f3-trial-05-high",
+        "native_usage": {
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "prompt_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "output_artifact": null,
+        "output_sha256": "32998c72e85bff4e5ea52d34349be8117c4a713e77312eaa90807c723169d3f4",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.14",
+          "output_usd_per_million": "0.28",
+          "source": "not_billed_overflow"
+        },
+        "provider": null,
+        "provider_repeat_sample_id": "f3-provider-repeat-05",
+        "reasoning_effort": "high",
+        "receipt_sha256": "431432a86ce5d64f4dae7437efd68bbc7c911833ca513e86d1f8d2e32bfb5bd7",
+        "request_id": null,
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": null,
+        "retry_count": 0,
+        "run_spec_sha256": "ec97b8df2e6a0e1b4b56e147cc0e262b647a5397bee51495d4cdc1b580e61330",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "failed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-05"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-05",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "ec97b8df2e6a0e1b4b56e147cc0e262b647a5397bee51495d4cdc1b580e61330",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "full_history",
+      "trial_id": "f3-trial-05"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-01-low-answer_quality.json",
+        "artifact_sha256": "00e5ffa645744fb2df76c20e9fc0de8940b7b446d73050dea3d9fa924528b0c9",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "2f80c7b1addfbaca631ce106cfb37447c684a8a2e80e8fd843894d0bd4e6ad24",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-01-low-recovered_evidence_recall.json",
+        "artifact_sha256": "23a55f526d3386b4ff1659d61bd9544171ebeaea0a1c4c47237ededd58d3782f",
+        "recovered_evidence_recall": 0.5,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.002308752",
+        "error": null,
+        "latency_ms": 104121,
+        "ledger_reservation_id": "f3a05-dense_retrieval-f3-trial-01-low",
+        "native_usage": {
+          "cached_prompt_tokens": 64,
+          "completion_tokens": 3129,
+          "prompt_tokens": 19446,
+          "reasoning_tokens": 1775
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/dense_retrieval-f3-trial-01-low.json",
+          "sha256": "00db95f7a0b1769768159df3a09d0ed38e2873f7650a4f46be1652a1cd5f661e"
+        },
+        "output_sha256": "00db95f7a0b1769768159df3a09d0ed38e2873f7650a4f46be1652a1cd5f661e",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-01",
+        "reasoning_effort": "low",
+        "receipt_sha256": "0e0ce4e8a3d985b196e34eab032278828bf6cfcc09297ed15339e673d1b28889",
+        "request_id": "gen-1786132457-y5TqrZiBB9rhodul58za",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "a56649a7166e534d8934edc10cefa23b72868c7594b6948b13ef0ae1bcb6ba5a",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-01"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-01",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "a56649a7166e534d8934edc10cefa23b72868c7594b6948b13ef0ae1bcb6ba5a",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "dense_retrieval",
+      "trial_id": "f3-trial-01"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-01-high-answer_quality.json",
+        "artifact_sha256": "391ec60cfe3e3fd07c8565e3df1308e1318b1b501fc6e317507ccc9ca7a546e8",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "9433c2e4727295c23eb5874697f6bd442a1d62c659330f05c936110a1eb45fb6",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-01-high-recovered_evidence_recall.json",
+        "artifact_sha256": "ba6d73e98fe5d8ad05f331cfe73e033906b535edc3d64ee0305373d5d82d6fe9",
+        "recovered_evidence_recall": 0.5,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.002475972",
+        "error": null,
+        "latency_ms": 92124,
+        "ledger_reservation_id": "f3a05-dense_retrieval-f3-trial-01-high",
+        "native_usage": {
+          "cached_prompt_tokens": 64,
+          "completion_tokens": 4058,
+          "prompt_tokens": 19446,
+          "reasoning_tokens": 2492
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/dense_retrieval-f3-trial-01-high.json",
+          "sha256": "13be70e1fd4dbfee3f61adf8507f214ba8534771b40962c38f1e8d4de213e501"
+        },
+        "output_sha256": "13be70e1fd4dbfee3f61adf8507f214ba8534771b40962c38f1e8d4de213e501",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-01",
+        "reasoning_effort": "high",
+        "receipt_sha256": "dee990f3dcb96bbe033b815346b8e72f5cd9da84f41af01e5229cdc88860d047",
+        "request_id": "gen-1786133476-bLAKtpF4WLJyR4YIal6c",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "c0b8ee35dd8e7c24bec886f798ece40c93817a9187da0af43a68e7c29333d9fa",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-01"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-01",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "c0b8ee35dd8e7c24bec886f798ece40c93817a9187da0af43a68e7c29333d9fa",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "dense_retrieval",
+      "trial_id": "f3-trial-01"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-02-low-answer_quality.json",
+        "artifact_sha256": "36fa36937acf84ff3cdfdf9c62ab72da594bb4bd42c05d4e0d592e434670c0c3",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "78ddec04eadffddbdc9f3eaae9921c1e312a426c87a9fff864bd1863741c23e8",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-02-low-recovered_evidence_recall.json",
+        "artifact_sha256": "7731e00e25b9f4cd4792f0fa2846dc84ce2d8f124a96c07241495d054a7faa29",
+        "recovered_evidence_recall": 0.5,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.00100188",
+        "error": null,
+        "latency_ms": 41081,
+        "ledger_reservation_id": "f3a05-dense_retrieval-f3-trial-02-low",
+        "native_usage": {
+          "cached_prompt_tokens": 19200,
+          "completion_tokens": 3523,
+          "prompt_tokens": 19446,
+          "reasoning_tokens": 2413
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/dense_retrieval-f3-trial-02-low.json",
+          "sha256": "a7c138dca586b9432c4e30f605f4931a183a2e3cbfd10fa6187fbc860bba041c"
+        },
+        "output_sha256": "a7c138dca586b9432c4e30f605f4931a183a2e3cbfd10fa6187fbc860bba041c",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-02",
+        "reasoning_effort": "low",
+        "receipt_sha256": "64dc03e29f35b89ec5f17169c3e57280b72668df9c43ad42e5d5ab135294c34f",
+        "request_id": "gen-1786133569-YgOivSSOT14nI73ZKyjn",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "1a1a677193004fc768b70956baa8c680ab9ed69dde9277ffc73f57f13a264e6e",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-02"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-02",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "1a1a677193004fc768b70956baa8c680ab9ed69dde9277ffc73f57f13a264e6e",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "dense_retrieval",
+      "trial_id": "f3-trial-02"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-02-high-answer_quality.json",
+        "artifact_sha256": "e9aa1e6f6004425079b0b3dde86463d449bcaf03f58e5fd1d7f3cd041eec0917",
+        "score": 0.75,
+        "status": "scored"
+      },
+      "cell_result_sha256": "073d1a69c2aff946c8b4a9b2e720bece4fadf2787c2e150df147ccf9bea03dac",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-02-high-recovered_evidence_recall.json",
+        "artifact_sha256": "6c626f29b28aa1b8b69c20f79df6ba0c63488f2161b622f17f0c893b646bbe99",
+        "recovered_evidence_recall": 0.5,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.00098352",
+        "error": null,
+        "latency_ms": 116708,
+        "ledger_reservation_id": "f3a05-dense_retrieval-f3-trial-02-high",
+        "native_usage": {
+          "cached_prompt_tokens": 19200,
+          "completion_tokens": 3421,
+          "prompt_tokens": 19446,
+          "reasoning_tokens": 2100
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/dense_retrieval-f3-trial-02-high.json",
+          "sha256": "6b6ffbaefed6a8bccfadec55658c76a8c897b47cc53fe02df048c9212b90e81e"
+        },
+        "output_sha256": "6b6ffbaefed6a8bccfadec55658c76a8c897b47cc53fe02df048c9212b90e81e",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-02",
+        "reasoning_effort": "high",
+        "receipt_sha256": "cfd0092ea678870903ed7e56ca0c4a801e8a95b5344f072c93faa3d825547025",
+        "request_id": "gen-1786133612-Y8MyZiDeP1TiP1X0oYcA",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "483f418bb110e42ff8de87978dbab7dd35e935c903decdd9f28119911622a0a6",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-02"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-02",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "483f418bb110e42ff8de87978dbab7dd35e935c903decdd9f28119911622a0a6",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "dense_retrieval",
+      "trial_id": "f3-trial-02"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-03-low-answer_quality.json",
+        "artifact_sha256": "29363744fed48373cef9af6bc9f9bc238337e27f9563514677ab5d6ffdfb3886",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "09e1705fc370d765ef469a70262d0b3cee01104673125d014075cf1bc15f601e",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-03-low-recovered_evidence_recall.json",
+        "artifact_sha256": "d5d8412010b56664784ed81e3cb6c1bfdedf263402199d67833d8015f1bdb49a",
+        "recovered_evidence_recall": 0.5,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.0009216",
+        "error": null,
+        "latency_ms": 37014,
+        "ledger_reservation_id": "f3a05-dense_retrieval-f3-trial-03-low",
+        "native_usage": {
+          "cached_prompt_tokens": 19200,
+          "completion_tokens": 3077,
+          "prompt_tokens": 19446,
+          "reasoning_tokens": 1944
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/dense_retrieval-f3-trial-03-low.json",
+          "sha256": "d04185f64499d2f3446b0704ad94ad71b1675807cd37448b3b79aec7a7088218"
+        },
+        "output_sha256": "d04185f64499d2f3446b0704ad94ad71b1675807cd37448b3b79aec7a7088218",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-03",
+        "reasoning_effort": "low",
+        "receipt_sha256": "aa8d4733369940cd2747cb2a50cc1801649c1baff78b33e7fb158aaeea82aef5",
+        "request_id": "gen-1786133729-hzGRmziJf3FGdeUilhUU",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "565356a26e88f33e9a9c5211a29356ae13a286d8ae4d463de348e8cf3fba2446",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-03"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-03",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "565356a26e88f33e9a9c5211a29356ae13a286d8ae4d463de348e8cf3fba2446",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "dense_retrieval",
+      "trial_id": "f3-trial-03"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-03-high-answer_quality.json",
+        "artifact_sha256": "37dd8c34b6a0fcdf9424a282618915b0a72cf410e6419eedb3d641736c49ac9a",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "0cd67c3fd2f12531b081c1c3fd57ea61878c4fa4b198917f1a82e659a576d04c",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-03-high-recovered_evidence_recall.json",
+        "artifact_sha256": "38d29b9a20aedb128186511820830e2af47ead18c95c06e5ad5cef6026e08cbc",
+        "recovered_evidence_recall": 0.5,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.00084744",
+        "error": null,
+        "latency_ms": 86239,
+        "ledger_reservation_id": "f3a05-dense_retrieval-f3-trial-03-high",
+        "native_usage": {
+          "cached_prompt_tokens": 19200,
+          "completion_tokens": 2665,
+          "prompt_tokens": 19446,
+          "reasoning_tokens": 1699
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/dense_retrieval-f3-trial-03-high.json",
+          "sha256": "c01172aadefa884208e641f105f3828b6a846a920983616f695537ad4ed777cf"
+        },
+        "output_sha256": "c01172aadefa884208e641f105f3828b6a846a920983616f695537ad4ed777cf",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-03",
+        "reasoning_effort": "high",
+        "receipt_sha256": "f88c0d13fa30516de5638a9d74c830ca268bc944eca662c3895a687be9d495f1",
+        "request_id": "gen-1786133767-RzAMmxSLBIXSK8xQsxT1",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "77fdb957d6e7dc438df162f661b184bba39bd77ac3b98165483a85bc40c61f92",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-03"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-03",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "77fdb957d6e7dc438df162f661b184bba39bd77ac3b98165483a85bc40c61f92",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "dense_retrieval",
+      "trial_id": "f3-trial-03"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-04-low-answer_quality.json",
+        "artifact_sha256": "200b203b2270748b1efd012ba2e420b19ff24975d9ffda328e73d3b7c15ba0a6",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "bb8bd2e5cc7ed58a2a03e8e079071d383ed32572fc825f41f29b4dd4e67d268f",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-04-low-recovered_evidence_recall.json",
+        "artifact_sha256": "27b7aad6dc1cf0fd8053f4641288f99e702176419c70b2a52904db27e33a68da",
+        "recovered_evidence_recall": 0.5,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.00086382",
+        "error": null,
+        "latency_ms": 31261,
+        "ledger_reservation_id": "f3a05-dense_retrieval-f3-trial-04-low",
+        "native_usage": {
+          "cached_prompt_tokens": 19200,
+          "completion_tokens": 2756,
+          "prompt_tokens": 19446,
+          "reasoning_tokens": 1747
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/dense_retrieval-f3-trial-04-low.json",
+          "sha256": "33f07ffe335f44ef50ea52a0e18c8964e9094745024fa0803c8bc08880d1d0e2"
+        },
+        "output_sha256": "33f07ffe335f44ef50ea52a0e18c8964e9094745024fa0803c8bc08880d1d0e2",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-04",
+        "reasoning_effort": "low",
+        "receipt_sha256": "85d7bd8b760d2e46aaf67c21beb8294ed5b79c820109e55a62c8338d3322b3dd",
+        "request_id": "gen-1786133854-yODiQ7x29dkvFMDvoxCk",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "f0a24302c9f8264cf2ca7a49817ff4ca346c65153fa695ac3fbeac9dc42ea485",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-04"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-04",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "f0a24302c9f8264cf2ca7a49817ff4ca346c65153fa695ac3fbeac9dc42ea485",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "dense_retrieval",
+      "trial_id": "f3-trial-04"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-04-high-answer_quality.json",
+        "artifact_sha256": "8c909c1f6d9f17aec30719e37289582797db6a14212924873eb4b13b2d8afad4",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "c66c7d7e4902d91ff242e00b8d1226283b216b6c13dc1969339d31d309a9e841",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-04-high-recovered_evidence_recall.json",
+        "artifact_sha256": "95b2722292774c352543a3dd05136ceb9974edcccdc317c9d8d94624f7940f1c",
+        "recovered_evidence_recall": 0.5,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.00096318",
+        "error": null,
+        "latency_ms": 146852,
+        "ledger_reservation_id": "f3a05-dense_retrieval-f3-trial-04-high",
+        "native_usage": {
+          "cached_prompt_tokens": 19200,
+          "completion_tokens": 3308,
+          "prompt_tokens": 19446,
+          "reasoning_tokens": 1927
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/dense_retrieval-f3-trial-04-high.json",
+          "sha256": "cf07170fd53a205ae5144e9dc2a818b0ded516f6cea053d4d2eba2d08ff584bb"
+        },
+        "output_sha256": "cf07170fd53a205ae5144e9dc2a818b0ded516f6cea053d4d2eba2d08ff584bb",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-04",
+        "reasoning_effort": "high",
+        "receipt_sha256": "33383399d2ee9997944a2828254705a8a14bb6eec1ce37aa2ef2d3f7a2174d44",
+        "request_id": "gen-1786133886-b1eO4kXZnoYC8fJOL7di",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "73c50dc5af59958a927b53fe2c699e99a6d788287861cc8dc08a8584b75d4fc0",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-04"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-04",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "73c50dc5af59958a927b53fe2c699e99a6d788287861cc8dc08a8584b75d4fc0",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "dense_retrieval",
+      "trial_id": "f3-trial-04"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-05-low-answer_quality.json",
+        "artifact_sha256": "8e67f0fcf6a69c081b43d7874c532b9546fbfd473f36790d9605ba58a05cbcd2",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "6ff30c4d1a7c6412c283bd33d2a76d18133a8059beffe7382387a9bb24012818",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-05-low-recovered_evidence_recall.json",
+        "artifact_sha256": "917df19f15687e898122b33b536f83633efb46403b2ae81b169c4db89c33b3e6",
+        "recovered_evidence_recall": 0.5,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.00078876",
+        "error": null,
+        "latency_ms": 47847,
+        "ledger_reservation_id": "f3a05-dense_retrieval-f3-trial-05-low",
+        "native_usage": {
+          "cached_prompt_tokens": 19200,
+          "completion_tokens": 2339,
+          "prompt_tokens": 19446,
+          "reasoning_tokens": 1455
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/dense_retrieval-f3-trial-05-low.json",
+          "sha256": "c33aae1a584ce734bf88ca7309890c67cdc3bd45b8175a9a3b315b9daac777f8"
+        },
+        "output_sha256": "c33aae1a584ce734bf88ca7309890c67cdc3bd45b8175a9a3b315b9daac777f8",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-05",
+        "reasoning_effort": "low",
+        "receipt_sha256": "5d9f3def848bb09af24ddc28d153ed91999137120977b7b883d0176db7e07d5a",
+        "request_id": "gen-1786134034-Pu49S4rgYrKNJnrOs8g7",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "4c4c28fb22e60ea6a370d758b6f4c03f0ae9fac35ec9dc7393b0c355a658d814",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-05"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-05",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "4c4c28fb22e60ea6a370d758b6f4c03f0ae9fac35ec9dc7393b0c355a658d814",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "dense_retrieval",
+      "trial_id": "f3-trial-05"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-05-high-answer_quality.json",
+        "artifact_sha256": "2848a3bacc3a98501dce05456e0cd27683f2912195b059b40921322ec5bf4f9a",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "b2b6a1b3641dd6eac84c49d0d588ebe75ea11c064a25fbd89c9937ccc64cd535",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/dense_retrieval-f3-trial-05-high-recovered_evidence_recall.json",
+        "artifact_sha256": "08ba7a75fdef4b796594044eb33a0462cfdab7e0e16bf312f62189e856adb5e2",
+        "recovered_evidence_recall": 0.5,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.0009432",
+        "error": null,
+        "latency_ms": 107039,
+        "ledger_reservation_id": "f3a05-dense_retrieval-f3-trial-05-high",
+        "native_usage": {
+          "cached_prompt_tokens": 19200,
+          "completion_tokens": 3197,
+          "prompt_tokens": 19446,
+          "reasoning_tokens": 1925
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/dense_retrieval-f3-trial-05-high.json",
+          "sha256": "83ab672587329a7dca6d2b359d7c5533c04967cac62ebd2b89bd43c06186bf77"
+        },
+        "output_sha256": "83ab672587329a7dca6d2b359d7c5533c04967cac62ebd2b89bd43c06186bf77",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-05",
+        "reasoning_effort": "high",
+        "receipt_sha256": "6b96186a61db6b84c8228534f6dc0b0902afe19913ffb28e122f8d7d921aca4a",
+        "request_id": "gen-1786134083-rdKXwO75TjH8GawZVrWK",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "d406573849b4cb8bb9e5b8026829cd6a3e067ecd04f3c490a676336214de7d72",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-05"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-05",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "d406573849b4cb8bb9e5b8026829cd6a3e067ecd04f3c490a676336214de7d72",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "dense_retrieval",
+      "trial_id": "f3-trial-05"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-01-low-answer_quality.json",
+        "artifact_sha256": "7afcd9e53a01a9f0b903ce9816bf68657886ea588c971b8a574c3c13413f0179",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "0bbc8491903a58f75a1de4ef126d01c73423064eedb4176728620619a78eaccd",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-01-low-recovered_evidence_recall.json",
+        "artifact_sha256": "4e726153e9cdbcc58bc407f8c374fd864ba3f1d6f1380ab2d65bdb229b289e83",
+        "recovered_evidence_recall": 0.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000569232",
+        "error": null,
+        "latency_ms": 21549,
+        "ledger_reservation_id": "f3a05-episodic_memory-f3-trial-01-low",
+        "native_usage": {
+          "cached_prompt_tokens": 64,
+          "completion_tokens": 2246,
+          "prompt_tokens": 1884,
+          "reasoning_tokens": 926
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/episodic_memory-f3-trial-01-low.json",
+          "sha256": "e31cdd3bfdad9d7ec87b0207e7a95c0530e25d5bd7605d195c4da1ebbd4d2437"
+        },
+        "output_sha256": "e31cdd3bfdad9d7ec87b0207e7a95c0530e25d5bd7605d195c4da1ebbd4d2437",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-01",
+        "reasoning_effort": "low",
+        "receipt_sha256": "90aafc5c41a3a5e126720074a53cab1f8d555b9773c172a0fd7a229c9b6852f9",
+        "request_id": "gen-1786134191-QW430OZWzsvtxIPZWrrD",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "d64500de66e03d35e578ddf1f35b16eb2ea49839e050f8c0ab99614eebe887ef",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-01"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-01",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "d64500de66e03d35e578ddf1f35b16eb2ea49839e050f8c0ab99614eebe887ef",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "episodic_memory",
+      "trial_id": "f3-trial-01"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-01-high-answer_quality.json",
+        "artifact_sha256": "50a61c320688c89d38ade023a3852f16c7871a1256dd8f4ffdc4c567260d7e08",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "6b300e620d2c95abaf87b5e600f8d09914c8db197f22244aa01bc7525fe1e9fb",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-01-high-recovered_evidence_recall.json",
+        "artifact_sha256": "0f0a364fc25ecc8a15ca45d689dab8a9dce7e2cbba6426dc50b5e6ae62dcb2ca",
+        "recovered_evidence_recall": 0.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000395856",
+        "error": null,
+        "latency_ms": 26683,
+        "ledger_reservation_id": "f3a05-episodic_memory-f3-trial-01-high",
+        "native_usage": {
+          "cached_prompt_tokens": 1792,
+          "completion_tokens": 1974,
+          "prompt_tokens": 1884,
+          "reasoning_tokens": 840
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/episodic_memory-f3-trial-01-high.json",
+          "sha256": "c124f9dec15c6111ff280355355a93d8fd8df9a029f8a766f370d6b4cc207e71"
+        },
+        "output_sha256": "c124f9dec15c6111ff280355355a93d8fd8df9a029f8a766f370d6b4cc207e71",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-01",
+        "reasoning_effort": "high",
+        "receipt_sha256": "b9d00d4ba2450462f42c84da190368a2ed05eed9109b2c8493bae0b73ef0f8d2",
+        "request_id": "gen-1786134213-VXCpK20glHFLfNNtYiTA",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "b5d22df6c502709df7f9a76321bf758a00b95780abed71c129f63fdc0a31a07e",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-01"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-01",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "b5d22df6c502709df7f9a76321bf758a00b95780abed71c129f63fdc0a31a07e",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "episodic_memory",
+      "trial_id": "f3-trial-01"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-02-low-answer_quality.json",
+        "artifact_sha256": "6457a634f505d4c3627ce4992cd08774d54972bc36efb0e3ae521f460b82fd98",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "5e82930c39969036a6fca38838ae6c1ceb25f0d5a23b5605c3674f66e5e6b86f",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-02-low-recovered_evidence_recall.json",
+        "artifact_sha256": "4781dfa54b949858fc3ffd7b5b1f38e6740f73b1bc76cb07c143dd2618cd5abd",
+        "recovered_evidence_recall": 0.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000414396",
+        "error": null,
+        "latency_ms": 34595,
+        "ledger_reservation_id": "f3a05-episodic_memory-f3-trial-02-low",
+        "native_usage": {
+          "cached_prompt_tokens": 1792,
+          "completion_tokens": 2077,
+          "prompt_tokens": 1884,
+          "reasoning_tokens": 1085
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/episodic_memory-f3-trial-02-low.json",
+          "sha256": "999eed7acba19f0075975805f551de2677f25c35e6a0350ba2cd76394b152337"
+        },
+        "output_sha256": "999eed7acba19f0075975805f551de2677f25c35e6a0350ba2cd76394b152337",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-02",
+        "reasoning_effort": "low",
+        "receipt_sha256": "93993b893673b34935c9e4742535c34f0c6604410be8fa398086110bffc4a0a1",
+        "request_id": "gen-1786134241-cVoU3YZavxK29pCmyL47",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "c1c5f4b060cdc6b916d3665dd7499bce5c12544c00f5a0447bfef60713774ba2",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-02"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-02",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "c1c5f4b060cdc6b916d3665dd7499bce5c12544c00f5a0447bfef60713774ba2",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "episodic_memory",
+      "trial_id": "f3-trial-02"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-02-high-answer_quality.json",
+        "artifact_sha256": "73214c5b12c5df0f40edb5829a6abdcc8d0333006c8cc20b58a96f3ec9e967af",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "9e73c7c6f5618eaed05e3221faa51baa2cfa40b17d09e0e34d4c07c30ebaa050",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-02-high-recovered_evidence_recall.json",
+        "artifact_sha256": "9eb011677baabf17eb37ec8538ed9ef65081c7997e4f5349e4807dd5d2009172",
+        "recovered_evidence_recall": 0.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000608076",
+        "error": null,
+        "latency_ms": 44719,
+        "ledger_reservation_id": "f3a05-episodic_memory-f3-trial-02-high",
+        "native_usage": {
+          "cached_prompt_tokens": 1792,
+          "completion_tokens": 3153,
+          "prompt_tokens": 1884,
+          "reasoning_tokens": 2335
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/episodic_memory-f3-trial-02-high.json",
+          "sha256": "a0589c225f74b25a782b9ca88b8faf5afb28c622da3ff6356c2d34bb60d47f39"
+        },
+        "output_sha256": "a0589c225f74b25a782b9ca88b8faf5afb28c622da3ff6356c2d34bb60d47f39",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-02",
+        "reasoning_effort": "high",
+        "receipt_sha256": "a5e23cb18bf0f6816451e7ac667f3df2c324612ff8ce2f240cfa8deabb329171",
+        "request_id": "gen-1786134276-zMbLIws2V7nIKYvU7Nw4",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "ae9e3880a6b47f8828da690044a4c1a3ba2f590ab14679abed3652b4a01b8091",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-02"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-02",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "ae9e3880a6b47f8828da690044a4c1a3ba2f590ab14679abed3652b4a01b8091",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "episodic_memory",
+      "trial_id": "f3-trial-02"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-03-low-answer_quality.json",
+        "artifact_sha256": "323f6d6ccae950fe1a30c6e81d09e7f707dc80378f0a479ed1a6bab0c585c803",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "a659edd64f3a9763815c9c1279cfc99793d2b6b65564c9093a0485c8c7320273",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-03-low-recovered_evidence_recall.json",
+        "artifact_sha256": "ad5d3b7a569202e9f8afe0eae6458771601d6c7207cbed892e82761b81ccebc2",
+        "recovered_evidence_recall": 0.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000388836",
+        "error": null,
+        "latency_ms": 33571,
+        "ledger_reservation_id": "f3a05-episodic_memory-f3-trial-03-low",
+        "native_usage": {
+          "cached_prompt_tokens": 1792,
+          "completion_tokens": 1935,
+          "prompt_tokens": 1884,
+          "reasoning_tokens": 925
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/episodic_memory-f3-trial-03-low.json",
+          "sha256": "abf55f21048ea16e9c04a22549d6e2309e4fc41fd165df3252250b349847ca78"
+        },
+        "output_sha256": "abf55f21048ea16e9c04a22549d6e2309e4fc41fd165df3252250b349847ca78",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-03",
+        "reasoning_effort": "low",
+        "receipt_sha256": "f4f9985659fdda73a6613691b37cb9f62a2d11a427ea40e04649eff71772a007",
+        "request_id": "gen-1786134322-Bw1kTvJcxEhpcLJrHdMb",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "6738f7189397f501b087c9cbe844f9d298457ef95aa7e45c01429ef6ed97686b",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-03"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-03",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "6738f7189397f501b087c9cbe844f9d298457ef95aa7e45c01429ef6ed97686b",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "episodic_memory",
+      "trial_id": "f3-trial-03"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-03-high-answer_quality.json",
+        "artifact_sha256": "5ba355adb7533a05b8d9144e96ad114d8c7f8be8aeb757a2736951f7811c3f44",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "08f5bb6906be23ac5e4ac84a8942d75ad05378dc1bdf6a9ebff37c0141ef15d5",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-03-high-recovered_evidence_recall.json",
+        "artifact_sha256": "05e31d26e3aebc4852378fe533d848896fc8466a4a579210373857f938119fc3",
+        "recovered_evidence_recall": 0.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000489996",
+        "error": null,
+        "latency_ms": 29016,
+        "ledger_reservation_id": "f3a05-episodic_memory-f3-trial-03-high",
+        "native_usage": {
+          "cached_prompt_tokens": 1792,
+          "completion_tokens": 2497,
+          "prompt_tokens": 1884,
+          "reasoning_tokens": 1253
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/episodic_memory-f3-trial-03-high.json",
+          "sha256": "8da18b430cc702fd6c7af82add8836ae2e96e5b5727deadb435b37041317c7ca"
+        },
+        "output_sha256": "8da18b430cc702fd6c7af82add8836ae2e96e5b5727deadb435b37041317c7ca",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-03",
+        "reasoning_effort": "high",
+        "receipt_sha256": "a9ceda28317e8a21f005096cc6498c4f858b0a59919c2a1fd7325f6857920c2d",
+        "request_id": "gen-1786134356-HF3fgmFWGm3u51v6Z94m",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "cb6b7fb3110751c643e41a5ccc6cf41aaf4fdd3674f7f70d96a50bdcbaf14540",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-03"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-03",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "cb6b7fb3110751c643e41a5ccc6cf41aaf4fdd3674f7f70d96a50bdcbaf14540",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "episodic_memory",
+      "trial_id": "f3-trial-03"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-04-low-answer_quality.json",
+        "artifact_sha256": "1eb6b518dcde6c53c2d63ddf0420b284d91b183d3f39a53c76d64441dcd8f845",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "e9435c50ffbfbe710a1ae98376823889d1a99be2c252ab8fe033db0bd4d1d04b",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-04-low-recovered_evidence_recall.json",
+        "artifact_sha256": "72f93260653dcfd9e60fbfa655d7392eceb520844d08c3937ac58e76ce7c91fb",
+        "recovered_evidence_recall": 0.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000548856",
+        "error": null,
+        "latency_ms": 35834,
+        "ledger_reservation_id": "f3a05-episodic_memory-f3-trial-04-low",
+        "native_usage": {
+          "cached_prompt_tokens": 1792,
+          "completion_tokens": 2824,
+          "prompt_tokens": 1884,
+          "reasoning_tokens": 2193
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/episodic_memory-f3-trial-04-low.json",
+          "sha256": "2a211634555cbce6e18d309e89f6040df0c370819fd774d7fc570c0f80ceb54b"
+        },
+        "output_sha256": "2a211634555cbce6e18d309e89f6040df0c370819fd774d7fc570c0f80ceb54b",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-04",
+        "reasoning_effort": "low",
+        "receipt_sha256": "08074b62e1c7de258cb4e260ccadae73d0e1001993e052549367f7b2d78ce767",
+        "request_id": "gen-1786134386-YegqmHjZTjw11Cu8UDuf",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "bc2ed96c7c924a8d4549b68b51a94995e738fa2911bebf8280c0e5085a919496",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-04"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-04",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "bc2ed96c7c924a8d4549b68b51a94995e738fa2911bebf8280c0e5085a919496",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "episodic_memory",
+      "trial_id": "f3-trial-04"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-04-high-answer_quality.json",
+        "artifact_sha256": "1c881a00ac2b0da91abcbcdd866b7de36a657628689092fa64bf3a2727ff1796",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "efdb40844c7b7d75a8943b79e4688b9369f5c75ead990082102dae7efd42eced",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-04-high-recovered_evidence_recall.json",
+        "artifact_sha256": "0cf33c3bb1fa793f24ea48defb2083fa0763d08b8fcbb4ffd0ab274645e4de39",
+        "recovered_evidence_recall": 0.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000505656",
+        "error": null,
+        "latency_ms": 30639,
+        "ledger_reservation_id": "f3a05-episodic_memory-f3-trial-04-high",
+        "native_usage": {
+          "cached_prompt_tokens": 1792,
+          "completion_tokens": 2584,
+          "prompt_tokens": 1884,
+          "reasoning_tokens": 1350
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/episodic_memory-f3-trial-04-high.json",
+          "sha256": "61b9c4800b351168089c852d381ee2b23702d7b3ba7d4f470e7e6a73b0e32518"
+        },
+        "output_sha256": "61b9c4800b351168089c852d381ee2b23702d7b3ba7d4f470e7e6a73b0e32518",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-04",
+        "reasoning_effort": "high",
+        "receipt_sha256": "6ce8e322dafadd206ee34c14728dbf19d8e422e68b09420a92a0adc7148a8e2b",
+        "request_id": "gen-1786134423-qxrYImTjZEe1jf7brhtj",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "d125d185ef67faf9aa82821f915d49566465d5e8082070716d18c2c7c2e32c86",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-04"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-04",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "d125d185ef67faf9aa82821f915d49566465d5e8082070716d18c2c7c2e32c86",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "episodic_memory",
+      "trial_id": "f3-trial-04"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-05-low-answer_quality.json",
+        "artifact_sha256": "cbf5b4053d03e0015c05ec0b851fd83ab610bb5c12e39edd6349b5f03d02dd26",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "2b6f9e1148d98b973f60e8b4aa5ad9951a6828e4cacae537440e07d9f05d9917",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-05-low-recovered_evidence_recall.json",
+        "artifact_sha256": "bdf98dca50d3945f3384e8c68e73d57c697ef8edde8102d588e6ee91d8484233",
+        "recovered_evidence_recall": 0.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000714816",
+        "error": null,
+        "latency_ms": 48364,
+        "ledger_reservation_id": "f3a05-episodic_memory-f3-trial-05-low",
+        "native_usage": {
+          "cached_prompt_tokens": 1792,
+          "completion_tokens": 3746,
+          "prompt_tokens": 1884,
+          "reasoning_tokens": 2740
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/episodic_memory-f3-trial-05-low.json",
+          "sha256": "d569ab9e7bf799fc03edadb77b77287d0a089ce309c83b5099ebc00ebcd432e5"
+        },
+        "output_sha256": "d569ab9e7bf799fc03edadb77b77287d0a089ce309c83b5099ebc00ebcd432e5",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-05",
+        "reasoning_effort": "low",
+        "receipt_sha256": "712be5a60be4e65cb232ba49d6bd315377117a33e2fdd5ef8ddca29a64cba183",
+        "request_id": "gen-1786134454-KJ2lOvFdNHLMUwoiWV7a",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "9d13226b7f659e71e012de226a4c352a0f8147066985bce24bf45fb2c6e2cda9",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-05"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-05",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "9d13226b7f659e71e012de226a4c352a0f8147066985bce24bf45fb2c6e2cda9",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "episodic_memory",
+      "trial_id": "f3-trial-05"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-05-high-answer_quality.json",
+        "artifact_sha256": "3f8bf90d36a952ff4e25dc9a736a6b885875a4cd2174422f2b3ebbcd95fd5ae8",
+        "score": 0.5,
+        "status": "scored"
+      },
+      "cell_result_sha256": "2f3f342eb13332bd22034bfdae0108a890a536e8da76fb42f8adc711c9ea5a4e",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/episodic_memory-f3-trial-05-high-recovered_evidence_recall.json",
+        "artifact_sha256": "2270063923a971030cd52a8284d2a27a2b7f72045fbb549a2ec48b934eb1dd89",
+        "recovered_evidence_recall": 0.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000415296",
+        "error": null,
+        "latency_ms": 22425,
+        "ledger_reservation_id": "f3a05-episodic_memory-f3-trial-05-high",
+        "native_usage": {
+          "cached_prompt_tokens": 1792,
+          "completion_tokens": 2082,
+          "prompt_tokens": 1884,
+          "reasoning_tokens": 1074
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/episodic_memory-f3-trial-05-high.json",
+          "sha256": "7f83e29e189a3d559eb1e86b171f113ce253212b6d08ff7e7dc1486098b5cade"
+        },
+        "output_sha256": "7f83e29e189a3d559eb1e86b171f113ce253212b6d08ff7e7dc1486098b5cade",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-05",
+        "reasoning_effort": "high",
+        "receipt_sha256": "38c4d962eb40b01ed1e0a78194a6c7638469fac899d4b5ac4a5b19955658a2db",
+        "request_id": "gen-1786134503-mAq71xtZHHuBzGa3UYS2",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "f310a21882979ee89fa912535691645bda950dbf68f6a79d57db2173951ae8ba",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-05"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-05",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "f310a21882979ee89fa912535691645bda950dbf68f6a79d57db2173951ae8ba",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "episodic_memory",
+      "trial_id": "f3-trial-05"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-01-low-answer_quality.json",
+        "artifact_sha256": "1ddfd50454a2b8f2bf5522b742649d7f416132356b64721eb568363a5fb2e1c5",
+        "score": 1.0,
+        "status": "scored"
+      },
+      "cell_result_sha256": "3cf584cd4c6af4c8238fd97083a4f02d757bc01652286438a2e7477bd56c7210",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-01-low-recovered_evidence_recall.json",
+        "artifact_sha256": "a9986ec79dab091f77e3e5439b409942a653742c9c51ca0cd3684f97136b4da8",
+        "recovered_evidence_recall": 1.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.002093742",
+        "error": null,
+        "latency_ms": 39427,
+        "ledger_reservation_id": "f3a05-managed_working_set-f3-trial-01-low",
+        "native_usage": {
+          "cached_prompt_tokens": 64,
+          "completion_tokens": 3016,
+          "prompt_tokens": 17283,
+          "reasoning_tokens": 1838
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/managed_working_set-f3-trial-01-low.json",
+          "sha256": "117e74eed659bb377ea856549c9d2dfdc266333f3252990e3e482a836c652dac"
+        },
+        "output_sha256": "117e74eed659bb377ea856549c9d2dfdc266333f3252990e3e482a836c652dac",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-01",
+        "reasoning_effort": "low",
+        "receipt_sha256": "5ab1e9997a6cbd34dc7bf85312bfeacb6f36a44a63438c09350549a9502286e9",
+        "request_id": "gen-1786134527-UYhdev1KPB1tJkDBvEbT",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "bbcf6a0d696e489dffcb531ac506c701e9c9cb26a5c1eafd86bbfa635b20cb76",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-01"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-01",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "bbcf6a0d696e489dffcb531ac506c701e9c9cb26a5c1eafd86bbfa635b20cb76",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "managed_working_set",
+      "trial_id": "f3-trial-01"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-01-high-answer_quality.json",
+        "artifact_sha256": "6123b3d954973b34e2525c88cf7aaeca04cb86dac0aa8eb5408ad39e6ffa4245",
+        "score": 1.0,
+        "status": "scored"
+      },
+      "cell_result_sha256": "213cd4a2df9308ba770da00ec3f588c9e2e8360d1ce1e43255367bd2cf1e6a5d",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-01-high-recovered_evidence_recall.json",
+        "artifact_sha256": "8cd81f808d04bf1bf6bb967a20a47c73e53976a0ff552dcf759b66cd03368d41",
+        "recovered_evidence_recall": 1.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000926586",
+        "error": null,
+        "latency_ms": 39322,
+        "ledger_reservation_id": "f3a05-managed_working_set-f3-trial-01-high",
+        "native_usage": {
+          "cached_prompt_tokens": 17152,
+          "completion_tokens": 3367,
+          "prompt_tokens": 17283,
+          "reasoning_tokens": 2111
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/managed_working_set-f3-trial-01-high.json",
+          "sha256": "8992656f3d23b1ffb9b3c9660f99964f70f13be2a0dc6d76dd6f56845af753c6"
+        },
+        "output_sha256": "8992656f3d23b1ffb9b3c9660f99964f70f13be2a0dc6d76dd6f56845af753c6",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-01",
+        "reasoning_effort": "high",
+        "receipt_sha256": "ad37144ee45cc31622a639f2761934147a728b98df8707e92f7cd8c38cff46e5",
+        "request_id": "gen-1786134567-TdAQEPfsvLOpsowNzrya",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "47b0e7ffe11873640a3685fffe318630bf6ae162a0583917a91b01784cf1b59c",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-01"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-01",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "47b0e7ffe11873640a3685fffe318630bf6ae162a0583917a91b01784cf1b59c",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "managed_working_set",
+      "trial_id": "f3-trial-01"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-02-low-answer_quality.json",
+        "artifact_sha256": "174ab13616a4b7cce9d8086a0f47363c5ff54b1a334a60691376e432bf78db3d",
+        "score": 1.0,
+        "status": "scored"
+      },
+      "cell_result_sha256": "e3405189851cf19f6c28dca8c77ed86b39ade9d86cc0d9b5a869a60c931b5c31",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-02-low-recovered_evidence_recall.json",
+        "artifact_sha256": "b652bb7883ad5670d892778c29a9ae5c5cdbcf8c0fa67c0c1ba5db52e05928ab",
+        "recovered_evidence_recall": 1.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000859626",
+        "error": null,
+        "latency_ms": 31564,
+        "ledger_reservation_id": "f3a05-managed_working_set-f3-trial-02-low",
+        "native_usage": {
+          "cached_prompt_tokens": 17152,
+          "completion_tokens": 2995,
+          "prompt_tokens": 17283,
+          "reasoning_tokens": 1945
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/managed_working_set-f3-trial-02-low.json",
+          "sha256": "95afc48b909a66f3947c8b6f58bfcf21022fb6b19541d71611f034cf343d1165"
+        },
+        "output_sha256": "95afc48b909a66f3947c8b6f58bfcf21022fb6b19541d71611f034cf343d1165",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-02",
+        "reasoning_effort": "low",
+        "receipt_sha256": "51b83df7a1cd13e3e9ffa2a05dc31155a675cf4d20eea56028098fc9538f0c5c",
+        "request_id": "gen-1786134608-GrxCdcoOolcBvp58qiW8",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "bd936a8811efd3146d0495a2605b197331e5f6bd9aabd0143433e0a30f1557af",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-02"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-02",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "bd936a8811efd3146d0495a2605b197331e5f6bd9aabd0143433e0a30f1557af",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "managed_working_set",
+      "trial_id": "f3-trial-02"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-02-high-answer_quality.json",
+        "artifact_sha256": "f7867ee1df356bf290f89127a6056228d514f07c83cfc88c06a7abbb78850eef",
+        "score": 1.0,
+        "status": "scored"
+      },
+      "cell_result_sha256": "8156863f4db4e4dce5ba0e6b849065c03b71fd48a583f4023e0f89d5747f797b",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-02-high-recovered_evidence_recall.json",
+        "artifact_sha256": "544fa5e0dd29d9ca6a2009e98eb025cea85273ecaaec116c9f89c39039c159ad",
+        "recovered_evidence_recall": 1.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000854946",
+        "error": null,
+        "latency_ms": 52338,
+        "ledger_reservation_id": "f3a05-managed_working_set-f3-trial-02-high",
+        "native_usage": {
+          "cached_prompt_tokens": 17152,
+          "completion_tokens": 2969,
+          "prompt_tokens": 17283,
+          "reasoning_tokens": 1715
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/managed_working_set-f3-trial-02-high.json",
+          "sha256": "d46f5a9f5dcc6f71d81e0b85f8f319fac2e72c7cf2158dfba2e05f46fd24bcda"
+        },
+        "output_sha256": "d46f5a9f5dcc6f71d81e0b85f8f319fac2e72c7cf2158dfba2e05f46fd24bcda",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-02",
+        "reasoning_effort": "high",
+        "receipt_sha256": "ff48bf8c5d2306b6229271ca318528ab6f08613eb8379e1eaa7ab30593b4dd17",
+        "request_id": "gen-1786134640-iNBPcDROYuLKIxK4828x",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "6d189021e574919422fdad99debea3a41d0c079414bc4c10cadecc9a53dcc233",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-02"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-02",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "6d189021e574919422fdad99debea3a41d0c079414bc4c10cadecc9a53dcc233",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "managed_working_set",
+      "trial_id": "f3-trial-02"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-03-low-answer_quality.json",
+        "artifact_sha256": "ae261645f212935a77d9bfa52018c7156afeadfb84d96af8ce4589c5dda38ef6",
+        "score": 1.0,
+        "status": "scored"
+      },
+      "cell_result_sha256": "360d5ca5392be87964db11ed9b72c1808a9fbcfdca1c7a1dd6848b90b2682789",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-03-low-recovered_evidence_recall.json",
+        "artifact_sha256": "8d7f6db35201ec9046b82114044390b3a93c4ae5adbb80cc098b83f7f847ac66",
+        "recovered_evidence_recall": 1.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000784566",
+        "error": null,
+        "latency_ms": 29023,
+        "ledger_reservation_id": "f3a05-managed_working_set-f3-trial-03-low",
+        "native_usage": {
+          "cached_prompt_tokens": 17152,
+          "completion_tokens": 2578,
+          "prompt_tokens": 17283,
+          "reasoning_tokens": 1613
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/managed_working_set-f3-trial-03-low.json",
+          "sha256": "64477f49367609ed3b5d6a5d3c7bdf375b2d54c53702f0ffe21796e8ce6b639a"
+        },
+        "output_sha256": "64477f49367609ed3b5d6a5d3c7bdf375b2d54c53702f0ffe21796e8ce6b639a",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-03",
+        "reasoning_effort": "low",
+        "receipt_sha256": "a628e959dc4fff5f7b2172352abd546b14fbd17426347208af13c881fc1ee073",
+        "request_id": "gen-1786134693-YUBIe7zRZVF7OqsPU71f",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "939c897302313aaca820c3f062166fb0b1528b629ee761eb7c1b4247c57d788e",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-03"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-03",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "939c897302313aaca820c3f062166fb0b1528b629ee761eb7c1b4247c57d788e",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "managed_working_set",
+      "trial_id": "f3-trial-03"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-03-high-answer_quality.json",
+        "artifact_sha256": "9d16b34f3c90193bcae70ab793065402947437d3d5a2ff9bf76ee4b10d825117",
+        "score": 1.0,
+        "status": "scored"
+      },
+      "cell_result_sha256": "6ccaa47eb459ddd85b918bd742877c52bb5e35b6252265925dda7089c4640fdc",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-03-high-recovered_evidence_recall.json",
+        "artifact_sha256": "2e186c8a5ae0b7ab3bd724cc92482ff91840c2de29049983eaae79653749f4f0",
+        "recovered_evidence_recall": 1.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000744786",
+        "error": null,
+        "latency_ms": 35070,
+        "ledger_reservation_id": "f3a05-managed_working_set-f3-trial-03-high",
+        "native_usage": {
+          "cached_prompt_tokens": 17152,
+          "completion_tokens": 2357,
+          "prompt_tokens": 17283,
+          "reasoning_tokens": 1401
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/managed_working_set-f3-trial-03-high.json",
+          "sha256": "20a904bd8bef6f49dfb1fec3e19b3b0416abee5abdfcbc72776716113e92973c"
+        },
+        "output_sha256": "20a904bd8bef6f49dfb1fec3e19b3b0416abee5abdfcbc72776716113e92973c",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-03",
+        "reasoning_effort": "high",
+        "receipt_sha256": "95b0d8c621406b7856e47c3ebfac8d246014942d8b8efc284abff79d2bc76cf1",
+        "request_id": "gen-1786134723-lJLJtj2qOzAuJQYnpT36",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "f03d660a40b310ae734a1062b3f7023d652a816c467cfd3f41d5ca3575ad71d5",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-03"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-03",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "f03d660a40b310ae734a1062b3f7023d652a816c467cfd3f41d5ca3575ad71d5",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "managed_working_set",
+      "trial_id": "f3-trial-03"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-04-low-answer_quality.json",
+        "artifact_sha256": "c9a4953c5b23baf5c141bdff8e05141a275c9e911b004804b84c9402922ce540",
+        "score": 1.0,
+        "status": "scored"
+      },
+      "cell_result_sha256": "01699c80bce7120ae0c2369050b673109852d11a4ea001d0e7df10cfe0bebc71",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-04-low-recovered_evidence_recall.json",
+        "artifact_sha256": "c4918a8cf796deec9064435b1200cbf2ac67a6b1aa120864915b627dcd257853",
+        "recovered_evidence_recall": 1.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.001078146",
+        "error": null,
+        "latency_ms": 51514,
+        "ledger_reservation_id": "f3a05-managed_working_set-f3-trial-04-low",
+        "native_usage": {
+          "cached_prompt_tokens": 17152,
+          "completion_tokens": 4209,
+          "prompt_tokens": 17283,
+          "reasoning_tokens": 3133
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/managed_working_set-f3-trial-04-low.json",
+          "sha256": "938a2e3bc7e4f6a5f7839f8e3a0948d1b9d3c4864a37e49f652cfc15a5c7cd06"
+        },
+        "output_sha256": "938a2e3bc7e4f6a5f7839f8e3a0948d1b9d3c4864a37e49f652cfc15a5c7cd06",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-04",
+        "reasoning_effort": "low",
+        "receipt_sha256": "6756786d8ef24ee3bfc1785a3c3ddae3d82c5d2542bd62a9f795c4350a8aa859",
+        "request_id": "gen-1786134759-1Q8yzQxJdJpH8VK0pUlL",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "a0d9b9e4fa009203f0d2bb097dde7abfce7ca1a23f7cc56d7814ee7bc74f5ff0",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-04"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-04",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "a0d9b9e4fa009203f0d2bb097dde7abfce7ca1a23f7cc56d7814ee7bc74f5ff0",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "managed_working_set",
+      "trial_id": "f3-trial-04"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-04-high-answer_quality.json",
+        "artifact_sha256": "94452e63c237adb022a6c698fb52c62ab243977cca2614807750755402e5008a",
+        "score": 1.0,
+        "status": "scored"
+      },
+      "cell_result_sha256": "8e6b86d247a3d8ded3e47c3113f06ae159e2d0b017f47d388bc37e92e3c1218b",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-04-high-recovered_evidence_recall.json",
+        "artifact_sha256": "2656bd480120b6b3449d929541c1d5dffdaf0deeea40642b441365e0452ccb12",
+        "recovered_evidence_recall": 1.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000926586",
+        "error": null,
+        "latency_ms": 36333,
+        "ledger_reservation_id": "f3a05-managed_working_set-f3-trial-04-high",
+        "native_usage": {
+          "cached_prompt_tokens": 17152,
+          "completion_tokens": 3367,
+          "prompt_tokens": 17283,
+          "reasoning_tokens": 1859
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/managed_working_set-f3-trial-04-high.json",
+          "sha256": "26a8b88b0e73d3e6f3c4409b1cd67096a26d80a7f3385b3ea29313fead3d3650"
+        },
+        "output_sha256": "26a8b88b0e73d3e6f3c4409b1cd67096a26d80a7f3385b3ea29313fead3d3650",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-04",
+        "reasoning_effort": "high",
+        "receipt_sha256": "3ffd842e6be60c8b9b8be24f0a2ead7c492266302da9a0de45e03c20f37a5ca1",
+        "request_id": "gen-1786134812-5UG4VXws9ynQGbUv7d9g",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "c0ed5f0593b883e8979b400dbbcc80460c14f714abb5b943d8816580a80f7622",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-04"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-04",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "c0ed5f0593b883e8979b400dbbcc80460c14f714abb5b943d8816580a80f7622",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "managed_working_set",
+      "trial_id": "f3-trial-04"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-05-low-answer_quality.json",
+        "artifact_sha256": "6afa0cbb445aa4e994595afb3e3883ce8ecd032c2b57db82faced5c1e84dce07",
+        "score": 1.0,
+        "status": "scored"
+      },
+      "cell_result_sha256": "1513714cb43238b777f9f6dbdf17783964642d132c831f9a721478b884276959",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-05-low-recovered_evidence_recall.json",
+        "artifact_sha256": "d9c5d397687c87a2eb59c2f8760e6330ae4b6d522f1a130728c8657f11827627",
+        "recovered_evidence_recall": 1.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.000825606",
+        "error": null,
+        "latency_ms": 37297,
+        "ledger_reservation_id": "f3a05-managed_working_set-f3-trial-05-low",
+        "native_usage": {
+          "cached_prompt_tokens": 17152,
+          "completion_tokens": 2806,
+          "prompt_tokens": 17283,
+          "reasoning_tokens": 1833
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/managed_working_set-f3-trial-05-low.json",
+          "sha256": "9ecec47a3a9e3837b62053c0650e0cdbc2dc69397b06241574e8c0919826bd58"
+        },
+        "output_sha256": "9ecec47a3a9e3837b62053c0650e0cdbc2dc69397b06241574e8c0919826bd58",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-05",
+        "reasoning_effort": "low",
+        "receipt_sha256": "3055401469a64f9cbb0c6ae63b0be2d0200c3c1286b5870b54c1616352972b70",
+        "request_id": "gen-1786134849-yfAIjnwhQWm90GGWUjAC",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "514adaba516c05bd93bd19cdc67d4dfa8ad498f316e0be5b20c0b62483c09509",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-05"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-05",
+      "reasoning_effort": "low",
+      "run_spec_sha256": "514adaba516c05bd93bd19cdc67d4dfa8ad498f316e0be5b20c0b62483c09509",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "managed_working_set",
+      "trial_id": "f3-trial-05"
+    },
+    {
+      "answer_quality_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-05-high-answer_quality.json",
+        "artifact_sha256": "3c8a1157bceed134dc8d4dc4b6d974aaddf8a4d3b00da9b868ccbeeba09d228e",
+        "score": 1.0,
+        "status": "scored"
+      },
+      "cell_result_sha256": "b1667d8f2e4bae02f05561e042fcfdac025523633e5bca1e5a1417cdcecef5bc",
+      "evidence_result": {
+        "artifact_path": "results/v2/frontier/f3/reviews-attempt-05/managed_working_set-f3-trial-05-high-recovered_evidence_recall.json",
+        "artifact_sha256": "3276bf2254e3b5f5d0fe007ddcc743386abf8dd03963917b1eb76e950a52e7f9",
+        "recovered_evidence_recall": 1.0,
+        "status": "scored"
+      },
+      "generator_receipt": {
+        "billed_cost_usd": "0.001099746",
+        "error": null,
+        "latency_ms": 60080,
+        "ledger_reservation_id": "f3a05-managed_working_set-f3-trial-05-high",
+        "native_usage": {
+          "cached_prompt_tokens": 17152,
+          "completion_tokens": 4329,
+          "prompt_tokens": 17283,
+          "reasoning_tokens": 2757
+        },
+        "output_artifact": {
+          "path": "results/v2/frontier/f3/evidence-attempt-05/managed_working_set-f3-trial-05-high.json",
+          "sha256": "439c61a38763f6dcb34571bfb34c5409601aefb8befba34389a7dd1820199418"
+        },
+        "output_sha256": "439c61a38763f6dcb34571bfb34c5409601aefb8befba34389a7dd1820199418",
+        "price": {
+          "currency": "USD",
+          "input_usd_per_million": "0.09000000",
+          "output_usd_per_million": "0.18000000",
+          "source": "openrouter_response_usage"
+        },
+        "provider": "DeepInfra",
+        "provider_repeat_sample_id": "f3-provider-repeat-05",
+        "reasoning_effort": "high",
+        "receipt_sha256": "151b322198d3b348eefd0514bc1a82b204cc4c3890e6b04ab0272285d14e5356",
+        "request_id": "gen-1786134887-WgBBVNR1kBTCcpdxIxEg",
+        "requested_model": "deepseek/deepseek-v4-flash-0731",
+        "resolved_model": "deepseek/deepseek-v4-flash-0731",
+        "retry_count": 0,
+        "run_spec_sha256": "0e32780e6ab33264c4ebdc023d63c43c9da45b14bce3af5c90375c6fc3f7de7f",
+        "schema_version": "contextlab.f3-generator-receipt.v2",
+        "status": "completed",
+        "temperature": 0.0,
+        "trial_id": "f3-trial-05"
+      },
+      "provider_repeat_sample_id": "f3-provider-repeat-05",
+      "reasoning_effort": "high",
+      "run_spec_sha256": "0e32780e6ab33264c4ebdc023d63c43c9da45b14bce3af5c90375c6fc3f7de7f",
+      "schema_version": "contextlab.f3-answer-quality-result.v2",
+      "strategy_id": "managed_working_set",
+      "trial_id": "f3-trial-05"
+    }
+  ],
+  "experiment_id": "F3",
+  "frontier_entry_gate_sha256": "d7f4a44cdd7ad3cf721824961436dd21eb7d5d58a7133b280d5744510cbc2ed0",
+  "generator_status_counts": {
+    "completed": 30,
+    "failed": 10
+  },
+  "ledger_reservation_ids": [
+    "f3a05-full_history-f3-trial-01-low",
+    "f3a05-full_history-f3-trial-01-high",
+    "f3a05-full_history-f3-trial-02-low",
+    "f3a05-full_history-f3-trial-02-high",
+    "f3a05-full_history-f3-trial-03-low",
+    "f3a05-full_history-f3-trial-03-high",
+    "f3a05-full_history-f3-trial-04-low",
+    "f3a05-full_history-f3-trial-04-high",
+    "f3a05-full_history-f3-trial-05-low",
+    "f3a05-full_history-f3-trial-05-high",
+    "f3a05-dense_retrieval-f3-trial-01-low",
+    "f3a05-dense_retrieval-f3-trial-01-high",
+    "f3a05-dense_retrieval-f3-trial-02-low",
+    "f3a05-dense_retrieval-f3-trial-02-high",
+    "f3a05-dense_retrieval-f3-trial-03-low",
+    "f3a05-dense_retrieval-f3-trial-03-high",
+    "f3a05-dense_retrieval-f3-trial-04-low",
+    "f3a05-dense_retrieval-f3-trial-04-high",
+    "f3a05-dense_retrieval-f3-trial-05-low",
+    "f3a05-dense_retrieval-f3-trial-05-high",
+    "f3a05-episodic_memory-f3-trial-01-low",
+    "f3a05-episodic_memory-f3-trial-01-high",
+    "f3a05-episodic_memory-f3-trial-02-low",
+    "f3a05-episodic_memory-f3-trial-02-high",
+    "f3a05-episodic_memory-f3-trial-03-low",
+    "f3a05-episodic_memory-f3-trial-03-high",
+    "f3a05-episodic_memory-f3-trial-04-low",
+    "f3a05-episodic_memory-f3-trial-04-high",
+    "f3a05-episodic_memory-f3-trial-05-low",
+    "f3a05-episodic_memory-f3-trial-05-high",
+    "f3a05-managed_working_set-f3-trial-01-low",
+    "f3a05-managed_working_set-f3-trial-01-high",
+    "f3a05-managed_working_set-f3-trial-02-low",
+    "f3a05-managed_working_set-f3-trial-02-high",
+    "f3a05-managed_working_set-f3-trial-03-low",
+    "f3a05-managed_working_set-f3-trial-03-high",
+    "f3a05-managed_working_set-f3-trial-04-low",
+    "f3a05-managed_working_set-f3-trial-04-high",
+    "f3a05-managed_working_set-f3-trial-05-low",
+    "f3a05-managed_working_set-f3-trial-05-high"
+  ],
+  "prepared_experiment_sha256": "4d17e196a9a380e79e1c76e97ac5ffbb75a4052112e63ed456eae780782704a1",
+  "provider_repeat_sample_ids": [
+    "f3-provider-repeat-01",
+    "f3-provider-repeat-02",
+    "f3-provider-repeat-03",
+    "f3-provider-repeat-04",
+    "f3-provider-repeat-05"
+  ],
+  "schema_version": "contextlab.f3-final-result.v2",
+  "status": "generated-pending-result-review",
+  "task_id": "F3-NOVALEARN-TEAMS-READINESS-Q2-2026",
+  "total_billed_cost_usd": "0.027343476",
+  "trial_ids": [
+    "f3-trial-01",
+    "f3-trial-02",
+    "f3-trial-03",
+    "f3-trial-04",
+    "f3-trial-05"
+  ]
+}

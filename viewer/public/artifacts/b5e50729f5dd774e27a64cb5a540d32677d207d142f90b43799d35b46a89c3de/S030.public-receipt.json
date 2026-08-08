@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0001345288,
+  "answer": "The Slack thread is informal and low-authority [NL-027#NL-027-S01]. The authoritative status is that the Teams integration is **not done**: it is under active design and planned for Q4 2026, with release targeted for v2.11.0 in November [NL-014#NL-014-S07]. It is not generally available and was never approved for early production deployment [NL-027#NL-027-S04]. A \"toy\" demo shown at sales kickoff lacked tenant isolation, permission mapping, SSO, and formatting/citations, so it was not deployable [NL-027#NL-027-S03]. Sales statements calling it \"basically done\" or \"right around the corner\" are overclaims contradicted by the roadmap [NL-023#NL-023-S04]. Only the Slack connector is currently available as a limited pilot [NL-014#NL-014-S07].\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 4617.0,
+  "policy": "M2",
+  "provider": "deepseek",
+  "reasoning_effort": "high",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M2-high-S030",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "A Slack thread says Teams integration is basically done. What is the authoritative status?",
+      "suite": "static",
+      "task_family": "authority_conflict",
+      "task_id": "S030"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2779,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      },
+      {
+        "evidence_id": "4b003cdc9ed916687aadca66",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-027-S02"
+        ],
+        "token_count": 325
+      },
+      {
+        "evidence_id": "b7880ffe19d9ba38ad0ff1e4",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-027-S03"
+        ],
+        "token_count": 462
+      },
+      {
+        "evidence_id": "980a08facb068137dcf30109",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-027-S01"
+        ],
+        "token_count": 54
+      },
+      {
+        "evidence_id": "1f50611b074c31fd3a938050",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-027-S05"
+        ],
+        "token_count": 413
+      },
+      {
+        "evidence_id": "2a1b3db4f36165eb931ec1f5",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-023-S04"
+        ],
+        "token_count": 405
+      },
+      {
+        "evidence_id": "70af491e77028109ca3dbf3b",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-027-S04"
+        ],
+        "token_count": 566
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "7f45ca2bb810589f48e5b666",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-014-S07"
+        ],
+        "token_count": 194
+      },
+      {
+        "evidence_id": "4b003cdc9ed916687aadca66",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-027-S02"
+        ],
+        "token_count": 325
+      },
+      {
+        "evidence_id": "b7880ffe19d9ba38ad0ff1e4",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-027-S03"
+        ],
+        "token_count": 462
+      },
+      {
+        "evidence_id": "980a08facb068137dcf30109",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-027-S01"
+        ],
+        "token_count": 54
+      },
+      {
+        "evidence_id": "1f50611b074c31fd3a938050",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-027-S05"
+        ],
+        "token_count": 413
+      },
+      {
+        "evidence_id": "2a1b3db4f36165eb931ec1f5",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-023-S04"
+        ],
+        "token_count": 405
+      },
+      {
+        "evidence_id": "70af491e77028109ca3dbf3b",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-027-S04"
+        ],
+        "token_count": 566
+      },
+      {
+        "evidence_id": "7ff5bc9205b5a9f610fb47df",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-015-S06"
+        ],
+        "token_count": 360
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}

@@ -1,0 +1,160 @@
+{
+  "actual_usd": 0.0005644072,
+  "answer": "OCR/import issues (particularly scanned, image-only PDFs lacking a text layer) are a primary, direct driver of poor onboarding performance, and they escalate support intervention and remediation workload. Specifically:\n\n- **Onboarding duration impact**: OCR and scanned PDF processing accounts for 25% of all onboarding delay incidents [NL-031#NL-031-S04], alongside permission mapping (45%) and source ingestion cleanup (30%) [NL-012#NL-012-S06]. For example, BrightPath Healthcare experienced the longest onboarding time (9.5 weeks) specifically due to OCR/scanned PDF compliance issues [NL-012#NL-012-S06], and Northstar Financial's pilot kickoff was delayed by three weeks because the customer's IT team had to run files through an external OCR tool [NL-010#NL-010-S06].\n\n- **Go-live quality failures**: Without OCR, scanned PDFs fail to extract a text layer, causing incomplete or missing answers and triggering go-live quality check failures [NL-010#NL-010-S06]. Since the go-live threshold requires an 85% citation correctness rate (90% for Enterprise), image-only documents lead to failed validation and onboarding pauses [NL-015#NL-015-S04][NL-031#NL-031-S04].\n\n- **Support and remediation escalation**: When tenants fail UAT thresholds due to such extraction/OCR errors, a mandatory remediation path is triggered—implementation is paused, a corpus audit is initiated, and additional support hours or escalated steering committee reviews are allocated [NL-005#NL-005-S11]. Recurring blockers are then reviewed monthly against onboarding metrics and support ticket patterns [NL-005#NL-005-S11].\n\n- **Support/operational provisions**: Because these OCR issues are so common among legacy corpora, NovaLearn specifically provisions an \"Advanced OCR Ingestion Queue\" for enterprise customers as part of its onboarding extensions [NL-005#NL-005-S09]. Additionally, OCR batches can clog the import queue—the March 14 upload outage was triggered by an import worker retry storm—demonstrating that import issues degrade overall system onboarding performance unless split-queue architecture and concurrency limits are enforced [NL-021#NL-021-S06].\n\nIn summary, OCR/import issues directly inflate onboarding timelines, cause UAT failures that trigger mandatory support remediation, and necessitate special queue-management and enterprise-level support provisions to mitigate their impact.\n\nANSWER_STATUS: answer\nUSED_MEMORY_CLAIMS: none",
+  "latency_ms": 15867.0,
+  "policy": "M3",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "requested_model": "deepseek/deepseek-v4-flash-0731",
+  "resolved_model": "deepseek/deepseek-v4-flash-0731",
+  "run_id": "g3-public-v1-M3-low-S017",
+  "run_spec": {
+    "context_budget_tokens": 3200,
+    "prompt_version": "contextlab.memory-answer.v1",
+    "task": {
+      "question_text": "What relationship exists between OCR/import issues and support or onboarding performance?",
+      "suite": "static",
+      "task_family": "multi_hop_synthesis",
+      "task_id": "S017"
+    }
+  },
+  "status": "completed",
+  "trace": {
+    "context_token_count": 2871,
+    "corpus_candidate_evidence": [
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      },
+      {
+        "evidence_id": "77cf8912f7f7754f60627223",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S06"
+        ],
+        "token_count": 345
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "bb6dd6175f7e6c59ef563902",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-031-S04"
+        ],
+        "token_count": 308
+      },
+      {
+        "evidence_id": "1c463727adce682cc9fc4a25",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-021-S07"
+        ],
+        "token_count": 416
+      },
+      {
+        "evidence_id": "c7a1d4004b0d64aae9b8ebb4",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-005-S11"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "b64ebbdc0022a41572d20236",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-021-S06"
+        ],
+        "token_count": 411
+      }
+    ],
+    "memory_candidate_evidence": [],
+    "selected_corpus_evidence": [
+      {
+        "evidence_id": "bd02786fe6f93bdec6000963",
+        "rank": 1,
+        "raw_evidence_ids": [
+          "NL-015-S04"
+        ],
+        "token_count": 320
+      },
+      {
+        "evidence_id": "77cf8912f7f7754f60627223",
+        "rank": 2,
+        "raw_evidence_ids": [
+          "NL-010-S06"
+        ],
+        "token_count": 345
+      },
+      {
+        "evidence_id": "d54051058ef6990ee1ebd70b",
+        "rank": 3,
+        "raw_evidence_ids": [
+          "NL-012-S06"
+        ],
+        "token_count": 336
+      },
+      {
+        "evidence_id": "db31ea8fda252043069062d8",
+        "rank": 4,
+        "raw_evidence_ids": [
+          "NL-005-S09"
+        ],
+        "token_count": 238
+      },
+      {
+        "evidence_id": "bb6dd6175f7e6c59ef563902",
+        "rank": 5,
+        "raw_evidence_ids": [
+          "NL-031-S04"
+        ],
+        "token_count": 308
+      },
+      {
+        "evidence_id": "1c463727adce682cc9fc4a25",
+        "rank": 6,
+        "raw_evidence_ids": [
+          "NL-021-S07"
+        ],
+        "token_count": 416
+      },
+      {
+        "evidence_id": "c7a1d4004b0d64aae9b8ebb4",
+        "rank": 7,
+        "raw_evidence_ids": [
+          "NL-005-S11"
+        ],
+        "token_count": 497
+      },
+      {
+        "evidence_id": "b64ebbdc0022a41572d20236",
+        "rank": 8,
+        "raw_evidence_ids": [
+          "NL-021-S06"
+        ],
+        "token_count": 411
+      }
+    ],
+    "selected_memory_evidence": []
+  },
+  "viewer_projection_schema": "contextlab.public-g3-receipt.v2"
+}
