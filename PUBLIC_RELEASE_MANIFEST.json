@@ -2,12 +2,12 @@
   "file_count": 1376,
   "files": [
     {
-      "byte_size": 2013,
+      "byte_size": 2057,
       "path": ".github/workflows/ci.yml",
       "projection_lineage": null,
-      "sha256": "4ab2028e6ffbe95c40e056664862db36dfffa5298f4e7660a0911cdbf3ae0a40",
+      "sha256": "40fa7e6f069f5779fb4bb13090572276ec87cfe78c46cca47968a53657d4ebdb",
       "source_path": ".github/workflows/ci.yml",
-      "source_sha256": "4ab2028e6ffbe95c40e056664862db36dfffa5298f4e7660a0911cdbf3ae0a40"
+      "source_sha256": "40fa7e6f069f5779fb4bb13090572276ec87cfe78c46cca47968a53657d4ebdb"
     },
     {
       "byte_size": 460,
@@ -922,12 +922,12 @@
       "source_sha256": "5e784f82cc7e012b93731dcc9800d173d10e7ffedd608e9243c53f68e4006109"
     },
     {
-      "byte_size": 1979,
+      "byte_size": 1997,
       "path": "viewer/index.html",
       "projection_lineage": null,
-      "sha256": "997685347836884ec47f4d6594efc6213c6a7a867f8a91a245bc9ab5e9534fe0",
+      "sha256": "7481b308aa4799f67e1f1c1a3ecfb90fb53366b13b1d9c2b1c18f0cccdf6bf31",
       "source_path": "viewer/index.html",
-      "source_sha256": "997685347836884ec47f4d6594efc6213c6a7a867f8a91a245bc9ab5e9534fe0"
+      "source_sha256": "7481b308aa4799f67e1f1c1a3ecfb90fb53366b13b1d9c2b1c18f0cccdf6bf31"
     },
     {
       "byte_size": 168093,
@@ -11146,12 +11146,12 @@
       "source_sha256": "9aa9bc38962070c5612faf1ffcf5f84c0f15d53787673c9bbc25737166a91ae8"
     },
     {
-      "byte_size": 8767,
+      "byte_size": 8910,
       "path": "viewer/tests/story.test.tsx",
       "projection_lineage": null,
-      "sha256": "299e028a8a091418923af6f0ee7f93eec33ec86356d64ddb837cb0f5f70042bf",
+      "sha256": "6f7af48ee9cf258470615c92489280bb0ca4de3d198af061ded0d757e1aaf626",
       "source_path": "viewer/tests/story.test.tsx",
-      "source_sha256": "299e028a8a091418923af6f0ee7f93eec33ec86356d64ddb837cb0f5f70042bf"
+      "source_sha256": "6f7af48ee9cf258470615c92489280bb0ca4de3d198af061ded0d757e1aaf626"
     },
     {
       "byte_size": 7514,
@@ -11178,8 +11178,8 @@
       "source_sha256": "4df400140986b5ac09d7dfb8ea6bba5b0ad26125050c8a0b0dc1831e1d82f286"
     }
   ],
-  "manifest_commitment_sha256": "6f8501550e162abff9b8f99a4e8b9edd58a8731a9df50682162646453dddced9",
-  "payload_bytes": 29365857,
+  "manifest_commitment_sha256": "cb248dc6ae9fa0725a1219782a9df38cb68d9947b7a0a11b9965d978436a8c61",
+  "payload_bytes": 29366062,
   "policy": {
     "max_file_bytes_exclusive": 10000000,
     "max_total_bytes_exclusive": 100000000

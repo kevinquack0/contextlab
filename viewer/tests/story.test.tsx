@@ -31,7 +31,12 @@ describe('guided ContextLab Story', () => {
     const posterPath = resolve('..', 'docs', 'portfolio', 'media', 'contextlab-poster-1200x630.jpg');
     const poster = readFileSync(posterPath);
 
-    expect(html).toContain('<link rel="canonical" href="https://contextlab.vercel.app/" />');
+    expect(html).toContain(
+      '<link rel="canonical" href="https://contextlab-research.vercel.app/" />',
+    );
+    expect(html).toContain(
+      '<meta property="og:url" content="https://contextlab-research.vercel.app/" />',
+    );
     expect(html).toContain('name="author" content="Kevin Araujo"');
     expect(html).toContain('property="og:image"');
     expect(html).toContain('name="twitter:card" content="summary_large_image"');
