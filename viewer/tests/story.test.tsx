@@ -28,7 +28,7 @@ afterEach(() => {
 describe('guided ContextLab Story', () => {
   it('binds canonical social metadata to the exact public poster', () => {
     const html = readFileSync(resolve('index.html'), 'utf-8');
-    const posterPath = resolve('..', 'docs', 'portfolio', 'media', 'contextlab-poster-1200x630.jpg');
+    const posterPath = resolve('..', 'docs', 'portfolio', 'media', 'contextlab-poster-v2-1200x630.jpg');
     const poster = readFileSync(posterPath);
 
     expect(html).toContain(
@@ -41,10 +41,10 @@ describe('guided ContextLab Story', () => {
     expect(html).toContain('property="og:image"');
     expect(html).toContain('name="twitter:card" content="summary_large_image"');
     expect(html).toContain(
-      'https://raw.githubusercontent.com/kevinquack0/contextlab/main/docs/portfolio/media/contextlab-poster-1200x630.jpg',
+      'https://raw.githubusercontent.com/kevinquack0/contextlab/main/docs/portfolio/media/contextlab-poster-v2-1200x630.jpg',
     );
     expect(createHash('sha256').update(poster).digest('hex')).toBe(
-      '10e56c1b3d2a9e5edb7edc5f7d006a7b8368fa57c968fe695db4f81ad631ea83',
+      '6fbafd683d43bdd6f8295096b6786d4e231dcdbedadc5e304594702c6521e015',
     );
   });
 
@@ -54,8 +54,8 @@ describe('guided ContextLab Story', () => {
 
     render(<App />);
 
-    expect(screen.getByRole('heading', { name: 'Complexity has to earn its place.' })).toBeVisible();
-    expect(screen.getByText('Postgraduate research by Kevin Araujo')).toBeVisible();
+    expect(screen.getByRole('heading', { name: 'I built ContextLab to test AI complexity.' })).toBeVisible();
+    expect(screen.getByText('Postgraduate AI research and engineering')).toBeVisible();
     expect(fetchMock).not.toHaveBeenCalled();
   });
 
@@ -64,12 +64,12 @@ describe('guided ContextLab Story', () => {
     vi.stubGlobal('fetch', fetchMock);
     render(<App />);
 
-    fireEvent.click(screen.getAllByRole('link', { name: 'Explore the lab' })[0]);
+    fireEvent.click(screen.getByRole('link', { name: 'Open the evidence lab' }));
     expect(await screen.findByRole('heading', { name: 'Question comparison' })).toBeVisible();
     expect(fetchMock).toHaveBeenCalledTimes(1);
 
     fireEvent.click(screen.getByRole('link', { name: 'Story' }));
-    expect(screen.getByRole('heading', { name: 'Complexity has to earn its place.' })).toBeVisible();
+    expect(screen.getByRole('heading', { name: 'I built ContextLab to test AI complexity.' })).toBeVisible();
   });
 
   it.each([

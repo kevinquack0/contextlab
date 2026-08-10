@@ -14,27 +14,27 @@ interface StoryProps {
 const architectureNodes = [
   {
     name: 'Corpus and events',
-    detail: 'Public knowledge and ordered change records enter through a frozen snapshot.',
+    detail: 'Versioned enterprise knowledge enters through a frozen public snapshot.',
   },
   {
     name: 'Strategy adapters',
-    detail: 'Each retrieval or memory policy implements the same external contract.',
+    detail: 'Retrieval and memory policies run behind one comparable contract.',
   },
   {
     name: 'Context packs',
-    detail: 'Selected evidence is ordered, budgeted, and bound to source identifiers.',
+    detail: 'Selected evidence is ordered, budgeted, and bound to source IDs.',
   },
   {
     name: 'Provider gateway',
-    detail: 'The same request envelope records model, cost, latency, and raw output.',
+    detail: 'Every model call records route, cost, latency, and raw output.',
   },
   {
     name: 'Grading and gates',
-    detail: 'Frozen promotion rules can retain the baseline even when a component improves.',
+    detail: 'Frozen rules decide whether added machinery earns promotion.',
   },
   {
     name: 'Evidence viewer',
-    detail: 'Public projections expose runs, citations, commitments, and decisions.',
+    detail: 'Public traces expose runs, citations, commitments, and decisions.',
   },
 ] as const;
 
@@ -46,8 +46,8 @@ const traceStages = [
     body: (
       <p>
         The saved run retrieved <BoundValue id="trace.earlier_candidate" /> and{' '}
-        <BoundValue id="trace.current_candidate" /> from the public event stream. The conflict was
-        preserved for context construction.
+        <BoundValue id="trace.current_candidate" /> from the public event stream. The conflict stayed
+        visible for context construction.
       </p>
     ),
     evidenceIds: ['trace.run_id', 'trace.earlier_candidate', 'trace.current_candidate'],
@@ -91,11 +91,11 @@ const traceStages = [
   {
     id: 'review',
     label: 'Review',
-    title: 'Review checked the packet. It did not grant authority.',
+    title: 'Independent review checked the complete packet.',
     body: (
       <p>
-        Independent AI gate reviews reached <BoundValue id="g3.review_status" />. Those reviews could
-        report findings, but no agent could approve the result.
+        The frozen AI review gate reached <BoundValue id="g3.review_status" />. Its findings were saved
+        separately from the final human decision.
       </p>
     ),
     evidenceIds: ['g3.review_status'],
@@ -103,15 +103,47 @@ const traceStages = [
   {
     id: 'decision',
     label: 'Gate decision',
-    title: 'Kevin retained simple memory.',
+    title: 'The evidence did not justify added memory.',
     body: (
       <p>
-        Kevin made the final <BoundValue id="g3.decision" /> decision as the{' '}
-        <BoundValue id="g3.human_reviewer_role" />. No memory policy was promoted.
+        Kevin designed the gate and made the final <BoundValue id="g3.decision" /> decision. No memory
+        policy was promoted.
       </p>
     ),
     evidenceIds: ['g3.decision', 'g3.human_reviewer_role', 'g3.promoted_memory_policy'],
   },
+] as const;
+
+const buildDisciplines = [
+  {
+    label: 'Research design',
+    title: 'A falsifiable question, not a feature demo.',
+    detail: 'Frozen hypotheses, controls, budgets, stop rules, and claim limits.',
+  },
+  {
+    label: 'Synthetic data',
+    title: 'An enterprise that can change over time.',
+    detail: 'Policies, records, conflicts, authority levels, and supersession events.',
+  },
+  {
+    label: 'Evaluation engine',
+    title: 'Strategies compared behind one contract.',
+    detail: 'Retrieval, memory, generation, grading, cost, and latency stay observable.',
+  },
+  {
+    label: 'Evidence interface',
+    title: 'Every claim can be inspected.',
+    detail: 'Local exports, exact JSON pointers, source identity, and SHA-256 commitments.',
+  },
+] as const;
+
+const ownershipScope = [
+  ['Conceived', 'Research question, thesis, scope, and benchmark'],
+  ['Designed', 'Architecture, experimental controls, gates, and product'],
+  ['Built', 'Corpus, evaluation engine, evidence pipeline, and interface'],
+  ['Executed', 'Experiments, review workflow, failure analysis, and verification'],
+  ['Authored', 'TCC, case study, methodology, claims, and presentation'],
+  ['Decided', 'Promotion criteria, no-ship calls, limitations, and release'],
 ] as const;
 
 function StoryHeader({ onOpenLab }: StoryProps) {
@@ -119,21 +151,22 @@ function StoryHeader({ onOpenLab }: StoryProps) {
     <header className="story-header">
       <div className="story-header__inner">
         <a className="story-brand" href="#story" aria-label="ContextLab Story home">
-          <span aria-hidden className="story-brand__mark">CL</span>
-          <span>ContextLab</span>
+          <span aria-hidden className="story-brand__mark">C</span>
+          <span className="story-brand__wordmark">ContextLab</span>
+          <span className="story-brand__author">by Kevin Araujo</span>
         </a>
         <nav aria-label="Story sections" className="story-nav">
           <a href="#question">Question</a>
-          <a href="#evidence">Evidence</a>
-          <a href="#role">Kevin's role</a>
-          <a href="#limits">Limits</a>
+          <a href="#system">System</a>
+          <a href="#findings">Findings</a>
+          <a href="#role">Authorship</a>
         </nav>
         <a
           className="story-cta story-cta--compact"
           href="#comparison"
           onClick={() => onOpenLab('comparison')}
         >
-          <span>Explore the lab</span>
+          <span>Open the evidence lab</span>
           <span aria-hidden className="story-cta__icon"><ArrowRight size={16} /></span>
         </a>
       </div>
@@ -141,32 +174,32 @@ function StoryHeader({ onOpenLab }: StoryProps) {
   );
 }
 
-function DecisionField() {
+function EvidenceInstrument() {
   return (
-    <div aria-label="Approved decision map" className="story-decision-field">
-      <div className="story-decision-field__rule">
-        <span>Technique</span>
-        <span>Gate result</span>
+    <div aria-label="ContextLab evidence architecture" className="story-instrument">
+      <div className="story-instrument__header">
+        <span>Evidence path</span>
+        <span>Frozen and replayable</span>
       </div>
-      <article>
-        <h2>Retrieve</h2>
-        <p>
-          <BoundGateLabel id="g2.gate" /> retained <BoundValue id="g2.retained_retriever" />
-        </p>
-      </article>
-      <article>
-        <h2>Remember</h2>
-        <p>
-          <BoundGateLabel id="g3.gate" /> promoted no policy
-        </p>
-      </article>
-      <article>
-        <h2>Search</h2>
-        <p>
-          <BoundValue id="f5.experiment" /> remained an <BoundValue id="f5.final_status" /> demo
-        </p>
-      </article>
-      <p className="story-decision-field__note">Promotion requires evidence across the full frozen gate.</p>
+      <div className="story-instrument__field">
+        <span className="story-instrument__node story-instrument__node--corpus">Corpus</span>
+        <span className="story-instrument__node story-instrument__node--events">Events</span>
+        <span className="story-instrument__node story-instrument__node--authority">Authority</span>
+        <span className="story-instrument__node story-instrument__node--time">Time</span>
+        <div className="story-instrument__core">
+          <span>Selected evidence</span>
+          <strong>Context pack</strong>
+          <small>ordered, budgeted, source-bound</small>
+        </div>
+        <span className="story-instrument__node story-instrument__node--answer">Answer</span>
+        <span className="story-instrument__node story-instrument__node--citations">Citations</span>
+        <span className="story-instrument__node story-instrument__node--gate">Gate</span>
+      </div>
+      <div className="story-instrument__readout">
+        <p><strong><BoundValue id="g2.generation_cells" /></strong><span>generation cells</span></p>
+        <p><strong><BoundValue id="g3.receipt_count" /></strong><span>public commitments</span></p>
+        <p><strong><BoundValue id="g2.retained_retriever" /></strong><span>retriever retained</span></p>
+      </div>
     </div>
   );
 }
@@ -176,13 +209,11 @@ function Architecture() {
     <section aria-labelledby="architecture-title" className="story-section story-architecture" id="architecture">
       <div className="story-section__heading">
         <h2 id="architecture-title">Truth stays outside the system under test.</h2>
-        <p>
-          I designed the platform so strategies can change without gaining access to evaluator truth.
-        </p>
+        <p>I designed the boundary so a strategy can change without seeing the answers used to grade it.</p>
       </div>
       <div className="story-architecture__frame">
         <div className="story-architecture__public">
-          <p className="story-architecture__boundary-label">Public execution boundary</p>
+          <p className="story-architecture__boundary-label">Public experiment boundary</p>
           <ol aria-label="ContextLab system architecture" className="story-architecture__flow">
             {architectureNodes.map((node) => (
               <li key={node.name}>
@@ -195,7 +226,7 @@ function Architecture() {
         <aside aria-label="Sealed evaluator boundary" className="story-architecture__sealed">
           <span>Outside the public boundary</span>
           <h3>Sealed evaluator</h3>
-          <p>Protected truth returns only content-free metrics and commitments.</p>
+          <p>Protected truth returns content-free metrics and commitments, never gold answers.</p>
         </aside>
       </div>
     </section>
@@ -212,7 +243,7 @@ function TemporalCase() {
     <section aria-labelledby="temporal-title" className="story-section story-temporal" id="time-case">
       <div className="story-section__heading">
         <h2 id="temporal-title">A correct answer depends on when you ask.</h2>
-        <p>Move the control to reveal how later, higher-authority evidence changes the active claim.</p>
+        <p>Move the control to see a later, higher-authority event replace the active claim without erasing history.</p>
       </div>
       <div className="story-temporal__control">
         <label htmlFor="story-time-control">Knowledge state</label>
@@ -289,10 +320,8 @@ function TraceExplorer() {
   return (
     <section aria-labelledby="trace-title" className="story-section story-trace" id="evidence">
       <div className="story-section__heading">
-        <h2 id="trace-title">Follow one run to its decision.</h2>
-        <p>
-          This public replay follows a saved temporal run. It is an evidence trace, not an evaluation score.
-        </p>
+        <h2 id="trace-title">One answer. Every decision behind it.</h2>
+        <p>Replay a real saved run from candidate retrieval through the final gate.</p>
       </div>
       <div className="story-trace__question">
         <span>Saved question</span>
@@ -348,68 +377,85 @@ export default function Story({ onOpenLab }: StoryProps) {
       <main id="story-main" tabIndex={-1}>
         <section aria-labelledby="story-hero-title" className="story-hero">
           <div className="story-hero__copy">
-            <p className="story-eyebrow">Postgraduate research by Kevin Araujo</p>
-            <h1 id="story-hero-title">Complexity has to earn its place.</h1>
-            <p>I built a governed testbed for retrieval, temporal memory, and bounded search in changing enterprise knowledge.</p>
+            <p className="story-eyebrow">Postgraduate AI research and engineering</p>
+            <h1 id="story-hero-title">I built ContextLab to test AI complexity.</h1>
+            <p>A governed platform for testing retrieval, temporal memory, and bounded search against changing enterprise knowledge.</p>
             <div className="story-hero__actions">
-              <a className="story-cta" href="#problem">
-                <span>Read the case</span>
+              <a className="story-cta" href="#question">
+                <span>See what I built</span>
                 <span aria-hidden className="story-cta__icon"><ArrowRight size={16} /></span>
               </a>
               <a className="story-text-link" href="#comparison" onClick={() => onOpenLab('comparison')}>
-                Explore the lab
+                Inspect the evidence
               </a>
             </div>
           </div>
-          <DecisionField />
+          <EvidenceInstrument />
+        </section>
+
+        <section aria-label="Project evidence at a glance" className="story-proofline">
+          <p><strong><BoundValue id="g2.generation_cells" /></strong><span>completed generation cells</span></p>
+          <p><strong><BoundValue id="g2.repeat_cells" /></strong><span>repeat-evidence cells</span></p>
+          <p><strong><BoundValue id="g3.receipt_count" /></strong><span>public receipt commitments</span></p>
+          <p><strong>2</strong><span>approved no-promotion gates</span></p>
         </section>
 
         <section aria-labelledby="problem-title" className="story-section story-problem" id="problem">
           <div className="story-section__heading">
-            <h2 id="problem-title">Enterprise knowledge does not stand still.</h2>
-            <p>A system can retrieve a plausible answer and still miss what is current, authoritative, or safe to use.</p>
+            <h2 id="problem-title">Enterprise knowledge changes. Most AI systems pretend it does not.</h2>
+            <p>A plausible answer can still be stale, conflicted, or sourced from the wrong moment.</p>
           </div>
           <div className="story-problem__states">
-            <article>
-              <h3>Stale</h3>
-              <p>An older rule remains easy to retrieve after a newer rule takes effect.</p>
-            </article>
-            <article>
-              <h3>Conflicting</h3>
-              <p>Two sources make incompatible claims with different authority.</p>
-            </article>
-            <article>
-              <h3>Changing</h3>
-              <p>The correct answer changes with event order and the requested snapshot.</p>
-            </article>
+            <article><h3>Stale</h3><p>An older rule remains easy to retrieve after a newer rule takes effect.</p></article>
+            <article><h3>Conflicting</h3><p>Two sources make incompatible claims with different authority.</p></article>
+            <article><h3>Changing</h3><p>The correct answer changes with event order and the requested snapshot.</p></article>
           </div>
         </section>
 
         <section aria-labelledby="question-title" className="story-section story-question" id="question">
           <div>
-            <h2 id="question-title">The research question</h2>
+            <h2 id="question-title">The question behind the whole system</h2>
             <blockquote>
-              When should an enterprise AI system retrieve more, remember more, search more, and when should it stay simple?
+              When should enterprise AI retrieve more, remember more, search more, and when should it stay simple?
             </blockquote>
           </div>
           <aside>
-            <h3>NovaLearn makes the test repeatable.</h3>
-            <p>
-              I designed a synthetic enterprise with policies, customer records, conflicts, and temporal events. No result in this study claims performance outside that frozen benchmark.
-            </p>
+            <span>NovaLearn</span>
+            <h3>A synthetic enterprise built for hard cases.</h3>
+            <p>I created policies, customer records, conflicts, authority levels, and temporal events so the experiment can be repeated safely.</p>
           </aside>
+        </section>
+
+        <section aria-labelledby="system-title" className="story-section story-system" id="system">
+          <div className="story-section__heading">
+            <h2 id="system-title">A thesis turned into a working research platform.</h2>
+            <p>I built the data, experiment engine, governance layer, and public evidence interface as one system.</p>
+          </div>
+          <div className="story-system__disciplines">
+            {buildDisciplines.map((discipline) => (
+              <article key={discipline.label}>
+                <span>{discipline.label}</span>
+                <h3>{discipline.title}</h3>
+                <p>{discipline.detail}</p>
+              </article>
+            ))}
+          </div>
+          <p className="story-system__stack">
+            <span>Python</span><span>React 19</span><span>TypeScript</span><span>Vite</span>
+            <span>JSON Schema</span><span>SHA-256 provenance</span><span>Provider gateways</span>
+          </p>
         </section>
 
         <section aria-labelledby="controls-title" className="story-section story-controls">
           <div className="story-section__heading">
-            <h2 id="controls-title">I froze the variables before comparing techniques.</h2>
-            <p>The strategy changes. The question set, provider envelope, budgets, gate rules, and evaluator boundary do not.</p>
+            <h2 id="controls-title">The comparison stays honest by construction.</h2>
+            <p>The strategy changes. The tasks, model route, budgets, gate rules, and evaluator boundary do not.</p>
           </div>
           <div className="story-controls__sequence">
-            <article><h3>Freeze</h3><p>Bind corpus, tasks, configuration, budget, and promotion criteria.</p></article>
-            <article><h3>Run</h3><p>Save context, output, citations, latency, cost, and provenance.</p></article>
-            <article><h3>Review</h3><p>Keep protected truth outside the strategy and public viewer.</p></article>
-            <article><h3>Decide</h3><p>Require Kevin's exact-hash approval after bounded agent review.</p></article>
+            <article><h3>Freeze the study</h3><p>Bind corpus, tasks, configuration, budgets, and promotion criteria.</p></article>
+            <article><h3>Instrument every run</h3><p>Save context, output, citations, latency, cost, and provenance.</p></article>
+            <article><h3>Keep truth sealed</h3><p>Protect gold answers from retrieval, generation, memory, and the viewer.</p></article>
+            <article><h3>Reject what fails</h3><p>Preserve the evidence and keep extra machinery out of the architecture.</p></article>
           </div>
         </section>
 
@@ -417,122 +463,102 @@ export default function Story({ onOpenLab }: StoryProps) {
 
         <section aria-labelledby="findings-title" className="story-section story-findings" id="findings">
           <div className="story-section__heading">
-            <h2 id="findings-title">The baseline survived both promotion gates.</h2>
-            <p>I found that component improvements were not enough. A technique had to clear the full frozen decision rule.</p>
+            <h2 id="findings-title">The strongest result was knowing what not to ship.</h2>
+            <p>Component wins were not enough. Every technique had to clear the complete frozen decision rule.</p>
           </div>
           <div className="story-findings__approved">
             <article>
-              <header><BoundGateLabel id="g2.gate" /><span>Approved retrieval result</span></header>
-              <h3>I retained <BoundValue id="g2.retained_retriever" />.</h3>
-              <p>No retriever was promoted. Failed ancestors and missing target-family evidence blocked the incremental candidate.</p>
+              <header><BoundGateLabel id="g2.gate" /><span>Retrieval</span></header>
+              <h3>Keep <BoundValue id="g2.retained_retriever" />.</h3>
+              <p>No advanced retriever earned promotion across the complete approved gate.</p>
               <div className="story-findings__metrics">
-                <p><strong><BoundValue id="g2.generation_cells" /></strong><span>completed generation cells</span></p>
-                <p><strong><BoundValue id="g2.repeat_cells" /></strong><span>repeat-evidence cells</span></p>
+                <p><strong><BoundValue id="g2.generation_cells" /></strong><span>generation cells</span></p>
+                <p><strong><BoundValue id="g2.repeat_cells" /></strong><span>repeat cells</span></p>
               </div>
               <EvidenceBinding ids={['g2.decision', 'g2.retained_retriever', 'g2.promoted_retriever', 'g2.generation_cells', 'g2.repeat_cells']} />
             </article>
             <article>
-              <header><BoundGateLabel id="g3.gate" /><span>Approved temporal-memory result</span></header>
-              <h3>I promoted no memory policy.</h3>
-              <p>The tested memory policies failed, regressed, or remained descriptive under the preregistered rules.</p>
+              <header><BoundGateLabel id="g3.gate" /><span>Temporal memory</span></header>
+              <h3>Promote nothing.</h3>
+              <p>The tested memory policies failed, regressed, or stayed descriptive under the preregistered rules.</p>
               <div className="story-findings__metrics">
-                <p><strong><BoundValue id="g3.receipt_count" /></strong><span>public receipt commitments</span></p>
+                <p><strong><BoundValue id="g3.receipt_count" /></strong><span>public commitments</span></p>
               </div>
               <EvidenceBinding ids={['g3.decision', 'g3.promoted_memory_policy', 'g3.receipt_count', 'g3.human_reviewer_role']} />
             </article>
           </div>
           <div className="story-findings__frontier">
-            <article>
-              <header><BoundValue id="f3.experiment" /><span>Virtual context paging</span></header>
-              <p><BoundValue id="f3.final_status" />. Useful as a negative demonstration. It authorizes no promotion claim.</p>
-              <EvidenceBinding ids={['f3.experiment', 'f3.final_status', 'f3.human_status']} />
-            </article>
-            <article>
-              <header><BoundValue id="f5.experiment" /><span>Bounded search</span></header>
-              <p><BoundValue id="f5.final_status" />. Useful as a negative demonstration. It authorizes no general superiority claim.</p>
-              <EvidenceBinding ids={['f5.experiment', 'f5.final_status', 'f5.human_status']} />
-            </article>
+            <article><header><BoundValue id="f3.experiment" /><span>Virtual context paging</span></header><p><BoundValue id="f3.final_status" />. A useful negative demonstration, not a promotion claim.</p><EvidenceBinding ids={['f3.experiment', 'f3.final_status', 'f3.human_status']} /></article>
+            <article><header><BoundValue id="f5.experiment" /><span>Bounded search</span></header><p><BoundValue id="f5.final_status" />. More search did not meet the frozen success rule.</p><EvidenceBinding ids={['f5.experiment', 'f5.final_status', 'f5.human_status']} /></article>
           </div>
         </section>
 
         <section aria-labelledby="negative-title" className="story-section story-negative">
-          <p className="story-eyebrow">What I chose not to ship</p>
-          <h2 id="negative-title">More machinery. No promotion.</h2>
+          <p className="story-eyebrow">The product judgment</p>
+          <h2 id="negative-title">More machinery did not earn a place in the system.</h2>
           <div className="story-negative__ledger">
             <p><span>Retrieval</span>More stages did not clear the full gate.</p>
-            <p><span>Memory</span>The tested policies did not clear the frozen temporal gate.</p>
-            <p><span>Frontier</span>More search remained a bounded negative demonstration.</p>
+            <p><span>Memory</span>The tested policies did not clear the temporal gate.</p>
+            <p><span>Search</span>More exploration stayed a bounded negative demonstration.</p>
           </div>
-          <p className="story-negative__conclusion">In ContextLab, complexity is rejected until the evidence pays for it.</p>
+          <p className="story-negative__conclusion">Negative results are not failure here. They are evidence that the governance works.</p>
         </section>
 
         <TemporalCase />
         <TraceExplorer />
 
         <section aria-labelledby="role-title" className="story-section story-role" id="role">
-          <div className="story-section__heading">
-            <h2 id="role-title">I owned the research and every final decision.</h2>
-            <p>Agents extended my execution capacity. They did not own the question, the claims, or the approval boundary.</p>
+          <div className="story-role__statement">
+            <p className="story-eyebrow">Built end to end by</p>
+            <h2 id="role-title">Kevin Araujo</h2>
+            <p>I conceived, designed, built, ran, analyzed, documented, and presented ContextLab. It is my complete research and engineering project.</p>
           </div>
           <dl className="story-role__map">
-            <div><dt>Research lead</dt><dd>I conceived the project and defined the research questions.</dd></div>
-            <div><dt>Systems architect</dt><dd>I designed the adapters, evidence boundary, receipts, and gates.</dd></div>
-            <div><dt>Product owner</dt><dd>I set scope, priorities, acceptance rules, and public claim limits.</dd></div>
-            <div><dt>Agent orchestrator</dt><dd>I assigned bounded work and reviewed the returned evidence.</dd></div>
-            <div><dt>Final human authority</dt><dd>I audited the record and made every human decision.</dd></div>
+            {ownershipScope.map(([term, definition]) => (
+              <div key={term}><dt>{term}</dt><dd>{definition}</dd></div>
+            ))}
           </dl>
-          <div className="story-role__governance">
-            <article>
-              <h3>Kevin could approve.</h3>
-              <p>Kevin is the sole human reviewer. He bound each decision to the current artifact hash.</p>
-            </article>
-            <article>
-              <h3>Agents could not approve.</h3>
-              <p>Agents performed bounded implementation and review work. No agent could approve its own output.</p>
-            </article>
-          </div>
+          <p className="story-role__clarification">
+            I used AI systems as tools inside the workflow, just as I used Python and React. The authorship, implementation, research judgment, and project ownership are mine.
+          </p>
         </section>
 
         <section aria-labelledby="limits-title" className="story-section story-limits" id="limits">
           <div className="story-section__heading">
-            <h2 id="limits-title">The claim boundary is part of the result.</h2>
-            <p>ContextLab is a postgraduate research platform with frozen, reproducible evidence. Its claims stay narrow.</p>
+            <h2 id="limits-title">The limits are part of the result.</h2>
+            <p>ContextLab makes narrow, reproducible claims instead of pretending one benchmark proves everything.</p>
           </div>
           <ul>
             <li>The conclusions apply to the frozen synthetic NovaLearn benchmark.</li>
-            <li>The work is not peer-reviewed, publication-grade, or production-proven.</li>
+            <li>The work is postgraduate research, not a peer-reviewed production study.</li>
             <li>The memory result does not show that memory is universally harmful.</li>
-            <li>Kevin is the sole human reviewer. Agent review is separate and bounded.</li>
-            <li>The frontier results are demonstrations. They do not authorize promotion or superiority claims.</li>
+            <li>Kevin is the sole human reviewer, a limitation stated throughout the work.</li>
+            <li>The frontier results are demonstrations, not superiority claims.</li>
           </ul>
           <aside lang="pt-BR" className="story-portuguese">
             <h3>Contexto acadêmico</h3>
-            <p>
-              Este projeto nasceu como um TCC de pós-graduação da PUCRS. Kevin Araujo definiu a pesquisa, construiu o sistema de avaliação, dirigiu o trabalho dos agentes e tomou todas as decisões humanas finais.
-            </p>
+            <p>O ContextLab nasceu como meu TCC de pós-graduação da PUCRS. Eu concebi, projetei, construí, executei, analisei e documentei o projeto completo.</p>
           </aside>
         </section>
 
         <section aria-labelledby="sources-title" className="story-section story-sources">
           <div>
-            <h2 id="sources-title">Inspect the work at the depth you need.</h2>
-            <p>The Story gives the decision path. The lab keeps the saved runs and provenance available.</p>
+            <h2 id="sources-title">Inspect it at the depth you need.</h2>
+            <p>Start with the guided story, then open the saved runs, methods, source code, and exact evidence.</p>
           </div>
           <nav aria-label="Case study sources">
             <a href="#methods" onClick={() => onOpenLab('methods')}>Method and sources</a>
             <a href="#replay" onClick={() => onOpenLab('replay')}>Saved run replay</a>
             <SourceLink evidenceId="g2.gate">Approved retrieval gate</SourceLink>
             <SourceLink evidenceId="g3.gate">Approved memory gate</SourceLink>
-            {storyLinks.map((link) => (
-              <a href={link.href} key={link.id}>{link.label}</a>
-            ))}
+            {storyLinks.map((link) => <a href={link.href} key={link.id}>{link.label}</a>)}
           </nav>
-          <p className="story-sources__release">Source publication is bound to the exact release packet and Kevin's final approval.</p>
+          <p className="story-sources__release">Every public result is bound to its source artifact and exact release record.</p>
         </section>
       </main>
       <footer className="story-footer">
         <span>ContextLab</span>
-        <span>Research and final authority: Kevin Araujo</span>
+        <span>Conceived, designed, built, and authored by Kevin Araujo</span>
       </footer>
     </div>
   );

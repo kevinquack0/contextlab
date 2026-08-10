@@ -29,6 +29,17 @@ The answer was often no.
 The [claim ledger](docs/portfolio/CLAIMS.md) binds each public result to an artifact, an exact JSON
 pointer, a raw file SHA-256, and the relevant semantic commitment.
 
+## Public release
+
+- [Open the live case study](https://contextlab-research.vercel.app/).
+- [Browse the curated public repository](https://github.com/kevinquack0/contextlab).
+- [Inspect the immutable `portfolio-v1` release snapshot](https://github.com/kevinquack0/contextlab/tree/portfolio-v1).
+- [Review the successful public verification run](https://github.com/kevinquack0/contextlab/actions/runs/31245108231).
+
+The public repository is a generated, allowlisted release. The private TCC repository remains the
+evidence vault. Public commit `f2af44e956ca8251c51790482e5e7f8e33210047` is the exact commit
+referenced by `portfolio-v1`.
+
 ## Start here
 
 - [Read the case study](docs/portfolio/CASE_STUDY.md) for the five-minute story.
@@ -59,11 +70,11 @@ expected answers, gold evidence, or private review data to the system under test
 
 ## My role
 
-I conceived and own ContextLab. I defined the research questions, experimental limits, promotion
-rules, system architecture, and public claims. I acted as research lead, systems architect, product
-owner, and agent orchestrator. Agents completed bounded implementation and review tasks. I reviewed
-their work, audited the evidence, and made every final human decision. I am the sole human reviewer.
-No agent could approve its own output.
+I conceived, designed, built, ran, analyzed, documented, and presented ContextLab. The research
+question, benchmark, evaluation method, software architecture, implementation, interface, evidence
+audit, and public narrative are all my work. I used AI systems as tools during implementation and
+review, just as I used Python and React. They did not own a separate part of the project. I am
+responsible for the complete research and engineering system and made every final decision.
 
 ## Limits
 

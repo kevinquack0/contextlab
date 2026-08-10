@@ -2,9 +2,9 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   color-scheme: dark;
-  --viewer-accent: #8ab4ff;
-  --viewer-accent-strong: #4589ff;
-  --viewer-accent-muted: rgba(69, 137, 255, 0.18);
+  --viewer-accent: #f0a18c;
+  --viewer-accent-strong: #d97862;
+  --viewer-accent-muted: rgba(217, 120, 98, 0.18);
   --viewer-surface: #0f1114;
   --viewer-surface-elevated: #161a1f;
   --viewer-layer: #1c2128;
@@ -88,7 +88,7 @@ select,
 .app-theme {
   min-height: 100dvh;
   background:
-    radial-gradient(1200px 480px at 12% -8%, rgba(69, 137, 255, 0.1), transparent 55%),
+    radial-gradient(1200px 480px at 12% -8%, rgba(217, 120, 98, 0.1), transparent 55%),
     radial-gradient(900px 420px at 88% 0%, rgba(255, 255, 255, 0.03), transparent 50%),
     var(--viewer-surface);
 }
@@ -119,8 +119,8 @@ select,
   align-items: center;
   gap: 0.625rem;
   padding: 0 1rem;
-  background: linear-gradient(160deg, var(--viewer-accent-strong) 0%, #0043ce 100%);
-  color: #ffffff;
+  background: linear-gradient(160deg, #e38a74 0%, #bd5f4c 100%);
+  color: #17110f;
   letter-spacing: -0.01em;
   text-decoration: none;
 }

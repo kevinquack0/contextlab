@@ -12,4 +12,3 @@ dependencies = []
 [tool.contextlab]
 python-test-command = "PYTHONPATH=evaluation/v2 python3 -m unittest discover -s evaluation/v2/tests -p 'test_*.py'"
 public-release-config = "public-release.json"
-
