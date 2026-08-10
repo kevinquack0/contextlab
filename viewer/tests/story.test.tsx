@@ -54,7 +54,7 @@ describe('guided ContextLab Story', () => {
 
     render(<App />);
 
-    expect(screen.getByRole('heading', { name: 'I built ContextLab to test AI complexity.' })).toBeVisible();
+    expect(screen.getByRole('heading', { name: 'I built a laboratory to find out when AI complexity earns its place.' })).toBeVisible();
     expect(screen.getByText('Postgraduate AI research and engineering')).toBeVisible();
     expect(fetchMock).not.toHaveBeenCalled();
   });
@@ -69,7 +69,7 @@ describe('guided ContextLab Story', () => {
     expect(fetchMock).toHaveBeenCalledTimes(1);
 
     fireEvent.click(screen.getByRole('link', { name: 'Story' }));
-    expect(screen.getByRole('heading', { name: 'I built ContextLab to test AI complexity.' })).toBeVisible();
+    expect(screen.getByRole('heading', { name: 'I built a laboratory to find out when AI complexity earns its place.' })).toBeVisible();
   });
 
   it.each([

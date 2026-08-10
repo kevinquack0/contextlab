@@ -1,5 +1,5 @@
 {
-  "file_count": 1382,
+  "file_count": 1383,
   "files": [
     {
       "byte_size": 2145,
@@ -914,12 +914,12 @@
       "source_sha256": "34c786bb2f6ba90362f148a5b04952f1359d8c8cd72769fede502f92345737f9"
     },
     {
-      "byte_size": 4517,
+      "byte_size": 5701,
       "path": "viewer/README.md",
       "projection_lineage": null,
-      "sha256": "a6245fa02f0499c45c1c36f316f9fa5a7c0a6badf2c8d3759ddf0e02326847c4",
+      "sha256": "e4e858e03faf355b8c1ced5c88b0392e19c6b8ec764d87c663fe62ab8eb3df39",
       "source_path": "viewer/README.md",
-      "source_sha256": "a6245fa02f0499c45c1c36f316f9fa5a7c0a6badf2c8d3759ddf0e02326847c4"
+      "source_sha256": "e4e858e03faf355b8c1ced5c88b0392e19c6b8ec764d87c663fe62ab8eb3df39"
     },
     {
       "byte_size": 598,
@@ -930,12 +930,12 @@
       "source_sha256": "5e784f82cc7e012b93731dcc9800d173d10e7ffedd608e9243c53f68e4006109"
     },
     {
-      "byte_size": 2048,
+      "byte_size": 2301,
       "path": "viewer/index.html",
       "projection_lineage": null,
-      "sha256": "5d3e67621cbc751ea2af3866f64b92ecdec329557cd675d1b4705158d7585752",
+      "sha256": "747940a9e58c56e8027a49bf029006602e642fc2f4d2b3f57a87302fac5c01a6",
       "source_path": "viewer/index.html",
-      "source_sha256": "5d3e67621cbc751ea2af3866f64b92ecdec329557cd675d1b4705158d7585752"
+      "source_sha256": "747940a9e58c56e8027a49bf029006602e642fc2f4d2b3f57a87302fac5c01a6"
     },
     {
       "byte_size": 172817,
@@ -10937,25 +10937,25 @@
       "byte_size": 12238,
       "path": "viewer/src/components/EvidenceConstellation.tsx",
       "projection_lineage": null,
-      "sha256": "924676c91fc935e9b00fcae90cb5a1c3e4885479c0609ef7bb31731dc3101531",
+      "sha256": "d197aad6a1aa0c577efa6dcdb3e22bcafe5c956f68ba1de81891d0add7d9fbfb",
       "source_path": "viewer/src/components/EvidenceConstellation.tsx",
-      "source_sha256": "924676c91fc935e9b00fcae90cb5a1c3e4885479c0609ef7bb31731dc3101531"
+      "source_sha256": "d197aad6a1aa0c577efa6dcdb3e22bcafe5c956f68ba1de81891d0add7d9fbfb"
     },
     {
       "byte_size": 16009,
       "path": "viewer/src/components/EvidenceFlow.tsx",
       "projection_lineage": null,
-      "sha256": "7636e1d0b88712c910bbf8e0b108668764b935f38522575cc4d7196234093d91",
+      "sha256": "01c52b94b2d118655f56084110a3c09987fee90dce1765ed4566a478ff974c34",
       "source_path": "viewer/src/components/EvidenceFlow.tsx",
-      "source_sha256": "7636e1d0b88712c910bbf8e0b108668764b935f38522575cc4d7196234093d91"
+      "source_sha256": "01c52b94b2d118655f56084110a3c09987fee90dce1765ed4566a478ff974c34"
     },
     {
-      "byte_size": 2784,
+      "byte_size": 3740,
       "path": "viewer/src/components/ProvenanceLink.tsx",
       "projection_lineage": null,
-      "sha256": "3b42af055c7c23f46bef293725f921ec232123e8c875d0316309171e7a4713ec",
+      "sha256": "8eb7ba362e0ffd80aec3c4be7c35a389d664d21bdd0625906662fafe6fa0c604",
       "source_path": "viewer/src/components/ProvenanceLink.tsx",
-      "source_sha256": "3b42af055c7c23f46bef293725f921ec232123e8c875d0316309171e7a4713ec"
+      "source_sha256": "8eb7ba362e0ffd80aec3c4be7c35a389d664d21bdd0625906662fafe6fa0c604"
     },
     {
       "byte_size": 1715,
@@ -10966,20 +10966,20 @@
       "source_sha256": "cc752ab4c96e6af83a89dd26ec9ea3329835c7bfed9be23f8bf2a870a7dc034a"
     },
     {
-      "byte_size": 8455,
+      "byte_size": 8519,
       "path": "viewer/src/components/TemporalStrata.tsx",
       "projection_lineage": null,
-      "sha256": "7b40938c1b771c363b00d11f466996fd573acb5ed95e8b08c05b603cc84199a6",
+      "sha256": "aca768e9a4c9f989e88bd78674340d24ecbf86057c1bc9cb325e6542ac8a303d",
       "source_path": "viewer/src/components/TemporalStrata.tsx",
-      "source_sha256": "7b40938c1b771c363b00d11f466996fd573acb5ed95e8b08c05b603cc84199a6"
+      "source_sha256": "aca768e9a4c9f989e88bd78674340d24ecbf86057c1bc9cb325e6542ac8a303d"
     },
     {
-      "byte_size": 2881,
+      "byte_size": 2836,
       "path": "viewer/src/components/ViewPrimitives.tsx",
       "projection_lineage": null,
-      "sha256": "9dcaeba9925ebe4d53aa461ee7d7399c6bbd8ac5bdbe111dc581bcf02e03c1d0",
+      "sha256": "3a74e8088aa2705a02ab8907ffb16894e0c8680dbb23ff30b531a9f835f73a08",
       "source_path": "viewer/src/components/ViewPrimitives.tsx",
-      "source_sha256": "9dcaeba9925ebe4d53aa461ee7d7399c6bbd8ac5bdbe111dc581bcf02e03c1d0"
+      "source_sha256": "3a74e8088aa2705a02ab8907ffb16894e0c8680dbb23ff30b531a9f835f73a08"
     },
     {
       "byte_size": 6279,
@@ -11022,20 +11022,20 @@
       "source_sha256": "f5f386316ec8f6d52e959f70eecdab7e38b85496df17c344d01af1f4111108c7"
     },
     {
-      "byte_size": 2561,
+      "byte_size": 4786,
       "path": "viewer/src/story/EvidenceBinding.tsx",
       "projection_lineage": null,
-      "sha256": "593102c53a2547148788012d8424b7bfe5562a216aaff8a84b692d2a390e4f39",
+      "sha256": "9af58f4f178f8d30a52de51d65be86f675f73676a9a26902e559affef7c68f61",
       "source_path": "viewer/src/story/EvidenceBinding.tsx",
-      "source_sha256": "593102c53a2547148788012d8424b7bfe5562a216aaff8a84b692d2a390e4f39"
+      "source_sha256": "9af58f4f178f8d30a52de51d65be86f675f73676a9a26902e559affef7c68f61"
     },
     {
-      "byte_size": 26036,
+      "byte_size": 30851,
       "path": "viewer/src/story/Story.tsx",
       "projection_lineage": null,
-      "sha256": "1fce7caff35c5a08278603a97a285eb6eebb6be402de0f8ee0211e96ab125134",
+      "sha256": "08bc3b0e6b592da3e6c526e80ced5cf7c04df415b97bf757a8a6b3f7a9d0efe5",
       "source_path": "viewer/src/story/Story.tsx",
-      "source_sha256": "1fce7caff35c5a08278603a97a285eb6eebb6be402de0f8ee0211e96ab125134"
+      "source_sha256": "08bc3b0e6b592da3e6c526e80ced5cf7c04df415b97bf757a8a6b3f7a9d0efe5"
     },
     {
       "byte_size": 17686,
@@ -11074,92 +11074,100 @@
       "source_sha256": "b9497d1a4720f4c245dd6b74b832da6580db05af27f8d4cd3b929386fa2a4bd3"
     },
     {
-      "byte_size": 56218,
+      "byte_size": 4573,
+      "path": "viewer/src/story/motion.ts",
+      "projection_lineage": null,
+      "sha256": "547ca6fe4db1d61c8075a7eea3cc41b542bf21d89dd6484d3e00093ec3932c71",
+      "source_path": "viewer/src/story/motion.ts",
+      "source_sha256": "547ca6fe4db1d61c8075a7eea3cc41b542bf21d89dd6484d3e00093ec3932c71"
+    },
+    {
+      "byte_size": 37736,
       "path": "viewer/src/styles/app.scss",
       "projection_lineage": null,
-      "sha256": "c8ae27d4fb1a61afd980734f92b0fe9144bfda46179807b0d6de5b696248db4e",
+      "sha256": "6d08a236370ccab6f88f7b29b61881c8ebcfa4dbb039ed27ca10557cd8cee7e2",
       "source_path": "viewer/src/styles/app.scss",
-      "source_sha256": "c8ae27d4fb1a61afd980734f92b0fe9144bfda46179807b0d6de5b696248db4e"
+      "source_sha256": "6d08a236370ccab6f88f7b29b61881c8ebcfa4dbb039ed27ca10557cd8cee7e2"
     },
     {
-      "byte_size": 1705,
+      "byte_size": 2506,
       "path": "viewer/src/styles/carbon.scss",
       "projection_lineage": null,
-      "sha256": "8ff0a344d65c94c73620b4d10f51de9cbb1fb3cb279fbac40fd146c40afcf25e",
+      "sha256": "9dfab49e6b4225bf99a77076ba844e4a53611817a6b9fb2c6fdae4ec2fa590a3",
       "source_path": "viewer/src/styles/carbon.scss",
-      "source_sha256": "8ff0a344d65c94c73620b4d10f51de9cbb1fb3cb279fbac40fd146c40afcf25e"
+      "source_sha256": "9dfab49e6b4225bf99a77076ba844e4a53611817a6b9fb2c6fdae4ec2fa590a3"
     },
     {
-      "byte_size": 36939,
+      "byte_size": 37551,
       "path": "viewer/src/styles/story.scss",
       "projection_lineage": null,
-      "sha256": "652ccd466e085ad451ebaaf7a40fbaaf57aa19f85b39b1ae6f81fbd922f30014",
+      "sha256": "626f36862674dcccbe9607691b82687e759175b223278a6975c3fe8ccfb0b13f",
       "source_path": "viewer/src/styles/story.scss",
-      "source_sha256": "652ccd466e085ad451ebaaf7a40fbaaf57aa19f85b39b1ae6f81fbd922f30014"
+      "source_sha256": "626f36862674dcccbe9607691b82687e759175b223278a6975c3fe8ccfb0b13f"
     },
     {
       "byte_size": 21841,
       "path": "viewer/src/styles/visualizations.scss",
       "projection_lineage": null,
-      "sha256": "3cb97e203fa88f0dd3d6db08b54406456a2f3af65a516974bf6d2c9aeb5d54fc",
+      "sha256": "f79608f308a573e63a10028885bc132feea17ff68293c00d5ecf118b6d32c3c7",
       "source_path": "viewer/src/styles/visualizations.scss",
-      "source_sha256": "3cb97e203fa88f0dd3d6db08b54406456a2f3af65a516974bf6d2c9aeb5d54fc"
+      "source_sha256": "f79608f308a573e63a10028885bc132feea17ff68293c00d5ecf118b6d32c3c7"
     },
     {
-      "byte_size": 5402,
+      "byte_size": 7502,
       "path": "viewer/src/views/EvidencePipeline.tsx",
       "projection_lineage": null,
-      "sha256": "3b9355e91e94aba7d4689fc6641beae5d717a997845950eeea0c79acbda27997",
+      "sha256": "e3265f5413a4881e8dcba970387836906f594e265f50ef19636fc105a6e1baff",
       "source_path": "viewer/src/views/EvidencePipeline.tsx",
-      "source_sha256": "3b9355e91e94aba7d4689fc6641beae5d717a997845950eeea0c79acbda27997"
+      "source_sha256": "e3265f5413a4881e8dcba970387836906f594e265f50ef19636fc105a6e1baff"
     },
     {
-      "byte_size": 3337,
+      "byte_size": 3334,
       "path": "viewer/src/views/MethodsSources.tsx",
       "projection_lineage": null,
-      "sha256": "daa13e9c6a6da0cbffe2b6047c4d3f8b37e7080063331a92eb9f18624ac5727b",
+      "sha256": "afdd2c1d640f5af2ebd95c4fe987d21d73cd6f741c24352a19a1ca5644b84e13",
       "source_path": "viewer/src/views/MethodsSources.tsx",
-      "source_sha256": "daa13e9c6a6da0cbffe2b6047c4d3f8b37e7080063331a92eb9f18624ac5727b"
+      "source_sha256": "afdd2c1d640f5af2ebd95c4fe987d21d73cd6f741c24352a19a1ca5644b84e13"
     },
     {
-      "byte_size": 7647,
+      "byte_size": 7639,
       "path": "viewer/src/views/QuestionComparison.tsx",
       "projection_lineage": null,
-      "sha256": "e9becc1a06748e0451debee8ea7a53d94ff44bbcc27e8afaa67d064dc2e8e75c",
+      "sha256": "f359e00f5a4f48d7b352aba15359fd339492d47b6f9a466807eac3021cfcf5f7",
       "source_path": "viewer/src/views/QuestionComparison.tsx",
-      "source_sha256": "e9becc1a06748e0451debee8ea7a53d94ff44bbcc27e8afaa67d064dc2e8e75c"
+      "source_sha256": "f359e00f5a4f48d7b352aba15359fd339492d47b6f9a466807eac3021cfcf5f7"
     },
     {
-      "byte_size": 9548,
+      "byte_size": 9578,
       "path": "viewer/src/views/RunReplay.tsx",
       "projection_lineage": null,
-      "sha256": "86b50d54da7a21e57a62ba28c7fe209ee76135461d28e2353dde061a235c550c",
+      "sha256": "9eb325e795c32a1f2fde7cc9aecb3e3eccde7a9b73b1634b482261788da3bdff",
       "source_path": "viewer/src/views/RunReplay.tsx",
-      "source_sha256": "86b50d54da7a21e57a62ba28c7fe209ee76135461d28e2353dde061a235c550c"
+      "source_sha256": "9eb325e795c32a1f2fde7cc9aecb3e3eccde7a9b73b1634b482261788da3bdff"
     },
     {
-      "byte_size": 6751,
+      "byte_size": 10202,
       "path": "viewer/src/views/StrategyMatrix.tsx",
       "projection_lineage": null,
-      "sha256": "03c81197386a946e14b9ef8dc555a9a06eebc68cd38e6657f5ef1dbff4f3e814",
+      "sha256": "82115fd2c7fd120516dc1b92aa12ac550157303d622721115794bb669785c142",
       "source_path": "viewer/src/views/StrategyMatrix.tsx",
-      "source_sha256": "03c81197386a946e14b9ef8dc555a9a06eebc68cd38e6657f5ef1dbff4f3e814"
+      "source_sha256": "82115fd2c7fd120516dc1b92aa12ac550157303d622721115794bb669785c142"
     },
     {
-      "byte_size": 4220,
+      "byte_size": 4275,
       "path": "viewer/src/views/TimeMachine.tsx",
       "projection_lineage": null,
-      "sha256": "1778fa803a3933843650de0ad57b2eefe3f6d4c263d27becbf3964b8dc00571c",
+      "sha256": "60189296e2d8c17f5ad55ac61660d19d9dcfed8efbe8ca18ce17d272ff4fbf81",
       "source_path": "viewer/src/views/TimeMachine.tsx",
-      "source_sha256": "1778fa803a3933843650de0ad57b2eefe3f6d4c263d27becbf3964b8dc00571c"
+      "source_sha256": "60189296e2d8c17f5ad55ac61660d19d9dcfed8efbe8ca18ce17d272ff4fbf81"
     },
     {
-      "byte_size": 5358,
+      "byte_size": 5508,
       "path": "viewer/tests/app.test.tsx",
       "projection_lineage": null,
-      "sha256": "a52cbd47e02a367eb98c40864da109e5b9286939e47f7379fdbfb04ed358a5a3",
+      "sha256": "30f3282af3120ac825f7fe64c08cec49d77127dad925cb6305938665cd7facbc",
       "source_path": "viewer/tests/app.test.tsx",
-      "source_sha256": "a52cbd47e02a367eb98c40864da109e5b9286939e47f7379fdbfb04ed358a5a3"
+      "source_sha256": "30f3282af3120ac825f7fe64c08cec49d77127dad925cb6305938665cd7facbc"
     },
     {
       "byte_size": 11952,
@@ -11186,20 +11194,20 @@
       "source_sha256": "2eca8f13fbff03cadb6ff6decc506f99f2c6d99cf120b561700bd10ebc31c8be"
     },
     {
-      "byte_size": 251,
+      "byte_size": 1134,
       "path": "viewer/tests/setup.ts",
       "projection_lineage": null,
-      "sha256": "9aa9bc38962070c5612faf1ffcf5f84c0f15d53787673c9bbc25737166a91ae8",
+      "sha256": "2afe8c65983d771c2cf0d047293c4388df999fe33b38a48ddd7a507d3c066681",
       "source_path": "viewer/tests/setup.ts",
-      "source_sha256": "9aa9bc38962070c5612faf1ffcf5f84c0f15d53787673c9bbc25737166a91ae8"
+      "source_sha256": "2afe8c65983d771c2cf0d047293c4388df999fe33b38a48ddd7a507d3c066681"
     },
     {
-      "byte_size": 8935,
+      "byte_size": 8989,
       "path": "viewer/tests/story.test.tsx",
       "projection_lineage": null,
-      "sha256": "b15d91e634c9a82bef5fb5aaf2a11ee81e432c4bc4fc11c0fc1a76f3dff12a06",
+      "sha256": "db796cf10eec7a503fda849a6039f3950e68c169906b2aad4ffe7f0d172d2c57",
       "source_path": "viewer/tests/story.test.tsx",
-      "source_sha256": "b15d91e634c9a82bef5fb5aaf2a11ee81e432c4bc4fc11c0fc1a76f3dff12a06"
+      "source_sha256": "db796cf10eec7a503fda849a6039f3950e68c169906b2aad4ffe7f0d172d2c57"
     },
     {
       "byte_size": 7514,
@@ -11226,8 +11234,8 @@
       "source_sha256": "4df400140986b5ac09d7dfb8ea6bba5b0ad26125050c8a0b0dc1831e1d82f286"
     }
   ],
-  "manifest_commitment_sha256": "110fdc1d2c74f022c8bd56d246f15c535e8cd41cb21d6f1e3cb3806c4be85969",
-  "payload_bytes": 29575739,
+  "manifest_commitment_sha256": "09b9214a73aea223f5c9647667bcef83b0fd80d0d9cc3672aaca0e74f9f1af1a",
+  "payload_bytes": 29579407,
   "policy": {
     "max_file_bytes_exclusive": 10000000,
     "max_total_bytes_exclusive": 100000000

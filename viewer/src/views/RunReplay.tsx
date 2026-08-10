@@ -69,9 +69,9 @@ function RunReplayContent({ data }: { data: ContextLabViewerExport }) {
           <h2 id="replay-heading">{state.current.questionText}</h2>
         </div>
         <div className="replay-question__metrics" aria-label="Saved run measures">
-          <MetricLink compact label="Context" metric={run.metrics.contextTokens} />
-          <MetricLink compact label="Latency" metric={run.metrics.latency} />
-          <MetricLink compact label="Cost" metric={run.metrics.estimatedCost} />
+          <MetricLink variant="compact" label="Context" metric={run.metrics.contextTokens} />
+          <MetricLink variant="compact" label="Latency" metric={run.metrics.latency} />
+          <MetricLink variant="compact" label="Cost" metric={run.metrics.estimatedCost} />
         </div>
       </section>
 

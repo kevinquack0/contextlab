@@ -58,20 +58,22 @@ export default function TemporalStrata({
   item,
   selectedIndex,
   onSelect,
+  headingId = 'strata-heading',
 }: {
   item: TemporalEvidenceCase;
   selectedIndex: number;
   onSelect: (index: number) => void;
+  headingId?: string;
 }) {
   const selected = item.events[selectedIndex] ?? item.events[0];
   const selectedPoint = pointFor(selected, selectedIndex, item.events.length);
 
   return (
-    <section className="temporal-strata" aria-labelledby="strata-heading">
+    <section className="temporal-strata" aria-labelledby={headingId}>
       <header className="instrument-heading">
         <div>
-          <p className="instrument-kicker">Authority over time</p>
-          <h2 id="strata-heading">Temporal strata</h2>
+          <p className="instrument-kicker">Authority over time · saved event sequence</p>
+          <h2 id={headingId}>{item.title}</h2>
           <p>Claims remain visible as history. Higher-authority evidence becomes the active governing layer.</p>
         </div>
         <ArtifactLink artifact={item.artifact} compact />
@@ -91,13 +93,13 @@ export default function TemporalStrata({
             </desc>
             <defs>
               <linearGradient id="active-stratum" x1="0" x2="1">
-                <stop offset="0%" stopColor="#bb6553" stopOpacity="0.72" />
-                <stop offset="72%" stopColor="#e89a85" stopOpacity="0.38" />
-                <stop offset="100%" stopColor="#e89a85" stopOpacity="0.08" />
+                <stop offset="0%" stopColor="#f0854a" stopOpacity="0.62" />
+                <stop offset="72%" stopColor="#f0854a" stopOpacity="0.28" />
+                <stop offset="100%" stopColor="#f0854a" stopOpacity="0.06" />
               </linearGradient>
               <linearGradient id="past-stratum" x1="0" x2="1">
-                <stop offset="0%" stopColor="#8e8984" stopOpacity="0.42" />
-                <stop offset="100%" stopColor="#5e5b58" stopOpacity="0.12" />
+                <stop offset="0%" stopColor="#837f74" stopOpacity="0.38" />
+                <stop offset="100%" stopColor="#4a4740" stopOpacity="0.1" />
               </linearGradient>
             </defs>
 

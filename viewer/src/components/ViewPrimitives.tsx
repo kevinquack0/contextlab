@@ -1,4 +1,4 @@
-import { Select, SelectItem, Tag } from '@carbon/react';
+import { Select, SelectItem } from '@carbon/react';
 import type { ChangeEvent, ReactNode } from 'react';
 
 import type { ContextLabViewerExport, RunRecord, ShowcaseInsight } from '../data/contract';
@@ -67,13 +67,12 @@ export function RunPicker({
 }
 
 export function RunIdentity({ run }: { run: RunRecord }) {
-  const failed = run.executionStatus === 'failed';
   return (
     <div className="run-identity">
       <div className="run-identity__status">
-        <Tag size="sm" type={failed ? 'red' : 'green'}>
+        <span className="chip" data-status={run.executionStatus}>
           {run.executionStatus}
-        </Tag>
+        </span>
         <span>
           Run <strong>{run.id}</strong>
         </span>

@@ -34,20 +34,48 @@ export function ArtifactLink({ artifact, compact = false, download = false }: Ar
   );
 }
 
+/**
+ * How a bound metric is presented.
+ *
+ * `block`   a labelled tile, for panels where the metric is the subject.
+ * `compact` a small labelled tile, for cards that stack several metrics.
+ * `cell`    the value alone, for tables. A column already carries the label,
+ *           and repeating it in every cell destroys the vertical scan that is
+ *           the whole point of a comparison table. The provenance stays
+ *           reachable through the link, the title, and the accessible name.
+ */
+export type MetricVariant = 'block' | 'compact' | 'cell';
+
 interface MetricLinkProps {
   label: string;
   metric: MetricValue;
-  compact?: boolean;
+  variant?: MetricVariant;
 }
 
-export function MetricLink({ label, metric, compact = false }: MetricLinkProps) {
+export function MetricLink({ label, metric, variant = 'block' }: MetricLinkProps) {
   const { artifact, runIds } = metric.provenance;
   const detail = `${artifact.path}, SHA-256 ${artifact.sha256}, runs ${runIds.join(', ')}`;
+  const accessibleLabel = `${label}: ${metric.display}. Provenance: ${detail}`;
+
+  if (variant === 'cell') {
+    return (
+      <a
+        aria-label={accessibleLabel}
+        className="metric-cell"
+        href={artifact.staticUrl}
+        rel="noreferrer"
+        target="_blank"
+        title={`${label}\n${detail}`}
+      >
+        <data value={metric.value}>{metric.display}</data>
+      </a>
+    );
+  }
 
   return (
     <a
-      aria-label={`${label}: ${metric.display}. Provenance: ${detail}`}
-      className={`metric-link${compact ? ' metric-link--compact' : ''}`}
+      aria-label={accessibleLabel}
+      className={`metric-link${variant === 'compact' ? ' metric-link--compact' : ''}`}
       href={artifact.staticUrl}
       rel="noreferrer"
       target="_blank"

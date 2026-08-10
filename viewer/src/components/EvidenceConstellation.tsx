@@ -26,13 +26,13 @@ interface ConstellationEdge {
 }
 
 const COLORS: Record<ConstellationKind, string> = {
-  question: '#f3c0b1',
-  input: '#8c8985',
-  source: '#aaa49e',
-  process: '#d37d68',
-  answer: '#ef9b84',
-  citation: '#f2b7a6',
-  trace: '#77736f',
+  question: '#f6b78c',
+  input: '#837f74',
+  source: '#8a8580',
+  process: '#c9713d',
+  answer: '#f0854a',
+  citation: '#9cc4d8',
+  trace: '#4a4740',
 };
 
 function uniqueSources(run: RunRecord): Array<{ id: string; label: string; artifact: ArtifactRef }> {
@@ -255,17 +255,17 @@ export default function EvidenceConstellation({
       model.nodes.forEach((node) => graph.addNode(node.id, node));
       model.edges.forEach((edge) => {
         graph.addDirectedEdgeWithKey(edge.id, edge.source, edge.target, {
-          color: '#5b5551',
+          color: '#3a3a31',
           size: 1.4,
         });
       });
 
       renderer = new Sigma(graph, container, {
         allowInvalidContainer: true,
-        defaultEdgeColor: '#5b5551',
+        defaultEdgeColor: '#3a3a31',
         defaultNodeColor: COLORS.source,
         enableEdgeEvents: false,
-        labelColor: { color: '#d8d2cc' },
+        labelColor: { color: '#b6b2a7' },
         labelDensity: 0.9,
         labelFont: 'IBM Plex Sans',
         labelRenderedSizeThreshold: 6,
@@ -278,7 +278,7 @@ export default function EvidenceConstellation({
         nodeReducer: (node, data) => {
           const focus = hoveredRef.current ?? selectedRef.current;
           const connected = node === focus || graph.areNeighbors(node, focus);
-          if (!connected) return { ...data, color: '#3c3a38', label: '', zIndex: 0 };
+          if (!connected) return { ...data, color: '#26261f', label: '', zIndex: 0 };
           if (node === focus) return { ...data, highlighted: true, size: data.size * 1.22, zIndex: 2 };
           return { ...data, zIndex: 1 };
         },
@@ -287,8 +287,8 @@ export default function EvidenceConstellation({
           const [source, target] = graph.extremities(edge);
           const connected = source === focus || target === focus;
           return connected
-            ? { ...data, color: '#d98b75', size: 2.4, zIndex: 1 }
-            : { ...data, color: '#34312f', size: 0.8, zIndex: 0 };
+            ? { ...data, color: '#f0854a', size: 2.4, zIndex: 1 }
+            : { ...data, color: '#26261f', size: 0.8, zIndex: 0 };
         },
       });
       rendererRef.current = renderer;

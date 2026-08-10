@@ -1,4 +1,4 @@
-import { Accordion, AccordionItem, Tag } from '@carbon/react';
+import { Accordion, AccordionItem } from '@carbon/react';
 
 import type { ContextLabViewerExport } from '../data/contract';
 import { ArtifactLink } from '../components/ProvenanceLink';
@@ -42,7 +42,7 @@ export default function MethodsSources({ data }: { data: ContextLabViewerExport 
         <div className="reviewer-grid">
           {methods.reviewers.aiJudges.map((reviewer) => (
             <article key={reviewer.id}>
-              <Tag size="sm" type="blue">AI judge</Tag>
+              <span className="chip chip--origin">AI judge</span>
               <h3>{reviewer.name}</h3>
               <p>{reviewer.modelId}, {reviewer.reasoningEffort} reasoning</p>
               <p>{reviewer.invocation}</p>
@@ -50,7 +50,7 @@ export default function MethodsSources({ data }: { data: ContextLabViewerExport 
             </article>
           ))}
           <article>
-            <Tag size="sm" type="cool-gray">Sole human reviewer</Tag>
+            <span className="chip">Sole human reviewer</span>
             <h3>{methods.reviewers.human.name}</h3>
             <p>{methods.reviewers.human.invocation}</p>
             <ArtifactLink artifact={methods.reviewers.human.artifact} />

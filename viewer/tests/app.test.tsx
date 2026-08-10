@@ -68,7 +68,9 @@ describe('viewer application shell', () => {
     );
     render(<App />);
 
-    expect(await screen.findByRole('heading', { name: 'Temporal strata' })).toBeVisible();
+    // The strata chart is labelled by the saved case it draws, rather than by a
+    // generic section title stacked under the view heading.
+    expect(await screen.findByRole('heading', { name: 'Public event transition' })).toBeVisible();
     expect(screen.getByRole('slider', { name: 'Inspect saved event' })).toHaveAttribute('max', '1');
     const laterEvent = screen.getByRole('button', { name: /Later event\. active/i });
     fireEvent.click(laterEvent);

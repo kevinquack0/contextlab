@@ -46,13 +46,13 @@ interface SourceGroup {
 const WIDTH = 1180;
 const HEIGHT = 560;
 const FLOW_COLORS: Record<FlowKind, string> = {
-  source: '#a7a29d',
-  retrieval: '#d78a76',
-  context: '#f0a18c',
-  excluded: '#77736f',
-  answer: '#f4c1b3',
-  evidence: '#df8f78',
-  failure: '#ff8389',
+  source: '#8a8580',
+  retrieval: '#c9713d',
+  context: '#f0854a',
+  excluded: '#4a4740',
+  answer: '#f6b78c',
+  evidence: '#d97b45',
+  failure: '#e8806a',
 };
 
 function formatTokens(value: number): string {

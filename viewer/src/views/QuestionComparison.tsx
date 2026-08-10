@@ -1,4 +1,4 @@
-import { Search, Select, SelectItem, Tag } from '@carbon/react';
+import { Search, Select, SelectItem } from '@carbon/react';
 import { useMemo, useState, type ChangeEvent } from 'react';
 
 import type { ContextLabViewerExport } from '../data/contract';
@@ -95,9 +95,7 @@ export default function QuestionComparison({ data }: { data: ContextLabViewerExp
           <>
             <div className="question-summary">
               <div className="question-summary__body">
-                <Tag size="sm" type="cool-gray">
-                  {question.taskFamily}
-                </Tag>
+                <span className="chip">{question.taskFamily}</span>
                 <h2 id="comparison-title">{question.text}</h2>
               </div>
               <div className="question-summary__meta">
@@ -119,9 +117,9 @@ export default function QuestionComparison({ data }: { data: ContextLabViewerExp
                       <span className="strategy-lane__summary">{strategy?.summary}</span>
                     </header>
                     <div className="strategy-lane__status">
-                      <Tag size="sm" type={failed ? 'red' : 'green'}>
+                      <span className="chip" data-status={run.executionStatus}>
                         {run.executionStatus}
-                      </Tag>
+                      </span>
                       <span className="strategy-lane__id">
                         Run <strong>{run.id}</strong>
                       </span>
@@ -130,9 +128,9 @@ export default function QuestionComparison({ data }: { data: ContextLabViewerExp
                       </span>
                     </div>
                     <div className="strategy-lane__metrics">
-                      <MetricLink compact label="Context" metric={run.metrics.contextTokens} />
-                      <MetricLink compact label="Latency" metric={run.metrics.latency} />
-                      <MetricLink compact label="Cost" metric={run.metrics.estimatedCost} />
+                      <MetricLink variant="compact" label="Context" metric={run.metrics.contextTokens} />
+                      <MetricLink variant="compact" label="Latency" metric={run.metrics.latency} />
+                      <MetricLink variant="compact" label="Cost" metric={run.metrics.estimatedCost} />
                     </div>
                     <section className="strategy-lane__answer">
                       <h3>Saved answer</h3>

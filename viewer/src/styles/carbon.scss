@@ -46,6 +46,32 @@
   src: url('@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Latin1.woff2') format('woff2');
 }
 
+/* Display voice for the portfolio Story. Self-hosted like every other face here;
+   the viewer still makes no remote request at runtime. */
+@font-face {
+  font-display: swap;
+  font-family: 'IBM Plex Serif';
+  font-style: normal;
+  font-weight: 300;
+  src: url('@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Latin1.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'IBM Plex Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Latin1.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'IBM Plex Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url('@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Latin1.woff2') format('woff2');
+}
+
 @font-face {
   font-display: swap;
   font-family: 'IBM Plex Mono';

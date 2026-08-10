@@ -3,7 +3,7 @@
 This React and Vite application has two layers:
 
 - Story is the default case-study entry point. It uses a compact, checked-in evidence ledger and makes no network request.
-- Explore the lab loads the detailed saved-run export only after a lab hash is active.
+- Open the evidence lab loads the detailed saved-run export only after a lab hash is active.
 
 Neither layer runs an experiment, calls a model, or substitutes sample values when evidence is missing or invalid.
 
@@ -14,7 +14,7 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by Vite. The page starts in Story. Use Explore the lab to open the detailed viewer, or add one of these hashes:
+Open the local URL printed by Vite. The page starts in Story. Use Open the evidence lab to open the detailed viewer, or add one of these hashes:
 
 - `#comparison`
 - `#pipeline`
@@ -30,6 +30,24 @@ npm run check
 ```
 
 The project requires Node.js `20.19.0` or a compatible Node.js `22.12.0` or newer release.
+
+## Story design system
+
+`src/styles/story.scss` is the whole Story surface. Four rules govern it:
+
+- **Colour is evidence.** Amber marks a value bound to a frozen artifact; ice marks the sealed
+  evaluator boundary. Nothing decorative uses either, so no ornament can be mistaken for a result.
+- **Three voices.** IBM Plex Serif carries the argument, Plex Sans the prose, Plex Mono every
+  measurement, identifier, and digest. All three are self-hosted; the page makes no remote request.
+- **Hairlines, not boxes.** Structure comes from rules and alignment rather than nested cards.
+- **Motion is scroll-driven CSS or nothing.** Section entrances and the header progress bar use
+  `animation-timeline`, and the active-section rail uses IntersectionObserver. There is no scroll
+  listener and no animation library; `tests/story.test.tsx` enforces both.
+
+Bound figures count up the first time they scroll into view. `useOdometer` in `src/story/motion.ts`
+renders the exact recorded value unless an animation is actually running, and a timer settles the
+final value even if `requestAnimationFrame` is throttled, so a bound number can never display a
+figure it does not have.
 
 ## Evidence contracts
 

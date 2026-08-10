@@ -2,26 +2,26 @@
 
 .app-theme {
   --instrument-radius: 0.75rem;
-  --instrument-surface: #121416;
-  --instrument-layer: #181b1e;
-  --instrument-layer-strong: #202428;
-  --instrument-line: #34383d;
-  --instrument-coral: #e08b74;
-  --instrument-coral-light: #f0b19f;
-  --instrument-ink: #0f1113;
+  --instrument-surface: #121211;
+  --instrument-layer: #121211;
+  --instrument-layer-strong: #191917;
+  --instrument-line: #2b2b25;
+  --instrument-coral: #f0854a;
+  --instrument-coral-light: #f6b78c;
+  --instrument-ink: #0c0c0b;
 }
 
 .app-theme .cds--btn--primary {
   background: var(--viewer-accent-strong);
-  color: #17110f;
+  color: #21120a;
 
   &:hover {
-    background: #e28b76;
+    background: #f0854a;
   }
 
   &:focus {
-    border-color: #17110f;
-    box-shadow: inset 0 0 0 1px #17110f, inset 0 0 0 2px var(--viewer-accent);
+    border-color: #21120a;
+    box-shadow: inset 0 0 0 1px #21120a, inset 0 0 0 2px var(--viewer-accent);
   }
 }
 
@@ -50,10 +50,10 @@
 }
 
 .app-theme .cds--btn--secondary {
-  background: #34383d;
+  background: #2b2b25;
 
   &:hover {
-    background: #42474d;
+    background: #3a3a31;
   }
 }
 
@@ -187,7 +187,7 @@
   height: 0.55rem;
   flex: 0 0 auto;
   border-radius: 50%;
-  background: #8c8884;
+  background: #837f74;
 }
 
 .flow-legend i[data-kind="context"],
@@ -197,7 +197,7 @@
 }
 
 .flow-legend i[data-kind="excluded"] {
-  background: #66625f;
+  background: #3a3a31;
 }
 
 .constellation-key span[data-kind="answer"]::before,
@@ -240,7 +240,7 @@
 
 .flow-column-labels text,
 .strata-grid text {
-  fill: #777c82;
+  fill: #837f74;
   font-family: var(--viewer-mono);
   font-size: 10px;
   font-weight: 600;
@@ -280,13 +280,13 @@
 .flow-node:hover rect,
 .flow-node:focus-visible rect,
 .flow-node--active rect {
-  stroke: #f7d5cb;
+  stroke: #f6cdb0;
   stroke-width: 2;
   filter: brightness(1.08);
 }
 
 .flow-node__title {
-  fill: #ece8e4;
+  fill: #f3f0e9;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 12px;
   font-weight: 600;
@@ -294,7 +294,7 @@
 }
 
 .flow-node__value {
-  fill: #94999f;
+  fill: #8a8580;
   font-family: var(--viewer-mono);
   font-size: 10px;
   pointer-events: none;
@@ -405,7 +405,7 @@
   max-width: 100ch;
   margin: 0;
   padding-left: 1rem;
-  border-left: 2px solid #706d69;
+  border-left: 2px solid #4a4740;
   color: var(--viewer-muted);
   font-size: 0.78rem;
   line-height: 1.55;
@@ -737,12 +737,12 @@ button.trace-row data {
 }
 
 .strata-grid line {
-  stroke: #2f3337;
+  stroke: #21211d;
   stroke-width: 1;
 }
 
 .strata-grid .strata-baseline {
-  stroke: #4a4e53;
+  stroke: #3a3a31;
 }
 
 .strata-layer {
@@ -767,20 +767,20 @@ button.trace-row data {
 }
 
 .strata-event circle:first-child {
-  fill: #24282c;
-  stroke: #94908c;
+  fill: #191917;
+  stroke: #837f74;
   stroke-width: 2;
   transition: fill 180ms ease, stroke 180ms ease;
 }
 
 .strata-event__core {
-  fill: #aaa49e;
+  fill: #8a8580;
 }
 
 .strata-event:hover circle:first-child,
 .strata-event:focus-visible circle:first-child,
 .strata-event--selected circle:first-child {
-  fill: #412820;
+  fill: #3a2113;
   stroke: var(--instrument-coral-light);
 }
 
@@ -789,14 +789,14 @@ button.trace-row data {
 }
 
 .strata-event__label {
-  fill: #d9d4cf;
+  fill: #b6b2a7;
   font-family: var(--viewer-mono);
   font-size: 11px;
   font-weight: 600;
 }
 
 .strata-event__date {
-  fill: #858a90;
+  fill: #837f74;
   font-family: var(--viewer-mono);
   font-size: 10px;
 }
@@ -813,7 +813,7 @@ button.trace-row data {
 
 .strata-readout__state span {
   padding: 0.3rem 0.45rem;
-  border: 1px solid #5c5955;
+  border: 1px solid #3a3a31;
   border-radius: 0.25rem;
   text-transform: uppercase;
 }

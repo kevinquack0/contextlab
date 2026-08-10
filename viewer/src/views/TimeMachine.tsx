@@ -23,7 +23,7 @@ function ExecutionComparison({
         <RunIdentity run={run} />
       </header>
       <p className="execution-comparison__answer">{run.answer.text}</p>
-      <MetricLink compact label="Saved context" metric={run.metrics.contextTokens} />
+      <MetricLink variant="compact" label="Saved context" metric={run.metrics.contextTokens} />
       <div className="citation-stack">
         {run.answer.citations.map((citation) => (
           <CitationLink citation={citation} key={citation.id} />
@@ -72,12 +72,14 @@ function TimeMachineContent({ data }: { data: ContextLabViewerExport }) {
 
       <EvidenceCallout insight={data.showcase.temporalEvidence} />
 
-      <section className="time-case-intro">
-        <p className="instrument-kicker">Saved event sequence</p>
-        <h2 id="time-heading">{item.title}</h2>
-      </section>
-
-      <TemporalStrata item={item} onSelect={setEventIndex} selectedIndex={eventIndex} />
+      {/* The case title used to sit in its own band above the chart, which
+          stacked three headings before any content. It now labels the chart. */}
+      <TemporalStrata
+        headingId="time-heading"
+        item={item}
+        onSelect={setEventIndex}
+        selectedIndex={eventIndex}
+      />
 
       {baselineRun || memoryRun ? (
         <section className="execution-comparisons" aria-labelledby="comparison-heading">
