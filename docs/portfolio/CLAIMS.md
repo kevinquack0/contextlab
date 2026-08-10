@@ -9,16 +9,17 @@ artifact's schema.
 Source result files can retain an older pending-state string because evidence is immutable. The
 current final gate, not that historical string, controls the public status.
 
-## C-01: Kevin owns the research and the final decisions
+## C-01: Kevin built and owns ContextLab end to end
 
 **Status:** Public governance fact.
 
-**Allowed wording:** Kevin Araujo conceived and owns ContextLab. He defined the research questions,
-experimental boundaries, promotion criteria, architecture, and public claims. He directed and
-reviewed bounded agent work and made every final human decision.
+**Allowed wording:** Kevin Araujo conceived, designed, built, ran, analyzed, documented, and
+presented ContextLab. He owns the complete research and engineering project, including its research
+question, benchmark, method, architecture, implementation, interface, evidence, and public claims.
+AI systems were tools inside his workflow, not separate project owners.
 
-**Scope:** Project ownership and v2 governance. This does not imply that Kevin personally wrote every
-line of implementation code.
+**Scope:** End-to-end project authorship, implementation ownership, and v2 governance. Kevin is also
+the sole human reviewer, which is a study limit and not the extent of his contribution.
 
 **Binding:**
 

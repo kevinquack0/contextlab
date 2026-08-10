@@ -117,15 +117,16 @@ reader inspect:
 The viewer reads a fixed local export and makes no model call. Missing or invalid data produces an
 error, not a substitute value.
 
-## My role and the use of agents
+## Built end to end by Kevin Araujo
 
-I conceived and own ContextLab. I defined the research questions, experimental boundaries,
-promotion rules, system architecture, and public claims. I directed the work as research lead,
-systems architect, product owner, and agent orchestrator.
+I conceived, designed, built, ran, analyzed, documented, and presented ContextLab. I defined the
+research question, benchmark, experimental boundaries, promotion rules, software architecture,
+interface, and public claims.
 
-Agents performed bounded implementation and review tasks. They worked from frozen contracts and
-returned code, tests, reviews, or evidence for inspection. No agent could approve its own output. I
-audited the evidence and made every final human decision. I am the sole human reviewer.
+I used AI systems as tools for implementation assistance and independent checks. I specified,
+integrated, and verified their output, as I did with the other tools in the stack. The complete
+research and engineering project is my work, and I am responsible for every final decision. I am
+also the sole human reviewer, which remains a limit on the study.
 
 The full responsibility split is in [My role](MY_ROLE.md) and the operating controls are in
 [AI working method](AI_WORKING_METHOD.md).

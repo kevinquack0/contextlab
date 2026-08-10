@@ -69,6 +69,11 @@
       "sha256": "10e56c1b3d2a9e5edb7edc5f7d006a7b8368fa57c968fe695db4f81ad631ea83"
     },
     {
+      "path": "docs/portfolio/media/contextlab-poster-v2-1200x630.jpg",
+      "required": true,
+      "sha256": "6fbafd683d43bdd6f8295096b6786d4e231dcdbedadc5e304594702c6521e015"
+    },
+    {
       "path": "docs/portfolio/media/contextlab-walkthrough.mp4",
       "required": true,
       "sha256": "0f59964cf03ac66bc9bf3f6a3ce385bb46c46aa56c0ff1f41993419301e2f4e3"

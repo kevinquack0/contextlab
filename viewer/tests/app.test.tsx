@@ -44,12 +44,43 @@ describe('viewer application shell', () => {
       expect(await screen.findByRole('heading', { name: viewName })).toBeVisible();
     }
 
+    expect(screen.getByRole('heading', { name: 'Evidence flow' })).toBeVisible();
+    expect(screen.getByRole('button', { name: 'Explore constellation' })).toBeVisible();
+
     const methodsLink = screen.getByRole('link', { name: 'Methods and sources' });
     methodsLink.focus();
     expect(methodsLink).toHaveFocus();
     fireEvent.click(methodsLink);
     expect(await screen.findByRole('heading', { name: 'Methods and sources' })).toBeVisible();
     expect(screen.getByText('NovaLearn is a synthetic company and corpus used only for this study.')).toBeVisible();
+  });
+
+  it('exposes temporal strata and evidence flow as interactive, evidence-bound views', async () => {
+    window.history.replaceState({}, '', '/#time');
+    vi.stubGlobal(
+      'fetch',
+      vi.fn().mockResolvedValue(
+        new Response(JSON.stringify(validViewerExport), {
+          status: 200,
+          headers: { 'Content-Type': 'application/json' },
+        }),
+      ),
+    );
+    render(<App />);
+
+    expect(await screen.findByRole('heading', { name: 'Temporal strata' })).toBeVisible();
+    expect(screen.getByRole('slider', { name: 'Inspect saved event' })).toHaveAttribute('max', '1');
+    const laterEvent = screen.getByRole('button', { name: /Later event\. active/i });
+    fireEvent.click(laterEvent);
+    expect(screen.getByRole('heading', { name: 'Later event' })).toBeVisible();
+    expect(screen.getByText(/Supersedes claim-old/i)).toBeVisible();
+
+    fireEvent.click(screen.getByRole('link', { name: 'Run replay' }));
+    expect(await screen.findByRole('heading', { name: 'Evidence flow' })).toBeVisible();
+    expect(screen.getByText(/Ribbon width is the saved candidate or context token volume/i)).toBeVisible();
+    const contextIndex = screen.getByRole('button', { name: 'Selected evidence: Context pack' });
+    fireEvent.click(contextIndex);
+    expect(screen.getByText('The exact saved evidence passed to generation after the recorded budget decision.')).toBeVisible();
   });
 
   it('ignores query-string export overrides and loads only the fixed local export', async () => {

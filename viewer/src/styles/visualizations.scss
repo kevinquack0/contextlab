@@ -1,0 +1,1088 @@
+/* Evidence instruments. Carbon remains the application shell; these views use custom SVG/WebGL leaves. */
+
+.app-theme {
+  --instrument-radius: 0.75rem;
+  --instrument-surface: #121416;
+  --instrument-layer: #181b1e;
+  --instrument-layer-strong: #202428;
+  --instrument-line: #34383d;
+  --instrument-coral: #e08b74;
+  --instrument-coral-light: #f0b19f;
+  --instrument-ink: #0f1113;
+}
+
+.app-theme .cds--btn--primary {
+  background: var(--viewer-accent-strong);
+  color: #17110f;
+
+  &:hover {
+    background: #e28b76;
+  }
+
+  &:focus {
+    border-color: #17110f;
+    box-shadow: inset 0 0 0 1px #17110f, inset 0 0 0 2px var(--viewer-accent);
+  }
+}
+
+.app-theme .cds--btn {
+  position: relative;
+  display: inline-flex;
+  min-height: 2.5rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 0.65rem 0.9rem;
+  border: 0;
+  line-height: 1.15;
+}
+
+.app-theme .cds--btn.cds--btn--lg {
+  min-height: 3rem;
+  padding: 0.8rem 1rem;
+}
+
+.app-theme .cds--btn__icon {
+  position: static;
+  inset: auto;
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+.app-theme .cds--btn--secondary {
+  background: #34383d;
+
+  &:hover {
+    background: #42474d;
+  }
+}
+
+.app-theme .cds--select-input:focus,
+.app-theme .cds--text-input:focus {
+  outline-color: var(--viewer-accent);
+}
+
+.instrument-kicker {
+  margin: 0 0 0.55rem;
+  color: var(--viewer-accent);
+  font-family: var(--viewer-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.instrument-heading {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.instrument-heading > div:first-child {
+  min-width: 0;
+}
+
+.instrument-heading h2 {
+  max-width: 24ch;
+  margin: 0;
+  color: var(--viewer-text);
+  font-size: clamp(1.6rem, 2.8vw, 2.65rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.04;
+}
+
+.instrument-heading p:not(.instrument-kicker) {
+  max-width: 66ch;
+  margin: 0.75rem 0 0;
+  color: var(--viewer-muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.replay-view,
+.time-view {
+  gap: clamp(1.5rem, 3vw, 2.75rem);
+}
+
+.replay-question {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(22rem, 0.75fr);
+  gap: 3rem;
+  align-items: end;
+  max-width: none;
+  padding: clamp(1.5rem, 3vw, 2.75rem) 0;
+}
+
+.replay-question h2 {
+  max-width: 29ch;
+  font-size: clamp(1.75rem, 3.4vw, 3.65rem);
+  font-weight: 300;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.replay-question__metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--instrument-line);
+  border-radius: var(--instrument-radius);
+  background: var(--instrument-line);
+}
+
+.replay-question__metrics .metric-link {
+  min-width: 0;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  border: 0;
+  border-radius: 0;
+  background: var(--instrument-layer);
+}
+
+.replay-question__metrics .metric-link__value {
+  margin-top: 0.45rem;
+  font-size: clamp(0.9rem, 1.3vw, 1.2rem);
+}
+
+.replay-question__metrics .metric-link__source {
+  display: none;
+}
+
+.evidence-flow,
+.temporal-strata,
+.constellation {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.evidence-flow {
+  padding-top: 0.25rem;
+}
+
+.flow-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: center;
+  color: var(--viewer-muted);
+  font-size: 0.75rem;
+}
+
+.flow-legend span,
+.constellation-key span {
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.flow-legend i,
+.constellation-key span::before,
+.constellation-index i {
+  width: 0.55rem;
+  height: 0.55rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #8c8884;
+}
+
+.flow-legend i[data-kind="context"],
+.constellation-key span[data-kind="process"]::before,
+.constellation-index i[data-kind="process"] {
+  background: var(--instrument-coral);
+}
+
+.flow-legend i[data-kind="excluded"] {
+  background: #66625f;
+}
+
+.constellation-key span[data-kind="answer"]::before,
+.constellation-index i[data-kind="answer"],
+.constellation-index i[data-kind="citation"],
+.constellation-index i[data-kind="question"] {
+  background: var(--instrument-coral-light);
+}
+
+.flow-stage,
+.strata-stage,
+.constellation-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(19rem, 23rem);
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--instrument-line);
+  border-radius: var(--instrument-radius);
+  background: var(--instrument-surface);
+  box-shadow: 0 24px 80px rgba(7, 8, 9, 0.32);
+}
+
+.flow-canvas,
+.strata-canvas {
+  min-width: 0;
+  overflow-x: auto;
+  background:
+    radial-gradient(circle at 48% 42%, rgba(224, 139, 116, 0.06), transparent 34%),
+    var(--instrument-surface);
+  scrollbar-color: var(--instrument-line) transparent;
+}
+
+.flow-svg,
+.strata-svg {
+  display: block;
+  width: 100%;
+  min-width: 64rem;
+  height: auto;
+}
+
+.flow-column-labels text,
+.strata-grid text {
+  fill: #777c82;
+  font-family: var(--viewer-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.flow-link {
+  fill: none;
+  opacity: 0.26;
+  cursor: pointer;
+  outline: none;
+  transition: opacity 220ms ease, filter 220ms ease;
+
+  &:hover,
+  &:focus-visible,
+  &.flow-link--active {
+    opacity: 0.76;
+    filter: saturate(1.08);
+  }
+
+  &:focus-visible {
+    stroke: var(--viewer-accent);
+  }
+}
+
+.flow-node {
+  cursor: pointer;
+  outline: none;
+}
+
+.flow-node rect {
+  stroke: rgba(245, 241, 237, 0.25);
+  stroke-width: 1;
+  transition: filter 180ms ease, stroke 180ms ease;
+}
+
+.flow-node:hover rect,
+.flow-node:focus-visible rect,
+.flow-node--active rect {
+  stroke: #f7d5cb;
+  stroke-width: 2;
+  filter: brightness(1.08);
+}
+
+.flow-node__title {
+  fill: #ece8e4;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.flow-node__value {
+  fill: #94999f;
+  font-family: var(--viewer-mono);
+  font-size: 10px;
+  pointer-events: none;
+}
+
+.flow-inspector,
+.strata-readout,
+.constellation-inspector {
+  display: grid;
+  min-width: 0;
+  align-content: start;
+  gap: 1rem;
+  padding: clamp(1.25rem, 2.4vw, 2rem);
+  border-left: 1px solid var(--instrument-line);
+  background:
+    linear-gradient(180deg, rgba(224, 139, 116, 0.07), transparent 34%),
+    var(--instrument-layer);
+}
+
+.flow-inspector h3,
+.strata-readout h3,
+.constellation-inspector h3 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+}
+
+.flow-inspector > p:not(.instrument-kicker),
+.constellation-inspector > p:not(.instrument-kicker) {
+  margin: 0;
+  color: var(--viewer-muted);
+  line-height: 1.55;
+}
+
+.flow-inspector__value {
+  color: var(--viewer-text);
+  font-family: var(--viewer-mono);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.flow-inspector .metric-link,
+.strata-readout .metric-link,
+.trace-detail .metric-link {
+  min-width: 0;
+}
+
+.flow-inspector__citations {
+  display: grid;
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--instrument-line);
+  border-radius: 0.5rem;
+  background: var(--instrument-line);
+}
+
+.flow-index {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.125rem 0 0.5rem;
+  scrollbar-color: var(--instrument-line) transparent;
+}
+
+.flow-index button {
+  display: grid;
+  min-width: 9rem;
+  flex: 1 0 9rem;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  border: 1px solid var(--instrument-line);
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--viewer-muted);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.flow-index button:hover,
+.flow-index button[aria-pressed="true"] {
+  border-color: color-mix(in srgb, var(--viewer-accent) 55%, var(--instrument-line));
+  background: rgba(224, 139, 116, 0.08);
+  color: var(--viewer-text);
+}
+
+.flow-index button:active,
+.strata-scrubber__events button:active,
+.constellation-index button:active {
+  transform: translateY(1px);
+}
+
+.flow-index span {
+  font-family: var(--viewer-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.flow-index strong {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.flow-boundary {
+  max-width: 100ch;
+  margin: 0;
+  padding-left: 1rem;
+  border-left: 2px solid #706d69;
+  color: var(--viewer-muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.flow-boundary strong {
+  color: var(--viewer-text);
+}
+
+.flow-empty {
+  padding: 2rem;
+  border: 1px solid var(--instrument-line);
+  border-radius: var(--instrument-radius);
+  background: var(--instrument-layer);
+}
+
+.flow-empty h2,
+.flow-empty p {
+  margin: 0;
+}
+
+.flow-empty p:last-child {
+  margin-top: 0.75rem;
+  color: var(--viewer-muted);
+}
+
+.replay-result {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(21rem, 0.75fr);
+  overflow: hidden;
+  border: 1px solid var(--instrument-line);
+  border-radius: var(--instrument-radius);
+  background: var(--instrument-line);
+}
+
+.replay-result__answer,
+.replay-result__inputs {
+  display: grid;
+  min-width: 0;
+  align-content: start;
+  gap: 1.25rem;
+  padding: clamp(1.25rem, 2.6vw, 2.25rem);
+  background: var(--instrument-layer);
+}
+
+.replay-result__answer {
+  margin-right: 1px;
+  background:
+    radial-gradient(circle at 8% 0%, rgba(224, 139, 116, 0.08), transparent 32%),
+    var(--instrument-surface);
+}
+
+.replay-result h2,
+.replay-result header,
+.execution-comparisons h2 {
+  margin: 0;
+}
+
+.replay-result h2 {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.replay-answer {
+  max-width: 78ch;
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+}
+
+.replay-result__empty-citations {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border-left: 2px solid var(--viewer-danger);
+  background: var(--viewer-danger-muted);
+  color: var(--viewer-muted);
+  font-size: 0.85rem;
+}
+
+.configuration-disclosure {
+  border-top: 1px solid var(--instrument-line);
+  padding-top: 0.9rem;
+}
+
+.configuration-disclosure summary {
+  color: var(--viewer-text);
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.configuration-disclosure .cds--snippet {
+  margin-top: 0.9rem;
+}
+
+.trace-section {
+  gap: 1.25rem;
+}
+
+.trace-layout {
+  grid-template-columns: minmax(18rem, 0.72fr) minmax(22rem, 1.28fr);
+  overflow: hidden;
+  border-color: var(--instrument-line);
+  border-radius: var(--instrument-radius);
+  background: var(--instrument-line);
+}
+
+.trace-list {
+  gap: 0;
+  background: var(--instrument-surface);
+}
+
+button.trace-row {
+  width: 100%;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.85rem;
+  padding: 1rem;
+  border: 0;
+  border-bottom: 1px solid var(--instrument-line);
+  background: var(--instrument-surface);
+  color: var(--viewer-text);
+  text-align: left;
+  cursor: pointer;
+}
+
+button.trace-row:hover,
+button.trace-row[aria-pressed="true"] {
+  box-shadow: inset 3px 0 0 var(--viewer-accent);
+  background: var(--instrument-layer-strong);
+}
+
+.trace-row__index {
+  color: var(--viewer-accent);
+  font-family: var(--viewer-mono);
+  font-size: 0.65rem;
+}
+
+button.trace-row > span:nth-child(2) {
+  display: grid;
+  gap: 0.2rem;
+}
+
+button.trace-row strong {
+  font-size: 0.87rem;
+  font-weight: 500;
+}
+
+button.trace-row small {
+  color: var(--viewer-muted);
+  font-family: var(--viewer-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+}
+
+button.trace-row data {
+  color: var(--viewer-muted);
+  font-family: var(--viewer-mono);
+  font-size: 0.72rem;
+}
+
+.trace-detail {
+  display: grid;
+  min-height: 19rem;
+  align-content: start;
+  gap: 1rem;
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  background:
+    linear-gradient(145deg, rgba(224, 139, 116, 0.06), transparent 36%),
+    var(--instrument-layer);
+}
+
+.trace-detail h3 {
+  margin: 0;
+  color: var(--viewer-text);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  text-transform: none;
+}
+
+.trace-detail time {
+  color: var(--viewer-muted);
+  font-family: var(--viewer-mono);
+  font-size: 0.72rem;
+}
+
+.trace-detail__tool {
+  display: grid;
+  gap: 0.6rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--instrument-line);
+  color: var(--viewer-muted);
+  font-size: 0.72rem;
+}
+
+.constellation-launch {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: center;
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  border: 1px solid color-mix(in srgb, var(--viewer-accent) 30%, var(--instrument-line));
+  border-radius: var(--instrument-radius);
+  background:
+    linear-gradient(105deg, rgba(224, 139, 116, 0.12), transparent 48%),
+    var(--instrument-layer);
+}
+
+.constellation-launch h2 {
+  max-width: 30ch;
+  margin: 0;
+  font-size: clamp(1.35rem, 2.4vw, 2.25rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+
+.constellation-launch > div > p:last-child {
+  max-width: 68ch;
+  margin: 0.75rem 0 0;
+  color: var(--viewer-muted);
+  line-height: 1.5;
+}
+
+.constellation-launch .cds--btn {
+  white-space: nowrap;
+}
+
+.constellation__count {
+  color: var(--viewer-muted);
+  font-family: var(--viewer-mono);
+  font-size: 0.75rem;
+}
+
+.constellation-canvas-wrap {
+  position: relative;
+  min-width: 0;
+  min-height: 38rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 52% 48%, rgba(224, 139, 116, 0.07), transparent 34%),
+    var(--instrument-surface);
+}
+
+.constellation-canvas {
+  position: absolute;
+  inset: 0;
+}
+
+.constellation-loading {
+  min-height: 12rem;
+  border-radius: var(--instrument-radius);
+  background:
+    linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent),
+    var(--instrument-layer);
+  background-size: 220% 100%;
+}
+
+.constellation-canvas-wrap .constellation-loading {
+  position: absolute;
+  inset: 0;
+}
+
+.constellation-error {
+  position: absolute;
+  inset: 1rem 1rem auto;
+  z-index: 2;
+  padding: 0.8rem 1rem;
+  border-left: 2px solid var(--viewer-danger);
+  background: var(--viewer-danger-muted);
+  color: var(--viewer-text);
+  font-size: 0.82rem;
+}
+
+.constellation-key {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 2;
+  display: flex;
+  gap: 0.8rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--instrument-line);
+  border-radius: 0.5rem;
+  background: rgba(18, 20, 22, 0.82);
+  color: var(--viewer-muted);
+  font-size: 0.66rem;
+  backdrop-filter: blur(8px);
+}
+
+.constellation-index {
+  display: flex;
+  gap: 0.45rem;
+  overflow-x: auto;
+  padding-bottom: 0.45rem;
+  scrollbar-color: var(--instrument-line) transparent;
+}
+
+.constellation-index button {
+  display: inline-flex;
+  min-width: max-content;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--instrument-line);
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--viewer-muted);
+  cursor: pointer;
+}
+
+.constellation-index button:hover,
+.constellation-index button[aria-pressed="true"] {
+  border-color: var(--viewer-accent);
+  background: rgba(224, 139, 116, 0.08);
+  color: var(--viewer-text);
+}
+
+.time-case-intro {
+  max-width: 70rem;
+  padding: 1rem 0 0;
+}
+
+.time-case-intro h2 {
+  max-width: 34ch;
+  margin: 0;
+  font-size: clamp(1.75rem, 3.4vw, 3.5rem);
+  font-weight: 300;
+  letter-spacing: -0.045em;
+  line-height: 1.06;
+  text-wrap: balance;
+}
+
+.strata-grid line {
+  stroke: #2f3337;
+  stroke-width: 1;
+}
+
+.strata-grid .strata-baseline {
+  stroke: #4a4e53;
+}
+
+.strata-layer {
+  stroke: rgba(201, 196, 191, 0.28);
+  stroke-width: 1;
+  transition: opacity 180ms ease;
+}
+
+.strata-layer--active {
+  stroke: rgba(241, 177, 159, 0.72);
+}
+
+.strata-selection-line {
+  stroke: rgba(241, 177, 159, 0.55);
+  stroke-dasharray: 4 6;
+  stroke-width: 1;
+}
+
+.strata-event {
+  cursor: pointer;
+  outline: none;
+}
+
+.strata-event circle:first-child {
+  fill: #24282c;
+  stroke: #94908c;
+  stroke-width: 2;
+  transition: fill 180ms ease, stroke 180ms ease;
+}
+
+.strata-event__core {
+  fill: #aaa49e;
+}
+
+.strata-event:hover circle:first-child,
+.strata-event:focus-visible circle:first-child,
+.strata-event--selected circle:first-child {
+  fill: #412820;
+  stroke: var(--instrument-coral-light);
+}
+
+.strata-event--selected .strata-event__core {
+  fill: var(--instrument-coral-light);
+}
+
+.strata-event__label {
+  fill: #d9d4cf;
+  font-family: var(--viewer-mono);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.strata-event__date {
+  fill: #858a90;
+  font-family: var(--viewer-mono);
+  font-size: 10px;
+}
+
+.strata-readout__state {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--viewer-muted);
+  font-family: var(--viewer-mono);
+  font-size: 0.69rem;
+}
+
+.strata-readout__state span {
+  padding: 0.3rem 0.45rem;
+  border: 1px solid #5c5955;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+
+.strata-readout__state span[data-state="active"] {
+  border-color: var(--viewer-accent);
+  background: rgba(224, 139, 116, 0.12);
+  color: var(--instrument-coral-light);
+}
+
+.strata-readout blockquote {
+  padding: 0;
+  margin: 0;
+  color: var(--viewer-text);
+  font-size: clamp(1rem, 1.45vw, 1.2rem);
+  line-height: 1.55;
+}
+
+.strata-readout__chain {
+  padding-top: 1rem;
+  margin: 0;
+  border-top: 1px solid var(--instrument-line);
+  color: var(--viewer-muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.strata-scrubber {
+  display: grid;
+  grid-template-columns: auto minmax(12rem, 1fr);
+  gap: 0.8rem 1rem;
+  align-items: center;
+}
+
+.strata-scrubber label {
+  color: var(--viewer-muted);
+  font-size: 0.75rem;
+}
+
+.strata-scrubber input[type="range"] {
+  width: 100%;
+  accent-color: var(--viewer-accent-strong);
+}
+
+.strata-scrubber__events {
+  display: flex;
+  grid-column: 1 / -1;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.35rem;
+}
+
+.strata-scrubber__events button {
+  display: grid;
+  min-width: 11rem;
+  gap: 0.25rem;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--instrument-line);
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--viewer-muted);
+  text-align: left;
+  cursor: pointer;
+}
+
+.strata-scrubber__events button:hover,
+.strata-scrubber__events button[aria-pressed="true"] {
+  border-color: color-mix(in srgb, var(--viewer-accent) 55%, var(--instrument-line));
+  background: rgba(224, 139, 116, 0.08);
+  color: var(--viewer-text);
+}
+
+.strata-scrubber__events span {
+  font-family: var(--viewer-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.strata-scrubber__events strong {
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.execution-comparisons {
+  display: grid;
+  gap: 1.25rem;
+  padding-top: 1rem;
+}
+
+.execution-comparisons__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--instrument-line);
+  border-radius: var(--instrument-radius);
+  background: var(--instrument-line);
+}
+
+.execution-comparison {
+  display: grid;
+  min-width: 0;
+  align-content: start;
+  gap: 1.1rem;
+  padding: clamp(1.25rem, 2.6vw, 2.25rem);
+  background: var(--instrument-surface);
+}
+
+.execution-comparison--emphasis {
+  background:
+    linear-gradient(145deg, rgba(224, 139, 116, 0.1), transparent 42%),
+    var(--instrument-layer);
+}
+
+.execution-comparison__answer {
+  margin: 0;
+  color: var(--viewer-text);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .flow-link {
+    animation: evidence-flow-enter 650ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .flow-node,
+  .strata-layer,
+  .strata-event {
+    animation: instrument-enter 480ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .strata-readout {
+    animation: readout-enter 260ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .constellation-loading {
+    animation: constellation-shimmer 1.1s ease-in-out infinite;
+  }
+
+  @keyframes evidence-flow-enter {
+    from { opacity: 0; }
+    to { opacity: 0.26; }
+  }
+
+  @keyframes instrument-enter {
+    from { opacity: 0; transform: translateX(-7px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes readout-enter {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes constellation-shimmer {
+    from { background-position: 100% 0; }
+    to { background-position: -100% 0; }
+  }
+}
+
+@media (max-width: 75rem) {
+  .flow-stage,
+  .strata-stage,
+  .constellation-stage {
+    grid-template-columns: minmax(0, 1fr) 19rem;
+  }
+
+  .replay-question {
+    grid-template-columns: minmax(0, 1fr) minmax(19rem, 0.75fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 63.99rem) {
+  .flow-stage,
+  .strata-stage,
+  .constellation-stage,
+  .replay-result {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-inspector,
+  .strata-readout,
+  .constellation-inspector {
+    border-top: 1px solid var(--instrument-line);
+    border-left: 0;
+  }
+
+  .replay-result__answer {
+    margin-right: 0;
+    margin-bottom: 1px;
+  }
+
+  .constellation-canvas-wrap {
+    min-height: 32rem;
+  }
+}
+
+@media (max-width: 47.99rem) {
+  .instrument-heading,
+  .constellation-launch {
+    display: grid;
+    align-items: start;
+  }
+
+  .instrument-heading h2 {
+    font-size: 1.75rem;
+  }
+
+  .replay-question {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .replay-question h2 {
+    font-size: clamp(1.65rem, 8vw, 2.35rem);
+  }
+
+  .replay-question__metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-svg,
+  .strata-svg {
+    min-width: 58rem;
+  }
+
+  .flow-inspector,
+  .strata-readout,
+  .constellation-inspector,
+  .replay-result__answer,
+  .replay-result__inputs,
+  .trace-detail,
+  .execution-comparison {
+    padding: 1rem;
+  }
+
+  .trace-layout,
+  .execution-comparisons__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trace-detail {
+    min-height: auto;
+  }
+
+  .constellation-launch .cds--btn {
+    width: 100%;
+    max-width: none;
+  }
+
+  .constellation-canvas-wrap {
+    min-height: 27rem;
+  }
+
+  .constellation-key {
+    right: 0.65rem;
+    bottom: 0.65rem;
+    flex-wrap: wrap;
+  }
+
+  .strata-scrubber {
+    grid-template-columns: 1fr;
+  }
+
+  .strata-scrubber__events {
+    grid-column: auto;
+  }
+}
